@@ -1,0 +1,143 @@
+﻿<Page x:Class="mx.gob.scjn.ius_common.gui.apoyos.BuscaPalabrasVotos"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:local="clr-namespace:mx.gob.scjn.ius_common.gui.apoyos"
+      xmlns:utils="clr-namespace:mx.gob.scjn.ius_common.gui.utils;assembly=General"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      WindowTitle="Consulta de votos" Loaded="Page_Loaded">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/General;component/Resources.xaml"/>
+                <ResourceDictionary>
+                    <utils:CalculosPropiedadesGlobales x:Key="Propiedades"/>
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Border Style="{StaticResource BorderStyle}">
+        <Grid
+              VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="140"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="180"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="21"/>
+                <RowDefinition Height="21"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="21"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="21"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+            <Label Name="EditarExp" Height="30" Background="#B5B2AB" Grid.Row="1">Editar expresión:</Label>
+            <Label Name="Lbl1" FontSize="6" HorizontalAlignment="Right" Grid.Row="1">1</Label>
+            <TextBox Name="Expresion" Grid.Column="1"  Grid.Row="1" Grid.ColumnSpan="6"></TextBox>
+            <TextBox Name="Palabra" KeyDown="Palabra_KeyDown" Grid.Row="2" Grid.ColumnSpan="5"/>
+            <Label Name="BuscarEn" Grid.Row="3" Background="#B5B2AB">Buscar en:</Label>
+            <Label Name="Lbl2" Grid.Row="3" HorizontalAlignment="Right" FontSize="6">2</Label>
+            <Label Name="Lbl3" Grid.Row="3" Grid.Column="5"
+                   Style="{StaticResource UIStyle}" FontSize="6" HorizontalAlignment="Right">3</Label>
+            <Button Name="Incorpora" Foreground="Red" Margin="2"
+                    Click="Incorpora_Click" Template="{StaticResource IncorporaBoton}"
+                    Grid.Column="6" Grid.Row="3"/>
+            <Button Name="Ver" Template="{StaticResource VerBoton}" Margin="2"
+                    Visibility="{Binding Source={StaticResource Visibilidad}, Path=ObtenVisibilidadInternet}"
+                    ToolTip="Muestra las expresiones almacenadas"
+                    Grid.Column="6" Grid.Row="4" Click="Ver_Click" />
+            <Button Name="Almacena" Template="{StaticResource AlmacenarBoton}" Margin="2"
+                    ToolTip="Guarda la expresión en expresiones almacenadas"
+                    Visibility="{Binding Source={StaticResource Visibilidad}, Path=ObtenVisibilidadInternet}"
+                    Grid.Column="6" Grid.Row="5" Click="Almacena_Click" />
+            <CheckBox Name="Localizacion" 
+                      IsChecked="{Binding Source={StaticResource Propiedades}, Path=PropiedadVotoLoc}"
+                      Grid.Column="0" Grid.Row="4" Style="{StaticResource UIStyle}">Localización</CheckBox>
+            <CheckBox IsChecked="{Binding Source={StaticResource Propiedades}, Path=PropiedadVotoTexto}"
+                      Name="Texto" Grid.Column="0" Grid.Row="5" Style="{StaticResource UIStyle}">Texto</CheckBox>
+            <CheckBox Name="Emisor"
+                      IsChecked="{Binding Source={StaticResource Propiedades}, Path=PropiedadVotoEmi}"
+                      Grid.Column="1" Grid.Row="4" Style="{StaticResource UIStyle}">Emisor</CheckBox>
+            <CheckBox IsChecked="{Binding Source={StaticResource Propiedades}, Path=PropiedadVotoAsu}"
+                      Name="Asunto" Grid.Column="1" Grid.Row="5" Style="{StaticResource UIStyle}">Asunto</CheckBox>
+            <Label Background="#B5B2AB" Grid.Row="6" Grid.ColumnSpan="2">Consultas a realizar:</Label>
+            <xcdg:DataGridControl Grid.ColumnSpan="6"
+                                  Grid.Row="7"
+                                  Grid.RowSpan="4"  
+                                  Name="OpcionesBusca" 
+                                  xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid" EditTriggers="None" ReadOnly="True" AutoCreateColumns="False" SelectionMode="Single" NavigationBehavior="RowOnly">
+                <xcdg:DataGridControl.Columns>
+                    <xcdg:Column FieldName="Operador" Title="Operador" IsMainColumn="True" ReadOnly="True" />
+                    <xcdg:Column FieldName="Expresion" Title="Expresión" ReadOnly="True" />
+                    <xcdg:Column FieldName="Seccion" Title="Sección" ReadOnly="True"/>
+                    <xcdg:Column FieldName="Epocas" Title="Época" ReadOnly="True"/>
+                </xcdg:DataGridControl.Columns>
+                <xcdg:DataGridControl.View>
+                    <xcdg:TableView ShowFixedColumnSplitter="False" ShowRowSelectorPane="False" UseDefaultHeadersFooters="False">
+                        <xcdg:TableView.FixedHeaders>
+                            <DataTemplate>
+                                <xcdg:ColumnManagerRow AllowSort="False" AllowColumnReorder="False" />
+                            </DataTemplate>
+                        </xcdg:TableView.FixedHeaders>
+                        <xcdg:TableView.Theme>
+                            <xcdg:AeroNormalColorTheme />
+                        </xcdg:TableView.Theme>
+                    </xcdg:TableView>
+                </xcdg:DataGridControl.View>
+            </xcdg:DataGridControl>
+            <Button Name="Eliminar" Grid.Column="6" Margin="2"
+                    Template="{StaticResource EliminarBoton}"
+                    ToolTip="Elimina la expresión incorporada en la lista de condiciones"
+                    Click="Eliminar_Click"
+                    Grid.Row="7"/>
+            <Button Name="Copiar" Grid.Column="6" Template="{StaticResource CopiarBoton}"
+                    Grid.Row="8" Margin="2"
+                    Click="Copiar_Click"/>
+            <Label Name="Lbl4" FontSize="6" HorizontalAlignment="Right"
+                   Grid.Column="3" Grid.Row="11" Style="{StaticResource UIStyle}">4</Label>
+            <Button Name="Realizar" Grid.Column="4"
+                    Template="{StaticResource RealizarBoton}"
+                    ToolTip="Dé clic para que la consulta se realice"
+                    Click="Realizar_Click" Grid.Row="11"/>
+            <Button Name="Regresar" Template="{StaticResource RegresarBoton}"
+                    Click="Regresar_Click" 
+                    ToolTip="Regresar a la pantalla anterior"
+                    Grid.Column="5" 
+                    Width="100" 
+                    Grid.Row="11">Regresar</Button>
+            <Label Grid.Column="5"  Grid.Row="2" HorizontalAlignment="Left" 
+                   Margin="0,0,0,0" Name="lblOperador" Height="30"
+                   Style="{StaticResource UIStyle}" Visibility="Hidden">Operador Lógico:</Label>
+            <ComboBox Grid.Column="6" Grid.Row="2" HorizontalAlignment="Left"
+                     Margin="0,0,0,0" Name="txtOperador" Visibility="Hidden">
+                <ComboBoxItem Content="Y" IsSelected="True"/>
+                <ComboBoxItem Content="O" IsSelected="False"/>
+                <ComboBoxItem Content="N" IsSelected="False"/>
+            </ComboBox>
+            <Canvas Width="1" Height="1">
+                <local:ListaBusquedasAlmacenadas x:Name="ListaBusquedas"
+                                                 Canvas.Top="100"
+                                                 Canvas.Left="100"
+                                                 VerticalAlignment="Top" Visibility="Hidden"
+                                                 HorizontalAlignment="Left"/>
+                <local:AlmacenaBusqueda x:Name="AlmacenaExpresion"
+                                        Canvas.Top="100"
+                                        Canvas.Left="100"
+                                        VerticalAlignment="Top" Visibility="Hidden"
+                                        HorizontalAlignment="Left"/>
+            </Canvas>
+
+        </Grid>
+    </Border>
+</Page>

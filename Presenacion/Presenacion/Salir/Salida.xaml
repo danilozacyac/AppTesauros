@@ -1,0 +1,34 @@
+﻿<Page x:Class="mx.gob.scjn.ius_common.gui.salir.Salida"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      WindowTitle="Aviso Importante"
+    MinHeight="400" MinWidth="493">
+    <Page.Resources>
+        <ResourceDictionary Source="/General;component/Resources.xaml"/>
+    </Page.Resources>
+    <Border Style="{StaticResource BorderStyle}">
+        <Grid>
+            <Button Height="32" HorizontalAlignment="Left" 
+                    Margin="16,19,0,0" Name="Librerias" 
+                    VerticalAlignment="Top" Width="140"
+                    Click="Librerias_Click">Librerías</Button>
+            <Button HorizontalAlignment="Left" 
+                    Margin="18,57,0,0" 
+                    Name="Catalogo" 
+                    Width="140" Height="35" 
+                    VerticalAlignment="Top"
+                    Click="Catalogo_Click">Catálogo de publicaciones</Button>
+            <Frame Margin="166,57,46,10" 
+                        Name="Contenido" 
+                        />
+            <Button Height="40" 
+                   HorizontalAlignment="Right" 
+                   Margin="0,0,8,0" 
+                   Name="Salir"
+                    ToolTip="Salir de la aplicación"
+                   VerticalAlignment="Top" Width="40" 
+                   Template="{StaticResource TacheBoton}"
+                    Click="Salir_MouseLeftButtonDown"/>
+        </Grid>
+    </Border>
+</Page>

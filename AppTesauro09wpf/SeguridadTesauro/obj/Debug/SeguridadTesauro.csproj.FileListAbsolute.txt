@@ -1,0 +1,18 @@
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\SeguridadTesauro\bin\Debug\SeguridadTesauro.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\SeguridadTesauro\bin\Debug\SeguridadTesauro.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\SeguridadTesauro\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\SeguridadTesauro\obj\Debug\SeguridadTesauro.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\SeguridadTesauro\obj\Debug\SeguridadTesauro.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\SeguridadTesauro\bin\Debug\SeguridadTesauro.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\SeguridadTesauro\bin\Debug\SeguridadTesauro.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\SeguridadTesauro\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\SeguridadTesauro\obj\Debug\SeguridadTesauro.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\SeguridadTesauro\obj\Debug\SeguridadTesauro.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\SeguridadTesauro\bin\Debug\SeguridadTesauro.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\SeguridadTesauro\bin\Debug\SeguridadTesauro.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\SeguridadTesauro\obj\Debug\SeguridadTesauro.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\SeguridadTesauro\obj\Debug\SeguridadTesauro.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\SeguridadTesauro\bin\Debug\SeguridadTesauro.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\SeguridadTesauro\bin\Debug\SeguridadTesauro.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\SeguridadTesauro\obj\Debug\SeguridadTesauro.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\SeguridadTesauro\obj\Debug\SeguridadTesauro.pdb

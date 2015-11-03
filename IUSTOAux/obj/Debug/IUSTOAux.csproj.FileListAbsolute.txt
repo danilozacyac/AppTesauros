@@ -1,0 +1,121 @@
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\context\ApplicationContext.xml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\context\ApplicationContext.xsd
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\context\ApplicationContext.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\log4net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\nunit.framework.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\Common.Logging.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\Lucene.Net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\obj\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\obj\Debug\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\context\ApplicationContext.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\context\ApplicationContext.xsd
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\context\ApplicationContext.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\log4net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\nunit.framework.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\Common.Logging.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\Lucene.Net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\obj\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\obj\Debug\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\context\ApplicationContext.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\context\ApplicationContext.xsd
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\context\ApplicationContext.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\log4net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\Common.Logging.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\Lucene.Net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUS\IUSTOAux\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUS\IUSTOAux\obj\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUS\IUSTOAux\obj\Debug\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\context\ApplicationContext.xml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\context\ApplicationContext.xsd
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\context\ApplicationContext.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\log4net.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\Lucene.Net.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\Common.Logging.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\obj\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\obj\Debug\IUSTOWeb.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\context\ApplicationContext.xml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\context\ApplicationContext.xsd
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\context\ApplicationContext.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\IUSTOWeb.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\IUSTOWeb.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\electoral_common.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\IUSTO.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\ius_common.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\Lucene.Net.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\Common.Logging.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\log4net.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\electoral_common.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\IUSTO.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\bin\Debug\ius_common.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\obj\Debug\IUSTOWeb.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTOAux\obj\Debug\IUSTOWeb.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOAux\bin\Debug\context\ApplicationContext.xml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOAux\bin\Debug\context\ApplicationContext.xsd
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOAux\bin\Debug\context\ApplicationContext.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOAux\bin\Debug\IUSTOWeb.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOAux\bin\Debug\IUSTOWeb.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOAux\bin\Debug\electoral_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOAux\bin\Debug\IUSTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOAux\bin\Debug\ius_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOAux\bin\Debug\Lucene.Net.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOAux\bin\Debug\Common.Logging.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOAux\bin\Debug\log4net.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOAux\bin\Debug\electoral_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOAux\bin\Debug\IUSTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOAux\bin\Debug\ius_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOAux\obj\Debug\IUSTOAux.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOAux\obj\Debug\IUSTOWeb.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOAux\obj\Debug\IUSTOWeb.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTOAux\bin\Debug\context\ApplicationContext.xml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTOAux\bin\Debug\context\ApplicationContext.xsd
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTOAux\bin\Debug\context\ApplicationContext.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTOAux\bin\Debug\IUSTOWeb.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTOAux\bin\Debug\IUSTOWeb.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTOAux\bin\Debug\electoral_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTOAux\bin\Debug\IUSTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTOAux\bin\Debug\ius_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTOAux\bin\Debug\Lucene.Net.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTOAux\bin\Debug\log4net.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTOAux\bin\Debug\Common.Logging.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTOAux\bin\Debug\electoral_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTOAux\bin\Debug\IUSTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTOAux\bin\Debug\ius_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTOAux\obj\Debug\IUSTOAux.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTOAux\obj\Debug\IUSTOWeb.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTOAux\obj\Debug\IUSTOWeb.pdb

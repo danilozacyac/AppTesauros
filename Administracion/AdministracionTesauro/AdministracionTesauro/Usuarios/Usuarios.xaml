@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="AdministracionTesauro.Usuarios.UsuariosPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Name="ListaUsuarios">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label >Usuario</Label>
+                <ComboBox Name="CbxNombreUsuario"
+                          Grid.Column="1"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label >Contraseña</Label>
+                <PasswordBox Name="PbxPwdUsuario"
+                          Grid.Column="1"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label >Perfil</Label>
+                <ComboBox Name="CbxPerfilUsuario"
+                          Grid.Column="1"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label >Rol</Label>
+                <ComboBox Name="CbxRolUsuario"
+                          Grid.Column="1"/>
+            </Grid>
+        </StackPanel>
+        <StackPanel Name="ListaPermisos" Grid.Column="1"/>
+        <Grid Height="35" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Name="BtnPerfilNuevo">Perfil _Nuevo</Button>
+            <Button Name="BtnEliminarPerfil" Grid.Column="1">_Eliminar Perfil</Button>
+            <Button Name="BtnGuardarPerfil" Grid.Column="2">_Guardar Perfil</Button>
+        </Grid>
+    </Grid>
+</UserControl>

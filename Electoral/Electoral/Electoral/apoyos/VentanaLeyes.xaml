@@ -1,0 +1,87 @@
+﻿<UserControl x:Class="mx.gob.scjn.electoral_common.gui.apoyos.VentanaLeyes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:utilities="clr-namespace:mx.gob.scjn.ius_common.gui.gui.utilities;assembly=General"
+             Height="350" Width="620"  
+             HorizontalAlignment="Left" VerticalAlignment="Top" 
+             Canvas.Left="100" Canvas.Top="100">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/General;component/Resources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid SnapsToDevicePixels="False">
+        <Border Style="{StaticResource BorderStyle}" Margin="0,0,0,0">
+        </Border>
+        <Label Height="56" Name="Titulo"
+               VerticalAlignment="Top"
+               Background="Cornsilk"
+               FontSize="12" Margin="0,19,30,0"
+               BorderBrush="Black" BorderThickness="1">
+            <TextBlock Name="contenidoReal" 
+                       TextWrapping="WrapWithOverflow" 
+                       Height="47" Width="564"> Ley</TextBlock>
+        </Label>
+        <Button Name="Salir"
+                Click="Salir_MouseLeftButtonUp"
+                Template="{StaticResource RegresarBoton}"
+                HorizontalAlignment="Right"
+                ToolTip="Cerrar"
+                Width="40" Height="40"
+                VerticalAlignment="Top" Margin="0,10,5,0"/>
+        <RichTextBox Name="contenidoLey" xml:lang="es-MX"
+                     IsDocumentEnabled="True" 
+                     Margin="49,100,30,20" 
+                     IsReadOnly="True"
+                     VerticalScrollBarVisibility="Auto"
+                     MinHeight="86" MaxHeight="330" Height="230" Width="541"></RichTextBox>
+        <Button HorizontalAlignment="Left"
+                Margin="3,76,0,0"
+                Name="imprimir"
+                Width="40"
+                Height="40"
+                Template="{StaticResource ImprimeBoton}"
+                Click="imprimir_MouseLeftButtonUp"
+                ToolTip="Imprimir"
+                VerticalAlignment="Top"/>
+        <Button HorizontalAlignment="Left"
+                Margin="3,116,0,0"
+                Name="Copiar"
+                Width="40"
+                Height="40"
+                Template="{StaticResource PortapapelesBoton}"
+                ToolTip="Portapapeles"
+                Click="Copiar_MouseLeftButtonUp"
+                VerticalAlignment="Top"/>
+        <Rectangle Height="15" 
+                   Margin="0,0,35,0"
+                   Name="BarraMovimiento" 
+                   VerticalAlignment="Top" 
+                   ClipToBounds="True" 
+                   Fill="#706E6A"
+                   MouseLeftButtonDown="BarraMovimiento_DragEnter"
+                   MouseMove="BarraMovimiento_DragLeave" 
+                   MouseLeftButtonUp="BarraMovimiento_MouseLeftButtonUp" Cursor="SizeAll" />
+        <Button HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Height="40"
+                Visibility="{Binding Source={StaticResource Visibilidad}, Path=ObtenVisibilidadInternet}"
+                Margin="0,158,0,0"
+                Name="Guardar"
+                ToolTip="Guardar"
+                Click="Guardar_MouseLeftButtonDown"
+                Template="{StaticResource GuardarBoton}"
+                Width="40" />
+        <Button Name="Anexos" Margin="0,200,0,0"
+                Width="40"
+                Height="40"
+                ToolTip="Ver documento anexo"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="Anexos_Click"
+                Template="{StaticResource VisualizarBoton}"/>
+        <FlowDocumentPageViewer Name="docImpresion" Visibility="Hidden"/>
+    </Grid>
+</UserControl>

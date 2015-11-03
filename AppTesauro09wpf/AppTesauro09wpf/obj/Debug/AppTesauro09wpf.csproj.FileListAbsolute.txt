@@ -1,0 +1,342 @@
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\AppTesauro09wpf.exe.config
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\noticia\introduccion.htm
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\noticia\marcojuridico.htm
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\noticia\Noticia.rtf
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Ayuda\ius.chm
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Informe2008.pdf
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Salir\directorio.pdf
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Salir\Aviso.pdf
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Salir\CATALOGO.pdf
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\presentacion\Presentacion.rtf
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\CodigoEtica\Codigo.htm
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\CodigoEtica\CodigoPDF.htm
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Informe2008.htm
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\noticia\Noticia.htm
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\presentacion\PresentaPDF.htm
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\presentacion\Presentacion.htm
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Salir\Aviso.htm
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Salir\CATALOGO.htm
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Salir\directorio.htm
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\AppTesauro09wpf.exe
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\AppTesauro09wpf.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\IUSTO.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\IUSTOWeb.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\ius_common.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Login.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Presenacion.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Recursos.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\SeguridadTesauro.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\TesauroMiddleTier.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\TesauroTO.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Common.Logging.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\log4net.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\electoral_common.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\JaStDev.ControlFramework.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\DirectorioPJF.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Electoral.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\TesauroUtilities.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\IUSTOWeb.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\IUSTO.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\ius_common.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Presenacion.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Recursos.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Login.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\SeguridadTesauro.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\TesauroMiddleTier.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\TesauroTO.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\electoral_common.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\JaStDev.ControlFramework.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\DirectorioPJF.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Electoral.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\TesauroUtilities.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Busqueda\BusquedaCopia.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\DetalleSinonimo.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\DetallesTema.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Expresiones.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Observaciones\Observaciones.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Utils\MoverCopiar.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Busqueda\BusquedaCopia.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\DetalleSinonimo.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\DetallesTema.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Expresiones.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Observaciones\Observaciones.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Utils\MoverCopiar.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\wMain.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\App.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf_MarkupCompile.cache
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf_MarkupCompile.lref
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\wMain.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.g.resources
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.Properties.Resources.resources
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.exe
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.pdb
+\\ctupo-24062-lvp\C\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\AppTesauro09wpf.exe.config
+\\ctupo-24062-lvp\C\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.exe
+\\ctupo-24062-lvp\C\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Busqueda\BusquedaCopia.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\DetalleSinonimo.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\DetallesTema.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Estadisticas\StatsWindow.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Expresiones.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Observaciones\Observaciones.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\RelacionarTemaTesis.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Utils\MoverCopiar.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Busqueda\BusquedaCopia.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\DetalleSinonimo.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\DetallesTema.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Estadisticas\StatsWindow.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Expresiones.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Observaciones\Observaciones.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\RelacionarTemaTesis.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\TematicoIus\Tematico.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Utils\MoverCopiar.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\wMain.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\App.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf_MarkupCompile.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf_MarkupCompile.lref
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\noticia\introduccion.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\noticia\marcojuridico.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\noticia\Noticia.rtf
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Ayuda\ius.chm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Informe2008.pdf
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Salir\directorio.pdf
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Salir\Aviso.pdf
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Salir\CATALOGO.pdf
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\presentacion\Presentacion.rtf
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\CodigoEtica\Codigo.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\CodigoEtica\CodigoPDF.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Informe2008.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\noticia\Noticia.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\presentacion\PresentaPDF.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\presentacion\Presentacion.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Salir\Aviso.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Salir\CATALOGO.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Salir\directorio.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\AppTesauro09wpf.exe.config
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\AppTesauro09wpf.exe
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\AppTesauro09wpf.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\IUSTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\IUSTOWeb.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\ius_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Login.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Presenacion.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Recursos.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\SeguridadTesauro.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\TesauroMiddleTier.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\TesauroTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Common.Logging.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\log4net.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\electoral_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\JaStDev.ControlFramework.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\DirectorioPJF.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Electoral.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\TesauroUtilities.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\IUSTOWeb.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\IUSTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\ius_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Presenacion.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Recursos.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Login.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\SeguridadTesauro.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\TesauroMiddleTier.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\TesauroTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\electoral_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\JaStDev.ControlFramework.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\DirectorioPJF.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Electoral.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\TesauroUtilities.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\TematicoIus\Tematico.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\wMain.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.g.resources
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.Properties.Resources.resources
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.csproj.GenerateResource.Cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.exe
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\TematicoIus\PruebaTematicoLoadOnDemand.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\TematicoIus\PruebaTematicoLoadOnDemand.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\AppTesauro09wpf.exe.config
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.exe
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\noticia\introduccion.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\noticia\marcojuridico.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\noticia\Noticia.rtf
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Ayuda\ius.chm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Informe2008.pdf
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Salir\directorio.pdf
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Salir\Aviso.pdf
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Salir\CATALOGO.pdf
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\presentacion\Presentacion.rtf
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\CodigoEtica\Codigo.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\CodigoEtica\CodigoPDF.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Informe2008.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\noticia\Noticia.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\presentacion\PresentaPDF.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\presentacion\Presentacion.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Salir\Aviso.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Salir\CATALOGO.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Salir\directorio.htm
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\AppTesauro09wpf.exe
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\AppTesauro09wpf.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\IUSTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\IUSTOWeb.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\ius_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Login.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Presenacion.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\SeguridadTesauro.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\TesauroMiddleTier.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\TesauroTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Common.Logging.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\log4net.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\electoral_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\JaStDev.ControlFramework.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\DirectorioPJF.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Electoral.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\TesauroUtilities.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\IUSTOWeb.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\IUSTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\ius_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Presenacion.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Login.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\SeguridadTesauro.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\TesauroMiddleTier.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\TesauroTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\electoral_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\JaStDev.ControlFramework.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\DirectorioPJF.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Electoral.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\TesauroUtilities.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\DetalleSinonimo.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\DetallesTema.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Estadisticas\StatsWindow.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Expresiones.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Observaciones\Observaciones.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\RelacionarTemaTesis.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Utils\MoverCopiar.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\DetalleSinonimo.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\DetallesTema.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Estadisticas\StatsWindow.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Expresiones.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Observaciones\Observaciones.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\RelacionarTemaTesis.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\TematicoIus\Tematico.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Utils\MoverCopiar.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\wMain.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\App.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf_MarkupCompile.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf_MarkupCompile.lref
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\TematicoIus\Tematico.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\wMain.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.g.resources
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.Properties.Resources.resources
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.csproj.GenerateResource.Cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\BuscarPorRegistro.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\BuscarPorRegistro.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\TesisNoIngresadas.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\TesisNoIngresadas.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\itextsharp.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\WPFToolkit.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\WPFToolkit.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Estadisticas\StatBarGraph.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Estadisticas\StatBarGraph.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Controls.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Controls.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\CCD.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\ERDLDH.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\estilo.css
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\FGR.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\GDGP.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\GIOM.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\GDGP.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\GIOM.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\JFFGS.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\JJGP.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\JNSM.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\JRCD.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\MAG.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\MBLR.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\OMCSCGV.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\SAVH.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\SSAA.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\SSAG.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\IIG.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\CCD.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\GIOM1.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\JALR.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\JMC.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\LMAM.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\MAQP.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\MBLR1.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\MGO.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\OVM.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\PEPL.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\SAVH1.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\images\SONG.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\JALR.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\JFFGS.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\JJGP.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\JMC.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\JNSM.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\JRCD.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\LMAM.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\MAG.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\MAQP.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\MBLR.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\MCAF.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\MGO.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\MMGO.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\more_base.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\more_col_base.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\MTHT.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\nav_base.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\nav_base2.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\nav_col_base.jpg
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\OMCSCGV.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\OSCGV.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\OVM.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\PEPL.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\Plantilla.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\SAVH.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\SONG.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\General\Semblanzas\SSAA.HTML
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\ScjnUtilities.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\ScjnUtilities.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\telerik.windows.controls.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\telerik.windows.controls.xml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\de\telerik.windows.controls.resources.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\es\telerik.windows.controls.resources.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\fr\telerik.windows.controls.resources.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\it\telerik.windows.controls.resources.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\nl\telerik.windows.controls.resources.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\tr\telerik.windows.controls.resources.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Telerik.Windows.Controls.Input.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Telerik.Windows.Controls.Navigation.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\telerik.windows.controls.ribbonview.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Telerik.Windows.Data.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Telerik.Windows.Controls.Input.xml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Telerik.Windows.Controls.Navigation.xml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\telerik.windows.controls.ribbonview.xml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\Telerik.Windows.Data.xml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Properties\Busqueda\BusquedaCopia.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\Properties\Busqueda\BusquedaCopia.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\AppTesauro09wpf.exe.manifest
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\AppTesauro09wpf.application
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.exe.manifest
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\obj\Debug\AppTesauro09wpf.application
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\uicontrols.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\AppTesauro09wpf\bin\Debug\uicontrols.pdb

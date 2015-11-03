@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="mx.gob.scjn.ius_common.gui.apoyos.VentanaHistorial"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Width="433"
+             Height="214">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/General;component/Resources.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Border Style="{StaticResource BorderStyle}">
+        <Grid>
+            <Label Name="Titulo"
+                   Height="40"
+                   Margin="18,15,72,0"
+                   VerticalAlignment="Top"
+                   Background="Cornsilk"
+                   BorderBrush="Black"
+                   BorderThickness="1"
+                   FontSize="16"
+                   FontWeight="Bold">
+                Historial de documentos relacionados
+            </Label>
+            <RichTextBox Name="Contenido"
+                         Margin="18,61,40,15"
+                         IsReadOnly="True"
+                         VerticalScrollBarVisibility="Auto" />
+            <Button Name="Salir"
+                    Width="40"
+                    Height="40"
+                    Margin="0,15,9,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Click="Salir_MouseLeftButtonDown"
+                    Template="{StaticResource RegresarBoton}"
+                    ToolTip="Cerrar" />
+            <Rectangle Name="BarraMovimiento"
+                       Height="16"
+                       Margin="-1,-1,40,0"
+                       VerticalAlignment="Top"
+                       Cursor="ScrollAll"
+                       Fill="#706E6A"
+                       MouseLeftButtonDown="BarraMovimiento_MouseLeftButtonDown"
+                       MouseLeftButtonUp="BarraMovimiento_MouseLeftButtonUp"
+                       MouseMove="BarraMovimiento_MouseMove"
+                       Stroke="Black" />
+        </Grid>
+    </Border>
+</UserControl>

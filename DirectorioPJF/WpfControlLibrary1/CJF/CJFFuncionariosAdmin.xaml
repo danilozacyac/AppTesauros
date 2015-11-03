@@ -1,0 +1,186 @@
+﻿<Page x:Class="mx.gob.scjn.directorio.CJF.CJFFuncionariosAdmin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+     xmlns:local="clr-namespace:mx.gob.scjn.directorio"
+     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="CJFFuncionariosAdmin" FontSize="13" Height="500" Width="739.5">
+
+    <Page.Resources>
+        <ResourceDictionary Source="/General;component/Resources.xaml">
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Border Name="Borde" BorderThickness="0" Style="{StaticResource BorderStyle}">
+        <Grid Height="500" Width="737.5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5" />
+                <RowDefinition Height="440*" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="5" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="378.75*" />
+                <ColumnDefinition Width="358.75*" />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" Margin="5,5,5,49.177" Name="grdDetalleDer" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="338.038*" />
+                    <ColumnDefinition Width="5" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1" />
+                    <RowDefinition Height="89*" />
+                    <RowDefinition Height="19*" />
+                    <RowDefinition Height="91*" />
+                    <RowDefinition Height="24*" />
+                    <RowDefinition Height="69.271*" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="3" />
+                </Grid.RowDefinitions>
+                <Label Grid.Row="4" Margin="95.835,1,93.089,1" Name="lblDomTel" Foreground="{StaticResource ColorFuenteEtiqueta}" Grid.Column="2" FontSize="12">DOMICILIO Y TELÉFONO</Label>
+                <Label Grid.Row="1" Margin="98.35,0,95.604,0.005" Name="lblAA" Foreground="{StaticResource ColorFuenteEtiqueta}" Grid.Column="2" FontSize="12" Height="26.363" Grid.RowSpan="2" VerticalAlignment="Bottom">ÁREA ADMINISTRATIVA</Label>
+                <Rectangle Fill="Bisque" Grid.Column="1" IsEnabled="True" IsHitTestVisible="False" Margin="0.996,0,1,1.005" Name="rectangleTel" Opacity="9" OpacityMask="Bisque" RadiusX="10" RadiusY="10" Stroke="Black" StrokeDashCap="Round" StrokeDashOffset="5" StrokeEndLineCap="Square" StrokeLineJoin="Bevel" StrokeStartLineCap="Triangle" Visibility="Visible" Grid.ColumnSpan="3" Grid.Row="1" />
+                <Rectangle Fill="Bisque" Grid.Column="1" Grid.Row="3" IsEnabled="True" IsHitTestVisible="False" Margin="0.996,1,1,1" Name="rectangleCargo" Opacity="9" OpacityMask="Bisque" RadiusX="10" RadiusY="10" Stroke="Black" StrokeDashCap="Round" StrokeDashOffset="5" StrokeEndLineCap="Square" StrokeLineJoin="Bevel" StrokeStartLineCap="Triangle" Visibility="Visible" Grid.ColumnSpan="3" />
+                <Rectangle Fill="Bisque" Grid.Column="1" Grid.Row="5" IsEnabled="True" IsHitTestVisible="False" Margin="0.996,1.003,1,1" Name="rectangleDom" Opacity="9" OpacityMask="Bisque" RadiusX="10" RadiusY="10" Stroke="Black" StrokeDashCap="Round" StrokeDashOffset="5" StrokeEndLineCap="Square" StrokeLineJoin="Bevel" StrokeStartLineCap="Triangle" Visibility="Visible" Grid.RowSpan="2" Grid.ColumnSpan="3" />
+                <TextBlock Margin="0,10.505"  Name="textCargo" Grid.Row="3" Background="Bisque" FontSize="20" TextWrapping="WrapWithOverflow" Grid.Column="2" VerticalAlignment="Center" Height="Auto" TextAlignment="Center">CARGO</TextBlock>
+                <TextBlock Background="Bisque" Margin="0,5" Name="textDom" Grid.Row="5" TextWrapping="WrapWithOverflow" FontSize="14" Grid.Column="2" Text="DOM" />
+                <TextBlock Background="Bisque" Margin="0,5" Name="textTel" Grid.Row="6" TextWrapping="WrapWithOverflow" FontSize="14" Grid.Column="2" Text="TEL"/>
+                <TextBlock Margin="0,10.505"  Name="textNombre" Background="Bisque" FontSize="25" Text="Nombre" TextWrapping="WrapWithOverflow" TextAlignment="Center" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" Height="Auto" />
+                <Grid Grid.Row="7" Height="40.411" HorizontalAlignment="Right" Margin="0,0,5.712,-41.412" Name="grdBotones" VerticalAlignment="Bottom" Width="149.003" Grid.Column="2" Grid.ColumnSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50" />
+                        <ColumnDefinition Width="50" />
+                        <ColumnDefinition Width="50" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Name="Guardar_"  Click="Guardar_Click"
+                            Grid.Row="0" Margin="0" 
+                            ToolTip="Guardar en archivo" 
+                            Visibility="{Binding Source={StaticResource Visibilidad}, Path=ObtenVisibilidadInternet}"
+                            Template="{StaticResource GuardarBoton}"/>
+                    <Button Name="Imprimir_" Click="Imprimir_Click"
+                            Grid.Column="1" Grid.Row="0" Margin="0"
+                            ToolTip="Imprimir"
+                            Template="{StaticResource ImprimeBoton}"
+                            VerticalAlignment="Top" />
+                    <Button Name="PortaPapeles_" Click="PortaPapeles_Click"
+                            Grid.Column="3" Margin="1,1,1,1"
+                            ToolTip="Portapapeles"
+                            Template="{StaticResource PortapapelesBoton}"
+                            HorizontalAlignment="Right" />
+
+                    <!--<Image MouseLeftButtonDown="Guardar" Name="Guardar_" Visibility="Hidden" 
+                           ToolTip="Guardar" Source="/DirectorioPJF;component/Images/Guardar1.PNG" Margin="0,0,0,0" />
+                    <Image Grid.Column="1" Grid.Row="0" Margin="0" MouseLeftButtonDown="Imprimir" Name="Imprimir_"
+                           ToolTip="Imprimir" Source="/DirectorioPJF;component/Images/Imprimir1.PNG" ImageFailed="Imprimir__ImageFailed" />
+                    <Image Grid.Column="2" Grid.Row="0" Margin="0" MouseLeftButtonDown="PortaPapeles" Name="PortaPapeles_" 
+                           ToolTip="Enviar al portapapeles" Source="/DirectorioPJF;component/Images/PORTAPAPELES1.PNG" />-->
+                </Grid>
+            </Grid>
+            <Grid Margin="6,5,1,3" Name="grdListaIzq" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="451*" />
+                    <RowDefinition Height="30" />
+
+                </Grid.RowDefinitions>
+                 <Label Margin="0,0,0,184.733" Name="lblPonencia" HorizontalAlignment="Center" 
+                        VerticalAlignment="Bottom" Foreground="{StaticResource ColorFuenteEtiqueta}" 
+                        Height="25.69" Width="74.54">Presidencia</Label>
+                <xcdg:DataGridControl AutoCreateColumns="False" Background="Bisque" EditTriggers="None" Margin="0,6,6,1" Name="Funcionarios" NavigationBehavior="RowOnly" ReadOnly="True" SelectionMode="Single" xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid" MouseLeftButtonDown="CargaDetalle" MouseLeftButtonUp="CargaDetalle" MouseDoubleClick="CargaDetalle" FontSize="14">
+                    <xcdg:DataGridControl.Columns>
+                        <xcdg:Column FieldName="NombrePersona" Title="Nombre" Width="320" IsMainColumn="True" ReadOnly="True" TextTrimming="WordEllipsis" TextWrapping="WrapWithOverflow" />
+                        <xcdg:Column FieldName="IdPersona" Title="Id" Visible="False" />
+                        <xcdg:Column FieldName="DomPersona" Title="Domicilio" Visible="False" />
+                        <xcdg:Column FieldName="TelPersona" Title="Telefono" Visible="False" />
+                    </xcdg:DataGridControl.Columns>
+                    <xcdg:DataGridControl.View>
+                        <xcdg:TableView ShowFixedColumnSplitter="False" ShowRowSelectorPane="False" UseDefaultHeadersFooters="False"></xcdg:TableView>
+                    </xcdg:DataGridControl.View>
+                </xcdg:DataGridControl>
+                <Rectangle Name="rectangleAccesoRapido" Fill="Bisque" IsEnabled="True" IsHitTestVisible="False" Opacity="9" OpacityMask="Bisque" RadiusX="10" RadiusY="10" Stroke="Black" StrokeDashCap="Round" StrokeDashOffset="5" StrokeEndLineCap="Square" StrokeLineJoin="Bevel" StrokeStartLineCap="Triangle" Visibility="Visible" Grid.Row="1" HorizontalAlignment="Left" Width="148" />
+                <TextBox Margin="8,2,1,2" Name="txtAccesoRapido" FontSize="15" Background="Bisque" BorderBrush="Bisque" 
+                         Grid.Row="1" Opacity="1" GotFocus="txtAccesoRapido_GotFocus" 
+                         MouseDoubleClick="txtAccesoRapido_MouseDoubleClick" TextChanged="txtAccesoRapido_TextChanged" 
+                         Foreground="Gray" HorizontalAlignment="Left" Width="130"
+                         ToolTip="Búsqueda por apellido">Acceso rápido</TextBox>
+                <Rectangle Name="rectangleTotal" Fill="Bisque" IsEnabled="True" IsHitTestVisible="False" 
+                           Opacity="9" OpacityMask="Bisque" RadiusX="10" RadiusY="10" Stroke="Black" 
+                           StrokeDashCap="Round" StrokeDashOffset="5" StrokeEndLineCap="Square" 
+                           StrokeLineJoin="Bevel" StrokeStartLineCap="Triangle" Visibility="Visible" 
+                           Grid.Row="1" Margin="0,0,5,0" HorizontalAlignment="Right" Width="38.961" />
+                <Label Grid.Row="1" Margin="154,1,50,1" Name="lblHayDatos" Foreground="{StaticResource ColorFuenteEtiqueta}" 
+                       Visibility="Hidden" FontSize="13">No hay coincidencias</Label>
+                <TextBlock Name="textCuantos" Background="Bisque" FontSize="14" Margin="0,5,11.5,5" 
+                           TextTrimming="WordEllipsis" TextWrapping="WrapWithOverflow" Grid.Row="1" HorizontalAlignment="Right" Width="25.625" TextAlignment="Center"></TextBlock>
+                <local:FondoTransparente x:Name="FTransparente" Visibility="Hidden" Margin="1,1,-358,1" />
+                <Canvas Margin="144,67,-193,26"></Canvas>
+                <local:OpcionesImprimir x:Name="OpImprimir" Visibility="Hidden" Margin="127.156,105,-212,17.817" />
+                <local:MensajesAvisos x:Name="Aviso" Visibility="Hidden" Margin="107.149,50.186,-236.602,71.432" />
+            </Grid>
+            <RichTextBox Grid.Row="1" Height="32.3" Margin="100,0,165.75,11" Name="contenidoTexto" Visibility="Hidden" VerticalAlignment="Bottom" VerticalScrollBarVisibility="Auto"  Width="103" Grid.Column="1" />
+            <FlowDocumentPageViewer Name="impresion" IsEnabled="True"
+                                        Background="White"
+                                        Grid.Column="1"
+                                        Grid.Row="1" Visibility="Hidden" Height="41.3" VerticalAlignment="Bottom" Margin="16,0,0,10" HorizontalAlignment="Left" Width="69" />
+            <Grid  Grid.ColumnSpan="2" Grid.Row="2" Margin="1,1,1,1" Name="grdBusqueda" Visibility="Hidden" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5" />
+                    <RowDefinition Height="27.889*" />
+                    <RowDefinition Height="5" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="6.012*" />
+                    <ColumnDefinition Width="90.681*" />
+                    <ColumnDefinition Width="4.509*" />
+                    <ColumnDefinition Width="91.85*" />
+                    <ColumnDefinition Width="5.344*" />
+                    <ColumnDefinition Width="3.604*" />
+                    <ColumnDefinition Width="303.553*" />
+                    <ColumnDefinition Width="7.247*" />
+                    <ColumnDefinition Width="7.6*" />
+                    <ColumnDefinition Width="258.6*" />
+                </Grid.ColumnDefinitions>
+                <Button  Name="btnBuscar" 
+                         BorderBrush="{StaticResource ColorClaro}" 
+                         Background="{StaticResource ColorBase}"  
+                         Foreground="{StaticResource ColorFuenteBoton}"
+                         Click="btnBuscar_Click" FontSize="15" Grid.Column="3" 
+                         Grid.Row="1" Margin="0">Buscar</Button>
+                <Button Name="btnRestablecer" 
+                        BorderBrush="{StaticResource ColorClaro}" 
+                        Background="{StaticResource ColorBase}"  
+                        Foreground="{StaticResource ColorFuenteBoton}"
+                        BorderThickness="2" Click="btnRestablecer_Click" 
+                        FontSize="15" Grid.Column="1" Grid.Row="1" 
+                        ToolTip="Mostrar listado completo">Restablecer</Button>
+                <GroupBox  Name="gpOpciones"  Background="Bisque" BorderBrush="Black" Foreground="Black" 
+                           Grid.Column="8" Grid.ColumnSpan="2" Grid.RowSpan="2" Header="" Margin="0"
+                          OpacityMask="Bisque" ToolTip="Criterio de búsqueda">
+                    <Grid Height="17.6" Margin="0" Width="249.8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2.4*" />
+                            <ColumnDefinition Width="94.4*" />
+                            <ColumnDefinition Width="2.4*" />
+                            <ColumnDefinition Width="140.4*" />
+                            <ColumnDefinition Width="2.8*" />
+                        </Grid.ColumnDefinitions>
+                        <RadioButton Name="optInicio" FontSize="12" Grid.ColumnSpan="2" IsChecked="False" 
+                                     Margin="1.837,-0.13,2.672,2.13" >Al Inicio</RadioButton>
+                        <RadioButton Name="optCualquierParte" FontSize="12" Grid.Column="3" IsChecked="True" 
+                                     Margin="1" >En cualquier parte</RadioButton>
+                    </Grid>
+                </GroupBox>
+                <Rectangle Fill="Bisque" Grid.Column="4" Grid.ColumnSpan="4" Grid.Row="1" IsEnabled="True" 
+                           IsHitTestVisible="False" Margin="4.948,0,1.8,0" Name="rectangle3" Opacity="9" 
+                           OpacityMask="Bisque" RadiusX="10" RadiusY="10" Stroke="Black" StrokeDashCap="Round" 
+                           StrokeDashOffset="5" StrokeEndLineCap="Square" StrokeLineJoin="Bevel" 
+                           StrokeStartLineCap="Triangle" Visibility="Visible" />
+                <TextBox Name="txtCampoBusqueda" Background="Bisque" BorderBrush="Bisque" FontSize="15" 
+                         Grid.Column="6" Grid.Row="1"  Margin="10,3" 
+                         KeyDown="txtCampoBusqueda_KeyDown" KeyUp="txtCampoBusqueda_KeyUp"
+                         TextChanged="txtCampoBusqueda_TextChanged" />
+            </Grid>
+        </Grid>
+    </Border>
+</Page>

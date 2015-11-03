@@ -1,0 +1,42 @@
+﻿<Window x:Class="AppTesauro09wpf.Busqueda.BusquedaCopia"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen"
+    Title="Temas que coinciden" Height="300" Width="300">
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            
+            <GradientStop Color="LightBlue" Offset="0.0"/>
+            <GradientStop Color="Gray" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <Label Margin="0,0,0,0">
+            <ScrollViewer Background="Transparent">
+                <TextBlock Name="lblRuta" Margin="0,0,0,0" TextWrapping="WrapWithOverflow">
+            Seleccione un tema
+                </TextBlock>
+            </ScrollViewer>
+        </Label>
+        <CheckBox Name="CbxTodos" Grid.Row="1" Click="CbxTodos_Click">Seleccionar _todo</CheckBox>
+        <TreeView Name="TviResultado" Grid.Row="2"
+                  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Name="BtnCopiar" Click="BtnCopiar_Click" IsDefault="True">_Copiar</Button>
+            <Button Name="BtnIgnorar" Click="BtnIgnorar_Click" Grid.Column="1">_Ignorar</Button>
+            <Button Name="BtnCancelar" Click="BtnCancelar_Click" Grid.Column="2">C_ancelar</Button>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="ReportesTesauro.ParametrosReporteCE"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>  
+        <Label>Reporte de Cabezas de Estructura</Label>
+        <CheckBox Name="CbxNumeroHijos" Grid.Row="1">Mostrar Número de Hijos</CheckBox>
+        <ComboBox Name="CbxMateria" Grid.Row="2">
+            <ComboBoxItem Tag="0" IsSelected="True">Todas las materias</ComboBoxItem>
+            <ComboBoxItem Tag="1" >Constitucional</ComboBoxItem>
+            <ComboBoxItem Tag="2">Penal</ComboBoxItem>
+            <ComboBoxItem Tag="4">Civil</ComboBoxItem>
+            <ComboBoxItem Tag="8">Administrativa</ComboBoxItem>
+            <ComboBoxItem Tag="16">Laboral</ComboBoxItem>
+            <ComboBoxItem TabIndex="32">Común</ComboBoxItem>
+            <ComboBoxItem Tag="64">Derechos Humanos</ComboBoxItem>
+        </ComboBox>
+        <ComboBox Name="CbxTipoReporte" Grid.Row="3">
+            <ComboBoxItem Tag="1" IsSelected="True">Texto separado por comas</ComboBoxItem>
+            <ComboBoxItem Tag="2" >Texto Separado por tabuladores</ComboBoxItem>
+        </ComboBox>
+        <Button Name="btnGeneraReporteCE" Click="btnGeneraReporteCE_Click" Grid.Row="4">GeneraReporte</Button> 
+    </Grid>
+</UserControl>

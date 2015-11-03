@@ -1,0 +1,36 @@
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUSTO\IUSTO\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUSTO\IUSTO\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUSTO\IUSTO\bin\Debug\Lucene.Net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUSTO\IUSTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUSTO\IUSTO\obj\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUSTO\IUSTO\obj\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUSTO\IUSTO\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUSTO\IUSTO\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUSTO\IUSTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUSTO\IUSTO\obj\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\IUSTO\IUSTO\obj\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTO\IUSTO\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTO\IUSTO\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTO\IUSTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTO\IUSTO\obj\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTO\IUSTO\obj\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTO\IUSTO\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTO\IUSTO\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTO\IUSTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTO\IUSTO\obj\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTO\IUSTO\obj\Debug\IUSTO.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTO\IUSTO\bin\Debug\IUSTO.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTO\IUSTO\bin\Debug\IUSTO.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTO\IUSTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTO\IUSTO\obj\Debug\IUSTO.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\IUSTO\IUSTO\obj\Debug\IUSTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTO\IUSTO\bin\Debug\IUSTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTO\IUSTO\bin\Debug\IUSTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTO\IUSTO\obj\Debug\IUSTO.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTO\IUSTO\obj\Debug\IUSTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTO\IUSTO\obj\Debug\IUSTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTO\IUSTO\bin\Debug\IUSTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTO\IUSTO\bin\Debug\IUSTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTO\IUSTO\obj\Debug\IUSTO.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTO\IUSTO\obj\Debug\IUSTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\IUSTO\IUSTO\obj\Debug\IUSTO.pdb

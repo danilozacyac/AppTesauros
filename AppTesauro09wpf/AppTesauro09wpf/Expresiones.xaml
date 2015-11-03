@@ -1,0 +1,100 @@
+﻿<Window x:Class="AppTesauro09wpf.Expresiones"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Expresiones"
+        Width="458"
+        Height="204"
+        Background="LightSeaGreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <Label Name="Titulo"
+               Grid.ColumnSpan="4"
+               HorizontalAlignment="Center">
+            <TextBlock FontSize="20"
+                       Foreground="White"
+                       TextAlignment="Center">
+                Expresiones
+            </TextBlock>
+        </Label>
+        <Label Name="lblExpresion"
+               Grid.Row="1"
+               Foreground="White">
+            Expresión
+        </Label>
+        <TextBox Name="tbxExpresion"
+                 Grid.Row="1"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="3" />
+        <Label Name="lblOperador"
+               Grid.Row="2"
+               Foreground="White">
+            Operador
+        </Label>
+        <ComboBox Name="cmbOperador"
+                  Grid.Row="2"
+                  Grid.Column="1">
+            <ComboBoxItem IsSelected="True">Y</ComboBoxItem>
+            <ComboBoxItem>O</ComboBoxItem>
+            <ComboBoxItem>NO</ComboBoxItem>
+        </ComboBox>
+        <CheckBox Name="CbxLoc"
+                  Grid.Row="2"
+                  Grid.Column="2"
+                  Foreground="White">
+            Localizacion
+        </CheckBox>
+        <CheckBox Name="CbxRubro"
+                  Grid.Row="2"
+                  Grid.Column="3"
+                  Foreground="White"
+                  IsChecked="True">
+            Rubro
+        </CheckBox>
+        <CheckBox Name="CbxTexto"
+                  Grid.Row="3"
+                  Grid.Column="2"
+                  Foreground="White"
+                  IsChecked="True">
+            Texto
+        </CheckBox>
+        <CheckBox Name="CbxPrec"
+                  Grid.Row="3"
+                  Grid.Column="3"
+                  Foreground="White">
+            Precedentes
+        </CheckBox>
+        <Grid Grid.Row="4" Grid.ColumnSpan="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button Name="btnAceptar"
+                    Width="80"
+                    Margin="10,0"
+                    HorizontalAlignment="Right"
+                    Click="btnAceptar_Click">
+                Aceptar
+            </Button>
+            <Button Name="btnCancelar"
+                    Grid.Column="1"
+                    Width="80"
+                    Margin="10,0"
+                    HorizontalAlignment="Left"
+                    Click="btnCancelar_Click">
+                Cancelar
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

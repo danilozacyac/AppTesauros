@@ -1,0 +1,666 @@
+﻿<Page x:Class="IUS.tablaResultado"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:help="clr-namespace:JaStDev.ControlFramework.Controls;assembly=JaStDev.ControlFramework"
+      xmlns:ius="clr-namespace:IUS"
+      xmlns:local="clr-namespace:mx.gob.scjn.ius_common.gui.apoyos"
+      xmlns:my="clr-namespace:System;assembly=mscorlib"
+      xmlns:utils="clr-namespace:mx.gob.scjn.ius_common.gui.gui.utilities;assembly=General"
+      xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid"
+      ClipToBounds="False"
+      Loaded="Page_Loaded"
+      WindowTitle="Visualizar registros tesis"
+      help:Help.HelpFile="IUS.chm"
+      help:Help.Topic="Visualizacion_de_las_tesis">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/General;component/Resources.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Border Name="Borde" Style="{StaticResource BorderStyle}">
+        <Grid xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" MaxWidth="10" />
+                <ColumnDefinition Width="40" MaxWidth="40" />
+                <ColumnDefinition Width="40" MaxWidth="40" />
+                <ColumnDefinition Width="100" MaxWidth="100" />
+                <ColumnDefinition Width="100" MaxWidth="100" />
+                <ColumnDefinition Width="100" MaxWidth="100" />
+                <ColumnDefinition Width="100" MaxWidth="100" />
+                <ColumnDefinition Width="100" MaxWidth="100" />
+                <ColumnDefinition Width="100" MaxWidth="100" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="40" MaxWidth="40" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="10" MaxWidth="10" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="10" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Grid.Column="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="12*" />
+                    <RowDefinition Height="18*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Button Name="anterior"
+                        Grid.RowSpan="2"
+                        Margin="-6,0,1,0"
+                        Click="anterior_MouseLeftButtonDown"
+                        Template="{StaticResource AnteriorBoton}"
+                        ToolTip="Registro anterior" />
+                <Button Name="siguiente"
+                        Grid.RowSpan="2"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        Margin="0,0,20,0"
+                        Click="siguiente_MouseLeftButtonDown"
+                        Template="{StaticResource SiguienteBoton}"
+                        ToolTip="Siguiente registro" />
+                <Button Name="final"
+                        Grid.RowSpan="2"
+                        Grid.Column="2"
+                        Grid.ColumnSpan="2"
+                        Margin="9,0,11,0"
+                        Click="final_MouseLeftButtonDown"
+                        Template="{StaticResource FinalBoton}"
+                        ToolTip="Ir al último registro" />
+            </Grid>
+            <Grid Name="Letras"
+                  Grid.Row="2"
+                  Grid.Column="1"
+                  Grid.ColumnSpan="9"
+                  Margin="0,0,0,0"
+                  Visibility="Hidden">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Button Name="LetraA"
+                        Grid.Column="0"
+                        Click="Letra_Click">
+                    A
+                </Button>
+                <Button Name="LetraB"
+                        Grid.Column="1"
+                        Click="Letra_Click">
+                    B
+                </Button>
+                <Button Name="LetraC"
+                        Grid.Column="2"
+                        Click="Letra_Click">
+                    C
+                </Button>
+                <Button Name="LetraD"
+                        Grid.Column="3"
+                        Click="Letra_Click">
+                    D
+                </Button>
+                <Button Name="LetraE"
+                        Grid.Column="4"
+                        Click="Letra_Click">
+                    E
+                </Button>
+                <Button Name="LetraF"
+                        Grid.Column="5"
+                        Click="Letra_Click">
+                    F
+                </Button>
+                <Button Name="LetraG"
+                        Grid.Column="6"
+                        Click="Letra_Click">
+                    G
+                </Button>
+                <Button Name="LetraH"
+                        Grid.Column="7"
+                        Click="Letra_Click">
+                    H
+                </Button>
+                <Button Name="LetraI"
+                        Grid.Column="8"
+                        Click="Letra_Click">
+                    I
+                </Button>
+                <Button Name="LetraJ"
+                        Grid.Column="9"
+                        Click="Letra_Click">
+                    J
+                </Button>
+                <Button Name="LetraK"
+                        Grid.Column="10"
+                        Click="Letra_Click">
+                    K
+                </Button>
+                <Button Name="LetraL"
+                        Grid.Column="11"
+                        Click="Letra_Click">
+                    L
+                </Button>
+                <Button Name="LetraM"
+                        Grid.Column="12"
+                        Click="Letra_Click">
+                    M
+                </Button>
+                <Button Name="LetraN"
+                        Grid.Column="13"
+                        Click="Letra_Click">
+                    N
+                </Button>
+                <Button Name="LetraO"
+                        Grid.Column="14"
+                        Click="Letra_Click">
+                    O
+                </Button>
+                <Button Name="LetraP"
+                        Grid.Column="15"
+                        Click="Letra_Click">
+                    P
+                </Button>
+                <Button Name="LetraQ"
+                        Grid.Column="16"
+                        Click="Letra_Click">
+                    Q
+                </Button>
+                <Button Name="LetraR"
+                        Grid.Column="17"
+                        Click="Letra_Click">
+                    R
+                </Button>
+                <Button Name="LetraS"
+                        Grid.Column="18"
+                        Click="Letra_Click">
+                    S
+                </Button>
+                <Button Name="LetraT"
+                        Grid.Column="19"
+                        Click="Letra_Click">
+                    T
+                </Button>
+                <Button Name="LetraU"
+                        Grid.Column="20"
+                        Click="Letra_Click">
+                    U
+                </Button>
+                <Button Name="LetraV"
+                        Grid.Column="21"
+                        Click="Letra_Click">
+                    V
+                </Button>
+                <Button Name="LetraW"
+                        Grid.Column="22"
+                        Click="Letra_Click">
+                    W
+                </Button>
+                <Button Name="LetraX"
+                        Grid.Column="23"
+                        Click="Letra_Click">
+                    X
+                </Button>
+                <Button Name="LetraY"
+                        Grid.Column="24"
+                        Click="Letra_Click">
+                    Y
+                </Button>
+                <Button Name="LetraZ"
+                        Grid.Column="25"
+                        Click="Letra_Click">
+                    Z
+                </Button>
+                <Button Name="LetraOtros"
+                        Grid.Column="26"
+                        Click="Letra_Click">
+                    #
+                </Button>
+            </Grid>
+            <Label Name="Titulo"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="4"
+                   Style="{StaticResource LabelStyle}">
+                Resultado de la búsqueda
+            </Label>
+            <Button Name="imprimir"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Width="40"
+                    Margin="0,0,0,0"
+                    Click="imprimir_onClick"
+                    Template="{StaticResource ImprimeBoton}"
+                    ToolTip="Ver vista preliminar de impresión" />
+            <Button Name="original"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Width="40"
+                    Click="original_onClick"
+                    Template="{StaticResource OriginalBoton}"
+                    ToolTip="Restablecer" />
+            <Image Name="jurisprudencia"
+                   Grid.Row="1"
+                   Grid.Column="4"
+                   Margin="0,0,0,0"
+                   MouseEnter="jurisprudencia_MouseEnter"
+                   MouseLeave="jurisprudencia_MouseLeave"
+                   MouseLeftButtonDown="jurisprudencia_onClick"
+                   Source="/General;component/images/jurisprudencia-1.png"
+                   Stretch="Fill"
+                   ToolTip="Mostrar tesis de jurisprudencia" />
+            <Image Name="aisladas"
+                   Grid.Row="1"
+                   Grid.Column="3"
+                   Margin="0,0,0,0"
+                   MouseEnter="aisladas_MouseEnter"
+                   MouseLeave="aisladas_MouseLeave"
+                   MouseLeftButtonDown="aisladas_onClick"
+                   Source="/General;component/images/Aisladas.png"
+                   Stretch="Fill"
+                   ToolTip="Mostrar tesis aisladas" />
+            <Image Name="contradiccion"
+                   Grid.Row="1"
+                   Grid.Column="8"
+                   Margin="0,5,0,5"
+                   MouseEnter="contradiccion_MouseEnter"
+                   MouseLeave="contradiccion_MouseLeave"
+                   MouseLeftButtonDown="contradiccion_onClick"
+                   Source="/General;component/images/contradiccion.png"
+                   Stretch="Fill"
+                   ToolTip="Mostrar jurisprudencias derivadas de contradicción de tesis" />
+            <Image Name="controversias"
+                   Grid.Row="1"
+                   Grid.Column="6"
+                   Margin="0,5,0,5"
+                   MouseEnter="controversias_MouseEnter"
+                   MouseLeave="controvercias_MouseLeave"
+                   MouseLeftButtonDown="controversias_onClick"
+                   Source="/General;component/images/CONTROVERSIAS.png"
+                   Stretch="Fill"
+                   ToolTip="Mostrar jurisprudencias derivadas de controversias constitucionales" />
+            <Image Name="reiteraciones"
+                   Grid.Row="1"
+                   Grid.Column="7"
+                   Margin="0,5,0,5"
+                   MouseEnter="reiteraciones_MouseEnter"
+                   MouseLeave="reiteraciones_MouseLeave"
+                   MouseLeftButtonDown="reiteraciones_onClick"
+                   Source="/General;component/images/REITERACIONES.png"
+                   Stretch="Fill"
+                   ToolTip="Mostrar jurisprudencias por reiteración" />
+            <Image Name="acciones"
+                   Grid.Row="1"
+                   Grid.Column="5"
+                   Margin="0,5,0,5"
+                   MouseEnter="acciones_MouseEnter"
+                   MouseLeave="acciones_MouseLeave"
+                   MouseLeftButtonDown="acciones_onClick"
+                   Source="/General;component/images/ACCIONES.png"
+                   Stretch="Fill"
+                   ToolTip="Mostrar jurisprudencias derivadas de acciones de inconstitucionalidad" />
+            <Button Name="Guardar"
+                    Grid.Row="1"
+                    Grid.Column="9"
+                    Click="Guardar_Click"
+                    Template="{StaticResource GuardarBoton}"
+                    ToolTip="Guardar resultado de la consulta"
+                    Visibility="{Binding Source={StaticResource Visibilidad},
+                                         Path=ObtenVisibilidadInternet}" />
+            <RichTextBox Name="Contenido" Visibility="Hidden" />
+
+            <Button Name="Almacenar"
+                    Grid.Row="1"
+                    Grid.Column="10"
+                    Margin="0,0,0,0"
+                    Click="Almacenar_Click"
+                    Template="{StaticResource BuroBoton}"
+                    ToolTip="Almacenar consulta"
+                    Visibility="Hidden" />
+            <Button x:Name="salir"
+                    Grid.Row="1"
+                    Grid.Column="12"
+                    Margin="0,0,0,0"
+                    Click="salir_onClick"
+                    Template="{StaticResource RegresarBoton}"
+                    ToolTip="Regresar a la pantalla anterior" />
+            <Label Name="RegistrosLabel"
+                   Grid.Column="5"
+                   Grid.ColumnSpan="2"
+                   FontSize="14"
+                   FontWeight="Bold"
+                   Style="{StaticResource LabelStyle}">
+                Registros:
+            </Label>
+            <Label Name="LblFiltros"
+                   Grid.RowSpan="2"
+                   Grid.Column="13"
+                   Style="{StaticResource LabelStyle}">
+                <TextBlock TextWrapping="WrapWithOverflow">Filtros realizados:</TextBlock>
+            </Label>
+            <ListBox Name="Filtros"
+                     Grid.Row="1"
+                     Grid.RowSpan="2"
+                     Grid.Column="13"
+                     MouseDoubleClick="Filtros_MouseDoubleClick" />
+            <xcdg:DataGridControl xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid"
+                                  Name="tablaResultados"
+                                  Grid.Row="3"
+                                  Grid.ColumnSpan="14"
+                                  MinHeight="100"
+                                  Margin="0,0,0,0"
+                                  HorizontalContentAlignment="Left"
+                                  AllowDetailToggle="False"
+                                  AutoCreateColumns="False"
+                                  Background="Bisque"
+                                  BorderBrush="Bisque"
+                                  IsTextSearchEnabled="True"
+                                  NavigationBehavior="RowOnly"
+                                  PropertyChanged="tablaResultados_PropertyChanged"
+                                  ReadOnly="True"
+                                  SelectedIndex="0"
+                                  SelectionMode="Single">
+                <xcdg:DataGridControl.Columns>
+                    <xcdg:Column Title="Tesis"
+                                 Width="75"
+                                 FieldName="Tesis"
+                                 ReadOnly="True"
+                                 TextBlock.TextAlignment="Center"
+                                 TextWrapping="WrapWithOverflow" />
+                    <xcdg:Column Title="Rubro"
+                                 Width="260"
+                                 FieldName="Rubro"
+                                 ReadOnly="True"
+                                 TextTrimming="WordEllipsis"
+                                 TextWrapping="WrapWithOverflow" />
+                    <xcdg:Column Title="Localización"
+                                 FieldName="LocAbr"
+                                 ReadOnly="True"
+                                 TextTrimming="CharacterEllipsis"
+                                 TextWrapping="WrapWithOverflow" />
+                    <xcdg:Column Title="Instancia"
+                                 Width="60"
+                                 FieldName="Sala"
+                                 ReadOnly="True" />
+                    <xcdg:Column Title="Tipo de Tesis"
+                                 CellContentTemplate="{StaticResource ImageContentPresenter}"
+                                 FieldName="ImageOther"
+                                 ReadOnly="True" />
+                    <xcdg:Column Title="IUS"
+                                 Width="50"
+                                 FieldName="Ius"
+                                 IsMainColumn="True"
+                                 ReadOnly="True" />
+                </xcdg:DataGridControl.Columns>
+                <xcdg:DataGridControl.View>
+                    <xcdg:TableView x:Name="tableView"
+                                    RowSelectorPaneWidth="50"
+                                    UseDefaultHeadersFooters="False">
+                        <xcdg:TableView.FixedHeaders>
+                            <DataTemplate>
+                                <xcdg:ColumnManagerRow HorizontalAlignment="Stretch"
+                                                       VerticalAlignment="Top"
+                                                       AllowColumnReorder="True"
+                                                       AllowSort="False" />
+                            </DataTemplate>
+                        </xcdg:TableView.FixedHeaders>
+
+                        <xcdg:TableView.Theme>
+                            <xcdg:AeroNormalColorTheme />
+                        </xcdg:TableView.Theme>
+                    </xcdg:TableView>
+                </xcdg:DataGridControl.View>
+                <xcdg:DataGridControl.ItemContainerStyle>
+                    <Style>
+                        <EventSetter Event="xcdg:DataRow.MouseDoubleClick" Handler="tablaResultados_MouseDoubleClick" />
+                        <Setter Property="xcdg:RowSelector.RowSelectorStyle" Value="{StaticResource itemIndexSelectorStyle}" />
+                        <Setter Property="xcdg:DataRow.Height" Value="{Binding RelativeSource={RelativeSource AncestorType={x:Type ius:tablaResultado}}, Path=RowHeight, Mode=TwoWay}" />
+                        <Setter Property="xcdg:DataRow.MinHeight" Value="15" />
+
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Path=IsJuris}" Value="true">
+                                <Setter Property="TextElement.FontWeight" Value="Bold" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </xcdg:DataGridControl.ItemContainerStyle>
+            </xcdg:DataGridControl>
+            <FlowDocumentPageViewer Name="impresionViewer"
+                                    Grid.Row="3"
+                                    Grid.Column="1"
+                                    Grid.ColumnSpan="10"
+                                    Margin="0,0,0,0"
+                                    Background="White"
+                                    Foreground="Black"
+                                    Template="{StaticResource FDPVTemplate}"
+                                    Visibility="Hidden" />
+            <Button Name="imprimePapel"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    Width="40"
+                    Height="40"
+                    Margin="0,0,0,0"
+                    VerticalAlignment="Top"
+                    Click="imprimePapel_MouseLeftButtonDown"
+                    Template="{StaticResource ImprimePapelBoton}"
+                    ToolTip="Imprimir el documento"
+                    Visibility="Hidden" />
+            <Button Name="BtnTache"
+                    Grid.Row="3"
+                    Grid.Column="2"
+                    Grid.ColumnSpan="4"
+                    Width="40"
+                    Height="40"
+                    Margin="0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Click="BtnTache_Click"
+                    Template="{StaticResource TacheBoton}"
+                    ToolTip="Cerrar vista preliminar"
+                    Visibility="Hidden" />
+            <Button Name="inicio"
+                    Grid.Column="3"
+                    Width="30"
+                    Margin="0,0,6,0"
+                    HorizontalAlignment="Right"
+                    Click="inicio_MouseLeftButtonDown"
+                    Template="{StaticResource InicioBoton}"
+                    ToolTip="Ir al primer registro" />
+            <Button Name="OrdenarPorImage"
+                    Grid.Column="7"
+                    Width="30"
+                    Margin="0,0,70,0"
+                    HorizontalAlignment="Right"
+                    Click="OrdenarPor_MouseLeftButtonDown"
+                    Template="{StaticResource OrdenarBoton}"
+                    ToolTip="Ordenar por..." />
+            <Image Name="ImgPonentes"
+                   Grid.Column="7"
+                   Width="30"
+                   Height="30"
+                   Margin="30,0"
+                   HorizontalAlignment="Right"
+                   MouseEnter="ImgPonentes_MouseEnter"
+                   MouseLeave="ImgPonentes_MouseLeave"
+                   MouseLeftButtonDown="ImgPonentes_MouseLeftButtonDown"
+                   Source="/General;component/images/Filtrar-PONENCIA1.png"
+                   ToolTip="Localizar por ponente" />
+            <Image Name="ImgAsuntos"
+                   Grid.Column="7"
+                   Width="30"
+                   Height="30"
+                   Margin="0,0"
+                   HorizontalAlignment="Right"
+                   MouseEnter="ImgAsuntos_MouseEnter"
+                   MouseLeave="ImgAsuntos_MouseLeave"
+                   MouseLeftButtonDown="ImgAsuntos_MouseLeftButtonDown"
+                   Source="/General;component/images/Filtrar-ASUNTO1.png"
+                   ToolTip="Localizar por asunto" />
+
+            <Label Name="lblIrA"
+                   Grid.RowSpan="2"
+                   Grid.Column="8"
+                   Grid.ColumnSpan="2"
+                   Width="80"
+                   Margin="0,0,0,0"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Top"
+                   Style="{StaticResource LabelStyle}">
+                <TextBlock Grid.ColumnSpan="2" TextWrapping="WrapWithOverflow">Ir a:</TextBlock>
+            </Label>
+            <xcdg:NumericTextBox xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid"
+                                 Name="IrANum"
+                                 Grid.Column="9"
+                                 Grid.ColumnSpan="2"
+                                 Margin="0,0,0,0"
+                                 KeyDown="IrANum_KeyDown"
+                                 MaxLength="6"
+                                 NumberStyles="None"
+                                 ValueDataType="my:Int32" />
+            <Button Name="btnIrA"
+                    Grid.Column="11"
+                    Height="30"
+                    Margin="0,0,0,0"
+                    Background="Maroon"
+                    BorderBrush="Bisque"
+                    Click="btnIrA_Click"
+                    Foreground="Bisque"
+                    ToolTip="Ir a un número consecutivo/registro">
+                Ir
+            </Button>
+            <Button Name="BtnVisualizar"
+                    Grid.Row="1"
+                    Grid.Column="11"
+                    Click="BtnVisualizar_Click"
+                    Template="{StaticResource VisualizarBoton}"
+                    ToolTip="Visualizar" />
+            <Button Name="BtnAumentaAlto"
+                    Grid.Row="2"
+                    Grid.Column="11"
+                    Background="Maroon"
+                    BorderBrush="Bisque"
+                    Click="BtnAumentaAlto_Click"
+                    Foreground="Bisque"
+                    ToolTip="Aumenta el alto de las celdas">
+                +
+            </Button>
+            <Button Name="BtnDisminuyeAlto"
+                    Grid.Row="2"
+                    Grid.Column="12"
+                    Background="Maroon"
+                    BorderBrush="Bisque"
+                    Click="BtnDisminuyeAlto_Click"
+                    Foreground="Bisque"
+                    ToolTip="Disminuye el alto de las Ccldas">
+                -
+            </Button>
+            <Label Name="idExpresion"
+                   Grid.Row="4"
+                   Grid.Column="1"
+                   Grid.ColumnSpan="2"
+                   Style="{StaticResource LabelStyle}">
+                Expresión:
+            </Label>
+            <Label Name="LblExpresion"
+                   Grid.Row="4"
+                   Grid.Column="3"
+                   Grid.ColumnSpan="6"
+                   Margin="0,0,0,0"
+                   Background="White"
+                   BorderBrush="Black"
+                   BorderThickness="2"
+                   ScrollViewer.CanContentScroll="True"
+                   ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                   ScrollViewer.VerticalScrollBarVisibility="Auto">
+                <ScrollViewer>
+                    <TextBlock Name="Expresion"
+                               Height="30"
+                               ScrollViewer.CanContentScroll="True"
+                               ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                               ScrollViewer.VerticalScrollBarVisibility="Auto"
+                               TextWrapping="WrapWithOverflow" />
+                </ScrollViewer>
+            </Label>
+            <ProgressBar Name="PgbTotalTesis"
+                         Grid.Row="4"
+                         Grid.Column="10"
+                         Grid.ColumnSpan="4"
+                         Height="15" />
+            <Canvas>
+                <local:OrdenarPor x:Name="PnlOrdenar"
+                                  Canvas.Left="50"
+                                  Canvas.Top="50"
+                                  Visibility="Hidden" />
+                <local:ListadoPonente x:Name="PnlPonentes"
+                                      Canvas.Left="50"
+                                      Canvas.Top="50"
+                                      Visibility="Hidden" />
+                <local:ListadoAsuntos x:Name="PnlAsuntos"
+                                      Canvas.Left="50"
+                                      Canvas.Top="50"
+                                      Visibility="Hidden" />
+                <local:AlmacenaBusqueda x:Name="PnlAlmacenar"
+                                        Canvas.Left="50"
+                                        Canvas.Top="50"
+                                        Visibility="Hidden" />
+            </Canvas>
+            <Canvas Name="Esperar"
+                    Grid.Row="0"
+                    Grid.RowSpan="10"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="20"
+                    Background="Black"
+                    Opacity="0.8"
+                    Visibility="Hidden">
+                <StackPanel Name="EsperarStack"
+                            Margin="150,150,0,0"
+                            Background="Bisque"
+                            Opacity="3">
+                    <TextBlock Name="TxbEsperar">Espere por favor</TextBlock>
+                    <ProgressBar Name="EsperaBarra"
+                                 Width="393"
+                                 Height="26"
+                                 Margin="0,0,0,0"
+                                 KeyDown="Esperar_KeyDown" />
+                    <Button Name="Cancelar" Click="Cancelar_Click">Cancelar</Button>
+                </StackPanel>
+            </Canvas>
+        </Grid>
+    </Border>
+</Page>

@@ -1,0 +1,631 @@
+﻿<Page x:Class="IUS.Tesis"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="clr-namespace:mx.gob.scjn.ius_common.gui.apoyos"
+      xmlns:utilities="clr-namespace:mx.gob.scjn.ius_common.gui.gui.utilities;assembly=General"
+      MinWidth="770"
+      Loaded="Page_Loaded"
+      ShowsNavigationUI="False"
+      WindowTitle="Tesis">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/General;component/Resources.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Border Style="{StaticResource BorderStyle}">
+        <Grid>
+            <RichTextBox Name="RtbCopyPaste"
+                         Visibility="Hidden"
+                         xml:lang="es-MX" />
+            <TextBox Name="TbxCopiar" Visibility="Hidden" />
+            <FlowDocumentPageViewer Name="impresion"
+                                    Margin="15,148,8,0"
+                                    Background="White"
+                                    Template="{StaticResource FDPVTemplate}"
+                                    Visibility="Hidden" />
+            <Canvas Name="FrmTemas"
+                    Width="160"
+                    Height="80"
+                    Margin="120,80,280,120"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Visibility="Collapsed">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="25" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="15" />
+                        <RowDefinition Height="25" />
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.RowSpan="2"
+                               Grid.ColumnSpan="2"
+                               Fill="Maroon"
+                               RadiusX="5"
+                               RadiusY="5" />
+                    <Button Name="CerrarTemas"
+                            Grid.Column="1"
+                            Click="CerrarTemas_Click"
+                            Template="{StaticResource TacheBoton}"
+                            ToolTip="Cierra la lista de temas" />
+                    <ComboBox Name="LbxTemas"
+                              Grid.Row="1"
+                              Grid.ColumnSpan="1"
+                              Width="120" />
+                    <Button Name="BtnMostrarTemas"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Background="DarkRed"
+                            Click="BtnMostrarTemas_Click"
+                            Foreground="Bisque"
+                            ToolTip="Muestra la lista de tesis relacionadas">
+                        Ver
+                    </Button>
+                </Grid>
+            </Canvas>
+            <Grid Margin="0,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="90" />
+                    <ColumnDefinition Width="90" />
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="73" />
+                    <ColumnDefinition Width="63" />
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="90" />
+                    <ColumnDefinition Width="40" />
+                </Grid.ColumnDefinitions>
+                <Button Name="PortaPapeles"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Margin="0,0,0,0"
+                        Click="PortaPapeles_MouseLeftButtonDown"
+                        Template="{StaticResource PortapapelesBoton}"
+                        ToolTip="Portapapeles" />
+                <Button Name="Guardar"
+                        Width="40"
+                        HorizontalAlignment="Left"
+                        Click="Guardar_MouseLeftButtonDown"
+                        Template="{StaticResource GuardarBoton}"
+                        ToolTip="Guardar en archivo"
+                        Visibility="{Binding Source={StaticResource Visibilidad},
+                                             Path=ObtenVisibilidadInternet}" />
+                <Button Name="FontMayor"
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        Width="40"
+                        Margin="0,0,0,0"
+                        HorizontalAlignment="Left"
+                        Click="FontSelec_MouseLeftButtonDown"
+                        Template="{StaticResource FontMayorBoton}"
+                        ToolTip="Aumentar tamaño de letra" />
+                <Button Name="FontMenor"
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        Width="40"
+                        Margin="40,0,0,0"
+                        HorizontalAlignment="Left"
+                        Click="FontMenor_MouseLeftButtonDown"
+                        Template="{StaticResource FontMenorBoton}"
+                        ToolTip="Disminuir tamaño de letra" />
+                <Button Name="MarcarTodo"
+                        Grid.Row="0"
+                        Grid.Column="3"
+                        Width="40"
+                        Height="40"
+                        Margin="0,0,0,0"
+                        HorizontalAlignment="Left"
+                        Click="MarcarTodo_MouseLeftButtonDown"
+                        Template="{StaticResource MarcarTodoBoton}"
+                        ToolTip="Marcar todo" />
+                <Button Name="Desmarcar"
+                        Grid.Row="0"
+                        Grid.Column="3"
+                        Width="40"
+                        Height="40"
+                        Margin="0,0,0,0"
+                        HorizontalAlignment="Right"
+                        Click="Desmarcar_MouseLeftButtonDown"
+                        Template="{StaticResource DesmarcarBoton}"
+                        ToolTip="Desmarcar todo" />
+                <Image Name="Marcar"
+                       Grid.Row="0"
+                       Grid.Column="4"
+                       Width="40"
+                       Height="40"
+                       Margin="0,0,0,0"
+                       MouseEnter="Marcar_MouseEnter"
+                       MouseLeave="Marcar_MouseLeave"
+                       MouseLeftButtonDown="Marcar_MouseLeftButtonDown"
+                       Source="/General;component/images/MARCAR1.png"
+                       Stretch="Fill"
+                       ToolTip="Marcar registro" />
+                <Button Name="BtnNotaGenerica"
+                        Grid.Column="5"
+                        Click="BtnNotaGenerica_Click"
+                        Template="{StaticResource NotaGenericaBoton}"
+                        ToolTip="Ver la descripción de las notas genéricas" />
+                <Button Name="BtnConcordancia"
+                        Grid.Row="1"
+                        Grid.Column="8"
+                        Click="BtnConcordancia_Click"
+                        Template="{StaticResource ConcordanciaBoton}"
+                        ToolTip="Ver concordancia" />
+                <Button Name="historial"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Margin="0,0,0,0"
+                        VerticalAlignment="Top"
+                        Click="historial_MouseButtonDown"
+                        Template="{StaticResource HistorialBoton}"
+                        ToolTip="Historial de documentos relacionados"
+                        Visibility="{Binding Path=HistorialVisibilidad}" />
+                <Button Name="Imprimir"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Margin="0,0,0,0"
+                        VerticalAlignment="Top"
+                        Click="BtnImprimeDirecto_Click"
+                        Template="{StaticResource ImprimeBoton}"
+                        ToolTip="Imprimir" />
+                <Button Name="BtnImprimeDirecto"
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Width="40"
+                        Margin="0,0,50,0"
+                        HorizontalAlignment="Right"
+                        Click="BtnImprimeDirecto_Click"
+                        Template="{StaticResource ImprimeDirectoBoton}"
+                        ToolTip="Imprime sin la vista preliminar"
+                        Visibility="Collapsed" />
+                <Button Name="BtnTemas"
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Margin="0,0"
+                        HorizontalAlignment="Right"
+                        Click="BtnTemas_Click"
+                        Template="{StaticResource TemaBoton}"
+                        ToolTip="Muestra los temas relacionados con la tesis"
+                        Visibility="Collapsed" />
+                <Button Name="ejecutoria"
+                        Grid.Row="1"
+                        Grid.Column="3"
+                        Grid.ColumnSpan="2"
+                        Margin="7,9,25,9"
+                        Click="ejecutoria_Click"
+                        Template="{StaticResource EjecutoriaBoton}"
+                        ToolTip="Ver ejecutoria" />
+                <Button Name="voto"
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        Grid.ColumnSpan="2"
+                        Margin="0,9,0,9"
+                        Click="voto_MouseButtonDown"
+                        Template="{StaticResource VotoBoton}"
+                        ToolTip="Ver voto" />
+                <Button Name="observacionesBot"
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        Grid.ColumnSpan="4"
+                        Margin="0,9,0,9"
+                        HorizontalAlignment="Right"
+                        Click="observacionesBot_MouseLeftButtonDown"
+                        Template="{StaticResource ObservacionesBoton}"
+                        ToolTip="Ver observaciones" />
+                <Button Name="genealogia"
+                        Grid.Row="1"
+                        Grid.Column="9"
+                        Margin="0,0,0,0"
+                        Click="genealogia_MouseButtonDown"
+                        Template="{StaticResource GenealogiaBoton}"
+                        ToolTip="Genealogía" />
+                <Button Name="inicioLista"
+                        Grid.Column="6"
+                        Margin="5,0,5,10"
+                        Click="inicioLista_MouseButtonDown"
+                        Template="{StaticResource InicioListaBoton}"
+                        ToolTip="Ir al primer registro" />
+                <Button Name="anteriorLista"
+                        Grid.Column="7"
+                        Margin="0,0,0,0"
+                        Click="anteriorLista_MouseButtonDown"
+                        Template="{StaticResource AnteriorListaBoton}"
+                        ToolTip="Registro anterior" />
+                <Button Name="siguienteLista"
+                        Grid.Column="8"
+                        Margin="0,0,0,0"
+                        HorizontalAlignment="Left"
+                        Click="siguienteLista_MouseButtonDown"
+                        Template="{StaticResource SiguienteListaBoton}"
+                        ToolTip="Siguiente registro" />
+                <Button Name="ultimoLista"
+                        Grid.Column="9"
+                        Margin="5,0,5,10"
+                        Click="ultimoLista_MouseButtonDown"
+                        Template="{StaticResource FinalListaBoton}"
+                        ToolTip="Ir al último registro" />
+                <Label Name="IrALabel"
+                       Grid.Column="10"
+                       Margin="0,0,0,0"
+                       VerticalAlignment="Top"
+                       Style="{StaticResource LabelStyle}">
+                    <TextBlock Name="BloqueTextoIrA" TextWrapping="WrapWithOverflow">Ir a:</TextBlock>
+                </Label>
+                <!--
+                    Button Margin="0,5,0,5" Grid.Column="12"
+                    ToolTip="Ir a un número consecutivo/registro" Name="IrBoton"
+                    Click="IrBoton_Click">Ir</Button
+                -->
+                <Button x:Name="Salir"
+                        Grid.Column="14"
+                        Margin="0,0,0,0"
+                        Click="Salir_MouseButtonDown"
+                        Template="{StaticResource RegresarBoton}"
+                        ToolTip="Regresar a la pantalla anterior" />
+                <Label Name="RegNum"
+                       Grid.Column="13"
+                       Margin="0,5,0,5"
+                       Background="White"
+                       BorderBrush="Black"
+                       BorderThickness="2">
+                    Label
+                </Label>
+                <xcdg:NumericTextBox xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid"
+                                     Name="regNum"
+                                     Grid.Column="11"
+                                     Margin="0,5,0,5"
+                                     KeyDown="regNum_KeyDown"
+                                     MaxLength="7"
+                                     NumberStyles="None"
+                                     ToolTip="Ir a un número consecutivo/registro" />
+                <Label Name="AnuncioMaterias"
+                       Grid.Row="1"
+                       Grid.Column="10"
+                       Width="73"
+                       Height="23.277"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Style="{StaticResource LabelStyle}">
+                    <TextBlock Name="BloqueMaterias"
+                               Grid.Row="1"
+                               Grid.Column="10"
+                               Margin="0,0,0,0"
+                               TextWrapping="WrapWithOverflow">
+                        Materia(s):
+                    </TextBlock>
+                </Label>
+                <Label Name="Materias"
+                       Grid.Row="1"
+                       Grid.Column="11"
+                       Grid.ColumnSpan="3"
+                       Margin="0,5,0,5"
+                       Background="White"
+                       BorderBrush="Black"
+                       BorderThickness="2" />
+            </Grid>
+            <Grid Margin="0,82,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="42" />
+                    <ColumnDefinition Width="170" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="125" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+                <Label Name="TesisLabel"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       Width="42"
+                       Margin="0,0,0,0"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Background="Transparent"
+                       BorderBrush="Black"
+                       BorderThickness="0"
+                       FontWeight="Bold"
+                       Style="{StaticResource LabelStyle}">
+                    Tesis:
+                </Label>
+                <Label Name="TesisTesisLabel"
+                       Grid.Row="0"
+                       Grid.Column="1"
+                       Margin="0,0,0,0"
+                       Background="White"
+                       BorderBrush="Black"
+                       BorderThickness="2">
+                    Tesis
+                </Label>
+                <Label Name="fuenteLabel"
+                       Grid.Row="0"
+                       Grid.Column="2"
+                       Grid.ColumnSpan="3"
+                       Margin="0,0,0,0"
+                       Background="White"
+                       BorderBrush="Black"
+                       BorderThickness="2">
+                    Fuente
+                </Label>
+                <Label Name="EpocaLabel"
+                       Grid.Row="0"
+                       Grid.Column="5"
+                       Grid.ColumnSpan="3"
+                       Background="White"
+                       BorderBrush="Black"
+                       BorderThickness="2">
+                    Época
+                </Label>
+                <Label Name="IUSLabel"
+                       Grid.Row="0"
+                       Grid.Column="8"
+                       Grid.ColumnSpan="2"
+                       Margin="0,0,0,0"
+                       Background="White"
+                       BorderBrush="Black"
+                       BorderThickness="2"
+                       FontWeight="Bold"
+                       Foreground="DarkRed"
+                       MouseDoubleClick="RegNum_MouseDoubleClick">
+                    IUS
+                </Label>
+                <Label Name="SalaLabel"
+                       Grid.Row="1"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="3"
+                       Margin="0,0,0,0"
+                       Background="White"
+                       BorderBrush="Black"
+                       BorderThickness="2">
+                    Instancia
+                </Label>
+                <Label Name="FechaLabel"
+                       Grid.Row="1"
+                       Grid.Column="2"
+                       Grid.ColumnSpan="3"
+                       Margin="0,0,0,0"
+                       Background="White"
+                       BorderBrush="Black"
+                       BorderThickness="2">
+                    <ScrollViewer>
+                        <TextBlock Name="FechaText"
+                                   Text="Fecha"
+                                   TextWrapping="Wrap" />
+                    </ScrollViewer>
+                </Label>
+                <Label Name="PaginaLabel"
+                       Grid.Row="1"
+                       Grid.Column="5"
+                       Grid.ColumnSpan="2"
+                       Margin="0,0,0,0"
+                       Background="White"
+                       BorderBrush="Black"
+                       BorderThickness="2">
+                    Pagina
+                </Label>
+                <Label Name="jurisLabel"
+                       Grid.Row="1"
+                       Grid.Column="7"
+                       Grid.ColumnSpan="3"
+                       Margin="0,0,0,0"
+                       Background="White"
+                       BorderBrush="Black"
+                       BorderThickness="2">
+                    Tesis Aisladas
+                </Label>
+                <RichTextBox Name="contradiccion"
+                             Grid.Row="0"
+                             Grid.RowSpan="2"
+                             Grid.Column="10"
+                             Grid.ColumnSpan="6"
+                             Margin="0,0,10,0"
+                             Background="White"
+                             BorderBrush="Black"
+                             FontSize="12"
+                             Foreground="Red"
+                             ScrollViewer.VerticalScrollBarVisibility="Auto"
+                             Visibility="Hidden" />
+            </Grid>
+            <Grid Margin="0,140,0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300*" />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <TabControl Name="tabControl1"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="3"
+                            Margin="0,0,0,0">
+                    <TabItem Name="TabTexto"
+                             HorizontalAlignment="Stretch"
+                             VerticalAlignment="Stretch">
+                        <!--  Grid  -->
+                        <!--  Grid.RowDefinitions  -->
+                        <!--  RowDefinition MinHeight="80" Height="80" /  -->
+                        <!--  RowDefinition Height="*"/  -->
+                        <!--  /Grid.RowDefinitions  -->
+                        <!--  Grid.ColumnDefinitions  -->
+                        <!--  ColumnDefinition Width="*"/  -->
+                        <!--  /Grid.ColumnDefinitions  -->
+                        <!--
+                            RichTextBox Margin="0,0,0,0" Name="contenidoRubro"
+                            VerticalScrollBarVisibility="Auto"
+                            VerticalAlignment="Top"
+                            HorizontalAlignment="Stretch"
+                            IsDocumentEnabled="True"
+                            BorderThickness="0" Grid.Row="0"/
+                        -->
+                        <RichTextBox Name="contenidoTexto"
+                                     Grid.Row="0"
+                                     Height="Auto"
+                                     Margin="0,0,0,0"
+                                     HorizontalAlignment="Stretch"
+                                     VerticalAlignment="Top"
+                                     BorderThickness="0"
+                                     DataObject.Copying="contenidoTexto_Copying"
+                                     IsDocumentEnabled="True"
+                                     IsReadOnly="True"
+                                     KeyDown="contenidoTexto_KeyDown"
+                                     SelectionChanged="contenidoTexto_SelectionChanged"
+                                     VerticalScrollBarVisibility="Auto"
+                                     xml:lang="es-MX" />
+                        <!--  /Grid  -->
+                    </TabItem>
+                    <!--  TabItem Name="Precedentes" Header="Precedentes"  -->
+                    <!--
+                        RichTextBox VerticalScrollBarVisibility="Auto"
+                        HorizontalAlignment="Stretch"
+                        Margin="0,0,0,0"
+                        IsDocumentEnabled="True"
+                        Name="contenidoPrecedentes"/
+                    -->
+
+                    <!--  </TabItem>  -->
+                </TabControl>
+                <Label Name="LblPalabraBuscar"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       Margin=" 0,0,0,0"
+                       Style="{StaticResource LabelStyle}">
+                    Palabra a buscar:
+                </Label>
+                <TextBox Name="textoAbuscar"
+                         Grid.Row="1"
+                         Grid.Column="2"
+                         Grid.ColumnSpan="2"
+                         Width="200"
+                         Height="30"
+                         Margin="0,0,0,0"
+                         HorizontalAlignment="Left"
+                         KeyDown="textoAbuscar_KeyDown"
+                         MaxLength="80"
+                         TextChanged="textoAbuscar_TextChanged" />
+                <Button Name="Buscar"
+                        Grid.Row="1"
+                        Grid.Column="3"
+                        Width="40"
+                        Height="40"
+                        Margin="170,0,0,0"
+                        HorizontalAlignment="Left"
+                        Click="Buscar_MouseLeftButtonDown"
+                        Template="{StaticResource BuscarBoton}"
+                        ToolTip="Buscar" />
+                <Label Name="Expresion"
+                       Grid.Row="1"
+                       Grid.Column="3"
+                       Margin="250,0,0,0"
+                       Background="White"
+                       BorderBrush="Black"
+                       BorderThickness="2" />
+
+                <Canvas Grid.Row="0" Grid.Column="0">
+                    <local:ObtenerRango x:Name="ventanaRangos"
+                                        Canvas.Left="200"
+                                        Canvas.Top="0"
+                                        Visibility="Hidden" />
+                    <local:MensajesGenerales x:Name="ventanaEmergente"
+                                             Canvas.Left="83"
+                                             Canvas.Top="0"
+                                             Width="437"
+                                             Height="180"
+                                             Visibility="Hidden" />
+                    <local:ListadoEjecutorias x:Name="ventanaListaEjecutorias"
+                                              Canvas.Left="62"
+                                              Canvas.Top="0"
+                                              Width="524"
+                                              Height="191"
+                                              Visibility="Hidden" />
+                    <local:ListadoVotos x:Name="ventanaListaVotos"
+                                        Canvas.Left="62"
+                                        Canvas.Top="0"
+                                        Width="524"
+                                        Height="251"
+                                        Visibility="Hidden" />
+                    <local:ListadoLeyes x:Name="ventanaListadoLeyes"
+                                        Grid.RowSpan="2"
+                                        Grid.Column="1"
+                                        Grid.ColumnSpan="3"
+                                        Canvas.Left="200"
+                                        Visibility="Hidden" />
+                    <local:VentanaLeyes x:Name="ventanitaLeyes"
+                                        Grid.RowSpan="2"
+                                        Grid.Column="1"
+                                        Grid.ColumnSpan="3"
+                                        Visibility="Hidden" />
+                    <local:ListadoAnexos x:Name="ventanaAnexos"
+                                         Grid.RowSpan="2"
+                                         Grid.Column="1"
+                                         Grid.ColumnSpan="3"
+                                         Canvas.Left="100"
+                                         Visibility="Hidden" />
+                    <local:ListadoTemas x:Name="ventanaTemas"
+                                        Grid.RowSpan="2"
+                                        Grid.Column="1"
+                                        Grid.ColumnSpan="3"
+                                        Canvas.Left="200"
+                                        Width="400"
+                                        Visibility="Hidden" />
+                    <local:ImprimirCompleta x:Name="ventanaImprimirCompleta"
+                                            Grid.Column="1"
+                                            Grid.ColumnSpan="3"
+                                            Canvas.Left="200"
+                                            Width="400"
+                                            Visibility="Hidden" />
+                    <local:VentanaHistorial x:Name="ventanaHistorial"
+                                            Canvas.Left="100"
+                                            Canvas.Top="0"
+                                            Width="433"
+                                            Height="214"
+                                            Visibility="Hidden" />
+                    <Button Name="imprimePapel"
+                            Canvas.Left="40"
+                            Canvas.Top="8"
+                            Width="40"
+                            Height="40"
+                            Click="imprimePapel_MouseLeftButtonDown"
+                            Template="{StaticResource ImprimePapelBoton}"
+                            ToolTip="Imprimir el documento" />
+                    <Button Name="BtnTache"
+                            Canvas.Left="80"
+                            Canvas.Top="8"
+                            Width="40"
+                            Height="40"
+                            Click="BtnTache_Click"
+                            Template="{StaticResource TacheBoton}"
+                            ToolTip="Cerrar vista preliminar"
+                            Visibility="Hidden" />
+                </Canvas>
+            </Grid>
+        </Grid>
+    </Border>
+</Page>

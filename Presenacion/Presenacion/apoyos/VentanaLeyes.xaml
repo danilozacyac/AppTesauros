@@ -1,0 +1,104 @@
+﻿<UserControl x:Class="mx.gob.scjn.ius_common.gui.apoyos.VentanaLeyes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:utilities="clr-namespace:mx.gob.scjn.ius_common.gui.gui.utilities;assembly=General"
+             Canvas.Left="100"
+             Canvas.Top="100"
+             Width="620"
+             Height="350"
+             HorizontalAlignment="Left"
+             VerticalAlignment="Top">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/General;component/Resources.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid SnapsToDevicePixels="False">
+        <Border Margin="0,0,0,0" Style="{StaticResource BorderStyle}" />
+        <Label Name="Titulo"
+               Height="56"
+               Margin="0,19,30,0"
+               VerticalAlignment="Top"
+               Background="Cornsilk"
+               BorderBrush="Black"
+               BorderThickness="1"
+               FontSize="12">
+            <TextBlock Name="contenidoReal"
+                       Width="564"
+                       Height="47"
+                       TextWrapping="WrapWithOverflow">
+                Ley
+            </TextBlock>
+        </Label>
+        <Button Name="Salir"
+                Width="40"
+                Height="40"
+                Margin="0,10,5,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Click="Salir_MouseLeftButtonUp"
+                Template="{StaticResource RegresarBoton}"
+                ToolTip="Cerrar" />
+        <RichTextBox Name="contenidoLey"
+                     Width="541"
+                     Height="230"
+                     MinHeight="86"
+                     MaxHeight="330"
+                     Margin="49,100,30,20"
+                     IsDocumentEnabled="True"
+                     IsReadOnly="True"
+                     VerticalScrollBarVisibility="Auto"
+                     xml:lang="es-MX" />
+        <Button Name="imprimir"
+                Width="40"
+                Height="40"
+                Margin="3,76,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="imprimir_MouseLeftButtonUp"
+                Template="{StaticResource ImprimeBoton}"
+                ToolTip="Imprimir" />
+        <Button Name="Copiar"
+                Width="40"
+                Height="40"
+                Margin="3,116,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="Copiar_MouseLeftButtonUp"
+                Template="{StaticResource PortapapelesBoton}"
+                ToolTip="Portapapeles" />
+        <Rectangle Name="BarraMovimiento"
+                   Height="15"
+                   Margin="0,0,35,0"
+                   VerticalAlignment="Top"
+                   ClipToBounds="True"
+                   Cursor="SizeAll"
+                   Fill="#706E6A"
+                   MouseLeftButtonDown="BarraMovimiento_DragEnter"
+                   MouseLeftButtonUp="BarraMovimiento_MouseLeftButtonUp"
+                   MouseMove="BarraMovimiento_DragLeave" />
+        <Button Name="Guardar"
+                Width="40"
+                Height="40"
+                Margin="0,158,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="Guardar_MouseLeftButtonDown"
+                Template="{StaticResource GuardarBoton}"
+                ToolTip="Guardar"
+                Visibility="{Binding Source={StaticResource Visibilidad},
+                                     Path=ObtenVisibilidadInternet}" />
+        <Button Name="Anexos"
+                Width="40"
+                Height="40"
+                Margin="0,200,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="Anexos_Click"
+                Template="{StaticResource VisualizarBoton}"
+                ToolTip="Ver documento anexo" />
+        <FlowDocumentPageViewer Name="docImpresion" Visibility="Hidden" />
+    </Grid>
+</UserControl>

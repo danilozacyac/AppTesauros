@@ -1,0 +1,91 @@
+﻿<Window x:Class="AppTesauro09wpf.BuscarPorRegistro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:converter="clr-namespace:AppTesauro09wpf.Converters"
+        Title="BuscarPorRegistro"
+        Width="510"
+        Height="500"
+        MinWidth="510"
+        MinHeight="500"
+        MaxWidth="700"
+        Background="LightSeaGreen"
+        Loaded="Window_Loaded">
+    <Window.Resources>
+        <converter:ForegroundConverter x:Key="foreConverter" />
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBox Name="TxtRegistroIus"
+                 Width="207"
+                 Height="23"
+                 Margin="12,22,0,0"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 PreviewTextInput="TxtRegistroIus_PreviewTextInput" />
+        <TextBlock Name="textBlock1"
+                   Height="23"
+                   Margin="12,2,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Text="Número de registro IUS:" />
+        <Button Name="BtnBuscar"
+                Width="59"
+                Height="23"
+                Margin="225,21,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="BtnBuscar_Click"
+                Content="Buscar"
+                IsDefault="True" />
+        <Grid Grid.Row="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="12" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="12" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="10" />
+            </Grid.RowDefinitions>
+        <TreeView x:Name="IusTreeView"
+                  Grid.Column="1"
+                  HorizontalAlignment="Stretch"
+                  VerticalAlignment="Stretch"
+                  AllowDrop="True"
+                  Foreground="{Binding IdOrigen,
+                                       Converter={StaticResource foreConverter}}"
+                  ItemsSource="{Binding }">
+            <TreeView.ItemContainerStyle>
+
+                <Style TargetType="{x:Type TreeViewItem}">
+                    <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+                    <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
+                    <Setter Property="FontWeight" Value="Normal" />
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TreeView.ItemContainerStyle>
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding SubTemas}">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center"
+                                   Foreground="{Binding IdOrigen,
+                                                        Converter={StaticResource foreConverter}}"
+                                   Text="{Binding Descripcion,
+                                                  Mode=TwoWay}" />
+                        <TextBlock Text="  [  " />
+                        <TextBlock Text="{Binding TesisRelacionadas, Mode=TwoWay}" />
+                        <TextBlock Text="  ]" />
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+        </Grid>
+    </Grid>
+</Window>

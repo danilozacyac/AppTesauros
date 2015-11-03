@@ -1,0 +1,16 @@
+﻿<Page x:Class="mx.gob.scjn.directorio.General.pagePersona"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="FuncCJF" Height="600" Width="800"  >
+    <Grid >
+        <Grid HorizontalAlignment="Left" Margin="10,12,0,10" Name="grid1" Width="357.5" Background="Bisque"></Grid>
+        <Label Margin="385,12,18,440" Name="NombreFunc" HorizontalContentAlignment="Center" Background="Bisque" BorderThickness="2" Padding="10" FontSize="20">Aqui va el nombre del Funcionario</Label>
+        <Label Height="25" Margin="385,0,0,24" Name="lblAccesoRapFPA" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="80">Acceso Rápido</Label>
+        <Label Height="25" Margin="0,0,226.25,24" Name="lblParaBuscarFunc" VerticalAlignment="Bottom" BorderBrush="Cyan" Background="Bisque" HorizontalAlignment="Right" Width="56.75"></Label>
+        <Label Height="25" HorizontalAlignment="Right" Margin="0,0,35,24" Name="lblCoincidencias" VerticalAlignment="Bottom" Width="158">Aqui va el mensaje de totales</Label>
+        <Label HorizontalContentAlignment="Center" Margin="384.5,0,18.5,222.5" Name="lblDomSPAdmin" Height="23.75" VerticalAlignment="Bottom" Background="Bisque" FontSize="14">DOMICILIO</Label>
+        <Label Height="150" HorizontalContentAlignment="Center" Margin="384.5,0,18.5,67.5" Name="lblDirFunc" VerticalAlignment="Bottom" Background="Bisque" FontSize="14">Aquí va la dirección completa</Label>
+        <Label Height="118.75" HorizontalContentAlignment="Center" Margin="384.5,0,19,267.5" Name="lblNombreOrgJud" VerticalAlignment="Bottom" Background="Bisque" FontSize="14">Aqui va el nombre del área administrativa</Label>
+        <Label Height="30" HorizontalContentAlignment="Center" Margin="385,0,18,392.5" Name="lblAreaAdmin" VerticalAlignment="Bottom" Background="Bisque" FontSize="14">ÁREA ADMINISTRATIVA</Label>
+    </Grid>
+</Page>

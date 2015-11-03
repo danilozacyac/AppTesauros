@@ -1,0 +1,592 @@
+﻿<Window x:Class="AppTesauro09wpf.WMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:UIControls="clr-namespace:UIControls;assembly=UIControls"
+        xmlns:converter="clr-namespace:AppTesauro09wpf.Converters"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        xmlns:utilities="clr-namespace:AppTesauro09wpf.Utils"
+        Width="1148"
+        Height="742"
+        Background="LightGray"
+        Loaded="Window_Loaded"
+        PreviewKeyUp="Window_PreviewKeyUp"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized">
+    <Window.Resources>
+
+        <ResourceDictionary>
+            <utilities:ConvertidorLetrasCampos x:Key="Convertidor" />
+            <utilities:ConvertidorOperador x:Key="ConvOp" />
+            <DataTemplate x:Key="lugares_celltemplate">
+                <TextBlock Text="{Binding Converter={StaticResource Convertidor}}" />
+            </DataTemplate>
+            <DataTemplate x:Key="operador_celltemplate">
+                <TextBlock Text="{Binding Converter={StaticResource ConvOp}}" />
+            </DataTemplate>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <telerik:RadRibbonView ApplicationName="Sistema de Administración de Tesis" telerik:StyleManager.Theme="Windows8">
+            <telerik:RadRibbonTab>
+                <telerik:RadRibbonGroup Header="Temas">
+                    <telerik:RadRibbonButton x:Name="RBtnNuevoTema"
+                                             Click="Nuevo_Click"
+                                             Content="Nuevo"
+                                             LargeImage="Resources/tree2_128.png"
+                                             Size="Large" />
+                    <telerik:RadRibbonButton x:Name="RBtnModifTema"
+                                             Click="Modificar_Click"
+                                             Content="Modificar"
+                                             LargeImage="Resources/tree2_128.png"
+                                             Size="Large" />
+                    <telerik:RadRibbonButton x:Name="RBtnDelTema"
+                                             Click="Eliminar_Click"
+                                             Content="Eliminar"
+                                             LargeImage="Resources/tree2_128.png"
+                                             Size="Large" />
+                    <telerik:RadRibbonButton x:Name="RBtnImportTema"
+                                             Click="BtnImportarTema_Click"
+                                             Content="Importar"
+                                             LargeImage="Resources/tree2_128.png"
+                                             Size="Large" />
+                    <StackPanel Orientation="Vertical">
+                        <telerik:RadRibbonButton Click="MenuCortar_Click"
+                                                 Content="Cortar"
+                                                 Size="Medium"
+                                                 SmallImage="Resources/cut_32.png" />
+                        <telerik:RadRibbonButton Click="MenuCopiar_Click"
+                                                 Content="Copiar"
+                                                 Size="Medium"
+                                                 SmallImage="Resources/copy_32.png" />
+                        <telerik:RadRibbonButton Click="MenuPegar_Click"
+                                                 Content="Pegar"
+                                                 Size="Medium"
+                                                 SmallImage="Resources/paste_32.png" />
+                    </StackPanel>
+
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup Header="Tesis">
+                    <telerik:RadRibbonButton x:Name="RBtnEditTesisRel"
+                                             Click="BtnAgregarRelacionTesis_Click"
+                                             LargeImage="Resources/1425495821_edit-notes.png"
+                                             Size="Large">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock HorizontalAlignment="Center" Text="Agregar o " />
+                            <TextBlock HorizontalAlignment="Center" Text="Eliminar" />
+                        </StackPanel>
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton x:Name="RBtnPreviewTesisRel"
+                                             Click="BtnVerTesis_Click"
+                                             LargeImage="Resources/1425495916_preview.png"
+                                             Size="Large">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock HorizontalAlignment="Center" Text="Ver Tesis" />
+                            <TextBlock HorizontalAlignment="Center" Text="Relacionadas" />
+                        </StackPanel>
+                    </telerik:RadRibbonButton>
+                    <StackPanel Orientation="Vertical">
+                        <telerik:RadRibbonButton Click="MenuCortarTesis_Click"
+                                                 Content="Cortar Tesis"
+                                                 Size="Medium"
+                                                 SmallImage="Resources/cut_32.png" />
+                        <telerik:RadRibbonButton Click="MenuCopiarTesis_Click"
+                                                 Content="Copiar Tesis"
+                                                 Size="Medium"
+                                                 SmallImage="Resources/copy_32.png" />
+                        <telerik:RadRibbonButton Click="MenuPegarTesis_Click"
+                                                 Content="Pegar Tesis"
+                                                 Size="Medium"
+                                                 SmallImage="Resources/paste_32.png" />
+                    </StackPanel>
+                    <telerik:RadRibbonButton x:Name="RBtnCopiaMarc"
+                                             Click="RBtnCopiaMarc_Click"
+                                             LargeImage="Resources/dbok_256.png"
+                                             Size="Large">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock HorizontalAlignment="Center" Text="Copiar tesis" />
+                            <TextBlock HorizontalAlignment="Center" Text="Marcadas" />
+                        </StackPanel>
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton x:Name="RBtnTraslMarc"
+                                             Click="RBtnTraslMarc_Click"
+                                             LargeImage="Resources/dbgo_256.png"
+                                             Size="Large">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock HorizontalAlignment="Center" Text="Trasladar Tesis" />
+                            <TextBlock HorizontalAlignment="Center" Text="Marcadas" />
+                        </StackPanel>
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton x:Name="RBtnDelMarc"
+                                             Click="RBtnDelMarc_Click"
+                                             LargeImage="Resources/dbfail_256.png"
+                                             Size="Large">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock HorizontalAlignment="Center" Text="Eliminar" />
+                            <TextBlock HorizontalAlignment="Center" Text="Marcación" />
+                        </StackPanel>
+                    </telerik:RadRibbonButton>
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup Header="Expresiones" IsEnabled="False">
+                    <telerik:RadRibbonButton x:Name="RBtnEjecutaExp"
+                                             Click="RBtnEjecutaExp_Click"
+                                             Content="Ejecutar"
+                                             LargeImage="Resources/question.png"
+                                             Size="Large" />
+                    <StackPanel Orientation="Vertical">
+                        <telerik:RadRibbonButton x:Name="RBtnNewExp"
+                                                 Click="RBtnNewExp_Click"
+                                                 Content="Nueva"
+                                                 Size="Medium"
+                                                 SmallImage="Resources/question.png" />
+                        <telerik:RadRibbonButton x:Name="RBtnEditExp"
+                                                 Click="RBtnEditExp_Click"
+                                                 Content="Modificar"
+                                                 Size="Medium"
+                                                 SmallImage="Resources/question.png" />
+                        <telerik:RadRibbonButton x:Name="RBtnDelExp"
+                                                 Click="RBtnDelExp_Click"
+                                                 Content="Eliminar"
+                                                 Size="Medium"
+                                                 SmallImage="Resources/question.png" />
+                    </StackPanel>
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup Header="Herramientas" Icon="Resources/tools_16.png">
+                    <telerik:RadRibbonButton x:Name="RBtnNoIngresadas"
+                                             Click="NoIngresadas_Click"
+                                             LargeImage="Resources/lupaverde_128.png"
+                                             Size="Large">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock HorizontalAlignment="Center" Text="Buscar Tesis" />
+                            <TextBlock HorizontalAlignment="Center" Text="NO ingresadas" />
+                        </StackPanel>
+                    </telerik:RadRibbonButton>
+
+                    <telerik:RadRibbonButton x:Name="RBtnBuscarPorIus"
+                                             Click="MenuBuscar_Click"
+                                             LargeImage="Resources/binoculars_128.png"
+                                             Size="Large">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock HorizontalAlignment="Center" Text="Buscar Relaciones" />
+                            <TextBlock HorizontalAlignment="Center" Text="por Núm. IUS" />
+                        </StackPanel>
+                    </telerik:RadRibbonButton>
+
+                    <telerik:RadRibbonButton x:Name="RBtnStat"
+                                             Click="Stats_Click"
+                                             Content="Estadisticas"
+                                             LargeImage="Resources/statistics_128.png"
+                                             Size="Large" />
+
+                    
+
+                </telerik:RadRibbonGroup>
+                <telerik:RadRibbonGroup Header="Reportes">
+                    <telerik:RadRibbonButton x:Name="RBtnListCertifica"
+                                             Click="Certificacion_Click"
+                                             IsEnabled="False"
+                                             LargeImage="Resources/certification_128.png"
+                                             Size="Large">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock HorizontalAlignment="Center" Text="Listado para" />
+                            <TextBlock HorizontalAlignment="Center" Text="Certificación" />
+                        </StackPanel>
+                    </telerik:RadRibbonButton>
+                    <telerik:RadRibbonButton x:Name="RBtnExpArbolPdf"
+                                             Click="TemasToPdf_Click"
+                                             LargeImage="Resources/pdf_128.png"
+                                             Size="Large"
+                                             ToolTip="Exporta la estructura del árbol que se encuentra visible a un documento PDF">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock HorizontalAlignment="Center" Text="Estructura" />
+                            <TextBlock HorizontalAlignment="Center" Text="a PDF" />
+                        </StackPanel>
+                    </telerik:RadRibbonButton>
+                    
+                    <StackPanel Orientation="Vertical">
+                        <telerik:RadNumericUpDown Minimum="1" Maximum="12" x:Name="DetailDeep" Value="1" IsInteger="True"/>
+                        <telerik:RadRibbonButton x:Name="RBtnExportExcel"
+                                             Content="Reporte Excel"
+                                             Size="Large" Click="RBtnExportExcel_Click" LargeImage="Resources/excel_48.png" />
+                    </StackPanel>
+                    
+                </telerik:RadRibbonGroup>
+            </telerik:RadRibbonTab>
+        </telerik:RadRibbonView>
+
+        <DockPanel x:Name="rootPanel" Grid.Row="1">
+            <DockPanel.Resources>
+                <converter:ForegroundConverter x:Key="foreConverter" />
+            </DockPanel.Resources>
+            <Menu DockPanel.Dock="Top" IsMainMenu="True" />
+            <!--  Header  -->
+            <!--
+                <Border x:Name="headerBorder" Visibility="Collapsed"
+                BorderBrush="#FF535353"
+                BorderThickness="0,0,0,1"
+                DockPanel.Dock="Top"
+                Padding="10,0,10,0">
+                <DockPanel Height="27" LastChildFill="False">
+                <TextBlock DockPanel.Dock="Right"
+                FontSize="24"
+                FontWeight="Bold"
+                Foreground="#FF828282"
+                Text="Tesauro" />
+                </DockPanel>
+                </Border>
+            -->
+
+            <!--  Main Display Area  -->
+            <Grid x:Name="mainGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.6*" MinWidth="590" />
+                    <ColumnDefinition Width="1*" MinWidth="348" />
+                </Grid.ColumnDefinitions>
+                <GridSplitter Grid.Column="0"
+                              Width="10"
+                              VerticalContentAlignment="Stretch" />
+
+                <!--  Main Pane  -->
+                <Grid x:Name="mainPane"
+                      Grid.Column="0"
+                      Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="0" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="25" />
+                        <RowDefinition Height="25" />
+                        <RowDefinition Height="25" />
+                    </Grid.RowDefinitions>
+                    <Border x:Name="mainPaneBorder"
+                            BorderBrush="#FF535353"
+                            BorderThickness="1">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="1.0,0.0" EndPoint="0.2,1.0">
+                                <GradientStop Offset="0" Color="#FF202020" />
+                                <GradientStop Offset="1" Color="#FF545454" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+                    </Border>
+
+                    <!--  Temas Search Results  -->
+
+                    <!--  Header Area  -->
+                    <Border x:Name="header"
+                            Grid.Row="0"
+                            Background="#25A0D9"
+                            BorderBrush="#FF535353"
+                            BorderThickness="1,1,1,0"
+                            Padding="10">
+                        <DockPanel>
+                            <TextBlock DockPanel.Dock="Left"
+                                       FontSize="16"
+                                       FontWeight="Bold"
+                                       Foreground="#FFFFFFFF"><Run Text="Resultado de Temas" />
+                            </TextBlock>
+                            <UIControls:SearchTextBox x:Name="SearchBox"
+                                                      Width="300"
+                                                      DockPanel.Dock="Right"
+                                                      LabelText="Buscar Tema"
+                                                      Search="SearchTextBox_Search"
+                                                      TextWrapping="Wrap" />
+                        </DockPanel>
+                    </Border>
+
+                    <TreeView x:Name="treeView"
+                              Grid.Row="1"
+                              HorizontalAlignment="Stretch"
+                              VerticalAlignment="Stretch"
+                              AllowDrop="True"
+                              Foreground="{Binding IdOrigen,
+                                                   Converter={StaticResource foreConverter}}"
+                              ItemsSource="{Binding}"
+                              PreviewKeyUp="treeView_PreviewKeyUp"
+                              SelectedItemChanged="TreeView_SelectedItemChanged">
+                        <TreeView.ItemContainerStyle>
+
+                            <Style TargetType="{x:Type TreeViewItem}">
+                                <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+                                <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
+                                <Setter Property="FontWeight" Value="Normal" />
+                                <Style.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="FontWeight" Value="Bold" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TreeView.ItemContainerStyle>
+                        <TreeView.ItemTemplate>
+                            <HierarchicalDataTemplate ItemsSource="{Binding SubTemas}">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock VerticalAlignment="Center"
+                                               Foreground="{Binding IdOrigen,
+                                                                    Converter={StaticResource foreConverter}}"
+                                               Text="{Binding Descripcion,
+                                                              Mode=TwoWay}" />
+                                    <TextBlock Text="  [  " />
+                                    <TextBlock Text="{Binding TesisRelacionadas, Mode=TwoWay}" />
+                                    <TextBlock Text="  ]" />
+                                </StackPanel>
+                            </HierarchicalDataTemplate>
+                        </TreeView.ItemTemplate>
+                    </TreeView>
+
+
+                    <Border x:Name="newExpresionHeader"
+                            Grid.Row="2"
+                            Grid.RowSpan="2"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            Background="#25A0D9"
+                            BorderBrush="Chocolate"
+                            BorderThickness="1,1,1,0"
+                            Padding="10" />
+                    <Border Grid.Row="3"
+                            Background="{x:Null}"
+                            BorderBrush="#FF535353"
+                            BorderThickness="0,1,0,0"
+                            Visibility="Collapsed">
+                        <xcdg:DataGridControl xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid"
+                                              x:Name="dgExpresiones"
+                                              Height="150"
+                                              AutoCreateColumns="False"
+                                              NavigationBehavior="RowOnly"
+                                              ReadOnly="True"
+                                              SelectionMode="Single"
+                                              Visibility="Visible">
+                            <xcdg:DataGridControl.Columns>
+                                <xcdg:Column Title="Expresión"
+                                             Width="400"
+                                             FieldName="Descripcion" />
+                                <xcdg:Column CellContentTemplate="{StaticResource lugares_celltemplate}" FieldName="Campos" />
+                                <xcdg:Column CellContentTemplate="{StaticResource operador_celltemplate}" FieldName="Operador" />
+                            </xcdg:DataGridControl.Columns>
+                            <xcdg:DataGridControl.View>
+                                <xcdg:TableView ShowFixedColumnSplitter="False"
+                                                ShowRowSelectorPane="False"
+                                                UseDefaultHeadersFooters="False">
+                                    <xcdg:TableView.FixedHeaders>
+                                        <DataTemplate>
+                                            <xcdg:ColumnManagerRow AllowSort="False" />
+                                        </DataTemplate>
+                                    </xcdg:TableView.FixedHeaders>
+                                </xcdg:TableView>
+                            </xcdg:DataGridControl.View>
+                        </xcdg:DataGridControl>
+                    </Border>
+                    <Label x:Name="LabelIA"
+                           Grid.Row="4"
+                           Height="28"
+                           Background="DarkBlue"
+                           Content="Inclusión Ascendente:"
+                           Foreground="White" />
+                    <Label x:Name="LblResultadoIA"
+                           Grid.Row="5"
+                           Height="28"
+                           Background="#FF6573A0"
+                           Cursor="Hand"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           MouseLeftButtonUp="LblResultadoIA_MouseLeftButtonUp" />
+                    <Label x:Name="LblTemaSelLbl"
+                           Grid.Row="6"
+                           Background="DarkGray"
+                           FontWeight="Bold"
+                           Foreground="White">
+                        <TextBlock x:Name="lblTemaSelec" Grid.Row="6"><Run Text="Tema seleccionado:" />
+                        </TextBlock>
+                    </Label>
+
+                </Grid>
+                <Grid x:Name="detailsPanel"
+                      Grid.Column="1"
+                      Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Offset="1" Color="DarkGray" />
+                            <GradientStop Offset="0" Color="Black" />
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                    <Grid Grid.Row="0" Background="#25A0D9">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="200" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="1"
+                                   FontSize="16"
+                                   FontWeight="Bold"
+                                   Foreground="#FFFFFFFF"
+                                   Text="Sinónimos" />
+                        <StackPanel Grid.Column="1"
+                                    Margin="0,10,0,0"
+                                    Orientation="Horizontal">
+                            <Button x:Name="btnSinonimoNvo"
+                                    Width="60"
+                                    Margin="0,0,5,0"
+                                    Click="BtnSinonimoNvo_Click"
+                                    Content="_Nuevo" />
+                            <Button x:Name="btnSinonimoModif"
+                                    Width="60"
+                                    Margin="0,0,5,0"
+                                    Click="BtnSinonimoModif_Click"
+                                    Content="_Modificar" />
+
+                            <Button x:Name="btnSinonimoElim"
+                                    Width="60"
+                                    Click="BtnSinonimoElim_Click"
+                                    Content="_Eliminar" />
+                        </StackPanel>
+                    </Grid>
+                    <xcdg:DataGridControl xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid"
+                                          x:Name="DgSinonimos"
+                                          Grid.Row="1"
+                                          Width="Auto"
+                                          AutoCreateColumns="False"
+                                          EditTriggers="None"
+                                          ItemScrollingBehavior="Immediate"
+                                          NavigationBehavior="RowOnly"
+                                          PropertyChanged="DgSinonimos_PropertyChanged"
+                                          ReadOnly="True">
+                        <xcdg:DataGridControl.Columns>
+                            <xcdg:Column Title="Descripción"
+                                         Width="250"
+                                         FieldName="Descripcion"
+                                         IsMainColumn="True"
+                                         ReadOnly="True"
+                                         TextWrapping="WrapWithOverflow" />
+                        </xcdg:DataGridControl.Columns>
+                        <xcdg:DataGridControl.View>
+                            <xcdg:TableView ColumnStretchMode="None"
+                                            ShowFixedColumnSplitter="False"
+                                            UseDefaultHeadersFooters="False">
+                                <xcdg:TableView.FixedHeaders>
+                                    <DataTemplate>
+                                        <xcdg:ColumnManagerRow />
+                                    </DataTemplate>
+                                </xcdg:TableView.FixedHeaders>
+                            </xcdg:TableView>
+                        </xcdg:DataGridControl.View>
+                    </xcdg:DataGridControl>
+                    <!--  Relaciones proximas Search  -->
+                    <GridSplitter Grid.Row="1"
+                                  Height="5"
+                                  HorizontalAlignment="Stretch"
+                                  VerticalAlignment="Bottom"
+                                  HorizontalContentAlignment="Stretch"
+                                  VerticalContentAlignment="Top" />
+                    <Grid Grid.Row="2"
+                          Grid.RowSpan="2"
+                          Background="#25A0D9">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"
+                                           MinHeight="20"
+                                           MaxHeight="30" />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0"
+                                   FontSize="16"
+                                   FontWeight="Bold"
+                                   Foreground="#FFFFFFFF"
+                                   Text="Relaciones próximas" />
+
+                        <StackPanel Grid.Row="0"
+                                    Grid.Column="1"
+                                    Margin="0,10,0,0"
+                                    Orientation="Horizontal">
+                            <Button x:Name="btnRelacionespNvo"
+                                    Width="60"
+                                    Margin="0,0,5,0"
+                                    Click="BtnRelacionespNvo_Click"
+                                    Content="Nuevo" />
+                            <Button x:Name="btnRelacionespModif"
+                                    Width="60"
+                                    Margin="0,0,5,0"
+                                    Click="BtnRelacionespModif_Click"
+                                    Content="Modificar" />
+
+                            <Button x:Name="btnRelacionespElim"
+                                    Width="60"
+                                    Click="BtnRelacionespElim_Click"
+                                    Content="Eliminar" />
+                        </StackPanel>
+                    </Grid>
+                    <xcdg:DataGridControl xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid"
+                                          x:Name="DgRelProx"
+                                          Grid.Row="3"
+                                          Grid.Column="1"
+                                          Width="Auto"
+                                          AutoCreateColumns="False"
+                                          EditTriggers="None"
+                                          ItemScrollingBehavior="Immediate"
+                                          NavigationBehavior="RowOnly"
+                                          PropertyChanged="DgRelProx_PropertyChanged"
+                                          ReadOnly="True">
+                        <xcdg:DataGridControl.View>
+                            <xcdg:TableView ShowFixedColumnSplitter="False" UseDefaultHeadersFooters="False">
+                                <xcdg:TableView.FixedHeaders>
+                                    <DataTemplate>
+                                        <xcdg:ColumnManagerRow />
+                                    </DataTemplate>
+                                </xcdg:TableView.FixedHeaders>
+                            </xcdg:TableView>
+                        </xcdg:DataGridControl.View>
+                        <xcdg:DataGridControl.Columns>
+                            <xcdg:Column Title="Descripción"
+                                         Width="250"
+                                         FieldName="Descripcion"
+                                         IsMainColumn="True"
+                                         ReadOnly="True"
+                                         TextWrapping="WrapWithOverflow" />
+                        </xcdg:DataGridControl.Columns>
+                    </xcdg:DataGridControl>
+                    <GridSplitter Grid.Row="3"
+                                  Height="5"
+                                  HorizontalAlignment="Stretch"
+                                  VerticalAlignment="Bottom"
+                                  HorizontalContentAlignment="Stretch"
+                                  VerticalContentAlignment="Top" />
+                    <Label Grid.Row="4"
+                           Background="White"
+                           Foreground="Black"
+                           ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <TextBlock x:Name="TblNotas"
+                                   Margin="0,0,0,0"
+                                   TextWrapping="WrapWithOverflow"><Run Text="Notas:" />
+                        </TextBlock>
+                    </Label>
+                    <Label Grid.Row="5"
+                           Grid.Column="1"
+                           Background="White"
+                           Foreground="Black"
+                           ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <TextBlock x:Name="TblObservaciones"
+                                   Margin="0,0,0,0"
+                                   TextWrapping="WrapWithOverflow"><Run Text="Observaciones:" />
+                        </TextBlock>
+                    </Label>
+                </Grid>
+
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>

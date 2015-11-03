@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D9944DFC-D53F-4311-B325-FF6FB300A01B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>General</RootNamespace>
+    <AssemblyName>General</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>general.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;STAND_ALONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;STAND_ALONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="gui\impresion\DocumentoAcuerdo.cs" />
+    <Compile Include="gui\impresion\DocumentoEjecutoria.cs" />
+    <Compile Include="gui\impresion\DocumentoListadoAcuerdo.cs" />
+    <Compile Include="gui\impresion\DocumentoListadoEjecutoria.cs" />
+    <Compile Include="gui\impresion\DocumentoListadoTesis.cs" />
+    <Compile Include="gui\impresion\DocumentoListadoVoto.cs" />
+    <Compile Include="gui\impresion\DocumentoTematica.cs" />
+    <Compile Include="gui\impresion\DocumentoTesis.cs" />
+    <Compile Include="gui\impresion\DocumentoThesauro.cs" />
+    <Compile Include="gui\impresion\DocumentoVoto.cs" />
+    <Compile Include="gui\impresion\DocumentPaginatorWrapper.cs" />
+    <Compile Include="gui\impresion\IUSPaginatedDocument.cs" />
+    <Compile Include="gui\utilities\BCInitTO.cs" />
+    <Compile Include="gui\utilities\BotonesCheckBox.cs" />
+    <Compile Include="gui\utilities\ItemIndexNumberConverter.cs" />
+    <Compile Include="gui\utilities\TreeViewUtilities.cs" />
+    <Compile Include="gui\utilities\VisibilidadGlobal.cs" />
+    <Compile Include="panel\PanelDinamico.xaml.cs">
+      <DependentUpon>PanelDinamico.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="utils\CalculosGlobales.cs" />
+    <Compile Include="utils\CalculosPropiedadesGlobales.cs" />
+    <Compile Include="utils\FlowDocumentHighlight.cs" />
+    <Compile Include="utils\IndicesTreeView.cs" />
+    <Compile Include="utils\Mensajes.cs" />
+    <Compile Include="utils\TematicaTreeView.cs" />
+    <Compile Include="utils\ThesauroTreeView.cs" />
+    <Compile Include="utils\Validadores.cs" />
+    <Compile Include="utils\WpfApplication.cs" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="general.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\IUSTO\IUSTO\IUSTO.csproj">
+      <Project>{BB6791F3-5F0B-4E0A-90DE-D61272AB5B92}</Project>
+      <Name>IUSTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IUS\IUSTOAux\IUSTOAux.csproj">
+      <Project>{3544A381-B59F-49D6-9046-E39A8C2AC076}</Project>
+      <Name>IUSTOAux</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ius_common\ius_common\ius_common.csproj">
+      <Project>{12679159-E247-4017-97F6-0C81CBE79F99}</Project>
+      <Name>ius_common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <ReferencePath Include="C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\ius_common.dll" />
+    <ReferencePath Include="C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUSTO\IUSTO\bin\Debug\IUSTO.dll" />
+    <ReferencePath Include="C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\IUS\IUSTOAux\bin\Debug\IUSTOWeb.dll" />
+    <ReferencePath Include="C:\Archivos de programa\Reference Assemblies\Microsoft\Framework\v3.0\PresentationCore.dll" />
+    <ReferencePath Include="C:\Archivos de programa\Reference Assemblies\Microsoft\Framework\v3.0\PresentationFramework.dll" />
+    <ReferencePath Include="c:\Archivos de programa\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll" />
+    <ReferencePath Include="c:\Archivos de programa\Reference Assemblies\Microsoft\Framework\v3.5\System.Data.DataSetExtensions.dll" />
+    <ReferencePath Include="c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll" />
+    <ReferencePath Include="c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll" />
+    <ReferencePath Include="C:\Archivos de programa\Reference Assemblies\Microsoft\Framework\v3.0\System.Runtime.Serialization.dll" />
+    <ReferencePath Include="C:\Archivos de programa\Reference Assemblies\Microsoft\Framework\v3.0\System.ServiceModel.dll" />
+    <ReferencePath Include="c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll" />
+    <ReferencePath Include="c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll" />
+    <ReferencePath Include="c:\Archivos de programa\Reference Assemblies\Microsoft\Framework\v3.5\System.Xml.Linq.dll" />
+    <ReferencePath Include="C:\Archivos de programa\Reference Assemblies\Microsoft\Framework\v3.0\UIAutomationProvider.dll" />
+    <ReferencePath Include="C:\Archivos de programa\Reference Assemblies\Microsoft\Framework\v3.0\WindowsBase.dll" />
+    <ReferencePath Include="C:\WINDOWS\assembly\GAC_MSIL\Xceed.Wpf.Controls\3.0.8453.23470__ba83ff368b7563c6\Xceed.Wpf.Controls.dll" />
+    <ReferencePath Include="C:\WINDOWS\assembly\GAC_MSIL\Xceed.Wpf.DataGrid\3.0.8453.23470__ba83ff368b7563c6\Xceed.Wpf.DataGrid.dll" />
+    <ReferencePath Include="C:\WINDOWS\assembly\GAC_MSIL\Xceed.Wpf.DataGrid.ThemePack.1\3.0.8453.23470__ba83ff368b7563c6\Xceed.Wpf.DataGrid.ThemePack.1.dll" />
+    <ReferencePath Include="C:\WINDOWS\assembly\GAC_MSIL\Xceed.Wpf.DataGrid.ThemePack.2\3.0.8453.23470__ba83ff368b7563c6\Xceed.Wpf.DataGrid.ThemePack.2.dll" />
+    <ReferencePath Include="C:\WINDOWS\assembly\GAC_MSIL\Xceed.Wpf.DataGrid.Views3D\3.0.8453.23470__ba83ff368b7563c6\Xceed.Wpf.DataGrid.Views3D.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\panel\PanelDinamico.g.cs" />
+    <Compile Include="C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\GeneratedInternalTypeHelper.g.cs" />
+  </ItemGroup>
+</Project>

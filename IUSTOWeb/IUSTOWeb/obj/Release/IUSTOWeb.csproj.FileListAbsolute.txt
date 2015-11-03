@@ -1,0 +1,5 @@
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTOWeb\IUSTOWeb\bin\Release\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTOWeb\IUSTOWeb\bin\Release\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTOWeb\IUSTOWeb\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTOWeb\IUSTOWeb\obj\Release\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTOWeb\IUSTOWeb\obj\Release\IUSTOWeb.pdb

@@ -1,0 +1,2182 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JaStDev.ControlFramework</name>
+    </assembly>
+    <members>
+        <member name="T:JaStDev.ControlFramework.Controls.ConceptualPanel">
+            <summary>
+            This panel maintains a collection of conceptual children that are neither logical
+            children nor visual children of the panel.  This allows those visuals to be connected 
+            to other parts of the UI, if necessary, or even to remain disconnected. 
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.ConceptualPanel.OnChildrenCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            For simplicity, this class will listen to change notifications on the DisconnectedUIElementCollection
+            and provide them to descendants through the OnChildAdded and OnChildRemoved members.  
+            </summary>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.DockSplitterResizeMode">
+            <summary>
+            Determins how objects are resized.
+            </summary>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.DockSplitterResizeMode.Box">
+            <summary>
+            In this mode, the first visible object before the splitter is resized.  All objects after the splitter remain the same size except the
+            last object on the DockPanel (if it is set to 'LastChildFill = true) which will be resized to fill the remaining area of the DockPanel.
+            </summary>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.DockSplitterResizeMode.Adjacent">
+            <summary>
+            In this mode, the first visible object before and after the splitter are resized.  The object after the splitter gets the opposite amount
+            so that all other objects on the DockPanel remain the same size.
+            </summary>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.DockSplitter">
+            <summary>
+            A splitter object to use on DockPanel objects.
+            </summary>
+            <remarks>
+            <para>
+            This class is a descendent of Thumb and provides splitter functionality, as found for Grid objects, but for a DockPanel.
+            It works similar to a GridSplitter object.  To use it, put it between 2 other objects on a DockPanel, give it a with or height and set it's
+            DockPanel.Dock attached property the same as the object before it in the list, which is the object that the splitter 
+            will control.
+            </para>
+            <para>
+            Since the class descends from a Control, it is templateble.  This means you can change or add functionality to the splitter, for 
+            instance, you could put a button on it to automatically collaps or open the object being controlled.  The 'BrowserTemplateDemo' 
+            application shows how you can accomplish this.
+            </para>
+            </remarks>
+            <example>
+            <code lang="xml"> 
+            <![CDATA[
+            <DockPanel>
+            <TextBox DockPanel.Dock="Bottom"/>
+              <t:DockSplitter DockPanel.Dock="Bottom" ></t:DockSplitter>
+              <TextBox DockPanel.Dock="Top"/>
+              <t:DockSplitter DockPanel.Dock="Top" ></t:DockSplitter>
+              <TextBox DockPanel.Dock="Top"/>
+              <t:DockSplitter DockPanel.Dock="Top"  ></t:DockSplitter>
+              <TextBox DockPanel.Dock="Bottom"/>
+              <t:DockSplitter DockPanel.Dock="Bottom"  ></t:DockSplitter>
+              <TextBox DockPanel.Dock="Left"/>
+              <t:DockSplitter DockPanel.Dock="Left" ></t:DockSplitter>
+              <TextBox DockPanel.Dock="Left"/>
+              <t:DockSplitter DockPanel.Dock="Left"  ></t:DockSplitter>
+              <TextBox DockPanel.Dock="Right"/>
+              <t:DockSplitter DockPanel.Dock="Right" ></t:DockSplitter>
+              <TextBox DockPanel.Dock="Right"/>
+              <t:DockSplitter DockPanel.Dock="Right" ></t:DockSplitter>
+              <TextBox DockPanel.Dock="Top"/>
+              <t:DockSplitter DockPanel.Dock="Top" ></t:DockSplitter>
+              <TextBox/>
+            </DockPanel>
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.#cctor">
+            <summary>
+            Override default values, register event handlers.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.OnDragStarted(System.Object,System.Windows.Controls.Primitives.DragStartedEventArgs)">
+            <summary>
+            This is the static wrapper for the OnDragStarted method (WPF way)
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.OnDragStarted">
+            <summary>
+            Initialises dragging.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.SetMinMaxValues">
+            <summary>
+            calculates the bounderies that the splitter must stay in.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.SetMinMaxValuesTop(System.Windows.FrameworkElement)">
+            <summary>
+            Algorithm:
+            - If resizeMode is Box:
+            we initialize the default maximum resize to the end of the DockPanel.
+            if there is a control on the dockPanel after the splitter that is on
+            the oposite side, this becomes the maximum resize. This creates the 
+            effect that the last object on the dockPanel is resized to compensate
+            for resize of the control in front of the splitter.
+            - otherwise, take the size of the object after the splitter.
+            </summary>
+            <param name="prev">The object in front of the splitter</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.SetMinMaxValuesRight(System.Windows.FrameworkElement)">
+            <summary>
+            see <see cref="M:JaStDev.ControlFramework.Controls.DockSplitter.SetMinMaxValuesTop(System.Windows.FrameworkElement)"/>
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.SetMinMaxValuesLeft(System.Windows.FrameworkElement)">
+            <summary>
+            see <see cref="M:JaStDev.ControlFramework.Controls.DockSplitter.SetMinMaxValuesTop(System.Windows.FrameworkElement)"/>
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.SetMinMaxValuesBottom(System.Windows.FrameworkElement)">
+            <summary>
+            calculates the Min Max values for a Splitter that is docked to the bottom.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.SetResizeDirection">
+            <summary>
+            Calculates the direction we want to resize in.  This depends on The Dock value.
+            </summary>
+            <remarks>
+            If Dock == Left or Right, Resize direction is Columns, otherwise it's Rows.
+            </remarks>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.FindLastVisible(System.Windows.Controls.DockPanel)">
+            <summary>
+            Finds the last FrameworkElement on the DockPanel and returns it.
+            </summary>
+            <param name="panel">The panel to search on</param>
+            <returns>The object found or null.</returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.FindNextVisible(System.Windows.Controls.DockPanel,System.Int32,System.Windows.Controls.Dock)">
+            <summary>
+            Finds the next visible FrameworkElement with the specified Dock value starting at the specified index.
+            </summary>
+            <remarks>
+            This property is used to find the 'percieved' next object.  This is found using the following algorithm:
+            -walk through all the items from the index, if:
+              -an item is found with the same dock value, return this, cause that is the closest.
+            - if no items was found with the same dock value, return the last item cause this serves as the filler, which can always be resized.
+            </remarks>
+            <param name="panel">The panel to search on.</param>
+            <param name="index">The index to start searching from.</param>
+            <param name="dock">The Dock value to search for.</param>
+            <returns>The object found or null.</returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.FindNextDockItem(System.Windows.Controls.DockPanel)">
+            <summary>
+            Looks for the next visible item on the DockPanel.
+            </summary>
+            <param name="panel">The DockPanel to search on.</param>
+            <returns>a reference to the next visible item.</returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.FindPreviousDockItemIndex(System.Windows.Controls.DockPanel)">
+            <summary>
+            look for the previous item in the dock panel.
+            </summary>
+            <remarks>
+            This function returns an index instead of the item itself. This is used when the drag begins to allow fast walk through all the previous
+            items.
+            </remarks>
+            <param name="panel">The panel to search on.</param>
+            <returns>The index of the previous item</returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.FindPreviousDockItem(System.Windows.Controls.DockPanel)">
+            <summary>
+            Returns the previous object.
+            </summary>
+            <remarks>
+            This function is similar to <see cref="M:JaStDev.ControlFramework.Controls.DockSplitter.FindPreviousDockItemIndex(System.Windows.Controls.DockPanel)"/> which returns the index number.
+            </remarks>
+            <param name="panel">The DockPanel to search on.</param>
+            <returns>The first object before the splitter that is visible or null.</returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.SetupPreview">
+            <summary>
+            creates an Adorner layer and puts the control on that shows the drag location.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.OnDragDelta(System.Object,System.Windows.Controls.Primitives.DragDeltaEventArgs)">
+            <summary>
+            Static wrapper for OnDragDelta
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.OnDragDelta(System.Windows.Controls.Primitives.DragDeltaEventArgs)">
+            <summary>
+            Called whenever the splitters is dragged around.
+            </summary>
+            <param name="e">Event arguments, contains the amount of movement.</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.MoveSplitter(System.Double,System.Double)">
+            <summary>
+            Moves the actual splitter object with the specified offset values.
+            </summary>
+            <param name="horChange">The amount of horizontal change.</param>
+            <param name="verChange">The amount of vertical change.</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.OnDragCompleted">
+            <summary>
+            called when dragging is terminated.  Removes the preview info and moves the splitter if needed.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.RemovePreviewAdorner">
+            <summary>
+            Removes the object that represents the new position (during preview) from the adorner layer when draggind is done.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.IsValidDelta(System.Object)">
+            <summary>
+            checks if the delta value (of the Thumb) is valid.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockSplitter.ApplyValue(System.Double)">
+            <summary>
+            Assigns the value Height/Width property to the object being controlled without saving the value.
+            </summary>
+            <param name="val">The value to assign to the object being controlled.</param>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.DockSplitter.SizeProperty">
+            <summary>
+            Identifies the Size dependency property.
+            </summary>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.DockSplitter.ValueProperty">
+            <summary>
+            Identifies the Value dependency property.
+            </summary>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.DockSplitter.DragIncrementProperty">
+            <summary>
+            Identifies the DragIncrement dependency property.
+            </summary>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.DockSplitter.ResizeModeProperty">
+            <summary>
+            Identifies the ResizeMode dependency property.
+            </summary>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.DockSplitter.PreviewStyleProperty">
+            <summary>
+            Identifies the PreviewStyle dependency property.
+            </summary>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.DockSplitter.ShowsPreviewProperty">
+            <summary>
+            Identifies the ShowsPreview dependency property.
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DockSplitter.ResizedObject">
+            <summary>
+            Provides a quick reference to the object that is being resized.
+            </summary>
+            <remarks>
+            This property returns the first item before the splitter on the DockPanel that is visible.  This is the object being resized.
+            </remarks>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DockSplitter.Size">
+            <summary>
+            Gets/sets the Width/Height of the control.
+            </summary>
+            <remarks>
+            <para>
+            Either the Height or Width of the control is determined by the DockPanel.Dock value assigned to the control while placed in 
+            a DockPanel.  This property determins the value of the property not controlled by the DockPanel.
+            </para>
+            <para>
+            This property provides an easy, transparent way of changing the Height/Width of the control without having to know the 
+            DockPanel.Dock value.  This is primarely used in styles so you can define 1 value for either Height or Width.
+            </para>
+            </remarks>
+            <seealso cref="T:JaStDev.ControlFramework.Controls.DockSplitter"/>
+            <seealso cref="P:JaStDev.ControlFramework.Controls.DockSplitter.Value"/>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DockSplitter.Value">
+            <summary>
+            Gets/sets the current value of the DockSplitter.  This is a dependency property.
+            </summary>
+            <remarks>
+            <para>
+            Use this property if you want to assign a new position to the DockSplitter from code.
+            </para>
+            <para>
+            The initial value is retrieved from the object being controlled . 
+            </para>
+            </remarks>
+            <example>
+            The following example demonstrates how you can collaps/expand a DockSplitter by placing
+            a button on it through a template.
+            The code collapses the associated object by setting it's with/height to 0.0, or restoring it to it's default value stored in the Tag property.
+            Collapsing and expanding is done through an animation, there is also a non animation form written as comment where the new value is simply assigned to the property.
+            <code>
+            void OnClickSplit(object aSender, EventArgs e)
+            {
+               Button iOrigin = aSender as Button;
+               if (iOrigin != null)
+               {
+                  DockSplitter iSender = iOrigin.TemplatedParent as DockSplitter;
+                  if (iSender != null)
+                  {
+                     if (iSender.Value == 0.0)
+                     {
+                        DoubleAnimation iValueAnimation = new DoubleAnimation((double)iSender.Tag, new TimeSpan(0, 0, 0, 0, 70));
+                        AnimationClock iMyControllableClock = iValueAnimation.CreateClock();
+                        iSender.ApplyAnimationClock(DockSplitter.ValueProperty, iMyControllableClock);
+                        //iSender.Value = (double)iSender.Tag;
+                     }
+                     else
+                     {
+                        iSender.Tag = iSender.Value;
+                        DoubleAnimation iValueAnimation = new DoubleAnimation(0.0, new TimeSpan(0, 0, 0, 0, 120));
+                        AnimationClock iMyControllableClock = iValueAnimation.CreateClock();
+                        iSender.ApplyAnimationClock(DockSplitter.ValueProperty, iMyControllableClock);
+                        //iSender.Value = 0.0;
+                     }
+                  }
+               }
+            }
+            </code>
+            This is the xaml to define the button.
+            <code lang="xml">
+            <![CDATA[
+            <Style TargetType={x:Type d:DockSplitter} >
+              <Setter Property="d:DockSplitter.Template">
+                 <Setter.Value>
+                    <ControlTemplate>
+                       <Border Background="{TemplateBinding Background}">
+                          <DockPanel LastChildFill="False"
+                                     HorizontalAlignment="Center"
+                                     VerticalAlignment="Center"
+                                     >
+                             <Button x:Name="CloseSplit"
+                                     Click="OnClickSplit"
+                                     Focusable="True"
+                                     Cursor="Arrow">
+                                <Image Source ="{StaticResource SplitterCloseImage}"/>
+                                <Button.Template>
+                                   <ControlTemplate>
+                                      <ContentPresenter Content ="{TemplateBinding Button.Content}"/>
+                                   </ControlTemplate>
+                                </Button.Template>
+                             </Button>
+                          </DockPanel>
+                       </Border>
+            
+                       <ControlTemplate.Triggers>
+                          <Trigger Property="DockPanel.Dock" Value="Top">
+                             <Setter Property="Control.Height" Value="{Binding Path=Size, RelativeSource={RelativeSource Self}}"/>
+                             <Setter Property="Control.Cursor" Value="SizeNS"/>
+                             <Setter TargetName="CloseSplit" Property="Button.LayoutTransform">
+                                <Setter.Value>
+                                   <RotateTransform Angle="90"/>
+                                </Setter.Value>
+                             </Setter>
+                          </Trigger>
+                          <MultiTrigger>
+                             <MultiTrigger.Conditions>
+                                <Condition Property="DockPanel.Dock" Value="Top"/>
+                                <Condition Property="d:DockSplitter.Value" Value="0.0"/>
+                             </MultiTrigger.Conditions>
+                             <Setter Property="Control.Height" Value="{Binding Path=Size, RelativeSource={RelativeSource Self}}"/>
+                             <Setter Property="Control.Cursor" Value="SizeNS"/>
+                             <Setter TargetName="CloseSplit" Property="Button.LayoutTransform">
+                                <Setter.Value>
+                                   <RotateTransform Angle="-90"/>
+                                </Setter.Value>
+                             </Setter>
+                          </MultiTrigger>
+                          <Trigger Property="DockPanel.Dock" Value="Bottom">
+                             <Setter Property="Control.Height" Value="{Binding Path=Size, RelativeSource={RelativeSource Self}}"/>
+                             <Setter Property="Control.Cursor" Value="SizeNS"/>
+                             <Setter TargetName="CloseSplit" Property="Button.LayoutTransform">
+                                <Setter.Value>
+                                   <RotateTransform Angle="-90"/>
+                                </Setter.Value>
+                             </Setter>
+                          </Trigger>
+                          <MultiTrigger>
+                             <MultiTrigger.Conditions>
+                                <Condition Property="DockPanel.Dock" Value="Bottom"/>
+                                <Condition Property="d:DockSplitter.Value" Value="0.0"/>
+                             </MultiTrigger.Conditions>
+                             <Setter Property="Control.Height" Value="{Binding Path=Size, RelativeSource={RelativeSource Self}}"/>
+                             <Setter Property="Control.Cursor" Value="SizeNS"/>
+                             <Setter TargetName="CloseSplit" Property="Button.LayoutTransform">
+                                <Setter.Value>
+                                   <RotateTransform Angle="90"/>
+                                </Setter.Value>
+                             </Setter>
+                          </MultiTrigger>
+                          <Trigger Property="DockPanel.Dock" Value="Right">
+                             <Setter Property="Control.Width" Value="{Binding Path=Size, RelativeSource={RelativeSource Self}}"/>
+                             <Setter Property="Control.Cursor" Value="SizeWE"/>
+                             <Setter TargetName="CloseSplit" Property="Button.LayoutTransform">
+                                <Setter.Value>
+                                   <RotateTransform Angle="180"/>
+                                </Setter.Value>
+                             </Setter>
+                          </Trigger>
+                          <MultiTrigger>
+                             <MultiTrigger.Conditions>
+                                <Condition Property="DockPanel.Dock" Value="Right"/>
+                                <Condition Property="d:DockSplitter.Value" Value="0.0"/>
+                             </MultiTrigger.Conditions>
+                             <Setter Property="Control.Width" Value="{Binding Path=Size, RelativeSource={RelativeSource Self}}"/>
+                             <Setter Property="Control.Cursor" Value="SizeWE"/>
+                             <Setter TargetName="CloseSplit" Property="Button.LayoutTransform" Value="{x:Null}"/>
+                          </MultiTrigger>
+                          <Trigger Property="DockPanel.Dock" Value="Left">
+                             <Setter Property="Control.Width" Value="{Binding Path=Size, RelativeSource={RelativeSource Self}}"/>
+                             <Setter Property="Control.Cursor" Value="SizeWE"/>
+                          </Trigger>
+                          <MultiTrigger>
+                             <MultiTrigger.Conditions>
+                                <Condition Property="DockPanel.Dock" Value="Left"/>
+                                <Condition Property="d:DockSplitter.Value" Value="0.0"/>
+                             </MultiTrigger.Conditions>
+                             <Setter Property="Control.Width" Value="{Binding Path=Size, RelativeSource={RelativeSource Self}}"/>
+                             <Setter Property="Control.Cursor" Value="SizeWE"/>
+                             <Setter TargetName="CloseSplit" Property="Button.LayoutTransform">
+                                <Setter.Value>
+                                   <RotateTransform Angle="180"/>
+                                </Setter.Value>
+                             </Setter>
+                          </MultiTrigger>             
+                       </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                 </Setter.Value>
+              </Setter>
+            </Style>
+            ]]>
+            </code>
+            </example>
+            <seealso cref="T:JaStDev.ControlFramework.Controls.DockSplitter"/>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DockSplitter.DragIncrement">
+            <summary>
+            Gets/sets the minimum distance that a user must drag a mouse to resize the object being controlled with a DockSplitter.  This is a dependency property.
+            </summary>
+            <seealso cref="T:JaStDev.ControlFramework.Controls.DockSplitter"/>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DockSplitter.ResizeMode">
+            <summary>
+            Gets/sets how a DockSplitter resizes the objects on a DockPanel.  This is a dependency property.
+            </summary>
+            <remarks>
+            <para>
+            By default, only the object in front of the splitter (the first visible object) is resized.  This usually means that all objects after the splitter 
+            are moved and if the DockPanel is set up to resize the last object to fill the client area, this object will also be resized.  Sometimes this isn't 
+            the desired behaviour but instead the object after the splitter should become bigger or shrink agording to the size change of the object before the 
+            splitter so that the position and size of all the other objects remains the same.  This can be achieved by setting this property to 'Adjacent'.
+            </para>
+            <para>
+            Changing this property also has an effect on how far the resize operation can go.  By default, resizing can be done in a 'box' like structure. This
+            means that the last control on the DockPanel that has a DockValue opposite to that of the splitter determins the maximum resize value (creating a
+            box effect: the last object on the DockPanel is resized).  If you change this property to 'Adjacent', the maximum size is limited to the 
+            size of the next control.  The minimum size is always the size of the control in front of the splitter.
+            set this property
+            </para>
+            </remarks>
+            <seealso cref="T:JaStDev.ControlFramework.Controls.DockSplitter"/>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DockSplitter.PreviewStyle">
+            <summary>
+            Getts/sets the style that customizes the appearance, effects, or other style characteristics for the DockSplitter control preview indicator that is displayed when the ShowsPreview property is set to true.  This is a dependency property.
+            </summary> 
+            <remarks>
+            Assign a style to this property if you want to change the default look of the preview style.  Usually this is done in xaml.
+            </remarks>
+            <example>
+            <code lang="xml">
+            <![CDATA[
+            <Style x:Key="{x:Type d:DockSplitter}">
+              <Setter Property="Control.Background" Value="#FF2E2E2E"/>
+              <Setter Property="d:DockSplitter.PreviewStyle">
+                 <Setter.Value>
+                    <Style>
+                       <Setter Property="Control.Template">
+                          <Setter.Value>
+                             <ControlTemplate>
+                                <Border Background="Azure"/>
+                             </ControlTemplate>
+                          </Setter.Value>
+                       </Setter>
+                    </Style>
+                 </Setter.Value>
+              </Setter>
+            </Style>
+            ]]>
+            </code>
+            </example>
+            <seealso cref="T:JaStDev.ControlFramework.Controls.DockSplitter"/>
+            <seealso cref="P:JaStDev.ControlFramework.Controls.DockSplitter.ShowsPreview"/>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DockSplitter.ShowsPreview">
+            <summary>
+            Gets/sets whether the DockSplitter control shows a preview or updates the object being controlled as the user drags the control.
+            </summary>
+            <remarks>
+            <para>
+            By default, this property is 'True' indicating that a preview is shown before the object is resized.  The resizing will only be done after the drag operation.
+            </para>
+            <para>
+            You can control the look of the preview through the <see cref="P:JaStDev.ControlFramework.Controls.DockSplitter.PreviewStyle"/> property.
+            </para>
+            </remarks>
+            /// <seealso cref="T:JaStDev.ControlFramework.Controls.DockSplitter"/>
+            /// <seealso cref="P:JaStDev.ControlFramework.Controls.DockSplitter.PreviewStyle"/>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Input.FocusManager">
+            <summary>
+            A class to set the focused object on a Window.
+            </summary>
+            <remarks>
+            This class provides an attached property you can use to make a FrameworkElement on a window have keyboard focus.
+            </remarks>
+            <example>
+            The followind example demonstrates how to make the TextBox have focus:
+            <code lang="xml">
+            </code>
+            </example>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Input.FocusManager.GetIsFocused(System.Windows.DependencyObject)">
+            <summary>
+            Gets if this object will try to focus itself after it is loaded or not.
+            </summary>
+            <remarks>
+            See <see cref="M:JaStDev.ControlFramework.Input.FocusManager.SetIsFocused(System.Windows.DependencyObject,System.Boolean)"/> for more info.
+            </remarks>
+            <param name="obj">The object to get the value for.</param>
+            <returns>True if this object will try to focus itself after it is loaded, otherwise false.</returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Input.FocusManager.SetIsFocused(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Sets if this object will try to focus itself after it is loaded or not.
+            </summary>
+            <remarks>
+            If you set this attached property to true, the object will get an event handler for it's loaded event which will try to move 
+            keyboard focus to the object.
+            </remarks>
+            <param name="obj">The object to set the value for.</param>
+            <param name="value">True if this object will try to focus itself after it is loaded, otherwise false.</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Input.FocusManager.OnIsFocusedChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Either removes the event handler from the item or registers an event handler called when the object is loaded to move focus.
+            </summary>
+            <remarks>
+            We use an event so that focus is called when the object is loaded, if we would call from here, it will be called when the object is being
+            created and not yet loaded, which would result in a failed Focus call.
+            </remarks>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Input.FocusManager.GetIsSelectedItemFocused(System.Windows.DependencyObject)">
+            <summary>
+            Gets if this object will try move focus to it's selected item when loaded or not.
+            </summary>
+            <remarks>
+            See <see cref="M:JaStDev.ControlFramework.Input.FocusManager.SetIsSelectedItemFocused(System.Windows.DependencyObject,System.Boolean)"/> for more info.
+            </remarks>
+            <param name="obj">The object to set the value for.</param>
+            <returns>True if this object will try to focus it's selected item after it is loaded, otherwise false.</returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Input.FocusManager.SetIsSelectedItemFocused(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Sets if this object will try move focus to it's selected item when loaded or not.
+            </summary>
+            <remarks>
+            <para>
+            This property can only be assigned to Selector controls (like ListBox and ListView).
+            </para>
+            <para>
+            If you set this attached property to true, the object will get an event handler for it's loaded event which will try to move 
+            keyboard focus to the first selected item.
+            </para>
+            <para>
+            Note: this technique will only work if the Container used by the selector is focusable.
+            </para>
+            </remarks>
+            <param name="obj">The object to set the value for.</param>
+            <param name="value">True if this object will try to focus it's selected item after it is loaded, otherwise false.</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Input.FocusManager.OnIsSelectedItemFocusedChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Either removes the event handler from the item or registers an event handler called when the object is loaded to move focus.
+            </summary>
+            <remarks>
+            We use an event so that focus is called when the object is loaded, if we would call from here, it will be called when the object is being
+            created and not yet loaded, which would result in a failed Focus call.
+            </remarks>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Input.FocusManager.Object_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Moves focus to the item after it has been loaded.
+            </summary>
+            <remarks>
+            The event handler is removed from the object to clean up.
+            </remarks>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Input.FocusManager.Selector_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Moves focus to the selected item after it has been loaded.
+            </summary>
+            <remarks>
+            The event handler is removed from the object to clean up.
+            </remarks>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.TabPanel">
+            <summary>
+            A replacement for the standard TabPanel used on TabControls which only uses 1 row.
+            </summary>
+            <remarks>
+            <para>
+            <see cref="P:JaStDev.ControlFramework.Controls.TabPanel.Orientation"/> determins if items are displayed horizontally from left to right or vertically
+            from top to bottom. When there is not enough room to fit all the items in the available width/height, it will shrink all 
+            items as needed untill they do.  The property <see cref="P:JaStDev.ControlFramework.Controls.TabPanel.AllowOverspil"/> determins if items are shrunk untill they
+            all fit, or only as much as they allow.
+            </para>
+            <para>
+            This panel is ideally suited for TabControls (due to the way it handles margins), but you can also use it standalone. 
+            <see cref="T:JaStDev.ControlFramework.Controls.ShrinkPanel"/> is a similar panel but which handles the margin differently and is therefor better suited for
+            a more general purpose situation.
+            </para>
+            <para>
+            This panel is used by <see cref="T:JaStDev.ControlFramework.Controls.BreadcrumbsControl"/> to display it's <see cref="T:JaStDev.ControlFramework.Controls.Breadcrumb"/>s.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.TabPanel.MeasureOverride(System.Windows.Size)">
+            <summary>
+            Measures the child elements of a TabPanel before they are arranged during the ArrangeOverride pass.
+            </summary>
+            <param name="availableSize">An upper Size limit that cannot be exceeded.</param>
+            <returns>The Size that represents the upper size limit of the element.</returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.TabPanel.GetTotalSize(System.Windows.Size)">
+            <summary>
+            Calculates how much size the items would occupy without any restrictions (first pass).
+            </summary>
+            <param name="availableSize">The total size available to the panel.</param>
+            <returns>The total desired size of all the items.</returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.TabPanel.ArrangeOverride(System.Windows.Size)">
+            <summary>
+            
+            </summary>
+            <param name="finalSize"></param>
+            <returns></returns>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.TabPanel.AllowOverspilProperty">
+            <summary>
+            Identifies the AllowOverspil dependency property.
+            </summary>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.TabPanel.OrientationProperty">
+            <summary>
+            Identifies the Orientation dependency property.
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.TabPanel.MaxFixed">
+            <summary>
+            Gets/sets the size of the panel that is fixed.  This depends on the <see cref="P:JaStDev.ControlFramework.Controls.TabPanel.Orientation"/> value.
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.TabPanel.AllowOverspil">
+            <summary>
+            Gets/sets wether all items have to fit the available width/height or that the is allowed to have items that are not visible
+            because they couldn't fit the available space.
+            </summary>
+            <remarks>
+            When this property is false, all the items will fit in the available space.  When true, items will be shrunken as much as possible.
+            </remarks>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.TabPanel.Orientation">
+            <summary>
+            Gets/sets the direction that the children will be stacked.
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.TabPanel.TargetSize">
+            <summary>
+            Gets/sets the desired maximum size that the panel should try to achieve when <see cref="P:JaStDev.ControlFramework.Controls.TabPanel.AllowOverspil"/> is true.
+            </summary>
+            <remarks>
+            This property is usefull if the panel is used in an ItemsControl that contains a <see cref="!:System.Windows.Control.ScrollViewer"/>.
+            In this case, the panel doesn't know the size restrictions, cause they are lifted by the scrollviewer, which means that the panel
+            will never try to shrink items.  When this property is set, and smaller than the allowed size, items will by shrunk so that they
+            can (potentially) fit this size. 
+            </remarks>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.ShrinkPanel">
+            <summary>
+            Note: not yet finisned! A panel which displays it's items Horizontally or Vertically and will try to shrink items as needed to try to fit them in 
+            the available space.
+            </summary>
+            <remarks>
+            <para>
+            <see cref="P:JaStDev.ControlFramework.Controls.TabPanel.Orientation"/> determins if items are displayed horizontally from left to right or vertically
+            from top to bottom. When there is not enough room to fit all the items in the available width/height, it will try to shrink all 
+            items as mush as possible. The property <see cref="P:JaStDev.ControlFramework.Controls.TabPanel.AllowOverspil"/> determins if items are shrunk untill they
+            all fit, or only as much as they allow.
+            </para>
+            <para>
+            This panel is a general purpose implementation of the functionality found in <see cref="T:JaStDev.ControlFramework.Controls.TabPanel"/> which is more suited for use
+            in TabControls.
+            </para>
+            </remarks>
+        </member>
+        <member name="T:helpinterop1.HH1Interop">
+            <summary>
+            HH1Interop is a set of constants, structures, and static methods which can be used by managed
+            code to manipulate the low-level HtmlHelp API through Win32 interop techniques.  Using the
+            HtmlHelp API directly should only be done as a last resort when the provided classes such as
+            Help and HelpProvider do not provide sufficient functionality for a specific scenario.
+            </summary>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Utility.ObjectToBoolConverter">
+            <summary>
+            Provides 2 way binding support between a boolean and another value that is compared to the parameter argument.
+            </summary>
+            <remarks>
+            This is usefull to compare to string constants for instance. A common scenario is a 'Checked' property of a toggle button that
+            needs to be bound to a property.  If this property has a specific value, the button should be checked, and visa versa.
+            <para>
+            Note: for converting back from bool to object, only the 'true' value can be correctly interpreted (in which case
+            the 'parameter' value is returned). Otherwise, <see cref="F:System.Windows.DependencyProperty.UnsetValue"/> is returned.
+            </para>
+            </remarks>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.TargetCollection">
+            <summary>
+            Collection used by <see cref="T:JaStDev.ControlFramework.Controls.DistributionPanel"/> to manage it's <see cref="T:JaStDev.ControlFramework.Controls.DistributionTarget"/>s.
+            </summary>
+            <remarks>
+            Lets the <see cref="T:JaStDev.ControlFramework.Controls.DistributionTarget"/> know about changes in the list so it can update it's logical tree.
+            This allows the target object's bindings to work properly.
+            </remarks>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.LogicalPanel">
+            <summary>
+            This panel extends ConceptualPanel by ensuring that its conceptual children are also "logical" children.  
+            Because certain things like property inheritance and resource resolution work through the logical
+            tree, this allows the disconnected visuals to be connected to the panel's ancestor tree
+            in a logical manner without being part of it's visual tree. 
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.LogicalPanel.OnLogicalChildrenChanged(System.Windows.UIElement,System.Windows.UIElement)">
+            <summary>
+            This class uses the OnLogicalChildrenChanged method to provide notification to descendants 
+            when its logical children change.  Note that this is intentionally
+            similar to the OnVisualChildrenChanged approach supported by all visuals.
+            </summary>
+            <param name="childAdded"></param>
+            <param name="childRemoved"></param>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.Breadcrumb">
+            <summary>
+            Represents 1 item in a <see cref="T:JaStDev.ControlFramework.Controls.BreadcrumbsControl"/>
+            </summary>
+            <remarks>
+            <para>
+            When changing the template, don't forget to put a button called 'BtnBreadcrumb' somewhere.  This is used to clip the
+            path up to the selected breadcrumb.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Breadcrumb.IsItemItsOwnContainerOverride(System.Object)">
+            <summary>
+            Determines if the specified item is (or is eligible to be) its own container.
+            </summary>
+            <param name="item">The item to check.</param>
+            <returns>
+            true if the item is (or is eligible to be) its own container; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Breadcrumb.GetContainerForItemOverride">
+            <summary>
+            Creates or identifies the element that is used to display the given item.
+            </summary>
+            <returns>
+            The element that is used to display the given item.
+            </returns>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.DockPanelEx">
+            <summary>
+            A DockPanel descendent that will stretch the last 'visible' child to fill the remaining available space.
+            </summary>
+            <remarks>
+            <para>
+            The major difference between this class and the standard DockPanel is that the the latter will stretch the last child, not the last visible child.
+            This means that, if the last child in a standard DockPanel is invisible, it will not resize the item before that, possibly leaving space open.
+            </para>
+            <para>
+            This class also provides a property to easely find out how many items are visible.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockPanelEx.#ctor">
+            <summary>
+            The default constructor.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DockPanelEx.ArrangeOverride(System.Windows.Size)">
+            <summary>
+            Arranges and sizes the content of a DockPanelEx object.
+            </summary>
+            <param name="arrangeSize">The computed size that is used to arrange the content</param>
+            <returns>The size of the content. </returns>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DockPanelEx.IndexOfLastVisible">
+            <summary>
+            Gets the index nr of the last visible element.
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DockPanelEx.VisibleChildCount">
+            <summary>
+            Gets the total number of children that have their 'Visibility' property set to 'Visible.
+            </summary>
+            <remarks>
+            This is a convenience property to easely find Visibility count information.
+            </remarks>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DockPanelEx.LastVisibleChild">
+            <summary>
+            Gets the UIElement that is the last visible item on the panel.
+            </summary>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.DistributionTarget">
+            <summary>
+            Declares a destination and rule to be used by a <see cref="T:JaStDev.ControlFramework.Controls.DistributionPanel"/> so that it can select the proper destination for
+            it's children.
+            </summary>
+            <remarks>
+            This needs to be a <see cref="T:System.Windows.FrameworkElement"/> so that the binding can work easely.
+            </remarks>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionTarget.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.DistributionTarget.TargetProperty">
+            <summary>
+            Identifies the Target dependency property.
+            </summary>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.DistributionTarget.ValueProperty">
+            <summary>
+            Identifies the Value dependency property.
+            </summary>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.DistributionTarget.HasItemsProperty">
+            <summary>
+            Identifies the HasItems dependency property.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionTarget.Items_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Whenever the list is changed, we update <see cref="P:JaStDev.ControlFramework.Controls.DistributionTarget.HasItems"/> (we check if there are any items left in our list).
+            </summary>
+            <remarks>
+            Don't need to take <see cref="!:AnimatedTarget.UsePlaceHolder"/> into account (they don't remain on the list). This
+            is because placeholder objects are always shown collapsed (they are only placeholders afterall) and don't effect
+            if there are any items in the list logically (even though there techniquely could be).
+            </remarks>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionTarget.AddChildToTarget(System.Windows.UIElement)">
+            <summary>
+            Called to add an item to a target.
+            </summary>
+            <remarks>
+            Overwrite this function if you want to do some extra processing when an item is added to the target list.  This is the
+            only function you need to overwrite for handling this type of event.
+            </remarks>
+            <param name="item">The element being added.</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionTarget.RemoveChildFromTarget(System.Windows.UIElement)">
+            <summary>
+            Called to remove an item from a distribution list.
+            </summary>
+            <remarks>
+            This is the only function that performs this task, so you don't need to overwrite other methods for handling removes.  
+            Overwrite it when you need extra processing before or after a child is removed from a target.
+            </remarks>
+            <param name="item">The item to remove.</param>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DistributionTarget.Target">
+            <summary>
+            Gets/sets the target list for objects who's <see cref="!:Rule"/> value evaluates to true.
+            </summary>
+            <remarks>
+            This can be the <see cref="P:System.Windows.Controls.Panel.Children"/> property of a Panel, or a custom list
+            that does extra processing after or before the list changes.
+            </remarks>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DistributionTarget.Value">
+            <summary>
+            Gets/sets the value that is used to compare with <see cref="!:DistributionPanel.Get"/>.
+            <remarks>
+            If the property value equals this value, the <see cref="T:JaStDev.ControlFramework.Controls.DistributionPanel"/> will use the value found in <see cref="!:DistributionRule.Target"/>
+            as it distribution point.
+            </remarks>
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DistributionTarget.HasItems">
+            <summary>
+            Gets wether this target has any items in it's collection.
+            </summary>
+            <remarks>
+            This is a convenience property that is probably most usefull from xaml.  Since this property
+            is automatically updated whenever this state changes, it allows you to bind to it and change something
+            else like a Visibility or Background property to indicate that there are or aren't any items anymore.
+            </remarks>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DistributionTarget.Items">
+            <summary>
+            gets the list of UIElements that have been added to this target by the DistributionPanel.
+            </summary>
+            <remarks>
+            This allows the distribution panel to quickly find items back.
+            </remarks>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.TreeViewItemToBreadcrumbsPath">
+            <summary>
+            A general purpose converter that is able to sync the <see cref="P:System.Windows.Controls.TreeView.SelectedItem"/> property (containing a TreeViewItem) of a
+            Treeview with the <see cref="!:BreadcrumbsControl.ItemsSource"/> of a breadcrumbsControl. 
+            </summary>
+            <remarks>
+            <para>
+            This converter is only suitable if the SelectedItem property contains a TreeViewItem. This means that the treeview (or any TreeViewItems)
+            can't be populated using ItemsSource (unless it contains TreeViewItems). You can however, use this source as a good starting point
+            for any custom path converters. You could alternatively also use the <see cref="T:JaStDev.ControlFramework.Controls.ObjectToBreadcrumbsPath"/> converter.
+            </para>
+            <para>
+            This converter doesn't implement the ConvertBack function cause <see cref="P:System.Windows.Controls.TreeView.SelectedItem"/> can't be 
+            assigned to.  This is why we use a WeakEvent pattern to monitor changes in the result list of the convert function.  The
+            BreadcrumbsControl changes this list whenever the user presses on a breadcrumb or adds a new one.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.TreeViewItemToBreadcrumbsPath.ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)">
+            <summary>
+            Called when the collection is changed.  We need to update the SelectedItem.
+            </summary>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.Primitives.Rotary">
+            <summary>
+            A Track implementation that shows a Rotary.
+            </summary>
+            <remarks>
+            <para>
+            Use this class in a Slider or ScrollBar template as a replacement for the Track control to change the appearance to a rotary.
+            </para>
+            <para>
+            Scroll page up and down is not yet working properly.
+            </para>
+            <para>
+            This type of rotary is rather CPY intensive
+            </para>
+            </remarks>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:JaStDev.ControlFramework.Controls.Primitives.Rotary.OnThumbDragStarted(System.Object,System.Windows.Controls.Primitives.DragStartedEventArgs)" -->
+        <member name="M:JaStDev.ControlFramework.Controls.Primitives.Rotary.UpdateComponent(System.Windows.Controls.Control,System.Windows.Controls.Control)">
+            <summary>
+            Removes the old object and adds the new object to the visual tree.
+            </summary>
+            <param name="oldValue">The previous control</param>
+            <param name="newValue">The new control</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Primitives.Rotary.OnValueChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the 'Value' property is changed. adjusts the rotation.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Primitives.Rotary.GetAngle">
+            <summary>
+            Calculates the angle that corresponds the the 'Value' of the Track object.  This is determined by the <see cref="!:Rotaray.MinimumAngle"/> 
+            and <see cref="P:JaStDev.ControlFramework.Controls.Primitives.Rotary.MaximumAngle"/> and <see cref="P:System.Windows.Controls.Primitives.Track.Minimum"/> and <see cref="P:System.Windows.Controls.Primitives.Track.Maximum"/> properties. and ofcourse the current
+            value of the Rotary (track).
+            </summary>
+            <returns>The angle in degrees that is equivalent to the current value.</returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Primitives.Rotary.ArrangeOverride(System.Windows.Size)">
+            <summary>
+            Arranges all the children in the Rotary.  This is currently just the thumb.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Primitives.Rotary.GetDecreaseRepeatBtnRect(System.Windows.Size)">
+            <summary>
+            Gets the rect that arranges the DecreaseRepeat button.
+            </summary>
+            <returns>A rect that the DecreaseRepeatButton can use to arrange itself.</returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Primitives.Rotary.GetIncreaseRepeatBtnRect(System.Windows.Size)">
+            <summary>
+            Gets the rect that arranges the IncreaseRepeat button.
+            </summary>
+            <returns>A rect that the IncreaseRepeatButton can use to arrange itself.</returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Primitives.Rotary.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)">
+            <summary>
+            Called when the Collection of visual children is changed.
+            </summary>
+            <remarks>
+            Checks if there is a Thumb, if so, sets the RenderTransform used to display the rotation value.
+            </remarks>
+            <param name="visualAdded">The visual that was added.</param>
+            <param name="visualRemoved">The visual that was removed.</param>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.Primitives.Rotary.ValueIndicator">
+            <summary>
+            Gets/sets the control that is used to indicate the current position of the rotary.
+            </summary>
+            <remarks>
+            This is a control so that styles and templates can be used.
+            </remarks>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.Primitives.Rotary.MinimumAngle">
+            <summary>
+            Gets/sets the angle value that corresponds to the minimum value of the Track.
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.Primitives.Rotary.MaximumAngle">
+            <summary>
+            Gets/sets the angle value that corresponds to the maximum value of the Track.
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.Primitives.Rotary.Precision">
+            <summary>
+            Gets/sets the precision factor that is applied to the drag manouver.
+            </summary>
+            <remarks>
+            This property can be used to adjust the precision during dragging.  This factor is multiplied with the drag value.
+            Setting this value grater than 1 gives a coarser precision, smaller than 1 gives a finer precision.
+            </remarks>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.Primitives.Rotary.IsRotaryDrag">
+            <summary>
+            Determins the way dragging is performed.
+            </summary>
+            <remarks>
+            When true: drag must be done in a rotary fashion, in the direction of the the control.
+            When false, dragging is done like a normal scrollbar.
+            </remarks>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.Primitives.Rotary.Angle">
+            <summary>
+            Gets the Angle that corresponds to the current value of the Rotary.
+            </summary>
+            <remarks>
+            This prop provides the angle value that is used to draw the indicator (and possibly the knub). 
+            </remarks>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.BreadcrumbsControl">
+            <summary>
+            A control that works similar to the breadcrumb control found in windows explorer.  It displays and allows editing of a selection path.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.BreadcrumbsControl.IsItemItsOwnContainerOverride(System.Object)">
+            <summary>
+            Determines if the specified item is (or is eligible to be) its own container.
+            </summary>
+            <param name="item">The item to check.</param>
+            <returns>
+            true if the item is (or is eligible to be) its own container; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.BreadcrumbsControl.GetContainerForItemOverride">
+            <summary>
+            Creates or identifies the element that is used to display the given item.
+            </summary>
+            <returns>
+            The element that is used to display the given item.
+            </returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.BreadcrumbsControl.OnMenuItemClicked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Called when a menu item is activated. This is used to allow the user to select a new path using a menu.
+            </summary>
+            <param name="aSender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.BreadcrumbsControl.SetPathFrom(System.Object,System.Collections.Generic.List{System.Object})">
+            <summary>
+            Tries to build the path (Items) starting from the specified object.
+            </summary>
+            <remarks>
+            The starting point speciefies an object that is in the current <see cref="!:BreadcrumbsControl.Path"/> list.
+            </remarks>
+            <param name="start">The last object to include from the old list in the new list.  When null, the previous path will be
+            completly erased.</param>
+            <param name="path">The new part to add after 'start'.  This can be null</param>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.BreadcrumbsControl.Seeds">
+            <summary>
+            Gets/sets the list of possible values that can be used as the start of a path.
+            </summary>
+            <remarks>
+            When the <see cref="!:BreadcrumbsControl.Items"/> or <see cref="!:BreadcrumbsControl.ItemsSource"/> is assigned/changed, there
+            is no check done that the first item is really from this list.  It is just suggested to the user.
+            </remarks>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.BreadcrumbsControl.SeedTemplate">
+            <summary>
+            gets/sets the template to use for the dropdown menu that displays a list with possible next <see cref="T:JaStDev.ControlFramework.Controls.Breadcrumb"/> items.
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.BreadcrumbsControl.SeedItemTemplateSelector">
+            <summary>
+            Gets/sets the DataTemplateSelector to use in the drop down menu used to display the list of possible next <see cref="T:JaStDev.ControlFramework.Controls.Breadcrumb"/>s.
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.BreadcrumbsControl.SeedContainerStyle">
+            <summary>
+            Gets/sets the style applied to the dropdown menu that contains all the possible next <see cref="T:JaStDev.ControlFramework.Controls.Breadcrumb"/>.  This is usually 
+            a style that is applied to menuItems.
+            </summary>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Utility.TreeItemObject">
+            <summary>
+            A general purpose class that can be used to declare TreeViewItems as resources that can be reused as sub items through an ItemsSource binding.
+            </summary>
+            <remarks>
+            This object should be put in a list that can be used as the ItemsSource of a treeViewItem that uses <see cref="T:JaStDev.ControlFramework.Utility.TreeItemObjectTemplateSelector"/>
+            as it's ItemTemplateSelector.
+            </remarks>
+            <example>
+            <code lang="xml">
+            <![CDATA[
+            <DataTemplate DataType="{x:Type a:TreeItemObject}">
+                <TextBlock Text="{Binding Path=ItemsSourcePath}"/>
+            </DataTemplate>
+            <HierarchicalDataTemplate x:Key="DevciesTreeItemObject"
+                                     ItemsSource="{Binding Path=Devices}">         
+            </HierarchicalDataTemplate>
+            
+            <HierarchicalDataTemplate x:Key="EventsTreeItemObject"
+                                     ItemsSource="{Binding Path=Events}">         
+            </HierarchicalDataTemplate>
+            
+            <a:TreeItemObjectTemplateSelector x:Key="SiteTypesSelector"/>
+            
+            <col:ArrayList x:Key="SiteTypes">
+                 <a:TreeItemObject ItemsSourcePath="Devices"/>
+                 <a:TreeItemObject ItemsSourcePath="Events"/>
+            </col:ArrayList>
+            <TreeView ItemsSource="{Binding Source={StaticResource SiteTypes}}"/>
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Utility.TreeItemObject.ItemsSourcePath">
+            <summary>
+            Gets/sets the string that is put in front of 'TreeItemObject' for searching the hiearchical template to use. 
+            </summary>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Utility.TreeItemObjectTemplateSelector">
+            <summary>
+            Selects the correct DataTemplate for <see cref="T:JaStDev.ControlFramework.Utility.TreeItemObject"/>s.
+            </summary>
+            <remarks>
+            This selector searches for templats that start with the ItemsSourcePath defined in the <see cref="T:JaStDev.ControlFramework.Utility.TreeItemObject"/>,
+            followed by 'TreeItemObject'.  So for instance, if the ItemsSourcePath is 'x', a Template called 'xTreeItemObject' is
+            searched for.
+            </remarks>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Utility.ExtentionEventArgs">
+            <summary>
+            The event arguments for <see cref="T:JaStDev.ControlFramework.Utility.ExtentionHandler"/>
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Utility.ExtentionEventArgs.OriginalSource">
+            <summary>
+            Gets/sets the object that triggered the event.
+            </summary>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Utility.ExtentionHandler">
+            <summary>
+            The event handler definition for events triggered by an <see cref="T:JaStDev.ControlFramework.Utility.Extention"/>.
+            </summary>
+            <param name="sender">The <see cref="T:JaStDev.ControlFramework.Utility.Extention"/> that triggered the event.</param>
+            <param name="e">The parameters for the event.</param>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Utility.Extention">
+            <summary>
+            This class defines which extentions can be used in a <see cref="T:JaStDev.ControlFramework.Utility.Extender"/>.
+            </summary>
+            <remarks>
+            <para>
+            <see cref="T:JaStDev.ControlFramework.Utility.Extender"/> has a dictionary (<see cref="P:JaStDev.ControlFramework.Utility.Extender.Extentions"/>) containing Extentions, the key value for each extention is the
+            name that is used to identify in in xaml.
+            </para>
+            <para>
+            There is an event that is raised when the extention is assigned to an object: <see cref="E:JaStDev.ControlFramework.Utility.Extention.Register"/>.  This usually assigns events
+            to the object that the extention is assigned too.  <see cref="E:JaStDev.ControlFramework.Utility.Extention.UnRegister"/> is called when extention is removed from an object.  
+            usually this event handler removes the previously registered events from the object.
+            </para>
+            </remarks>
+        </member>
+        <member name="E:JaStDev.ControlFramework.Utility.Extention.Register">
+            <summary>
+            Called when this extention is assigned to an object.
+            </summary>
+        </member>
+        <member name="E:JaStDev.ControlFramework.Utility.Extention.UnRegister">
+            <summary>
+            Called when this extention is removed from an object.
+            </summary>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Utility.Extender">
+            <summary>
+            Provides functionality for extending the functionality of an object.
+            </summary>
+            <remarks>
+            <para>
+            This class provides an attached property that can be used to assign extra/specific 'functionality' to a WPF element through xaml.
+            This is usefull in situations where you can't use events (code behind) like when reading uncompiled xaml files.
+            </para>
+            <para>
+            The object contains a dictionary of <see cref="T:JaStDev.ControlFramework.Utility.Extention"/> objects which you assign to it.  The key of each Extention object defines a value that
+            can be used in the attached property <see cref="M:JaStDev.ControlFramework.Utility.Extender.SetFunctionality(System.Windows.UIElement,System.String)"/>.
+            </para>
+            <para>
+            Default available extentions:
+            <list type="bullet">
+              <item>
+                 DockSplitterToExpander: Apply this functionality to a button on a <see cref="T:JaStDev.ControlFramework.Controls.DockSplitter"/>'s Template to let it function as an Expander.
+                 By clicking on the button, the user can expand/collaps the object just in front of the splitter.  Side effect: this functionality stores
+                 a value in the Tag property of the button used to expand/collaps.
+              </item> 
+              <item>
+                 ListBoxSelectOnFocus: Apply this to a control that contains ListBoxItems (usually a ListBox, or a control that contains a listbox). 
+                 When applied, listbox items will be selected as soon as they get focus.  This is usefull in keyboard only situations or when the
+                 control key needs to be pressed while still making selections.
+              </item>
+            </list>
+            </para>
+            </remarks>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Utility.Extender.FunctionalityProperty">
+            <summary>
+            Identifies the Functionality attached property.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Utility.Extender.SetFunctionality(System.Windows.UIElement,System.String)">
+            <summary>
+            Sets the custom functionality key that is assigned to the object.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Utility.Extender.GetFunctionality(System.Windows.UIElement)">
+            <summary>
+            Gets the custom functionality key that is assigned to the object.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Utility.Extender.OnFunctionalityChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the Functionality property has been changed on an object.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Utility.Extender.DockSplitterToExpanderButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Event handler for the splitters collaps/expand button.
+            collapses the associated object by setting it's Value to 0.0, or restoring it to it's default value stored in the Tag property.
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Utility.Extender.Extentions">
+            <summary>
+            Gets the dictionary of Extentions available.  The Key 
+            </summary>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.BreadcrumbsConverterEventArgs">
+            <summary>
+            The event arguments for a <see cref="T:JaStDev.ControlFramework.Controls.BreadcrumbsConverterEventHandler"/>
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.BreadcrumbsConverterEventArgs.Source">
+            <summary>
+            Gets/sets the TreeView that provides the path for the <see cref="T:JaStDev.ControlFramework.Controls.BreadcrumbsControl"/>.
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.BreadcrumbsConverterEventArgs.Data">
+            <summary>
+            Gets/sets the data object that this event is raised for.
+            </summary>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.BreadcrumbsConverterEventHandler">
+            <summary>
+            A delegate used by <see cref="T:JaStDev.ControlFramework.Controls.ObjectToBreadcrumbsPath"/> to get the parent of an object.
+            </summary>
+            <param name="sender">The object taht raised event, usually an <see cref="T:JaStDev.ControlFramework.Controls.ObjectToBreadcrumbsPath"/>.</param>
+            <param name="e">The event arguments.</param>
+            <returns>The parent object of the object passed along in the event arguments.</returns>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.ObjectToBreadcrumbsPath">
+            <summary>
+            A general purpose converter that is able to sync the <see cref="P:System.Windows.Controls.TreeView.SelectedItem"/> property 
+            (containing any type of object) of a Treeview with the <see cref="!:BreadcrumbsControl.ItemsSource"/> of a breadcrumbsControl. 
+            </summary>
+            <remarks>
+            <para>
+            This converter expects a <see cref="T:System.Windows.Controls.TreeView"/> as the first binding and an object in the second.  The
+            second binding is usually to the SelectedItem property of the TreeView.  We need both references so we can properly find and
+            change the value.
+            </para>
+            <para>
+            You should also provide an event handler for <see cref="E:JaStDev.ControlFramework.Controls.ObjectToBreadcrumbsPath.GetParent"/> so the converter can build a correct 
+            selection path.
+            </para>
+            <para>
+            This converter can be used for any type of data.  There is a small drawback in that it is a bit slower compared to the
+            <see cref="!:TreeViewItemBreadcrumbsPath"/> converter. 
+            </para>
+            <para>
+            This converter doesn't implement the ConvertBack function cause <see cref="P:System.Windows.Controls.TreeView.SelectedItem"/> can't be 
+            assigned to.  This is why we use a WeakEvent pattern to monitor changes in the result list of the convert function.  The
+            BreadcrumbsControl changes this list whenever the user presses on a breadcrumb or adds a new one.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.ObjectToBreadcrumbsPath.ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)">
+            <summary>
+            Called when the collection is changed.  We need to update the SelectedItem.
+            </summary>
+        </member>
+        <member name="E:JaStDev.ControlFramework.Controls.ObjectToBreadcrumbsPath.GetParent">
+            <summary>
+            Raised when we need to find the parent object in of an object in a tree.
+            </summary>
+            <remarks>
+            This event must be implemented, otherwise the converter is not possible to find the path starting from the
+            currently seledted object to the root (TreeView). 
+            </remarks>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.ObjectToBreadcrumbsPath.BreadcrumbsPath">
+            <summary>
+            Stores the TreeView so that we can look up TreeViewItems when the list has changed.
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.ObjectToBreadcrumbsPath.BreadcrumbsPath.Source">
+            <summary>
+            Gets/sets the TreeView from which this list stores a path.
+            </summary>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Utility.ReverseBoolConverter">
+            <summary>
+            Inverses a boolean value.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Utility.ReverseBoolConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Utility.ReverseBoolConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Utility.TreeHelper">
+            <summary>
+            A helper class for finding objects in the visual or logical tree of a wpf app.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Utility.TreeHelper.FindChildInTemplate(System.String,System.Windows.Controls.Control)">
+            <summary>
+            Looks up the first object in the <see cref="P:System.Windows.Controls.Control.Template"/>
+            of the control and returns this.
+            </summary>
+            <param name="name">The name of the object to look for.</param>
+            <param name="control">The control to look in.</param>
+            <returns></returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Utility.TreeHelper.FindInTree``1(System.Windows.DependencyObject)">
+            <summary>
+            Searches up the visual tree starting at the specified object untill it finds the first object of the specified type or null.
+            </summary>
+            <param name="start">The object to start walking up the tree.</param>
+            <typeparam name="T">The type to look for</typeparam>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Utility.TreeHelper.FindInLTree``1(System.Windows.DependencyObject)">
+            <summary>
+            Searches up the Logical tree starting at the specified object untill it finds an object of the specified type or null.
+            </summary>
+            <param name="aStart">The object to start walking up the tree.</param>
+            <param name="aType">The type to look for.</param>
+            <returns></returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Utility.TreeHelper.FindInTreeAsDataContext``1(System.Windows.DependencyObject)">
+            <summary>
+            Searches up the visual tree starting at the specified point untill it finds an object that has a dataContext of the specified
+            type.
+            </summary>
+            <typeparam name="T">The data type to look for.</typeparam>
+            <param name="start">The UI element to start looking at.</param>
+            <returns>The DataContext object that was found.</returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Utility.TreeHelper.FindPanelFor(System.Windows.Controls.ItemsControl)">
+            <summary>
+            Looks up the Panel used by the ItemsControl
+            </summary>
+            <remarks>
+            This function searches all the children of the 
+            </remarks>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Utility.TreeHelper.FindPanelForInternal(System.Windows.DependencyObject)">
+            <summary>
+            Recursive part of <see cref="!:App.FindInPanelFor"/>.
+            </summary>
+            <param name="item">The item who's children to walk through in search of the first panel that is an ItemsHost.</param>
+            <returns></returns>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Input.CustomInkCanvasRenderer">
+            <summary>
+            A <see cref="T:System.Windows.Input.StylusPlugIns.DynamicRenderer"/> descendent that draws 
+            strokes with an alpha color value dependent on the average stylus pressure value of the stroke.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Input.CustomInkCanvasRenderer.OnDraw(System.Windows.Media.DrawingContext,System.Windows.Input.StylusPointCollection,System.Windows.Media.Geometry,System.Windows.Media.Brush)">
+            <summary>
+            Draws the ink in real-time so it appears to "flow" from the tablet pen or other pointing device.
+            </summary>
+            <remarks>
+            Makes an average of the pressure values of each point and uses this value to add transparency.
+            </remarks>
+            <param name="drawingContext">The <see cref="T:System.Windows.Media.DrawingContext"/> object onto 
+            which the stroke is rendered.</param>
+            <param name="stylusPoints">
+            The <see cref="T:System.Windows.Input.StylusPointCollection"/> that represents the segment of the stroke 
+            to draw.
+            </param>
+            <param name="geometry">
+            A <see cref="T:System.Windows.Media.Geometry"/> that represents the path of the mouse pointer.
+            </param>
+            <param name="fillBrush">A Brush that specifies the appearance of the current stroke.</param>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.TransparentInkCanvas">
+            <summary>
+            An InkCanvas that can draw it's lines using a transparency based on the pressure of the stylus.
+            </summary>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.TransparentInkCanvas.IsPressuredTransparencyProperty">
+            <summary>
+            IsPressuredTransparency Dependency Property
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.TransparentInkCanvas.OnIsPressuredTransparencyChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Handles changes to the IsPressuredTransparency property.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.TransparentInkCanvas.OnIsPressuredTransparencyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Provides derived classes an opportunity to handle changes to the IsPressuredTransparency property.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.TransparentInkCanvas.OnStrokeCollected(System.Windows.Controls.InkCanvasStrokeCollectedEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Controls.InkCanvas.StrokeCollected"/> event.
+            </summary>
+            <param name="e">The event data.</param>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.TransparentInkCanvas.IsPressuredTransparency">
+            <summary>
+            Gets or sets the IsPressuredTransparency property.  This dependency property 
+            indicates wether strokes are drawn with a transparency dependent on the pressure that was excercised on the stylus.
+            </summary>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Utility.BitmapToSourceConverter">
+            <summary>
+            Converts a <see cref="T:System.Drawing.Bitmap"/> to a <see cref="T:System.Windows.Media.Imaging.BitmapSource"/>
+            that can be used in a WPF application.
+            </summary>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.Help">
+            <summary>
+            Generic class to integrate help into a wpf project.
+            </summary>
+            <remarks>
+            <para>
+            This class provides an easy way to include context sensitive help in wpf projects.
+            </para>
+            <para>
+            The basic steps to integrate help are:
+            <list type="number">
+              <item>
+                 <description>
+                    Add a Help field to the project (usually the app or main window class).
+                 </description>
+              </item>
+              <item>
+                 <description>
+                    Add a CommandBinding to the control handling help (usually the main window) for the Help command and provide the CanExecute and Executed events.
+                 </description>
+              </item>
+              <item>
+                 <description>
+                    Implement the commandBinding's CanExecute event by checking if there is a control that has keyboard focus.
+                 </description>
+              </item>
+              <item>
+                 <description>
+                    Implement the commandBinding's Executed event by calling <see cref="M:JaStDev.ControlFramework.Controls.Help.ShowHelpFor(System.Windows.UIElement)"/> for the control that has keyboard focus.
+                 </description>
+              </item>
+            </list>
+            And that's it.  
+            </para>
+            <para>
+            To finish it of, there are also functions to show the help file or parts of it such as <see cref="M:JaStDev.ControlFramework.Controls.Help.ShowHelp"/>, 
+            <see cref="M:JaStDev.ControlFramework.Controls.Help.ShowHelpIndex(System.String)"/>, <see cref="M:JaStDev.ControlFramework.Controls.Help.ShowHelpSearch"/>, <see cref="M:JaStDev.ControlFramework.Controls.Help.ShowHelpContents"/> and  <see cref="M:JaStDev.ControlFramework.Controls.Help.ShowHelpTopic(System.String)"/>.
+            </para>
+            </remarks>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.Help.TopicProperty">
+            <summary>
+            Identifies the Topic attached property.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Help.SetTopic(System.Windows.UIElement,System.String)">
+            <summary>
+            Sets the context sensitive help topic for the specified element.
+            </summary>
+            <remarks>
+            Use this function (or the related attached property) to assign a topic to a UIElement.  The topic should be the name of the html file 
+            containging the context sesitive help of the control.
+            </remarks>
+            <example>
+            <code lang="xml">
+            <![CDATA[
+            <Button help:Help.Topic="Button.html">
+               Button with help
+            </Button>
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Help.GetTopic(System.Windows.UIElement)">
+            <summary>
+            Gets the context sensitive help topic for the specified element.
+            </summary>
+            <remarks>
+            See <see cref="M:JaStDev.ControlFramework.Controls.Help.SetTopic(System.Windows.UIElement,System.String)"/> for more info.
+            </remarks>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.Help.HelpFileProperty">
+            <summary>
+            Identifies the HelpFile attached property.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Help.SetHelpFile(System.Windows.UIElement,System.String)">
+            <summary>
+            Sets the file to retrieve the context sensitive help topic from for the specified element.
+            </summary>
+            <remarks>
+            <para>
+            Use this function (or the related attached property) to assign a different file then <see cref="P:JaStDev.ControlFramework.Controls.Help.DefaultHelpFile"/> to retrieve the topic from.
+            </para>
+            <para>
+            This attached property is especially interesting for projects that can be extended.  This allows the extender of the wpf file to provide 
+            context sensitive help through the application's standard help system without having to modify the original help file.  
+            </para>
+            </remarks>
+            <example>
+            <code lang="xml">
+            <![CDATA[
+            <Button help:Help.Topic="Button.html"
+                    help:Help.HelpFile="Help2.chm">
+               button with help from other file
+            </Button>
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Help.GetHelpFile(System.Windows.UIElement)">
+            <summary>
+            Gets the file to retrieve the context sensitive help topic for the specified element from.
+            </summary>
+            <remarks>
+            See <see cref="M:JaStDev.ControlFramework.Controls.Help.SetHelpFile(System.Windows.UIElement,System.String)"/> for more info.
+            </remarks>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Help.ShowHelp">
+            <summary>
+            Displays the help file.
+            </summary>
+            <remarks>
+            <para>
+            The file being displayed always comes from the <see cref="P:JaStDev.ControlFramework.Controls.Help.DefaultHelpFile"/>
+            </para>
+            <para>
+            When the help file was not yet opened, the table of contents is shown, otherwise, the already opened help file is brought to the foreground.
+            </para>
+            <para>
+            Related functions are:
+            <list type="bullet">
+              <item>
+                 <description>
+                    <see cref="M:JaStDev.ControlFramework.Controls.Help.ShowHelpTopic(System.String)"/>
+                 </description>
+              </item>
+              <item>
+                 <description>
+                    <see cref="M:JaStDev.ControlFramework.Controls.Help.ShowHelpContents"/>
+                 </description>
+              </item>
+              <item>
+                 <description>
+                    <see cref="M:JaStDev.ControlFramework.Controls.Help.ShowHelpSearch"/>
+                 </description>
+              </item>
+              <item>
+                 <description>
+                    <see cref="M:JaStDev.ControlFramework.Controls.Help.ShowHelpIndex(System.String)"/>
+                 </description>
+              </item>
+            </list>
+            </para>
+            </remarks>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Help.ShowHelpFor(System.Windows.UIElement)">
+            <summary>
+            Displays the context sensitive help for the specified object.
+            </summary>
+            <remarks>
+            If the control has a <see cref="M:JaStDev.ControlFramework.Controls.Help.SetHelpFile(System.Windows.UIElement,System.String)"/> attached, this file will be used, otherwise, the 
+            <see cref="P:JaStDev.ControlFramework.Controls.Help.DefaultHelpFile"/> is used to search the topic in.  if there is no topic, or no file specified (no default 
+            or specific file), no help is shown.
+            </remarks>
+            <param name="item">The object to display help for.</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Help.ShowHelpTopic(System.String)">
+            <summary>
+            Displays a specific help topic from the default file.
+            </summary>
+            <remarks>
+            the Topic id is the name of the html file.
+            </remarks>
+            <example>
+            <code>
+            Help.ShowHelpTopic("gettingstarted.html");
+            </code>
+            </example>
+            <param name="topicId">The topic to display</param>
+            <seealso cref="M:JaStDev.ControlFramework.Controls.Help.ShowHelp"/>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Help.ShowHelpContents">
+            <summary>
+            Displays the content page of the default help file.
+            </summary>
+            <remarks>
+            This function will always show the content pages, even if the help file was already opened while <see cref="M:JaStDev.ControlFramework.Controls.Help.ShowHelp"/> will
+            simply bring the help to foreground if it was already open.
+            </remarks>
+            <seealso cref="M:JaStDev.ControlFramework.Controls.Help.ShowHelp"/>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Help.ShowHelpSearch">
+            <summary>
+            Displays the search page of the default help file.
+            </summary>
+            <seealso cref="M:JaStDev.ControlFramework.Controls.Help.ShowHelp"/>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Help.ShowHelpIndex(System.String)">
+            <summary>
+            Displays the index page of the default help file.
+            </summary>
+            <param name="start">A possible default value for the index search box, can be null.</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.Help.GetFile(System.Windows.UIElement)">
+            <summary>
+            Gets the helpfile to use for the specified object.
+            </summary>
+            <remarks>
+            This can either be the context sensitive file, if assigned, or it is the global file.
+            </remarks>
+            <param name="item">The object to get the helpfile for.</param>
+            <returns>The file name or null.</returns>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.Help.DefaultHelpFile">
+            <summary>
+            Gets/sets the global help file to use.
+            </summary>
+            <remarks>
+            When a control doesn't have <see cref="M:JaStDev.ControlFramework.Controls.Help.SetHelpFile(System.Windows.UIElement,System.String)"/> attached, the <see cref="M:JaStDev.ControlFramework.Controls.Help.ShowHelpFor(System.Windows.UIElement)"/> uses this
+            file to search the topic in.  This file is also shown when <see cref="M:JaStDev.ControlFramework.Controls.Help.ShowHelp"/> or related functions is called.
+            </remarks>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.DistributionException">
+            <summary>
+            Exception incountered or caused during distribution of elements.
+            </summary>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.DistributionEventArgs">
+            <summary>
+            Event arguments for the <see cref="!:DistributionPanel.Redistributed"/> event.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionEventArgs.#ctor(System.Windows.UIElement,JaStDev.ControlFramework.Controls.DistributionTarget,JaStDev.ControlFramework.Controls.DistributionTarget)">
+            <summary>
+            The default constructor.
+            </summary>
+            <param name="item">The item being redistributed.</param>
+            <param name="oldTarget">The <see cref="T:JaStDev.ControlFramework.Controls.DistributionTarget"/> that currently has the item (for the preview event) or had (for the normal event).</param>
+            <param name="newTarget">The <see cref="T:JaStDev.ControlFramework.Controls.DistributionTarget"/> that will receive the item (for the preview event) or now has (for the normal event).</param>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DistributionEventArgs.Item">
+            <summary>
+            The item being redistributed.
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DistributionEventArgs.OldTarget">
+            <summary>
+            The <see cref="T:JaStDev.ControlFramework.Controls.DistributionTarget"/> that currently has the item (for the preview event) or had (for the normal event).
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DistributionEventArgs.NewTarget">
+            <summary>
+            The <see cref="T:JaStDev.ControlFramework.Controls.DistributionTarget"/> that will receive the item (for the preview event) or now has (for the normal event).
+            </summary>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Controls.DistributionPanel">
+            <summary>
+            A <see cref="T:System.Windows.Controls.Panel"/> descendent able to put all of it's children on other panels (or general lists).
+            </summary>
+            <remarks>
+            <para>
+            Although theoretically possible, a DistributionPanel doesn't allow it's children to be owned by more than 1 DistributionPanel. So
+            you can't send a child to another DistributionPanel, not even indirectly. This is done to allow for proper internal workings.
+            </para>
+            <para>
+            Note: when you use a DistributionPanel in an ItemsControl as it's itemsPanel, the <see cref="M:System.Windows.Controls.ItemsControl.ItemsControlFromItemContainer(System.Windows.DependencyObject)"/>
+            function no longer works. This is because it uses the logical tree to find the parent items control, which is broken by ConceptualPanel.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.DistributionPanel.KeyProperty">
+            <summary>
+            Key Attached Dependency Property
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.GetKey(System.Windows.DependencyObject)">
+            <summary>
+            Gets the Key property.  This attached property 
+            indicates the value that determins which <see cref="P:JaStDev.ControlFramework.Controls.DistributionTarget.Target"/> to use.
+            </summary>
+            <remarks>
+            Assign this attached property to the object managed by the <see cref="T:JaStDev.ControlFramework.Controls.DistributionPanel"/> to indicate which
+            <see cref="T:JaStDev.ControlFramework.Controls.DistributionTarget"/>'s <see cref="P:JaStDev.ControlFramework.Controls.DistributionTarget.Target"/> to add the object to. This value
+            is compared with each <see cref="P:JaStDev.ControlFramework.Controls.DistributionTarget.Value"/> property of the DistributionTargets.  The first
+            match is used as the final target.
+            </remarks>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.SetKey(System.Windows.DependencyObject,System.Object)">
+            <summary>
+            Sets the Key property.  This attached property 
+            indicates the value that determins which Target to use.
+            </summary>
+            <remarks>
+            Assign this attached property to the object managed by the <see cref="T:JaStDev.ControlFramework.Controls.DistributionPanel"/> to indicate which
+            <see cref="T:JaStDev.ControlFramework.Controls.DistributionTarget"/>'s <see cref="P:JaStDev.ControlFramework.Controls.DistributionTarget.Target"/> to add the object to. This value
+            is compared with each <see cref="P:JaStDev.ControlFramework.Controls.DistributionTarget.Value"/> property of the DistributionTargets.  The first
+            match is used as the final target.
+            </remarks>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.OnKeyChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Handles changes to the Key property.
+            </summary>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.DistributionPanel.PanelProperty">
+            <summary>
+            Panel Attached Dependency Property
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.GetPanel(System.Windows.DependencyObject)">
+            <summary>
+            Gets the Panel property.  This attached property 
+            indicates which DistributionPanel manages the object..
+            </summary>
+            <remarks>
+            Used to find out if an item has already been added to a distribution panel or not.
+            </remarks>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.SetPanel(System.Windows.DependencyObject,JaStDev.ControlFramework.Controls.DistributionPanel)">
+            <summary>
+            Sets the Panel property.  This attached property 
+            indicates which DistributionPanel manages the object..
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.CoercePanelValue(System.Windows.DependencyObject,System.Object)">
+            <summary>
+            Coerces the Panel value.
+            </summary>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.DistributionPanel.PreviewDistributedEvent">
+            <summary>
+            PreviewDistributed Routed Event
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.RaisePreviewDistributedEvent(System.Windows.UIElement,JaStDev.ControlFramework.Controls.DistributionTarget,JaStDev.ControlFramework.Controls.DistributionTarget)">
+            <summary>
+            A helper method to raise the PreviewDistributed event.
+            </summary>
+            <param name="element">The item being distributed.</param>
+            <param name="oldTarget">The DistributionTarget it is currently in.</param>
+            <param name="newTarget">The distributionTarget it will be moved to.</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.RaisePreviewDistributedEvent(System.Windows.UIElement,System.Windows.UIElement,JaStDev.ControlFramework.Controls.DistributionTarget,JaStDev.ControlFramework.Controls.DistributionTarget)">
+            <summary>
+            A static helper method to raise the PreviewDistributed event on a target element.
+            </summary>
+            <param name="target">UIElement or ContentElement on which to raise the event</param>
+            <param name="element">The item being distributed.</param>
+            <param name="oldTarget">The DistributionTarget it is currently in.</param>
+            <param name="newTarget">The distributionTarget it will be moved to.</param>
+        </member>
+        <member name="F:JaStDev.ControlFramework.Controls.DistributionPanel.DistributedEvent">
+            <summary>
+            Distributed Routed Event
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.RaiseDistributedEvent(System.Windows.UIElement,JaStDev.ControlFramework.Controls.DistributionTarget,JaStDev.ControlFramework.Controls.DistributionTarget)">
+            <summary>
+            A helper method to raise the Distributed event.
+            </summary>
+            <param name="element">The item being moved/added/removed</param>
+            <param name="oldTarget">The DistributionTarget it was in.</param>
+            <param name="newTarget">The DistributionTarger it has moved to.</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.RaiseDistributedEvent(JaStDev.ControlFramework.Controls.DistributionEventArgs)">
+            <summary>
+            A helper method to raise the Distributed event.
+            </summary>
+            <remarks>
+            Used in a combo <see cref="!:DistributionTarget.PreviewDistributed"/> and <see cref="!:DistributionTarget.Distributed"/> so that the
+            event args of the first can be passed along to the second.
+            </remarks>
+            <param name="arg">The arguments for the event.</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.RaiseDistributedEvent(System.Windows.UIElement,System.Windows.UIElement,JaStDev.ControlFramework.Controls.DistributionTarget,JaStDev.ControlFramework.Controls.DistributionTarget)">
+            <summary>
+            A static helper method to raise the Distributed event on a target element.
+            </summary>
+            <param name="target">UIElement or ContentElement on which to raise the event</param>
+            <param name="element">The item being moved/added/removed</param>
+            <param name="oldTarget">The DistributionTarget it was in.</param>
+            <param name="newTarget">The DistributionTarget it has moved to.</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.RaiseDistributedEvent(System.Windows.UIElement,JaStDev.ControlFramework.Controls.DistributionEventArgs)">
+            <summary>
+            A static helper method to raise the Distributed event on a target element.
+            </summary>
+            <param name="target">UIElement or ContentElement on which to raise the event</param>
+            <param name="arg">The arguments for the event.</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.RaiseEvent(System.Windows.DependencyObject,System.Windows.RoutedEventArgs)">
+            <summary>
+            A static helper method to raise a routed event on a target UIElement or ContentElement.
+            </summary>
+            <param name="target">UIElement or ContentElement on which to raise the event</param>
+            <param name="args">RoutedEventArgs to use when raising the event</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.AddHandler(System.Windows.DependencyObject,System.Windows.RoutedEvent,System.Delegate)">
+            <summary>
+            A static helper method that adds a handler for a routed event 
+            to a target UIElement or ContentElement.
+            </summary>
+            <param name="element">UIElement or ContentElement that listens to the event</param>
+            <param name="routedEvent">Event that will be handled</param>
+            <param name="handler">Event handler to be added</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.RemoveHandler(System.Windows.DependencyObject,System.Windows.RoutedEvent,System.Delegate)">
+            <summary>
+            A static helper method that removes a handler for a routed event 
+            from a target UIElement or ContentElement.
+            </summary>
+            <param name="element">UIElement or ContentElement that listens to the event</param>
+            <param name="routedEvent">Event that will no longer be handled</param>
+            <param name="handler">Event handler to be removed</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.RebuildDistribution">
+            <summary>
+            Cleans out the previous distribution, reassesses each item again and assigns it to the correct list.
+            </summary>
+            <remarks>
+            Use this function if, for any reason the distribution has gotten out of sync.
+            </remarks>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.Redistribute(System.Windows.UIElement,System.Object,System.Object)">
+            <summary>
+            Relocates the specified object from the distribution target located at oldKey to the target found at newKey.
+            </summary>
+            <remarks>
+            This function is called whenever the distribution key value changes for an item.
+            </remarks>
+            <param name="item">The item to be moved.  This must be in the <see cref="!:DistributionPanel.Children"/> collection.</param>
+            <param name="oldKey">The key that determines the old location.</param>
+            <param name="newKey">The new location of the item.</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.Distribute(System.Windows.UIElement,JaStDev.ControlFramework.Controls.DistributionTarget,JaStDev.ControlFramework.Controls.DistributionTarget)">
+            <summary>
+            Puts the specified object from the old target to the new target.
+            </summary>
+            <remarks>
+            Overwrite this function if you need to do some extra processing during a transition from 1 target to another one.
+            You can achieve similar results overwriting <see cref="M:JaStDev.ControlFramework.Controls.DistributionTarget.AddChildToTarget(System.Windows.UIElement)"/> and
+            <see cref="M:JaStDev.ControlFramework.Controls.DistributionTarget.RemoveChildFromTarget(System.Windows.UIElement)"/>, which are called by this function.  Overwriting at this level
+            gives you the ability to check old and new target at the same time.  This function is always called, also during an
+            add or remove (in which case one of the params is empty).    
+            </remarks>
+            <param name="item">The item to move.</param>
+            <param name="oldTarget">The old distribution target.</param>
+            <param name="newTarget">The new distribution target.</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.RebuildDistributionFor(JaStDev.ControlFramework.Controls.DistributionTarget)">
+            <summary>
+            Rechecks the key for each item in the specified distribution target, thereby effectivelly redistributing part of the 
+            items list of the DistributionPanel.
+            </summary>
+            <param name="target"></param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.ClearDistributionFor(JaStDev.ControlFramework.Controls.DistributionTarget)">
+            <summary>
+            Tries to remove each item found in <see cref="P:JaStDev.ControlFramework.Controls.DistributionTarget.Items"/> from the Target.
+            </summary>
+            <param name="target">The <see cref="T:JaStDev.ControlFramework.Controls.DistributionTarget"/> to clean out.</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.AddChild(System.Windows.UIElement)">
+            <summary>
+            Tries to find a <see cref="T:JaStDev.ControlFramework.Controls.DistributionTarget"/> who's <see cref="P:JaStDev.ControlFramework.Controls.DistributionTarget.Value"/> matches that of the
+            child's <see cref="M:JaStDev.ControlFramework.Controls.DistributionPanel.GetKey(System.Windows.DependencyObject)"/> attached property and adds it to the <see cref="P:JaStDev.ControlFramework.Controls.DistributionTarget.Target"/>.
+            </summary>
+            <remarks>
+            The first target in the list that matches is used.
+            </remarks>
+            <param name="child">The child to add to a list</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.RemoveChild(System.Windows.UIElement)">
+            <summary>
+            Tries to find a <see cref="T:JaStDev.ControlFramework.Controls.DistributionTarget"/> who's <see cref="P:JaStDev.ControlFramework.Controls.DistributionTarget.Value"/> matches that of the
+            child's <see cref="M:JaStDev.ControlFramework.Controls.DistributionPanel.GetKey(System.Windows.DependencyObject)"/> attached property and removes it from the <see cref="P:JaStDev.ControlFramework.Controls.DistributionTarget.Target"/>.
+            </summary>
+            <remarks>
+            The first target in the list that matches is used. If the remove failed somehow, a new exception is thrown using
+            </remarks>
+            <param name="child">The child to add to a list</param>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DistributionPanel.fTargets_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Called by <see cref="T:JaStDev.ControlFramework.Controls.TargetCollection"/> wenever a target is added or removed.
+            </summary>
+            <remarks>
+            We always rebuild the intire distribibution again.  This allows us to keep the logical tree in sync.
+            </remarks>
+            <param name="target">The target added to or removed from the list.</param>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DistributionPanel.Targets">
+            <summary>
+            gets the list of rules that determin how distribution should be done.
+            </summary>
+            <remarks>
+            A <see cref="T:JaStDev.ControlFramework.Controls.DistributionTarget"/> has a <see cref="P:JaStDev.ControlFramework.Controls.DistributionTarget.Target"/> and <see cref="!:DistributionRule.Value"/> property.
+            This list of targets is applied to all the children of the panel.  The first one that evaluates to true is used (When the binding 
+            equals the value). An evaluation is done by comparing the value declared in the <see cref="P:JaStDev.ControlFramework.Controls.DistributionTarget.Value"/> and that one found 
+            on the item to distribute for the <see cref="!:DistributionPanel.Key"/> attached property.The child is than sent to the 
+            <see cref="!:DistributionRule.Target"/>.
+            </remarks>
+        </member>
+        <member name="E:JaStDev.ControlFramework.Controls.DistributionPanel.PreviewDistributed">
+            <summary>
+            Occurs when the DistributionPanel adds/removes or moves an item from one list to another.
+            </summary>
+        </member>
+        <member name="E:JaStDev.ControlFramework.Controls.DistributionPanel.Distributed">
+            <summary>
+            Occurs when an element is added/removed or moved from a panel and/or to another one.
+            </summary>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Utility.InsertTextConverter">
+            <summary>
+            A class that inserts a string in the parameter passed to the converter if the value that needs converting is boolean 'True' value.
+            </summary>
+            <remarks>
+            <para>
+            There are 2 important properties: <see cref="P:JaStDev.ControlFramework.Utility.InsertTextConverter.Text"/> determins which string is inserted, and 
+            <see cref="P:JaStDev.ControlFramework.Utility.InsertTextConverter.Split"/> determins where the parameter value is split.
+            </para>
+            This class can be used to display a different image in a button depending on wether it is enabled or not. This allows you to
+            show disabled images in a toolbar. As an example: if the Text prop = "Enabled", the Split = ".png" and the parameter value
+            = "\images\cut.png", the result would be "\images\cutEnabled.png"
+            </remarks>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Utility.InsertTextConverter.Text">
+            <summary>
+            Gets/sets the string to append to the parameter during convertion.
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Utility.InsertTextConverter.Split">
+            <summary>
+            Determins where the <see cref="P:JaStDev.ControlFramework.Utility.InsertTextConverter.Text"/> property is inserted in the Parameter value during convertion.
+            </summary>
+            <remarks>
+            If the split text isn't found in the parameter value, the Text value is appended to it.
+            </remarks>
+        </member>
+        <member name="T:JaStDev.ControlFramework.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DisconnectedUIElementCollection.#ctor(System.Windows.UIElement)">
+            <summary>
+            This collection can be used by a panel to maintain a collection of child elements 
+            that are *not* connected to their owner as visual children or logical children.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DisconnectedUIElementCollection.Add(System.Windows.UIElement)">
+            <summary>
+            Adds the element to the DisconnectedUIElementCollection
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DisconnectedUIElementCollection.Clear">
+            <summary>
+            Removes all elements from the DisconnectedUIElementCollection
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DisconnectedUIElementCollection.Contains(System.Windows.UIElement)">
+            <summary>
+            Determines whether an element is in the DisconnectedUIElementCollection
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DisconnectedUIElementCollection.CopyTo(System.Array,System.Int32)">
+            <summary>
+            Copies the collection into the Array
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DisconnectedUIElementCollection.CopyTo(System.Windows.UIElement[],System.Int32)">
+            <summary>
+            Strongly typed version of CopyTo
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DisconnectedUIElementCollection.GetEnumerator">
+            <summary>
+            Returns an enumerator that can iterate through the collection.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DisconnectedUIElementCollection.IndexOf(System.Windows.UIElement)">
+            <summary>
+            Returns the index of the element in the DisconnectedUIElementCollection
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DisconnectedUIElementCollection.Insert(System.Int32,System.Windows.UIElement)">
+            <summary>
+            Inserts an element into the DisconnectedUIElementCollection at the specified index
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DisconnectedUIElementCollection.Remove(System.Windows.UIElement)">
+            <summary>
+            Removes the specified element from the DisconnectedUIElementCollection
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DisconnectedUIElementCollection.RemoveAt(System.Int32)">
+            <summary>
+            Removes the element at the specified index from the DisconnectedUIElementCollection 
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DisconnectedUIElementCollection.RemoveRange(System.Int32,System.Int32)">
+            <summary>
+            Removes the specified number of elements starting at the specified index from the DisconnectedUIElementCollection
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DisconnectedUIElementCollection.Initialize">
+            <summary>
+            The Initialize method is simply exposed as an accessible member that can
+            be called from the ConceptualPanel's Loaded event.  Accessing this member 
+            via the Children property will implicitly cause CreateUIElementCollection
+            to be called to create the disconnected collection.  This method exists
+            because simple access of a property like Count might be optimized away by 
+            an aggressive compiler.
+            </summary>
+        </member>
+        <member name="M:JaStDev.ControlFramework.Controls.DisconnectedUIElementCollection.VerifyWriteAccess">
+            <summary>
+            If the owner is an items host, we need to enforce the rule that elements
+            cannot be explicitly added to the disconnected collection.  However, it is still
+            possible to modify the visual or logical "connected" children of a ConceptualPanel 
+            while it is an items host by simply calling the AddVisualChild, RemoveVisualChild, 
+            AddLogicalChild, or RemoveLogicalChild methods.  Logic within ConceptualPanel
+            ensures that any visual children added in this manner will be returned within 
+            a GetVisualChild() enumeration.
+            </summary>
+        </member>
+        <member name="P:JaStDev.ControlFramework.Controls.DisconnectedUIElementCollection.Count">
+            <summary>
+            Gets the number of elements in the collection.
+            </summary>
+        </member>
+        <member name="E:JaStDev.ControlFramework.Controls.DisconnectedUIElementCollection.CollectionChanged">
+            <summary>
+            Since the owner of the collection is not the parent of the elements, it needs
+            a mechanism by which to monitor its collection of child visuals.
+            This class provides such notifications via INotifyCollectionChanged.
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

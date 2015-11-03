@@ -1,0 +1,20 @@
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroTO\bin\Debug\TesauroTO.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroTO\bin\Debug\TesauroTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroTO\obj\Debug\TesauroTO.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroTO\obj\Debug\TesauroTO.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroTO\bin\Debug\TesauroTO.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroTO\bin\Debug\TesauroTO.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroTO\obj\Debug\TesauroTO.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroTO\obj\Debug\TesauroTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\TesauroTO\bin\Debug\TesauroTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\TesauroTO\bin\Debug\TesauroTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\TesauroTO\obj\Debug\TesauroTO.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\TesauroTO\obj\Debug\TesauroTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\TesauroTO\obj\Debug\TesauroTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\TesauroTO\bin\Debug\TesauroTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\TesauroTO\bin\Debug\TesauroTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\TesauroTO\obj\Debug\TesauroTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\TesauroTO\obj\Debug\TesauroTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\TesauroTO\obj\Debug\TesauroTO.csprojResolveAssemblyReference.cache

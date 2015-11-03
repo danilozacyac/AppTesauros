@@ -1,0 +1,320 @@
+﻿<Page x:Class="mx.gob.scjn.electoral.Ejecutoria"
+    Loaded="Page_Loaded"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="clr-namespace:mx.gob.scjn.electoral_common.gui.apoyos"
+      xmlns:xcdg ="http://schemas.xceed.com/wpf/xaml/datagrid"
+      WindowTitle="Sentencia" MinWidth="750">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/General;component/Resources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Border Style="{StaticResource BorderStyle}">
+        <Grid Name="Controles">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="27"/>
+                <RowDefinition Height="27"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+            <RichTextBox Name="RtbCopyPaste" xml:lang="es-MX" Visibility="Hidden"/>
+            <TextBox Name="TbxCopiar" Visibility="Hidden"/>
+            <Button Name="Guardar"
+                       Visibility="Collapsed"
+                       ToolTip="Guardar en archivo"
+                        Click="Guardar_MouseLeftButtonDown"
+                       Template="{StaticResource GuardarBoton}" />
+            <Button Name="Portapapeles" Visibility="Collapsed"
+                       ToolTip="Portapapeles"
+                       Grid.Column="1"
+                        Click="Portapapeles_MouseLeftButtonDown"
+                        Template="{StaticResource PortapapelesBoton}" />
+            <Button Name="FontMayor" 
+                       ToolTip="Aumentar tamaño de letra"
+                       Grid.Column="2" Grid.Row="0"
+                       Margin="0,0,0,0" Width="40" HorizontalAlignment="Left"
+                        Click="FontMayor_MouseLeftButtonDown" 
+                       Template="{StaticResource FontMayorBoton}"/>
+            <Button Name="FontMenor" Grid.Column="3" Grid.Row="0"
+                       ToolTip="Disminuir tamaño de letra"
+                       Margin="0,0,0,0" Width="40" HorizontalAlignment="Left"
+                        Click="FontMenor_MouseLeftButtonDown" 
+                       Template="{StaticResource FontMenorBoton}" />
+            <Button Grid.Row="0" Visibility="Hidden"
+                       HorizontalAlignment="Left"
+                       Margin="0,0,0,0"
+                       Width="40"
+                       Height="40"
+                       Grid.Column="4" 
+                       Name="MarcarTodo" 
+                       ToolTip="Marcar todo"
+                       Click="MarcarTodo_MouseLeftButtonDown"
+                       Template="{StaticResource MarcarTodoBoton}" />
+            <Button Grid.Row="0" Visibility="Hidden"
+                       Margin="0,0,0,0"
+                       HorizontalAlignment="Right"
+                       Width="40"
+                       Height="40"
+                       Grid.Column="5" 
+                       ToolTip="Desmarcar todo"
+                       Name="Desmarcar"
+                       Click="Desmarcar_MouseLeftButtonDown"
+                       Template="{StaticResource DesmarcarBoton}" />
+            <Image Grid.Row="0" Visibility="Hidden"
+                       Margin="0,0,0,0"
+                       Width="40"
+                       Height="40"
+                       Grid.Column="6" 
+                       Name="Marcar" 
+                       Stretch="Fill"
+                       ToolTip="Marcar registro"
+                       MouseEnter="Marcar_MouseEnter"
+                       MouseLeave="Marcar_MouseLeave"
+                       MouseLeftButtonDown="Marcar_MouseLeftButtonDown"
+                       Source="/General;component/images/MARCAR1.png" />
+
+            <Button Height="30" Grid.Column="8"
+                       ToolTip="Ir al primer registro"
+                       Name="inicioLista" 
+                       VerticalAlignment="Top"
+                        Template="{StaticResource InicioListaBoton}" 
+                       Click="inicioLista_MouseButtonDown"
+                       HorizontalAlignment="Left" Width="35"/>
+            <Button Height="40" Grid.Column="9" Name="anteriorLista"
+                       ToolTip="Registro anterior"
+                       Template="{StaticResource AnteriorListaBoton}" 
+                       VerticalAlignment="Top"
+                        Click="anteriorLista_MouseButtonDown"
+                        HorizontalAlignment="Left" Width="40" />
+            <Button Height="40" Grid.Column="10"
+                       Name="siguienteLista"
+                       ToolTip="Siguiente registro"
+                       Template="{StaticResource SiguienteListaBoton}"
+                        VerticalAlignment="Top"
+                        Click="siguienteLista_MouseButtonDown"
+                        HorizontalAlignment="Left" Width="40"/>
+            <Button Height="30" HorizontalAlignment="Left" Grid.Column="11"
+                       Name="ultimoLista"
+                       ToolTip="Ir al último registro"
+                       Template="{StaticResource FinalListaBoton}"
+                       VerticalAlignment="Top" Width="35"
+                       Click="ultimoLista_MouseButtonDown"/>
+            <Label  Name="IrALabel" Style="{StaticResource UIStyle}" 
+                           Height="40" HorizontalAlignment="Right" 
+                           Grid.Column="13" Grid.ColumnSpan="2" 
+                           VerticalAlignment="Top" Width="80">
+                <TextBlock TextWrapping="WrapWithOverflow">
+                Ir al Consecutivo:
+                </TextBlock>
+            </Label>
+            <xcdg:NumericTextBox  Height="25.001" NumberStyles="None"
+                         Grid.Column="15" KeyDown="regNum_KeyDown"
+                         Name="regNum" 
+                         MaxLength="6"
+                         VerticalAlignment="Top"/>
+            <Button Height="30" Background="Firebrick" 
+                        BorderBrush="Bisque" Foreground="Bisque"
+                        Grid.Column="16"
+                        Name="IrBoton" 
+                        ToolTip="Ir a número consecutivo"
+                        VerticalAlignment="Top"
+                        Click="IrBoton_Click"
+                        Width="40">Ir</Button>
+            <Label Height="25"
+                       Grid.Column="17" Name="RegNum" 
+                       VerticalAlignment="Top" 
+                       Background="White" 
+                       BorderBrush="Black" 
+                       BorderThickness="2">Label</Label>
+            <Button Height="40" HorizontalAlignment="Right" 
+                       Name="Salir" 
+                       VerticalAlignment="Top" Width="40" 
+                       Template="{StaticResource RegresarBoton}"
+                       ToolTip="Regresar a la pantalla anterior"
+                       Click="Salir_MouseButtonDown"
+                       Grid.Column="19"/>
+            <Button Height="40" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1" 
+                       ToolTip="Imprimir" Visibility="Collapsed"
+                       Name="Imprimir" Template="{StaticResource ImprimeBoton}" 
+                       VerticalAlignment="Top" Width="40" 
+                       Click="Imprimir_MouseButtonDown"/>
+
+            <Button Height="40" HorizontalAlignment="Left"
+                       ToolTip="Ver documento completo"
+                       Grid.Column="2" Grid.Row="1"
+                       Name="docCompletoImage"
+                       VerticalAlignment="Top"
+                       Width="40"
+                       Template="{StaticResource DocumentoCompletoBoton}"
+                        Click="docCompletoImage_MouseLeftButtonDown"/>
+            <Button Name="TablasAnexos" Grid.Column="3" Grid.Row="1"
+                    ToolTip="Tablas y anexos"
+                    Template="{StaticResource TablaBoton}" Click="TablasAnexos_Click" />
+            <Button Height="40" HorizontalAlignment="Left"
+                       ToolTip="Tesis relacionadas"
+                       Grid.Column="4" Grid.Row="1"
+                       Name="tesis"
+                        Template="{StaticResource TesisBoton}"
+                        VerticalAlignment="Top" Width="40"
+                        Click="tesis_MouseButtonDown"/>
+            <Button HorizontalAlignment="Center"
+                        Margin="0,0,0,0" Width="67" Height="22"
+                        Grid.Column="5" Grid.Row="1" Grid.ColumnSpan="3"
+                        Name="voto"
+                        Template="{StaticResource VotoBoton}"
+                        VerticalAlignment="Center"
+                        ToolTip="Votos relacionados"
+                       Click="voto_MouseButtonDown"/>
+            <Button Height="30" HorizontalAlignment="Left"
+                       Grid.Column="8" Grid.Row="1"
+                       Name="parteInicio"
+                       Template="{StaticResource InicioBoton}"
+                       VerticalAlignment="Top" Width="30"
+                        ToolTip="Ir a la primera parte"
+                       Click="parteInicio_MouseLeftButtonDown"/>
+            <Button Grid.Column="9" Grid.Row="1"
+                       Name="parteAnterior" 
+                       ToolTip="Ir a la parte anterior"
+                        Template="{StaticResource AnteriorBoton}"
+                       VerticalAlignment="Top"
+                        Click="parteAnterior_MouseLeftButtonDown" 
+                       HorizontalAlignment="Left" />
+            <Button Grid.Column="10" Grid.Row="1"
+                       Name="parteSiguiente"
+                       Template="{StaticResource SiguienteBoton}"
+                       ToolTip="Ir a la siguiente parte"
+                       VerticalAlignment="Top" HorizontalAlignment="Left"
+                       Click="parteSiguiente_MouseLeftButtonDown"/>
+            <Button Height="30" Grid.Column="11" Grid.Row="1"
+                       Name="parteFinal"
+                       ToolTip="Ir a la última parte"
+                       Template="{StaticResource FinalBoton}"
+                       VerticalAlignment="Top"
+                       HorizontalAlignment="Left"
+                       Width="30"
+                       Click="parteFinal_MouseLeftButtonDown"/>
+            <Label Grid.Column="0" Grid.Row="2" Height="27"
+                       HorizontalAlignment="Left" Grid.ColumnSpan="3"
+                       Name="EpocaLabel"
+                       VerticalAlignment="Top" Width="120"
+                       BorderThickness="2" Background="White"
+                       BorderBrush="Black">Label</Label>
+            <Label Height="27"
+                       HorizontalAlignment="Left"
+                       Grid.Column="3" Grid.Row="2" Grid.ColumnSpan="4"
+                       Name="VolumenLabel"
+                       VerticalAlignment="Top"
+                       Width="160" BorderThickness="2" 
+                       Background="White" BorderBrush="Black">Fecha</Label>
+            <Label Height="27" Grid.Column="7" Grid.Row="2" Grid.ColumnSpan="4"
+                       Name="PaginaLabel"
+                       VerticalAlignment="Top"
+                       HorizontalAlignment="Left"
+                       Width="160" BorderThickness="2"
+                       Background="White" BorderBrush="Black">Label</Label>
+            <Label Height="27" HorizontalAlignment="Left"
+                       Grid.Column="17" Grid.Row="2"
+                       Name="IdLabel" VerticalAlignment="Top"
+                       Width="80" Foreground="Red" BorderThickness="2" Background="White" BorderBrush="Black">Id</Label>
+            <Label Height="27" 
+                       Grid.Row="3" Grid.Column="12" Grid.ColumnSpan="4"
+                       Name="NumeroPartes" VerticalAlignment="Top"
+                       Background="White" BorderThickness="2"
+                       BorderBrush="Black" HorizontalAlignment="Left" Width="160">Label</Label>
+            <Label Height="27" 
+                       Grid.Row="3" Grid.Column="0"
+                       Grid.ColumnSpan="7"
+                       Name="fuenteLabel" VerticalAlignment="Top"
+                       HorizontalAlignment="Left" Width="280"
+                       BorderThickness="2" Background="White"
+                       BorderBrush="Black">Fuente</Label>
+            <Label Height="27"
+                       Grid.Column="7" Grid.Row="3" Grid.ColumnSpan="5"
+                       Name="SalaLabel" VerticalAlignment="Top"
+                       HorizontalAlignment="Left" Width="200"
+                       BorderThickness="2" Background="White"
+                       BorderBrush="Black">Instancia</Label>
+            <FlowDocumentPageViewer Background="White"
+                                    Grid.Row="4" Grid.ColumnSpan="22"
+                                    Template="{StaticResource FDPVTemplate}"
+                                    Name="impresion"
+                                    Visibility="Hidden" />
+            <Button Click="imprimePapel_MouseLeftButtonDown"
+                    ToolTip="Imprimir el documento"
+                    Height="40" Name="imprimePapel" Width="40" Grid.Column="0"
+                    Grid.Row="4" VerticalAlignment="Top"
+                    HorizontalAlignment="Right"
+                    Template="{StaticResource ImprimePapelBoton}"/>
+            <Button Name="BtnTache" VerticalAlignment="Top" Visibility="Hidden"
+                    ToolTip="Cerrar vista preliminar"
+                        Height="40" Width="40" Grid.Column="1" Grid.Row="4"
+                    Template="{StaticResource TacheBoton}"
+                    HorizontalAlignment="Left"
+                    Click="BtnTache_Click" />
+            <TabControl Grid.Column="0" Grid.ColumnSpan="22"
+                        Grid.Row="4" SelectionChanged="tabControl1_SelectionChanged"
+                        Name="tabControl1" Width="Auto">
+                <TabItem Name="TabTexto" Header="Texto" ToolTip="Para imprimir o copiar use el documento digitalizado" Panel.ZIndex="1">
+                    <RichTextBox HorizontalAlignment="Left" Panel.ZIndex="0" 
+                             VerticalScrollBarVisibility="Auto" KeyDown="contenidoTexto_KeyDown"
+                             Margin="0,0,0,0" DataObject.Copying="contenidoTexto_Copying"
+                             Name="contenidoTexto" xml:lang="es-MX" />
+                </TabItem>
+                <TabItem Name="TabDoc" Header="Documento digitalizado">
+                    <Frame Name="FrmDoc"/>
+                </TabItem>
+            </TabControl>
+            <Label Style="{StaticResource UIStyle}"
+                   Grid.ColumnSpan="3" Name="LblPalabraBuscar"
+                   Grid.Row="5">Palabra a buscar:</Label>
+            <TextBox Grid.Row="5" Grid.ColumnSpan="6" Grid.Column="3"
+                         Height="27" HorizontalAlignment="Left"
+                         KeyDown="TextoABuscar_KeyDown"
+                         TextChanged="TextoABuscar_TextChanged" MaxLength="80"
+                         Name="TextoABuscar" VerticalAlignment="Bottom" Width="230" />
+            <Button Grid.Row="5" Name="BuscarImage"
+                    Click="BuscarImage_MouseLeftButtonDown"
+                    Grid.Column="9"
+                    Margin="0,0,0,0"
+                    ToolTip="Buscar"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Left"
+                    Template="{StaticResource BuscarBoton}" />
+            <Label Grid.Column="10" Grid.Row="5" Grid.ColumnSpan="12" Background="White"
+                   Height="25" Name="Expresion" Margin="0,0,0,0"/>
+            <Canvas Grid.Column="0" Grid.Row="0" Name="ventanasEmergentes" Panel.ZIndex="20">
+                <local:ListadoVotos x:Name="ventanaListadoVotos" Visibility="Hidden" Canvas.Left="110" Canvas.Top="127" Panel.ZIndex="6"/>
+                <local:ListadoTesis x:Name="ventanaListadoTesis" Visibility="Hidden" Canvas.Left="203" Canvas.Top="127" Panel.ZIndex="5"/>
+                <local:ObtenerRango x:Name="ventanaRangos" Visibility="Hidden" Canvas.Left="200" Canvas.Top="136" Width="400" Height="200" Panel.ZIndex="4"/>
+            </Canvas>
+        </Grid>
+    </Border>
+</Page>

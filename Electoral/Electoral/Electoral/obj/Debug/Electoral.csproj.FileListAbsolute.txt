@@ -1,0 +1,518 @@
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Electoral.dll.config
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Electoral.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Electoral.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\General.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\JaStDev.ControlFramework.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\log4net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\nunit.framework.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Lucene.Net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Common.Logging.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\General.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\JaStDev.ControlFramework.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\EjecutoriasOrdenarPor.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoLeyes.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoTesis.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoVotos.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\MensajesGenerales.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ObtenerRango.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\PorRegistro.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\VentanaLeyes.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Acuerdos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\AcuerdoBuscaPalabras.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabras.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasEjecutoria.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasVotos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\EjecutoriasOrdenarPor.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoEjecutorias.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoLeyes.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoTesis.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoVotos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\MensajesGenerales.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ObtenerRango.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\PorRegistro.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\VentanaLeyes.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Ejecutoria.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\MenuElectoral.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoAcuerdos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoEjecutoria.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultados.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoVotos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TesisElectoral.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Votos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Electoral_MarkupCompile.cache
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Electoral_MarkupCompile.lref
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Acuerdos.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\AcuerdoBuscaPalabras.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabras.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasEjecutoria.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasVotos.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoEjecutorias.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Ejecutoria.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\MenuElectoral.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoAcuerdos.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoEjecutoria.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultados.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoVotos.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TesisElectoral.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Votos.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Electoral.g.resources
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Electoral.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Electoral.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Electoral.dll.config
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Electoral.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Electoral.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\General.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\JaStDev.ControlFramework.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.Controls.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.1.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.2.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.Views3D.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\log4net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\nunit.framework.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Lucene.Net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Common.Logging.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\General.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\JaStDev.ControlFramework.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.Views3D.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.Controls.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.1.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.2.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\EjecutoriasOrdenarPor.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoLeyes.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoTesis.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoVotos.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\MensajesGenerales.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ObtenerRango.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\PorRegistro.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\VentanaLeyes.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Acuerdos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\AcuerdoBuscaPalabras.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabras.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasEjecutoria.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasVotos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\EjecutoriasOrdenarPor.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoEjecutorias.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoLeyes.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoTesis.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoVotos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\MensajesGenerales.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ObtenerRango.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\PorRegistro.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\VentanaLeyes.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Ejecutoria.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\MenuElectoral.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoAcuerdos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoEjecutoria.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultados.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoVotos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TesisElectoral.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Votos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Electoral_MarkupCompile.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Electoral_MarkupCompile.lref
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Acuerdos.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\AcuerdoBuscaPalabras.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabras.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasEjecutoria.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasVotos.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoEjecutorias.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Ejecutoria.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\MenuElectoral.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoAcuerdos.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoEjecutoria.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultados.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoVotos.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TesisElectoral.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Votos.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Electoral.g.resources
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Electoral.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Electoral.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Electoral.dll.config
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Electoral.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Electoral.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\General.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\JaStDev.ControlFramework.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.Controls.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.1.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.2.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.Views3D.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\log4net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Lucene.Net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Common.Logging.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\General.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\JaStDev.ControlFramework.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.Views3D.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.Controls.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.1.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.2.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\EjecutoriasOrdenarPor.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoLeyes.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoTesis.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoVotos.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\MensajesGenerales.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ObtenerRango.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\PorRegistro.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\VentanaLeyes.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Acuerdos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\AcuerdoBuscaPalabras.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabras.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasEjecutoria.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasVotos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\EjecutoriasOrdenarPor.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoEjecutorias.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoLeyes.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoTesis.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoVotos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\MensajesGenerales.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ObtenerRango.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\PorRegistro.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\VentanaLeyes.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Ejecutoria.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\MenuElectoral.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoAcuerdos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoEjecutoria.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultados.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoVotos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TesisElectoral.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Votos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Electoral_MarkupCompile.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Electoral_MarkupCompile.lref
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Acuerdos.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\AcuerdoBuscaPalabras.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabras.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasEjecutoria.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasVotos.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoEjecutorias.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Ejecutoria.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\MenuElectoral.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoAcuerdos.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoEjecutoria.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultados.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoVotos.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\TesisElectoral.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Votos.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Electoral.g.resources
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Electoral.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\Electoral\Electoral\Electoral\obj\Debug\Electoral.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\EjecutoriasOrdenarPor.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoLeyes.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoTesis.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoVotos.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\MensajesGenerales.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ObtenerRango.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\PorRegistro.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\VentanaLeyes.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Acuerdos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\AcuerdoBuscaPalabras.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabras.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasEjecutoria.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasVotos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\EjecutoriasOrdenarPor.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoEjecutorias.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoLeyes.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoTesis.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoVotos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\MensajesGenerales.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ObtenerRango.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\PorRegistro.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\VentanaLeyes.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Ejecutoria.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\MenuElectoral.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoAcuerdos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoEjecutoria.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TablaResultados.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoVotos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TesisElectoral.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Votos.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Electoral_MarkupCompile.cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Electoral_MarkupCompile.lref
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Acuerdos.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\AcuerdoBuscaPalabras.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabras.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasEjecutoria.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasVotos.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoEjecutorias.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Ejecutoria.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\MenuElectoral.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoAcuerdos.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoEjecutoria.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TablaResultados.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoVotos.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TesisElectoral.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Votos.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Electoral.g.resources
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Electoral.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Electoral.dll.config
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Electoral.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Electoral.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\General.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\JaStDev.ControlFramework.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.Controls.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.1.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.2.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.Views3D.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\log4net.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Lucene.Net.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Common.Logging.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\General.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\JaStDev.ControlFramework.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.xml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.Views3D.xml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.Controls.xml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.1.xml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.2.xml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Electoral.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\EjecutoriasOrdenarPor.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoLeyes.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoTesis.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoVotos.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\MensajesGenerales.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ObtenerRango.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\PorRegistro.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\VentanaLeyes.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Acuerdos.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\AcuerdoBuscaPalabras.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabras.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasEjecutoria.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasVotos.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\EjecutoriasOrdenarPor.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoEjecutorias.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoLeyes.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoTesis.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoVotos.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\MensajesGenerales.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ObtenerRango.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\PorRegistro.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\VentanaLeyes.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Ejecutoria.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\MenuElectoral.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoAcuerdos.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoEjecutoria.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TablaResultados.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoVotos.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TesisElectoral.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Votos.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Electoral_MarkupCompile.cache
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Electoral_MarkupCompile.lref
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Electoral.g.resources
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Electoral.dll.config
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Electoral.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Electoral.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\General.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\IUSTO.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\IUSTOWeb.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\ius_common.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\JaStDev.ControlFramework.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Lucene.Net.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\Common.Logging.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\log4net.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\electoral_common.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\JaStDev.ControlFramework.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\General.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\IUSTO.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\IUSTOWeb.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\ius_common.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\bin\Debug\electoral_common.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Acuerdos.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\AcuerdoBuscaPalabras.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabras.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasEjecutoria.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasVotos.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoEjecutorias.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Ejecutoria.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\MenuElectoral.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoAcuerdos.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoEjecutoria.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TablaResultados.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoVotos.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\TesisElectoral.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Votos.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Electoral.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\Electoral\Electoral\Electoral\obj\Debug\Electoral.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\bin\Debug\Electoral.dll.config
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\bin\Debug\Electoral.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\bin\Debug\Electoral.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\bin\Debug\General.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\bin\Debug\IUSTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\bin\Debug\IUSTOWeb.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\bin\Debug\ius_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\bin\Debug\JaStDev.ControlFramework.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\bin\Debug\Lucene.Net.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\bin\Debug\Common.Logging.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\bin\Debug\log4net.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\bin\Debug\electoral_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\bin\Debug\JaStDev.ControlFramework.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\bin\Debug\General.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\bin\Debug\IUSTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\bin\Debug\IUSTOWeb.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\bin\Debug\ius_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\bin\Debug\electoral_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\Electoral.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\EjecutoriasOrdenarPor.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoLeyes.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoTesis.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoVotos.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\MensajesGenerales.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ObtenerRango.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\PorRegistro.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\VentanaLeyes.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\Acuerdos.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\AcuerdoBuscaPalabras.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabras.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasEjecutoria.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasVotos.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\EjecutoriasOrdenarPor.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoEjecutorias.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoLeyes.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoTesis.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoVotos.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\MensajesGenerales.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ObtenerRango.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\PorRegistro.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\VentanaLeyes.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\Ejecutoria.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\MenuElectoral.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoAcuerdos.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoEjecutoria.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\TablaResultados.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoVotos.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\TesisElectoral.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\Votos.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\Electoral_MarkupCompile.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\Electoral_MarkupCompile.lref
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\Acuerdos.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\AcuerdoBuscaPalabras.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabras.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasEjecutoria.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasVotos.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoEjecutorias.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\Ejecutoria.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\MenuElectoral.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoAcuerdos.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoEjecutoria.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\TablaResultados.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoVotos.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\TesisElectoral.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\Votos.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\Electoral.g.resources
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\Electoral.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\Electoral\Electoral\Electoral\obj\Debug\Electoral.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\Electoral.dll.config
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\Electoral.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\Electoral.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\General.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\IUSTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\IUSTOWeb.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\ius_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\JaStDev.ControlFramework.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\Lucene.Net.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\Common.Logging.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\log4net.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\electoral_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\JaStDev.ControlFramework.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\General.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\IUSTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\IUSTOWeb.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\ius_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\electoral_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\Electoral.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\EjecutoriasOrdenarPor.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoLeyes.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoTesis.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoVotos.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\MensajesGenerales.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ObtenerRango.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\PorRegistro.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\VentanaLeyes.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\Acuerdos.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\AcuerdoBuscaPalabras.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabras.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasEjecutoria.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasVotos.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\EjecutoriasOrdenarPor.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoEjecutorias.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoLeyes.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoTesis.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoVotos.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\MensajesGenerales.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ObtenerRango.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\PorRegistro.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\VentanaLeyes.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\Ejecutoria.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\MenuElectoral.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoAcuerdos.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoEjecutoria.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\TablaResultados.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoVotos.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\TesisElectoral.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\Votos.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\Electoral_MarkupCompile.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\Electoral_MarkupCompile.lref
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\Acuerdos.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\AcuerdoBuscaPalabras.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabras.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasEjecutoria.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\BuscaPalabrasVotos.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\apoyos\ListadoEjecutorias.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\Ejecutoria.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\MenuElectoral.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoAcuerdos.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoEjecutoria.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\TablaResultados.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\TablaResultadoVotos.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\TesisElectoral.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\Votos.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\Electoral.g.resources
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\Electoral.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\obj\Debug\Electoral.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\context\ApplicationContext.xml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\context\ApplicationContext.xsd
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\Electoral\Electoral\Electoral\bin\Debug\context\ApplicationContext.cs

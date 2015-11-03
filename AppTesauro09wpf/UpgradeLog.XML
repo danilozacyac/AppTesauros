@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="AppTesauro09wpf">
+</Property><Property Name="Solution File" Value="C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\AppTesauro09wpf.sln">
+</Property><Property Name="Date" Value="jueves, 19 de enero de 2012">
+</Property><Property Name="Time" Value="09:53 a.m.">
+</Property></Properties><Event ErrorLevel="0" Project="AppTesauro09wpf" Source="AppTesauro09wpf\AppTesauro09wpf.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="AppTesauro09wpf" Source="AppTesauro09wpf\AppTesauro09wpf.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TesauroUtilities" Source="TesauroUtilities\TesauroUtilities.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TesauroUtilities" Source="TesauroUtilities\TesauroUtilities.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TesauroMiddleTier" Source="TesauroMiddleTier\TesauroMiddleTier.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TesauroMiddleTier" Source="TesauroMiddleTier\TesauroMiddleTier.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Login" Source="Login\Login.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Login" Source="Login\Login.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SeguridadTesauro" Source="SeguridadTesauro\SeguridadTesauro.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SeguridadTesauro" Source="SeguridadTesauro\SeguridadTesauro.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RecusrosAdicionales" Source="..\RecursosAdcionales\RecusrosAdicionales\RecusrosAdicionales.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RecusrosAdicionales" Source="..\RecursosAdcionales\RecusrosAdicionales\RecusrosAdicionales.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Presenacion" Source="..\Presenacion\Presenacion\Presenacion.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Presenacion" Source="..\Presenacion\Presenacion\Presenacion.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ControlFramework" Source="..\ControlFramework\ControlFramework.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ControlFramework" Source="..\ControlFramework\ControlFramework.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ius_common" Source="..\ius_common\ius_common\ius_common.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ius_common" Source="..\ius_common\ius_common\ius_common.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="IUSTO" Source="..\IUSTO\IUSTO\IUSTO.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="IUSTO" Source="..\IUSTO\IUSTO\IUSTO.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="electoral_common" Source="..\electoral_common\electoral_common\electoral_common.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="electoral_common" Source="..\electoral_common\electoral_common\electoral_common.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="General" Source="..\General\General\General.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="General" Source="..\General\General\General.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="IUSTOAux" Source="..\IUSTOAux\IUSTOAux.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="IUSTOAux" Source="..\IUSTOAux\IUSTOAux.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DirectorioPJF" Source="..\DirectorioPJF\WpfControlLibrary1\DirectorioPJF.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DirectorioPJF" Source="..\DirectorioPJF\WpfControlLibrary1\DirectorioPJF.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Electoral" Source="..\Electoral\Electoral\Electoral\Electoral.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Electoral" Source="..\Electoral\Electoral\Electoral\Electoral.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TesauroTO" Source="TesauroTO\TesauroTO.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TesauroTO" Source="TesauroTO\TesauroTO.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="AppTesauro09wpf.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="AppTesauro09wpf.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="AppTesauro09wpf" Source="AppTesauro09wpf\AppTesauro09wpf.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="TesauroUtilities" Source="TesauroUtilities\TesauroUtilities.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="TesauroMiddleTier" Source="TesauroMiddleTier\TesauroMiddleTier.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Login" Source="Login\Login.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SeguridadTesauro" Source="SeguridadTesauro\SeguridadTesauro.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="RecusrosAdicionales" Source="..\RecursosAdcionales\RecusrosAdicionales\RecusrosAdicionales.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Presenacion" Source="..\Presenacion\Presenacion\Presenacion.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ControlFramework" Source="..\ControlFramework\ControlFramework.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ius_common" Source="..\ius_common\ius_common\ius_common.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="IUSTO" Source="..\IUSTO\IUSTO\IUSTO.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="electoral_common" Source="..\electoral_common\electoral_common\electoral_common.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="General" Source="..\General\General\General.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="IUSTOAux" Source="..\IUSTOAux\IUSTOAux.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="DirectorioPJF" Source="..\DirectorioPJF\WpfControlLibrary1\DirectorioPJF.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Electoral" Source="..\Electoral\Electoral\Electoral\Electoral.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="TesauroTO" Source="TesauroTO\TesauroTO.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

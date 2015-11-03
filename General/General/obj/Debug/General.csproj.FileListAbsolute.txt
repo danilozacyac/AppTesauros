@@ -1,0 +1,201 @@
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\General.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\General.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\log4net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\nunit.framework.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\Common.Logging.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\Lucene.Net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\panel\PanelDinamico.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\panel\PanelDinamico.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\General_MarkupCompile.cache
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\General_MarkupCompile.lref
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\Resources.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\General.g.resources
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\General.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\General.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\General.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\General.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.Controls.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.1.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.2.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.DataGrid.Views3D.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\log4net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\nunit.framework.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\Common.Logging.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\Lucene.Net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.DataGrid.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.DataGrid.Views3D.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.Controls.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.1.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.2.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\panel\PanelDinamico.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\panel\PanelDinamico.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\General_MarkupCompile.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\General_MarkupCompile.lref
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\Resources.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\General.g.resources
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\General.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\General\General\obj\Debug\General.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\General.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\General.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.Controls.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.1.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.2.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.DataGrid.Views3D.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\log4net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\Common.Logging.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\Lucene.Net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.DataGrid.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.DataGrid.Views3D.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.Controls.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.1.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.2.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\obj\Debug\panel\PanelDinamico.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\obj\Debug\panel\PanelDinamico.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\obj\Debug\General_MarkupCompile.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\obj\Debug\General_MarkupCompile.lref
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\obj\Debug\Resources.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\obj\Debug\General.g.resources
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\obj\Debug\General.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\General\General\obj\Debug\General.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\General.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\General.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\Xceed.Wpf.Controls.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.1.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.2.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\Xceed.Wpf.DataGrid.Views3D.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\Common.Logging.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\log4net.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\Lucene.Net.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.2.xml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\Xceed.Wpf.DataGrid.ThemePack.1.xml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\Xceed.Wpf.Controls.xml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\Xceed.Wpf.DataGrid.xml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\Xceed.Wpf.DataGrid.Views3D.xml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\panel\PanelDinamico.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\panel\PanelDinamico.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\General_MarkupCompile.cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\General_MarkupCompile.lref
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\Resources.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\General.g.resources
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\General.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\General.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\panel\ListaPreguntas.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\panel\ListaPreguntas.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\panel\ListaPreguntas.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\panel\PanelDinamico.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\panel\ListaPreguntas.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\panel\PanelDinamico.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\General_MarkupCompile.cache
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\General_MarkupCompile.lref
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\General.g.resources
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\General.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\General.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\IUSTO.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\IUSTOWeb.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\ius_common.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\Lucene.Net.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\Common.Logging.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\log4net.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\electoral_common.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\IUSTO.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\IUSTOWeb.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\ius_common.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\bin\Debug\electoral_common.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\Resources.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\General.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\General\General\obj\Debug\General.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\bin\Debug\General.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\bin\Debug\General.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\bin\Debug\IUSTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\bin\Debug\IUSTOWeb.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\bin\Debug\ius_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\bin\Debug\Lucene.Net.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\bin\Debug\Common.Logging.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\bin\Debug\log4net.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\bin\Debug\electoral_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\bin\Debug\IUSTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\bin\Debug\IUSTOWeb.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\bin\Debug\ius_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\bin\Debug\electoral_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\obj\Debug\General.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\obj\Debug\panel\ListaPreguntas.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\obj\Debug\panel\PanelDinamico.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\obj\Debug\panel\ListaPreguntas.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\obj\Debug\panel\PanelDinamico.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\obj\Debug\General_MarkupCompile.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\obj\Debug\General_MarkupCompile.lref
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\obj\Debug\Resources.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\obj\Debug\General.g.resources
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\obj\Debug\General.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\General\General\obj\Debug\General.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\bin\Debug\General.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\bin\Debug\General.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\bin\Debug\IUSTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\bin\Debug\IUSTOWeb.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\bin\Debug\ius_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\bin\Debug\Lucene.Net.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\bin\Debug\log4net.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\bin\Debug\Common.Logging.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\bin\Debug\electoral_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\bin\Debug\IUSTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\bin\Debug\IUSTOWeb.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\bin\Debug\ius_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\bin\Debug\electoral_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\obj\Debug\General.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\obj\Debug\panel\ListaPreguntas.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\obj\Debug\panel\PanelDinamico.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\obj\Debug\panel\ListaPreguntas.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\obj\Debug\panel\PanelDinamico.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\obj\Debug\General_MarkupCompile.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\obj\Debug\General_MarkupCompile.lref
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\obj\Debug\Resources.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\obj\Debug\General.g.resources
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\obj\Debug\General.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\General\General\obj\Debug\General.pdb

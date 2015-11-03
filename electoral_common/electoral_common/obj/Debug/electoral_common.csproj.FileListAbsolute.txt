@@ -1,0 +1,71 @@
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.xml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.xsd
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\Lucene.Net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\obj\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\obj\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.xsd
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\obj\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\electoral_common\electoral_common\obj\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.xsd
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\obj\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\obj\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.xml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.xsd
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\obj\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\obj\Debug\electoral_common.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.xml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.xsd
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\bin\Debug\electoral_common.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\bin\Debug\electoral_common.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\bin\Debug\IUSTO.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\bin\Debug\IUSTO.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\obj\Debug\electoral_common.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\electoral_common\electoral_common\obj\Debug\electoral_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.xml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.xsd
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\electoral_common\electoral_common\bin\Debug\electoral_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\electoral_common\electoral_common\bin\Debug\electoral_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\electoral_common\electoral_common\bin\Debug\IUSTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\electoral_common\electoral_common\bin\Debug\IUSTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\electoral_common\electoral_common\obj\Debug\electoral_common.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\electoral_common\electoral_common\obj\Debug\electoral_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\electoral_common\electoral_common\obj\Debug\electoral_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.xml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.xsd
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\electoral_common\electoral_common\bin\Debug\context\ApplicationContext.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\electoral_common\electoral_common\bin\Debug\electoral_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\electoral_common\electoral_common\bin\Debug\electoral_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\electoral_common\electoral_common\bin\Debug\IUSTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\electoral_common\electoral_common\bin\Debug\IUSTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\electoral_common\electoral_common\obj\Debug\electoral_common.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\electoral_common\electoral_common\obj\Debug\electoral_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\electoral_common\electoral_common\obj\Debug\electoral_common.pdb

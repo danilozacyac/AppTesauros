@@ -1,0 +1,108 @@
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\context\ApplicationContext.xml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\context\ApplicationContext.xsd
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\context\ApplicationContext.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\ius_common.dll.config
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\Common.Logging.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\log4net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\Lucene.Net.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\nunit.core.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\nunit.framework.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\Interop.MDACVer.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\obj\Debug\Interop.MDACVer.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\obj\Debug\ius_common.csproj.ResolveComReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\obj\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\obj\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\context\ApplicationContext.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\context\ApplicationContext.xsd
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\context\ApplicationContext.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\ius_common.dll.config
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\Interop.MDACVer.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\obj\Debug\Interop.MDACVer.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\obj\Debug\ius_common.csproj.ResolveComReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\obj\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ius_common\ius_common\obj\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\context\ApplicationContext.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\context\ApplicationContext.xsd
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\context\ApplicationContext.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\ius_common.dll.config
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ius_common\ius_common\bin\Debug\Interop.MDACVer.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ius_common\ius_common\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ius_common\ius_common\obj\Debug\Interop.MDACVer.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ius_common\ius_common\obj\Debug\ius_common.csproj.ResolveComReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ius_common\ius_common\obj\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ius_common\ius_common\obj\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\context\ApplicationContext.xml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\context\ApplicationContext.xsd
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\context\ApplicationContext.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\ius_common.dll.config
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\ius_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\Interop.MDACVer.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\obj\Debug\Interop.MDACVer.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\obj\Debug\ius_common.csproj.ResolveComReference.cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\obj\Debug\ius_common.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\obj\Debug\ius_common.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\context\ApplicationContext.xml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\context\ApplicationContext.xsd
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\context\ApplicationContext.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\ius_common.dll.config
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\ius_common.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\ius_common.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\electoral_common.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\IUSTO.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\electoral_common.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\bin\Debug\IUSTO.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\obj\Debug\ius_common.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ius_common\ius_common\obj\Debug\ius_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ius_common\ius_common\bin\Debug\context\ApplicationContext.xml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ius_common\ius_common\bin\Debug\context\ApplicationContext.xsd
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ius_common\ius_common\bin\Debug\context\ApplicationContext.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ius_common\ius_common\bin\Debug\ius_common.dll.config
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ius_common\ius_common\bin\Debug\ius_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ius_common\ius_common\bin\Debug\ius_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ius_common\ius_common\bin\Debug\electoral_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ius_common\ius_common\bin\Debug\IUSTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ius_common\ius_common\bin\Debug\electoral_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ius_common\ius_common\bin\Debug\IUSTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ius_common\ius_common\obj\Debug\ius_common.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ius_common\ius_common\obj\Debug\ius_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ius_common\ius_common\obj\Debug\ius_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ius_common\ius_common\bin\Debug\context\ApplicationContext.xml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ius_common\ius_common\bin\Debug\context\ApplicationContext.xsd
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ius_common\ius_common\bin\Debug\context\ApplicationContext.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ius_common\ius_common\bin\Debug\ius_common.dll.config
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ius_common\ius_common\bin\Debug\ius_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ius_common\ius_common\bin\Debug\ius_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ius_common\ius_common\bin\Debug\electoral_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ius_common\ius_common\bin\Debug\IUSTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ius_common\ius_common\bin\Debug\electoral_common.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ius_common\ius_common\bin\Debug\IUSTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ius_common\ius_common\obj\Debug\ius_common.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ius_common\ius_common\obj\Debug\ius_common.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ius_common\ius_common\obj\Debug\ius_common.pdb

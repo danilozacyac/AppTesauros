@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<objects xmlns="http://www.w3schools.com">
+  <object id="dataSource" type="mx.gob.scjn.ius_common.context.DBContext">
+  </object>
+  <object id="sqlMap"
+        type = "org.springframework.orm.ibatis.SqlMapClientFactoryobject">
+    <property name="configLocation">
+      <value>sqlMapConfig.xml</value>
+    </property>
+  </object>
+  <object id="EjecutoriasDAO" type = "mx.gob.scjn.ius_common.DAO.impl.EjecutoriasDAOImpl">
+    <property name="dataSource">
+      <ref local="dataSource"/>
+    </property>
+    <property name="sqlMapClient">
+      <ref local="sqlMap"/>
+    </property>
+  </object>
+  <object id="GuardarExpresionDAO" type = "mx.gob.scjn.ius_common.DAO.impl.GuardarExpresionDAOImpl">
+  </object>
+  <object id="ElectoralDAO" type = "mx.gob.scjn.ius_common.DAO.impl.ElectoralDAOImpl">
+  </object>
+  <object id="AcuerdosDAO" type = "mx.gob.scjn.ius_common.DAO.impl.AcuerdosDAOImpl">
+    <property name="dataSource">
+      <ref local="dataSource"/>
+    </property>
+    <property name="sqlMapClient">
+      <ref local="sqlMap"/>
+    </property>
+  </object>
+  <object id="VotosDAO" type = "mx.gob.scjn.ius_common.DAO.impl.VotosDAOImpl">
+    <property name="dataSource">
+      <ref local="dataSource"/>
+    </property>
+    <property name="sqlMapClient">
+      <ref local="sqlMap"/>
+    </property>
+  </object>
+  <object id="TesisDAO" type = "mx.gob.scjn.ius_common.DAO.impl.TesisDAOImpl">
+    <property name="dataSource">
+      <ref local="dataSource"/>
+    </property>
+    <property name="sqlMapClient">
+      <ref local="sqlMap"/>
+    </property>
+  </object>
+  <object id="LeyDAO" type = "mx.gob.scjn.ius_common.DAO.impl.LeyDAOImpl">
+    <property name="dataSource">
+      <ref local="dataSource"/>
+    </property>
+    <property name="sqlMapClient">
+      <ref local="sqlMap"/>
+    </property>
+  </object>
+  <object id="IndicesDAO" type="mx.gob.scjn.ius_common.DAO.impl.IndicesDAOImpl">
+    <property name="dataSource">
+      <ref local="dataSource"/>
+    </property>
+    <property name="sqlMapClient">
+      <ref local="sqlMap"/>
+    </property>
+  </object>
+  <object id="MinistrosDAO"
+          type="mx.gob.scjn.ius_common.DAO.impl.MinistrosDAOImpl">
+    <property name="dataSource">
+      <ref local="dataSource"/>
+    </property>
+    <property name="sqlMapClient">
+      <ref local="sqlMap"/>
+    </property>
+  </object>
+  <object id="transactionManager"
+          type="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    <property name="dataSource">
+      <ref local="dataSource"/>
+    </property>
+  </object>
+  <object id="DirectorioPersonasDAO" type = "mx.gob.scjn.ius_common.DAO.impl.DirectorioPersonasDAOImpl">
+    <property name="dataSource">
+      <ref local="dataSource"/>
+    </property>
+    <property name="sqlMapClient">
+      <ref local="sqlMap"/>
+    </property>
+  </object>
+
+
+  <object id="DirectorioMinistrosDAO" type = "mx.gob.scjn.ius_common.DAO.impl.DirectorioMinistrosDAOImpl">
+    <property name="dataSource">
+      <ref local="dataSource"/>
+    </property>
+    <property name="sqlMapClient">
+      <ref local="sqlMap"/>
+    </property>
+  </object>
+
+  <object id="DirectorioOrgJurDAO" type = "mx.gob.scjn.ius_common.DAO.impl.DirectorioOrganosJurDAOImpl">
+    <property name="dataSource">
+      <ref local="dataSource"/>
+    </property>
+    <property name="sqlMapClient">
+      <ref local="sqlMap"/>
+    </property>
+  </object>
+
+  <object id="DirectorioCatalogosDAO" type = "mx.gob.scjn.ius_common.DAO.impl.DirectorioCatalogosDAOImpl">
+    <property name="dataSource">
+      <ref local="dataSource"/>
+    </property>
+    <property name="sqlMapClient">
+      <ref local="sqlMap"/>
+    </property>
+  </object>
+</objects>

@@ -1,0 +1,266 @@
+﻿<Page x:Class="mx.gob.scjn.ius_common.gui.Tematica.ThesauroConstitucional"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:local="clr-namespace:mx.gob.scjn.ius_common.utils;assembly=General"
+      xmlns:apoyos="clr-namespace:mx.gob.scjn.ius_common.gui.apoyos"
+      xmlns:ventanas="clr-namespace:mx.gob.scjn.ius_common.gui.apoyos"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                
+                <ResourceDictionary Source="/General;component/Resources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Border Style="{StaticResource BorderStyle}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="240"/>
+                    <ColumnDefinition Width="280"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+                <RichTextBox Name="RtbDocumentoGuardar" Visibility="Hidden"/>
+                <Button Name="Regresar"
+                       Grid.Column="10"
+                        HorizontalAlignment="Right"
+                        Width="40"
+                        Height="40"
+                        ToolTip="Regresar a la pantalla anterior"
+                        Click="Regresar_MouseLeftButtonDown"
+                        Template="{StaticResource RegresarBoton}" />
+                <Button Name="BtnRestaurar"
+                        Grid.Column="2"
+                        ToolTip="Restaurar"
+                        Click="BtnRestaurar_Click"
+                        Template="{StaticResource RestaurarBoton}"/>
+                <Button Name="BtnImprimir"
+                        Grid.Column="3"
+                        ToolTip="Imprimir"
+                        Click="BtnImprimir_Click"
+                        Template="{StaticResource ImprimeBoton}"/>
+                <Button Name="BtnAlmacenar"
+                        Visibility="{Binding Source={StaticResource Visibilidad}, Path=ObtenVisibilidadInternet}"
+                        Grid.Column="4"
+                        ToolTip="Almacenar"
+                        Click="BtnAlmacenar_Click"
+                        Template="{StaticResource BuroBoton}"/>
+                <!--Button Name="BtnGuardar"
+                        Visibility="{Binding Source={StaticResource Visibilidad}, Path=ObtenVisibilidadInternet}"
+                        ToolTip="Guardar"
+                        Grid.Column="5"
+                        Template="{StaticResource GuardarBoton}"
+                        Click="BtnGuardar_Click"/-->
+                <Button Name="Visualizar"
+                        ToolTip="Visualizar"
+                        Click="Visualizar_MouseDown"
+                        Template="{StaticResource VisualizarBoton}"
+                        Grid.Column="1"/>
+                <Label Background="Salmon" Grid.Column="6" Name="IDSLabel"
+                       VerticalAlignment="Top" HorizontalAlignment="Left"
+                       Grid.ColumnSpan="5" Foreground="Black"
+                       Width="240" Height="40"
+                       FontWeight="Bold">
+                    <TextBlock TextWrapping="WrapWithOverflow"  FontFamily="Arial"
+                               FontSize="11" Height="30" Width="220">
+                        IA Inclusión ascendente (tema general)
+                        CE Cabeza de estructura (tema principal)
+                    </TextBlock>
+                </Label>
+                <Label Background="Salmon" Grid.Column="7" Name="IDLabel"
+                       Margin="0,0" HorizontalAlignment="Left"
+                       Foreground="Black"
+                       Width="370" Height="40" VerticalAlignment="Bottom"
+                       FontWeight="Bold">
+                    <TextBlock TextWrapping="WrapWithOverflow" FontFamily="Arial"
+                               FontSize="11" Height="30" Width="230">
+                        ID Inclusión descendente (tema específico)
+                        RP Relación próxima
+                    </TextBlock>
+                </Label>
+            </Grid>
+            
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Name="Buscar" Height="25"
+                         VerticalAlignment="Top"
+                         Margin="0,7"
+                         Grid.Column="1"
+                         KeyDown="Buscar_KeyDown"/>
+                <Button Name="BtnBuscar"
+                        VerticalAlignment="Top"
+                        Template="{StaticResource BuscarBoton}"
+                       ToolTip="Buscar"
+                        Click="BtnBuscar_MouseLeftButtonDown"
+                       Grid.Column="2"
+                       Width="40"
+                       Height="40"/>
+            </Grid>
+            <Grid Grid.Row="1" Margin="0,39,0,1" Grid.RowSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="80*" />
+                    <ColumnDefinition Width="220*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <FlowDocumentPageViewer Name="Imprimir"
+                                        Grid.RowSpan="3"
+                                        Template="{StaticResource FDPVTemplate}"
+                                        Grid.ColumnSpan="3"
+                                        Background="White"/>
+                <Button Name="ImprimePapel" Visibility="Hidden"
+                        ToolTip="Imprimir"
+                        Template="{StaticResource ImprimePapelBoton}"
+                        Grid.Column="0" HorizontalAlignment="Left"
+                        Click="ImprimePapel_Click"
+                        Width="40" Height="40" Margin="0,0"
+                        VerticalAlignment="Top"/>
+                <Button Name="BtnTache" Visibility="Hidden"
+                        ToolTip="Cerrar vista preliminar"
+                        Template="{StaticResource TacheBoton}"
+                        Grid.Column="0" HorizontalAlignment="Left"
+                        Click="BtnTache_Click" Margin="40,0"
+                        Width="40" Height="40"
+                        VerticalAlignment="Top"/>
+                <Label Name="lblFiltrado" Height="27"
+                       Background="Bisque" Margin="0,0"
+                       FontWeight="Bold"
+                       VerticalAlignment="Top">TESAURO CONSTITUCIONAL</Label>
+                <TreeView Grid.RowSpan="3" Margin="0,28,0,0"
+                          ScrollViewer.VerticalScrollBarVisibility="Auto"
+                          Background="Bisque" Name="Temas"
+                          IsTextSearchEnabled="True" TextSearch.TextPath="Header"
+                          SelectedItemChanged="Temas_SelectedItemChanged">
+                    <TreeView.Resources>
+                        <Style TargetType="{x:Type TreeViewItem}">
+                            <Setter Property="IsExpanded" Value="True"/>
+                        </Style>
+                    </TreeView.Resources>
+                </TreeView>
+                <Grid Grid.Column="1" Name="GrdEstructura"
+                            Margin="0,0,0,0"
+                            Background="LightSalmon"
+                            Grid.ColumnSpan="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Label Background="LightSalmon" 
+                           FontWeight="Bold"
+                           Grid.Row="0"
+                           BorderBrush="LightSalmon">
+                        ESTRUCTURA
+                    </Label>
+                    <TreeView Grid.Row="1"
+                              Name="SubtemasTree"
+                              IsTextSearchEnabled="True" TextSearch.TextPath="Header"
+                              ScrollViewer.VerticalScrollBarVisibility="Auto"
+                              SelectedItemChanged="SubtemasTree_SelectedItemChanged"
+                              Background="LightSalmon">
+                        <TreeView.Resources>
+                            <Style TargetType="{x:Type TreeViewItem}">
+                                <Setter Property="IsExpanded" Value="True"/>
+                            </Style>
+                        </TreeView.Resources>
+                        <TreeView.ItemTemplate>
+                            <HierarchicalDataTemplate 
+                              ItemsSource="{Binding Path=HijosSubtemas}">
+                                <TextBlock Text="{Binding Path=NodoSubtemaActual.Label}" 
+                                   Tag="{Binding Path=NodoSubtemaActual}"
+                                   Foreground="{Binding Path=ColorSubTema}"
+                                      x:Name="BloqueSubtema"
+                                   >
+                                </TextBlock>
+                            </HierarchicalDataTemplate>
+                        </TreeView.ItemTemplate>
+                    </TreeView>
+                </Grid>
+                <Grid Grid.Row="1" Name="GrdProximidad"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2"
+                            Background="Wheat"
+                            Margin="0,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Label Background="Wheat" FontWeight="Bold">Relación próxima</Label>
+                    <TreeView Name="Proximidad"
+                              Grid.Row="1" IsTextSearchEnabled="True" TextSearch.TextPath="Header"
+                              ScrollViewer.VerticalScrollBarVisibility="Auto"
+                              Background="Wheat">
+                        <TreeView.Resources>
+                            <Style TargetType="{x:Type TreeViewItem}">
+                                <Setter Property="IsExpanded" Value="True"/>
+                            </Style>
+                        </TreeView.Resources>
+                        <TreeView.ItemTemplate>
+                            <HierarchicalDataTemplate 
+                              ItemsSource="{Binding Path=HijosSinonimos}">
+                                <TextBlock Text="{Binding Path=NodoSinonimoActual.Label}" 
+                                       Tag="{Binding Path=NodoSinonimoActual}"
+                                       >
+                                </TextBlock>
+                            </HierarchicalDataTemplate>
+                        </TreeView.ItemTemplate>
+                    </TreeView>
+                </Grid>
+                <Grid Grid.Column="1" Name="GrdSinonimos"
+                            Grid.Row="2"
+                            Background="White"
+                            Grid.ColumnSpan="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Label Background="White" FontWeight="Bold">Sinónimos</Label>
+                    <TreeView Grid.Row="1" 
+                          Name="Sinonimos" IsTextSearchEnabled="True" TextSearch.TextPath="Header"
+                              ScrollViewer.VerticalScrollBarVisibility="Auto"
+                          Background="White" Grid.ColumnSpan="2">
+                        <TreeView.Resources>
+                            <Style TargetType="{x:Type TreeViewItem}">
+                                <Setter Property="IsExpanded" Value="True"/>
+                            </Style>
+                        </TreeView.Resources>
+                        <TreeView.ItemTemplate>
+                            <HierarchicalDataTemplate 
+                              ItemsSource="{Binding Path=HijosSinonimos}">
+                                <TextBlock Text="{Binding Path=NodoSinonimoActual.Label}" 
+                                       Tag="{Binding Path=NodoSinonimoActual}"
+                                       >
+                                </TextBlock>
+                            </HierarchicalDataTemplate>
+                        </TreeView.ItemTemplate>
+                    </TreeView>
+                </Grid>
+            </Grid>
+            <Canvas Width="1" Height="1" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">
+                <apoyos:AlmacenaBusqueda x:Name="PnlAlmacenar"
+                                        Canvas.Left="100" Canvas.Top="100"
+                                        Visibility="Hidden"/>
+            </Canvas>
+        </Grid>
+    </Border>
+</Page>

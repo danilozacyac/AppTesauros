@@ -1,0 +1,34 @@
+﻿<Page x:Class="mx.gob.scjn.ius_common.gui.noticia.MarcoJuridico"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      WindowTitle="Marco jurídico">
+    <Page.Resources>
+        <ResourceDictionary Source="/General;component/Resources.xaml"/>
+    </Page.Resources>
+    <Border Style="{StaticResource BorderStyle}">
+        <Grid>
+            <Frame Margin="23,11,46,10" 
+                        Name="Contenido" />
+            <Button Height="40"
+                    HorizontalAlignment="Right"
+                    Margin="0,11,8,0"
+                    Name="Salir"
+                    VerticalAlignment="Top" Width="40"
+                    Template="{StaticResource RegresarBoton}"
+                    Click="Salir_MouseLeftButtonDown"/>
+            <Button Height="40" Visibility="Hidden"
+                    HorizontalAlignment="Right"
+                    Margin="0,103,8,0"
+                    Name="Copiar"
+                    Click="Copiar_MouseLeftButtonDown"
+                    Template="{StaticResource PortapapelesBoton}"
+                    VerticalAlignment="Top" Width="40" />
+            <Button Height="40" HorizontalAlignment="Right"
+                    Margin="0,57,8,0" Name="Imprimir" Visibility="Hidden"
+                    Click="Imprimir_MouseLeftButtonDown"
+                    Template="{StaticResource ImprimeBoton}"
+                    VerticalAlignment="Top" Width="40" />
+
+        </Grid>
+    </Border>
+</Page>

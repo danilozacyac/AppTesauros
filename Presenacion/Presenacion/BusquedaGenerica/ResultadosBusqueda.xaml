@@ -1,0 +1,54 @@
+﻿<Page x:Class="mx.gob.scjn.ius_common.gui.BusquedaGenerica.ResultadosBusqueda"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      WindowTitle="Jurisprudencia y Tesis Aisladas IUS"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Page.Resources>
+        <ResourceDictionary Source="/General;component/Resources.xaml"/>
+    </Page.Resources>
+    <Border Style="{StaticResource BorderStyle}">
+        <Grid>
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+            <Button Template="{StaticResource RegresarBoton}"
+                    Grid.Column="2" Click="Button_Click" />
+            <TreeView Name="tablaResultados" Grid.Row="1"
+                      Background="Transparent">
+                <TreeViewItem Name="TviSCJN">
+                    <TreeViewItem.Header>
+                        <TextBlock>SCJN</TextBlock>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem Name="TviElectoral">
+                    <TreeViewItem.Header>
+                        <TextBlock>Electoral</TextBlock>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+            </TreeView>
+            <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                          CanContentScroll="False"
+                          VerticalScrollBarVisibility="Hidden"
+                          VerticalContentAlignment="Top"
+                          Grid.Column="1" Grid.Row="1" Grid.RowSpan="2"
+                          VerticalAlignment="Top">
+                <Frame  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                   ScrollViewer.VerticalScrollBarVisibility="Auto"
+                        MinWidth="800"
+                       MinHeight="600"
+                       MaxHeight="600"
+                    Name="FrmContenido"></Frame>
+            </ScrollViewer>
+            <GridSplitter Grid.Column="1"
+                          Grid.Row="1"
+                          HorizontalAlignment="Left"
+                          Name="gridSplitter1" Width="5" />
+        </Grid>
+    </Border>
+</Page>

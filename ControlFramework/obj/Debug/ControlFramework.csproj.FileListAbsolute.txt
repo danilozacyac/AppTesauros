@@ -1,0 +1,83 @@
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\bin\Debug\JaStDev.ControlFramework.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\bin\Debug\JaStDev.ControlFramework.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\JaStDev.ControlFramework_MarkupCompile.cache
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\JaStDev.ControlFramework_MarkupCompile.lref
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\Themes\Generic.baml
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\JaStDev.ControlFramework.g.resources
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\JaStDev.ControlFramework.Properties.Resources.resources
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\ControlFramework.csproj.GenerateResource.Cache
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\JaStDev.ControlFramework.dll
+C:\Documents and Settings\cluna\Mis documentos\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\JaStDev.ControlFramework.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\bin\Debug\JaStDev.ControlFramework.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\bin\Debug\JaStDev.ControlFramework.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\JaStDev.ControlFramework_MarkupCompile.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\JaStDev.ControlFramework_MarkupCompile.lref
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\Themes\Generic.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\JaStDev.ControlFramework.g.resources
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\JaStDev.ControlFramework.Properties.Resources.resources
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\ControlFramework.csproj.GenerateResource.Cache
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\JaStDev.ControlFramework.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\ControlFramework\obj\Debug\JaStDev.ControlFramework.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\bin\Debug\JaStDev.ControlFramework.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\bin\Debug\JaStDev.ControlFramework.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Debug\JaStDev.ControlFramework_MarkupCompile.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Debug\JaStDev.ControlFramework_MarkupCompile.lref
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Debug\Themes\Generic.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Debug\JaStDev.ControlFramework.g.resources
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Debug\JaStDev.ControlFramework.Properties.Resources.resources
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Debug\ControlFramework.csproj.GenerateResource.Cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Debug\JaStDev.ControlFramework.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Debug\JaStDev.ControlFramework.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\bin\Debug\JaStDev.ControlFramework.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\bin\Debug\JaStDev.ControlFramework.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\JaStDev.ControlFramework_MarkupCompile.cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\JaStDev.ControlFramework_MarkupCompile.lref
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\Themes\Generic.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\JaStDev.ControlFramework.g.resources
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\JaStDev.ControlFramework.Properties.Resources.resources
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\ControlFramework.csproj.GenerateResource.Cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\JaStDev.ControlFramework.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\JaStDev.ControlFramework.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\bin\Debug\JaStDev.ControlFramework.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\bin\Debug\JaStDev.ControlFramework.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\JaStDev.ControlFramework_MarkupCompile.cache
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\JaStDev.ControlFramework_MarkupCompile.lref
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\Themes\Generic.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\JaStDev.ControlFramework.g.resources
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\JaStDev.ControlFramework.Properties.Resources.resources
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\JaStDev.ControlFramework.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\ControlFramework\obj\Debug\JaStDev.ControlFramework.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ControlFramework\bin\Debug\JaStDev.ControlFramework.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ControlFramework\bin\Debug\JaStDev.ControlFramework.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ControlFramework\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ControlFramework\obj\Debug\JaStDev.ControlFramework_MarkupCompile.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ControlFramework\obj\Debug\JaStDev.ControlFramework_MarkupCompile.lref
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ControlFramework\obj\Debug\Themes\Generic.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ControlFramework\obj\Debug\JaStDev.ControlFramework.g.resources
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ControlFramework\obj\Debug\JaStDev.ControlFramework.Properties.Resources.resources
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ControlFramework\obj\Debug\ControlFramework.csproj.GenerateResource.Cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ControlFramework\obj\Debug\JaStDev.ControlFramework.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\ControlFramework\obj\Debug\JaStDev.ControlFramework.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ControlFramework\bin\Debug\JaStDev.ControlFramework.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ControlFramework\bin\Debug\JaStDev.ControlFramework.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ControlFramework\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ControlFramework\obj\Debug\JaStDev.ControlFramework_MarkupCompile.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ControlFramework\obj\Debug\JaStDev.ControlFramework_MarkupCompile.lref
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ControlFramework\obj\Debug\Themes\Generic.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ControlFramework\obj\Debug\JaStDev.ControlFramework.g.resources
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ControlFramework\obj\Debug\JaStDev.ControlFramework.Properties.Resources.resources
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ControlFramework\obj\Debug\ControlFramework.csproj.GenerateResource.Cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ControlFramework\obj\Debug\JaStDev.ControlFramework.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\ControlFramework\obj\Debug\JaStDev.ControlFramework.pdb

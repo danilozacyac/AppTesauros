@@ -1,0 +1,8 @@
+[Options]
+1=#P0#=1:2:1:1	.
+[Version]
+1=#P0#=2008	.
+[History]
+1=#P0#=ce	#P1#=Expresion	#P2#=mx.gob.scjn.ius_common.TO|BusquedaAlmacenadaTO|Expresion	#P3#=Expresion	#P4#=	#P5#=IUSTO|ius_common|TO|BusquedaAlmacenadaTO.cs	#P6#=75	#P7#=20090213145538	#P8#=False	#P9#=Expresion (set)   [BusquedaAlmacenadaTO.cs]	#P10#=0	.
+2=#P0#=ce	#P1#=BusquedaAlmacenadaTO	#P2#=mx.gob.scjn.ius_common.TO|BusquedaAlmacenadaTO	#P3#=BusquedaAlmacenadaTO	#P4#=	#P5#=IUSTO|ius_common|TO|BusquedaAlmacenadaTO.cs	#P6#=70	#P7#=20090213145520	#P8#=False	#P9#=BusquedaAlmacenadaTO   [BusquedaAlmacenadaTO.cs]	#P10#=46	.
+3=#P0#=ce	#P1#=Filtros	#P2#=mx.gob.scjn.ius_common.TO|BusquedaAlmacenadaTO|Filtros	#P3#=Filtros	#P4#=	#P5#=IUSTO|ius_common|TO|BusquedaAlmacenadaTO.cs	#P6#=75	#P7#=20090213145517	#P8#=False	#P9#=Filtros (get, set)   [BusquedaAlmacenadaTO.cs]	#P10#=1	.

@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="mx.gob.scjn.electoral_common.gui.apoyos.ListadoEjecutorias"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="191" Width="524"
+             xmlns:ius="clr-namespace:mx.gob.scjn.electoral_common.gui.apoyos"
+             xmlns:my="clr-namespace:Xceed.Wpf.DataGrid;assembly=Xceed.Wpf.DataGrid"
+             xmlns:my1="clr-namespace:Xceed.Wpf.DataGrid.Views;assembly=Xceed.Wpf.DataGrid">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/General;component/Resources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Border Style="{StaticResource BorderStyle}" Name="degradado">
+        <Grid>
+            <my:DataGridControl Margin="35,49,28,13" 
+                                Name="listado" 
+                                EditTriggers="None" 
+                                ReadOnly="True" 
+                                SelectionMode="Single" 
+                                NavigationBehavior="RowOnly"
+                               AutoCreateColumns="False">
+                <my:DataGridControl.View>
+                    <my1:TableView ShowFixedColumnSplitter="False" UseDefaultHeadersFooters="False">
+                        <my1:TableView.Theme>
+                            <my1:AeroNormalColorTheme />
+                        </my1:TableView.Theme>
+                        
+                        <my1:TableView.FixedHeaders>
+                            <DataTemplate>
+                                <my:ColumnManagerRow />
+                            </DataTemplate>
+                        </my1:TableView.FixedHeaders>
+                    </my1:TableView>
+                </my:DataGridControl.View>
+                <my:DataGridControl.ItemContainerStyle>
+                    <Style TargetType="{x:Type my:DataRow}">
+                        <Setter Property="my:RowSelector.RowSelectorStyle"
+                            Value="{StaticResource itemIndexSelectorStyle}" />
+                        <Setter Property="my:RowSelector.RowSelectorStyle"
+                                Value="{StaticResource itemIndexSelectorStyle}" />
+                        <Setter Property="my:DataRow.Height"
+                Value="{Binding RelativeSource={RelativeSource AncestorType={x:Type ius:ListadoEjecutorias}}, Path=RowHeight, Mode=TwoWay}" />
+                        <Setter Property="my:DataRow.MinHeight" Value="15"/>
+                        <EventSetter Event="MouseDoubleClick"
+                             Handler="listado_MouseDoubleClick"/>
+                    </Style>
+                    </my:DataGridControl.ItemContainerStyle>
+
+                    <my:DataGridControl.Columns>
+                    <my:Column FieldName="TpoAsunto" TextWrapping="WrapWithOverflow" IsMainColumn="True" Title="Asunto" TextTrimming="WordEllipsis" ReadOnly="True" Width="300" />
+                    <my:Column FieldName="Promovente" TextWrapping="WrapWithOverflow" IsMainColumn="False" Title="Promovente" TextTrimming="WordEllipsis" ReadOnly="True" Width="300"/>
+                    <my:Column FieldName="Loc" TextWrapping="WrapWithOverflow" IsMainColumn="False" Title="Localización"/>
+                    <my:Column FieldName="Id" TextWrapping="WrapWithOverflow" IsMainColumn="False" Title="Registro"/>
+                </my:DataGridControl.Columns>
+            </my:DataGridControl>
+            <Label Height="29" Margin="35,11,52,0" 
+                   Name="label1" VerticalAlignment="Top" Background="Bisque" FontWeight="Bold" FontSize="14">
+                Ejecutorias relacionadas</Label>
+            <Button Height="40" 
+                   HorizontalAlignment="Right" 
+                   Margin="0,0,12,0" Name="Salir" 
+                   VerticalAlignment="Top" 
+                   Width="40" ToolTip="Cerrar"
+                   Template="{StaticResource RegresarBoton}"
+                   Click="Salir_MouseLeftButtonDown"/>
+            <Rectangle Height="14" 
+                       Margin="-1,0,45,0" 
+                       Name="BarraMovimiento" 
+                       Stroke="Black" 
+                       VerticalAlignment="Top" 
+                       Fill="DarkRed"
+                       Cursor="SizeAll"
+                       MouseLeftButtonDown="BarraMovimiento_MouseLeftButtonDown"
+                       MouseLeftButtonUp="BarraMovimiento_MouseLeftButtonUp"
+                       MouseMove="BarraMovimiento_MouseMove"/>
+            <Label Height="25" HorizontalAlignment="Right" 
+                   Margin="0,14,70,0" Name="Registros" 
+                   VerticalAlignment="Top" Width="130">2 Registros</Label>
+        </Grid>
+    </Border>
+</UserControl>

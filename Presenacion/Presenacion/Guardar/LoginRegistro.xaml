@@ -1,0 +1,117 @@
+﻿<Page x:Class="mx.gob.scjn.ius_common.gui.Guardar.LoginRegistro"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Page.Resources>
+        <ResourceDictionary Source="/General;component/Resources.xaml"/>
+    </Page.Resources>
+    <Border Style="{StaticResource BorderStyle}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Column="1"
+               Grid.Row="1" 
+               Background="Bisque"
+               FontSize="16"
+               FontWeight="Bold"
+               Margin="0,0,0,0" Name="Titulo">Ingreso de usuario o registro</Label>
+            <Button Name="Regresar"
+                    Grid.Column="2"
+                    Grid.Row="1"
+                    Click="Regresar_Click"
+                    Template="{StaticResource RegresarBoton}">
+            </Button>
+            <Grid Background="Wheat" Grid.Row="2" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Name="HastaaNuevoAviso">
+                    <TextBlock Name="TblHastaNuevoAviso" TextWrapping="WrapWithOverflow">
+                        Estas funciones no estarán disponibles en Internet, si desea
+                        utilizarlas por favor utilice la versión comercial de DVD o CD
+                        y que puede adquirir en cualquiera de nuestras casas de cultura o librerías.
+                    </TextBlock>
+                </Label>
+                <StackPanel Grid.Column="0" Grid.Row="0"  Name="StkIngreso" Visibility="Collapsed">
+                    <TextBlock TextAlignment="Justify"  TextWrapping="WrapWithOverflow">
+                        Es necesario</TextBlock>
+                    <TextBlock TextAlignment="Justify"
+                               TextWrapping="WrapWithOverflow"
+                               Foreground="Blue" FontSize="14" 
+                               Cursor="Hand"
+                               MouseLeftButtonDown="TextBlock_MouseLeftButtonDown">
+                        registrarte</TextBlock>
+                    <TextBlock TextAlignment="Justify" TextWrapping="WrapWithOverflow">
+                        para poder realizar las funciones de búsquedas almacenadas, en
+                        caso de no estar registrado le pedimos nos proporcione los datos
+                        solicitados para poder otorgarle dicho servicio.</TextBlock>
+                    <TextBlock TextAlignment="Justify" TextWrapping="WrapWithOverflow">
+                        Si usted ya se
+                        registró use su usuario y contraseña.</TextBlock>
+                    <TextBlock TextAlignment="Justify" TextWrapping="WrapWithOverflow">
+                        Si no recuerda su usuario o contraseña:
+                    </TextBlock>
+                    <TextBlock Name="TblRecuperelo"
+                               MouseLeftButtonDown="TblRecuperelo_MouseLeftButtonDown"
+                               Foreground="Blue">Recupérelo.</TextBlock>
+                    <TextBlock FontWeight="Bold" TextWrapping="WrapWithOverflow"
+                        FontStyle="Italic">¿YA estás registrado?, sólo indica usuario, contraseña y da click en ACEPTAR.</TextBlock>
+                    <Label Name="LblUsuario">Usuario:</Label>
+                    <TextBox Name="TbxUsuario"></TextBox>
+                    <Label Name="LblPasswd">Contraseña</Label>
+                    <PasswordBox Name="PsbPassword" MaxLength="10"></PasswordBox>
+                    <Button Name="BtnAceptarPwd" Click="BtnAceptarPwd_Click">Aceptar</Button>
+                </StackPanel>
+                <StackPanel Grid.Column="2" Name="StkRegistrarse" Visibility="Hidden">
+                    <Label Name="LblNombre">* Nombre:</Label>
+                    <TextBox Name="TbxNombre"/>
+                    <Label Name="LblApellidos">* Apellidos:</Label>
+                    <TextBox Name="TbxApellidos"/>
+                    <Label Name="LblUsuarioReg">* Usuario:</Label>
+                    <TextBox Name="TbxUsuarioReg"/>
+                    <Label Name="LblPasswdReg">* Contraseña:</Label>
+                    <PasswordBox Name="PsbPasswdReg" MaxLength="10"/>
+                    <Label Name="LblPasswdRegConf">* Confirmar contraseña:</Label>
+                    <PasswordBox Name="PsbPasswdRegConf" MaxLength="10"/>
+                    <Label Name="LblCorreo">* Correo Electrónico</Label>
+                    <TextBox Name="TbxCorreo"/>
+                    <CheckBox Name="CbxEnvio">
+                        <TextBlock TextWrapping="WrapWithOverflow">Enviar información de obras de la SCJN
+                        </TextBlock>
+                    </CheckBox>
+                    <Button Name="BtnAceptarReg" Click="BtnAceptarReg_Click">Aceptar</Button>
+                    <Label>* Indica campo requerido</Label>
+                </StackPanel>
+                <StackPanel Name="StkRecuperar" Visibility="Hidden" Grid.Column="5">
+                    <StackPanel Name="StkDatosRecuperar">
+                        <Label>Correo Electrónico</Label>
+                        <TextBox Name="TbxCorreoRecuperar"/>
+                        <Button Name="BtnRecuperar" Click="BtnRecuperar_Click">Recuperar</Button>
+                        <TextBlock TextWrapping="WrapWithOverflow">
+                        Escriba el correo electrónico con el
+                        que se registró y de click en RECUPERAR.</TextBlock>
+                        <TextBlock TextWrapping="WrapWithOverflow">
+                        Una vez realizada la operación usted recibirá un correo electrónico con los datos de su cuenta.</TextBlock>
+                    </StackPanel>
+                    <TextBlock Name="TblMensaje" TextWrapping="WrapWithOverflow" Visibility="Hidden">
+                        Un correo ha sido enviado a la dirección solicitada con los datos referidos a la cuenta de acceso a este sistema,
+                        en caso de dudas envíe un correo a soporte_ius@mail.scjn.gob.mx
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Border>
+</Page>

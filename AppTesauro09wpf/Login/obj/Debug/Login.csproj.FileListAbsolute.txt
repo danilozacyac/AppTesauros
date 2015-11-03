@@ -1,0 +1,53 @@
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\bin\Debug\Login.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\bin\Debug\Login.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\bin\Debug\SeguridadTesauro.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\bin\Debug\SeguridadTesauro.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\Login.baml
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\Login.g.cs
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\Login_MarkupCompile.cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\Login.g.resources
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\Login.Properties.Resources.resources
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\Login.csproj.GenerateResource.Cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\Login.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\Login.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\bin\Debug\Login.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\bin\Debug\Login.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\bin\Debug\SeguridadTesauro.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\bin\Debug\SeguridadTesauro.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\Login.baml
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\Login.g.cs
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\Login_MarkupCompile.cache
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\Login.g.resources
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\Login.Properties.Resources.resources
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\Login.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\Login\obj\Debug\Login.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\Login\bin\Debug\Login.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\Login\bin\Debug\Login.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\Login\bin\Debug\SeguridadTesauro.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\Login\bin\Debug\SeguridadTesauro.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\Login\obj\Debug\Login.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\Login\obj\Debug\Login.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\Login\obj\Debug\Login.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\Login\obj\Debug\Login_MarkupCompile.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\Login\obj\Debug\Login.g.resources
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\Login\obj\Debug\Login.Properties.Resources.resources
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\Login\obj\Debug\Login.csproj.GenerateResource.Cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\Login\obj\Debug\Login.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\Login\obj\Debug\Login.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\Login\bin\Debug\Login.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\Login\bin\Debug\Login.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\Login\bin\Debug\SeguridadTesauro.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\Login\bin\Debug\SeguridadTesauro.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\Login\obj\Debug\Login.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\Login\obj\Debug\Login.baml
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\Login\obj\Debug\Login.g.cs
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\Login\obj\Debug\Login_MarkupCompile.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\Login\obj\Debug\Login.g.resources
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\Login\obj\Debug\Login.Properties.Resources.resources
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\Login\obj\Debug\Login.csproj.GenerateResource.Cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\Login\obj\Debug\Login.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\Login\obj\Debug\Login.pdb

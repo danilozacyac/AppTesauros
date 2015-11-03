@@ -1,0 +1,35 @@
+﻿<Page x:Class="mx.gob.scjn.directorio.General.QueImprimir"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="QueImprimir" Height="250" Width="250">
+    <Border  >
+    <Grid Height="250" Width="250">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="89.964*" />
+                <ColumnDefinition Width="17.85*" />
+                <ColumnDefinition Width="47.124*" />
+                <ColumnDefinition Width="8.996*" />
+                <ColumnDefinition Width="58.12*" />
+                <ColumnDefinition Width="5" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5" />
+                <RowDefinition Height="30.702*" />
+                <RowDefinition Height="22.134*" />
+                <RowDefinition Height="24.276*" />
+                <RowDefinition Height="5.712*" />
+                <RowDefinition Height="27.132*" />
+                <RowDefinition Height="19.278*" />
+                <RowDefinition Height="23.562*" />
+                <RowDefinition Height="5" />
+            </Grid.RowDefinitions>
+            <Label Name="lblImpr" Margin="1,1,1,1" HorizontalContentAlignment="Center" Background="Bisque" Grid.ColumnSpan="5" Grid.Column="1" Grid.Row="1" FontSize="14" VerticalAlignment="Stretch" VerticalContentAlignment="Center">Seleccione el tipo de impresión</Label>
+            <Label Name="lblWait" Margin="1,1,1,1" Background="Bisque" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="5" FontSize="12">Un momento por favor</Label>
+            <RadioButton Name="rbActual" Margin="1,1,1,1" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" BorderThickness="3" BorderBrush="Bisque" Foreground="White" Grid.Row="3" Grid.Column="1" FontSize="13">Actual</RadioButton>
+            <RadioButton Name="rbIntegrantes" Margin="1,1,1,1" BorderThickness="3" BorderBrush="Bisque" Foreground="White" Grid.Row="3" Grid.ColumnSpan="4" Grid.Column="3" FontSize="13">Integrantes</RadioButton>
+            <Button Margin="1,1,1,1" Name="btnOk" Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2">Aceptar</Button>
+            <Button Margin="1,1,1,1" Name="btnCancel" Grid.Row="7" Grid.Column="5">Cancelar</Button>
+        </Grid>
+        </Border>
+</Page>

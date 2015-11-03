@@ -1,0 +1,217 @@
+﻿<Page x:Class="mx.gob.scjn.electoral.TablaResultadoVotos"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:utils="clr-namespace:mx.gob.scjn.ius_common.gui.gui.utilities;assembly=General"
+      xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid"
+      xmlns:my="clr-namespace:System;assembly=mscorlib"
+      xmlns:local="clr-namespace:mx.gob.scjn.electoral_common.gui.apoyos"
+      xmlns:ius="clr-namespace:mx.gob.scjn.electoral"
+      WindowTitle="Visualizar registros votos" Loaded="Page_Loaded">
+    <Page.Resources>
+        <ResourceDictionary Source="/General;component/Resources.xaml"/>
+    </Page.Resources>
+    <Border Style="{StaticResource BorderStyle}">
+        <Grid Margin="0,0,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" MaxWidth="10"/>
+                <ColumnDefinition Width="40" MaxWidth="40"/>
+                <ColumnDefinition Width="100" MaxWidth="100"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="10" MaxWidth="10"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+                <Label Name="Titulo"
+                       Grid.Column="1"
+                       Grid.ColumnSpan="3"
+                       Style="{StaticResource UIStyle}"
+                       Margin="0,0,0,0">Resultado de la búsqueda</Label>
+                <Button Grid.Column="2" Name="inicio"
+                        Click="inicio_MouseLeftButtonDown"
+                        ToolTip="Ir al primer registro"
+                        Template="{StaticResource InicioBoton}"
+                        HorizontalAlignment="Right" Margin="0,0,0,0" />
+                <Button Name="anterior"
+                        ToolTip="Registro anterior"
+                        Click="anterior_MouseLeftButtonDown"
+                        Template="{StaticResource AnteriorBoton}"
+                        Margin="0,0,0,0" Grid.Column="3" />
+                <Button Name="siguiente"
+                        ToolTip="Siguiente registro"
+                        Click="siguiente_MouseLeftButtonDown"
+                        Template="{StaticResource SiguienteBoton}"
+                        Grid.Column="4" Margin="0,0,0,0"/>
+                <Button Grid.Column="5" Name="final"
+                        ToolTip="Ir al último registro"
+                        Click="final_MouseLeftButtonDown"
+                        Template="{StaticResource FinalBoton}"
+                        Margin="0,0,0,0"/>
+                <Label Name="RegistrosLabel" Style="{StaticResource UIStyle}"
+                       Grid.Column="6" Margin="0,0,0,0"
+                       FontSize="14"
+                       FontWeight="Bold">Registros:</Label>
+                <Label Grid.Column="7"
+                       Margin="0,0,0,0"
+                       Style="{StaticResource UIStyle}"
+                       Name="lblIrA">
+                    <TextBlock TextWrapping="WrapWithOverflow">Ir a consecutivo:</TextBlock>
+                </Label>
+                <xcdg:NumericTextBox Grid.Column="8" Height="25"
+                                     Margin="0,0,0,0"
+                                     Name="IrANum"  NumberStyles="None"
+                                     KeyDown="IrANum_KeyDown"
+                                     ValueDataType="my:Int32" MaxLength="6" />
+                <Button Grid.Column="9"
+                        ToolTip="Ir a número consecutivo"
+                        Margin="0,0,0,0" Height="30"
+                        Foreground="Bisque"
+                        BorderBrush="Bisque"
+                        Name="btnIrA"
+                        Click="btnIrA_Click"
+                        Background="Maroon">Ir</Button>
+            </Grid>
+            <Button Grid.Column="1" Grid.Row="1"
+                    Margin="0,0,0,0"
+                    Name="imprimir"
+                    ToolTip="Ver vista preliminar de impresión"
+                    Template="{StaticResource ImprimeBoton}"
+                    Click="imprimir_onClick"/>
+            <Button Grid.Column="5" Grid.Row="1" Margin="0,0,0,0"
+                    Name="salir"
+                    ToolTip="Regresar a la pantalla anterior"
+                    Template="{StaticResource RegresarBoton}"
+                    Click="salir_onClick"/>
+            <RichTextBox Name="Contenido" Visibility="Hidden"/>
+            <Button Grid.Row ="1" Grid.Column ="3" HorizontalAlignment="Right"
+                  ToolTip="Guardar" Name="BtnGuardar"
+                  Template="{StaticResource GuardarBoton}"
+                  Visibility="{Binding Source ={StaticResource Visibilidad}, Path=ObtenVisibilidadInternet}"
+                  Click="BtnGuardar_Click"/>
+            <Button Grid.Row ="1" Grid.Column ="3" HorizontalAlignment="Right"
+                  ToolTip="Visualizar" Name="BtnVisualizar" Margin="40,0"
+                  Template="{StaticResource VisualizarBoton}"
+                  Click="BtnVisualizar_Click"/>
+            <Button Name="BtnAumentaAlto" Grid.Column="3" Grid.Row="1"
+                    Width ="25" Margin="120,0" Height="20"
+                  Background="Maroon"
+                    Foreground="Bisque"
+                    BorderBrush="Bisque"                    
+                    ToolTip="Aumenta el alto de las celdas"
+                    Click="BtnAumentaAlto_Click" HorizontalAlignment="Right">+</Button>
+            <Button Name="BtnDisminuyeAlto" Grid.Column="3" Grid.Row="1"
+                  Width ="25" Margin="90,0" Height="20" HorizontalAlignment="Right"
+                  ToolTip="Disminuye el alto de las celdas"
+                  Background="Maroon"
+                    Foreground="Bisque"
+                    BorderBrush="Bisque"
+                  Click="BtnDisminuyeAlto_Click">-</Button>
+            <xcdg:DataGridControl Name="tablaResultado" Margin="0,0,0,0"
+                                  Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="4" 
+                                  ReadOnly="True" Background="Bisque"
+                                  EditTriggers="None" 
+                                  NavigationBehavior="RowOnly" 
+                                  SelectionMode="Single" 
+                                  AutoCreateColumns="False"
+                                  PropertyChanged="tablaResultados_PropertyChanged">
+                <xcdg:DataGridControl.Columns>
+                    <xcdg:Column FieldName="TpoAsunto" 
+                             IsMainColumn="True" 
+                             Title="Asunto" 
+                             Width="200" 
+                             TextTrimming="WordEllipsis"
+                             TextWrapping="WrapWithOverflow"/>
+                    <xcdg:Column FieldName="Rubro" ReadOnly="True" Title="Rubro" 
+                             TextTrimming="WordEllipsis" Width="200"
+                             TextWrapping="WrapWithOverflow"/>
+                    <xcdg:Column FieldName="Loc" ReadOnly="True" Title="Localización" 
+                             TextTrimming="WordEllipsis"
+                             TextWrapping="WrapWithOverflow"/>
+                    <xcdg:Column FieldName="Id" Title="Registro" />
+                </xcdg:DataGridControl.Columns>
+                <xcdg:DataGridControl.View>
+                    <xcdg:TableView RowSelectorPaneWidth="50" ShowFixedColumnSplitter="False" UseDefaultHeadersFooters="False">
+                        <xcdg:TableView.FixedHeaders>
+                            <DataTemplate>
+                                <xcdg:ColumnManagerRow />
+                            </DataTemplate>
+                        </xcdg:TableView.FixedHeaders>
+                        <xcdg:TableView.Theme>
+                            <xcdg:AeroNormalColorTheme />
+                        </xcdg:TableView.Theme>
+                    </xcdg:TableView>
+                </xcdg:DataGridControl.View>
+                <xcdg:DataGridControl.ItemContainerStyle>
+                    <Style TargetType="{x:Type xcdg:DataRow}">
+                        <Setter Property="xcdg:RowSelector.RowSelectorStyle"
+                            Value="{StaticResource itemIndexSelectorStyle}" />
+                        <Setter Property="xcdg:DataRow.Height"
+                Value="{Binding RelativeSource={RelativeSource AncestorType={x:Type ius:TablaResultadoVotos}}, Path=RowHeight, Mode=TwoWay}" />
+                        <Setter Property="xcdg:DataRow.MinHeight" Value="15"/>
+                        <EventSetter Event="MouseDoubleClick"
+                             Handler="tablaResultado_MouseDoubleClick"/>
+                    </Style>
+                </xcdg:DataGridControl.ItemContainerStyle>
+            </xcdg:DataGridControl>
+            <FlowDocumentPageViewer Name="impresionViewer" 
+                                Template="{StaticResource FDPVTemplate}"
+                                Visibility="Hidden" 
+                                Background="White"
+                                Margin="0,0,0,0"
+                                  Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="4" />
+            <Button Grid.Column="1" Margin="0,0,0,0"
+                    Name="imprimePapel" Visibility="Hidden"
+                    Template="{StaticResource ImprimePapelBoton}"
+                    Height="40"  Width="40"  Grid.Row="2"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    ToolTip="Imprimir el documento"
+                    Click="imprimePapel_MouseLeftButtonDown"/>
+            <Button Name="BtnTache"
+                    Grid.Column="1" Grid.ColumnSpan="2" Margin="40,0"
+                    Visibility="Hidden"
+                    Template="{StaticResource TacheBoton}"
+                    Height="40" Width="40" Grid.Row="2"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    ToolTip="Cerrar vista preliminar"
+                    Click="BtnTache_Click"/>
+            <Canvas Name="Esperar"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="20"
+                    Grid.Row="0"
+                    Grid.RowSpan="10"
+                    Background="Black"
+                    Opacity="0.7"
+                    Visibility="Hidden">
+                <StackPanel Background="Bisque" 
+                            Margin="150,150,0,0"
+                            Name="EsperarStack">
+                    <TextBlock>Espere por favor</TextBlock>
+                    <ProgressBar Margin="0,0,0,0"
+                                 Height="26"
+                                 Name="EsperaBarra"
+                                 Width="393"/>
+                </StackPanel>
+            </Canvas>
+        </Grid>
+    </Border>
+</Page>

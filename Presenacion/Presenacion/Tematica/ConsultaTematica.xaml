@@ -1,0 +1,155 @@
+﻿<Page x:Class="mx.gob.scjn.ius_common.gui.Tematica.ConsultaTematica"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:local="clr-namespace:mx.gob.scjn.ius_common.gui.apoyos"
+      WindowTitle="Jurisprudencia y Tesis Aisladas"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/General;component/Resources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Border Style="{StaticResource BorderStyle}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="*"/>
+               </Grid.ColumnDefinitions>
+                <Label FontSize="18" Style="{StaticResource UIStyle}">Consulta temática</Label>
+                <Button Name="Regresar"
+                       Grid.Column="9"
+                       Width="40"
+                       Height="40"
+                       HorizontalAlignment="Right"
+                       ToolTip="Regresar al menú principal"
+                        Click="Regresar_MouseLeftButtonDown"
+                       Template="{StaticResource RegresarBoton}" />
+                <Button Name="Visualizar"
+                        ToolTip="Visualizar"
+                        Click="Visualizar_MouseDown"
+                        Template="{StaticResource VisualizarBoton}"
+                        Grid.Column="3"/>
+                <Button Name="ImgExpandir"
+                        ToolTip="Expandir"
+                        Grid.Column="4" Template="{StaticResource ExpandirBoton}"
+                        Click="ImgExpandir_MouseLeftButtonDown"/>
+                <Button Name="ImgRestaurar"
+                       ToolTip="Restaurar"
+                       Grid.Column="5" Template="{StaticResource RestaurarBoton}"
+                        Click="ImgRestaurar_MouseLeftButtonDown"/>
+                <Button Name="BtnImprimir"
+                        ToolTip="Imprimir"
+                        Grid.Column="6"
+                        Template="{StaticResource ImprimeBoton}" Click="BtnImprimir_Click" />
+                <Button Name="BtnBusquedaAlmacenada"
+                        ToolTip="Guardar consulta"
+                        Visibility="{Binding Source={StaticResource Visibilidad}, Path=ObtenVisibilidadInternet}"
+                        Grid.Column="7"
+                        Template="{StaticResource BuroBoton}"
+                        Click="BtnBusquedaAlmacenada_Click" />
+                <Button Name="BtnVease"
+                        ToolTip="Véase"
+                        Grid.Column="8"
+                        Visibility="Hidden"
+                        Template="{StaticResource VeaseBoton}" Click="BtnVease_Click" />
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Name="Buscar" Height="25"
+                         KeyDown="Buscar_KeyDown"
+                         Grid.Column="1"/>
+                <Button Name="BtnBuscar"
+                       Template="{StaticResource BuscarBoton}"
+                       ToolTip="Buscar"
+                        Click="BtnBuscar_MouseLeftButtonDown"
+                        Grid.Column="2"
+                       Width="40"
+                       Height="40"/>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="80*" />
+                    <ColumnDefinition Width="220*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <TreeView Grid.RowSpan="2"
+                          IsTextSearchEnabled="True" TextSearch.TextPath="Header"
+                          ScrollViewer.VerticalScrollBarVisibility="Auto"
+                          Background="Bisque" Name="Temas"
+                          SelectedItemChanged="Temas_SelectedItemChanged">
+                </TreeView>
+                <Grid Name="GrdSubtemas" Grid.Column="1" Grid.ColumnSpan="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Background="Wheat" Name="LblSubtemas"
+                           FontWeight="Bold"
+                           BorderBrush="Wheat">Subtemas</Label>
+                    <TreeView Name="SubtemasTree" Grid.Row="1"
+                              IsTextSearchEnabled="True"  TextSearch.TextPath="Header"
+                              ScrollViewer.VerticalScrollBarVisibility="Auto"
+                              SelectedItemChanged="BloqueSubtema_MouseLeftButtonDown"
+                              Background="Wheat">
+                    </TreeView>
+                </Grid>
+                <StackPanel Name="StkSinonimos" Margin="0,0,0,0"
+                            Grid.Column="1"
+                            Background="White"
+                            Grid.Row="1"
+                            Grid.ColumnSpan="2">
+                    <Label Background="White"
+                           FontWeight="Bold"
+                           BorderBrush="White">Sinónimos</Label>
+                    <TreeView Name="Sinonimos"
+                              IsTextSearchEnabled="True" TextSearch.TextPath="Header"
+                              ScrollViewer.VerticalScrollBarVisibility="Auto"
+                              Background="White" Grid.ColumnSpan="2">
+                    </TreeView>
+                </StackPanel>
+                <Button Name="ImprimePapel" Visibility="Hidden"
+                        ToolTip="Imprimir documento"
+                        Template="{StaticResource ImprimePapelBoton}"
+                        Width="40" Height="40" VerticalAlignment="Top"
+                        HorizontalAlignment="Left" Margin="0,0"
+                        Grid.Column="0" Click="ImprimePapel_Click" />
+                <Button Name="BtnTache" Visibility="Hidden"
+                        Template="{StaticResource TacheBoton}"
+                        Width="40" Height="40" Margin="40,0"
+                        Grid.Column="0" Click="BtnTache_Click"
+                        ToolTip="Cerrar vista preliminar"
+                        VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                <FlowDocumentPageViewer Name="Imprimir" Visibility="Hidden"
+                                        Template="{StaticResource FDPVTemplate}"
+                                        Grid.ColumnSpan="3" Background="White"
+                                        Grid.RowSpan="3"/>
+            </Grid>
+            <Canvas Width="0" Height="0" Grid.Column="0" Grid.Row="0">
+                <local:AlmacenaBusqueda Canvas.Left="-200" Canvas.Top="100" x:Name="GuardarExpresion" Visibility="Hidden"/>
+            </Canvas>
+        </Grid>
+    </Border>
+</Page>

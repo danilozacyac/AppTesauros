@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{12679159-E247-4017-97F6-0C81CBE79F99}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mx.gob.scjn</RootNamespace>
+    <AssemblyName>ius_common</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\IUS2009\Libs\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\IUS2009\Libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net, Version=2.0.0.4, Culture=neutral, PublicKeyToken=88cfbb9bc18f6536, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\IUS2009\Libs\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.core, Version=2.4.6.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\IUS2009\Libs\nunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.4.6.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\IUS2009\Libs\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="ReachFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ius_common\context\ApplicationContext.cs">
+      <DependentUpon>ApplicationContext.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ius_common\context\ContextoTO.cs" />
+    <Compile Include="ius_common\context\DBContext.cs" />
+    <Compile Include="ius_common\context\IUSApplicationContext.cs" />
+    <Compile Include="ius_common\DAO\AcuerdosDAO.cs" />
+    <Compile Include="ius_common\DAO\DirectorioAreasDAO.cs" />
+    <Compile Include="ius_common\DAO\DirectorioCatalogosDAO.cs" />
+    <Compile Include="ius_common\DAO\DirectorioDAO.cs" />
+    <Compile Include="ius_common\DAO\DirectorioMinistrosDAO.cs" />
+    <Compile Include="ius_common\DAO\DirectorioOrgJurDAO.cs" />
+    <Compile Include="ius_common\DAO\DirectorioPersonasDAO.cs" />
+    <Compile Include="ius_common\DAO\EjecutoriasDAO.cs" />
+    <Compile Include="ius_common\DAO\ElectoralDAO.cs" />
+    <Compile Include="ius_common\DAO\GuardarExpresionDAO.cs" />
+    <Compile Include="ius_common\DAO\impl\AcuerdosDAOImpl.cs" />
+    <Compile Include="ius_common\DAO\impl\DirectorioAreasDAOImpl.cs" />
+    <Compile Include="ius_common\DAO\impl\DirectorioCatalogosDAOImpl.cs" />
+    <Compile Include="ius_common\DAO\impl\DirectorioDAOImpl.cs" />
+    <Compile Include="ius_common\DAO\impl\DirectorioMinistrosDAOImpl.cs" />
+    <Compile Include="ius_common\DAO\impl\DirectorioOrganosJurDAOImpl.cs" />
+    <Compile Include="ius_common\DAO\impl\DirectorioPersonasDAOImpl.cs" />
+    <Compile Include="ius_common\DAO\impl\ElectoralDAOImpl.cs" />
+    <Compile Include="ius_common\DAO\impl\GuardarExpresionDAOImpl.cs" />
+    <Compile Include="ius_common\DAO\impl\IndicesDAOImpl.cs" />
+    <Compile Include="ius_common\DAO\impl\InformesDAOImpl.cs" />
+    <Compile Include="ius_common\DAO\impl\LeyDAOImpl.cs" />
+    <Compile Include="ius_common\DAO\impl\MinistrosDAOImpl.cs" />
+    <Compile Include="ius_common\DAO\impl\VotosDAOImpl.cs" />
+    <Compile Include="ius_common\DAO\impl\EjecutoriasDAOImpl.cs" />
+    <Compile Include="ius_common\DAO\impl\TesisDAOImpl.cs" />
+    <Compile Include="ius_common\DAO\IndicesDAO.cs" />
+    <Compile Include="ius_common\DAO\InformesDAO.cs" />
+    <Compile Include="ius_common\DAO\LeyDAO.cs" />
+    <Compile Include="ius_common\DAO\MinistrosDAO.cs" />
+    <Compile Include="ius_common\DAO\TesisDAO.cs" />
+    <Compile Include="ius_common\DAO\VotosDAO.cs" />
+    <Compile Include="ius_common\ius\Acuerdos.cs" />
+    <Compile Include="ius_common\ius\DirectorioCatalogos.cs" />
+    <Compile Include="ius_common\ius\DirectorioMinistros.cs" />
+    <Compile Include="ius_common\ius\DirectorioOrganosJur.cs" />
+    <Compile Include="ius_common\ius\DirectorioPersonas.cs" />
+    <Compile Include="ius_common\ius\Ejecutorias.cs" />
+    <Compile Include="ius_common\fachade\FachadaBusquedaTradicional.cs" />
+    <Compile Include="ius_common\ius\Electoral.cs" />
+    <Compile Include="ius_common\ius\GuardarExpresion.cs" />
+    <Compile Include="ius_common\ius\Informes.cs" />
+    <Compile Include="ius_common\ius\Ley.cs" />
+    <Compile Include="ius_common\ius\Magistrados.cs" />
+    <Compile Include="ius_common\ius\Tesis.cs" />
+    <Compile Include="ius_common\ius\Voto.cs" />
+    <Compile Include="ius_common\utils\FuncionesGenerales.cs" />
+    <Compile Include="ius_common\utils\IUSConstants.cs" />
+    <Compile Include="ius_common\utils\SpanishAnalyzer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ius_common\context\ApplicationContext.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EmbeddedResource Include="ius_common\context\ApplicationContext.xsd" />
+    <None Include="ius_common.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\electoral_common\electoral_common\electoral_common.csproj">
+      <Project>{D4316E80-A266-4B11-A322-73DC2E9A2FAD}</Project>
+      <Name>electoral_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\IUSTO\IUSTO\IUSTO.csproj">
+      <Project>{BB6791F3-5F0B-4E0A-90DE-D61272AB5B92}</Project>
+      <Name>IUSTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ius_common\impresion\" />
+    <Folder Include="ius_common\test\" />
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

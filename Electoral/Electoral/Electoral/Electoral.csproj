@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F88F47CB-AE43-4D36-B713-D4EE86121E20}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mx.gob.scjn.electoral</RootNamespace>
+    <AssemblyName>Electoral</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;STAND_ALONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;STAND_ALONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Controls, Version=3.0.8453.23470, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL" />
+    <Reference Include="Xceed.Wpf.DataGrid, Version=3.0.8453.23470, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL" />
+    <Reference Include="Xceed.Wpf.DataGrid.ThemePack.1, Version=3.0.8453.23470, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL" />
+    <Reference Include="Xceed.Wpf.DataGrid.ThemePack.2, Version=3.0.8453.23470, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL" />
+    <Reference Include="Xceed.Wpf.DataGrid.Views3D, Version=3.0.8453.23470, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\iustoweb\iustoweb\to\TesisSimplificadaElectoralTO.cs">
+      <Link>TO\TesisSimplificadaElectoralTO.cs</Link>
+    </Compile>
+    <Compile Include="Acuerdos.xaml.cs">
+      <DependentUpon>Acuerdos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="apoyos\AcuerdoBuscaPalabras.xaml.cs">
+      <DependentUpon>AcuerdoBuscaPalabras.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="apoyos\BuscaPalabras.xaml.cs">
+      <DependentUpon>BuscaPalabras.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="apoyos\BuscaPalabrasEjecutoria.xaml.cs">
+      <DependentUpon>BuscaPalabrasEjecutoria.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="apoyos\BuscaPalabrasVotos.xaml.cs">
+      <DependentUpon>BuscaPalabrasVotos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="apoyos\EjecutoriasOrdenarPor.xaml.cs">
+      <DependentUpon>EjecutoriasOrdenarPor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="apoyos\ListadoEjecutorias.xaml.cs">
+      <DependentUpon>ListadoEjecutorias.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="apoyos\ListadoLeyes.xaml.cs">
+      <DependentUpon>ListadoLeyes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="apoyos\ListadoTesis.xaml.cs">
+      <DependentUpon>ListadoTesis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="apoyos\ListadoVotos.xaml.cs">
+      <DependentUpon>ListadoVotos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="apoyos\MensajesGenerales.xaml.cs">
+      <DependentUpon>MensajesGenerales.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="apoyos\ObtenerRango.xaml.cs">
+      <DependentUpon>ObtenerRango.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="apoyos\PorRegistro.xaml.cs">
+      <DependentUpon>PorRegistro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="apoyos\VentanaLeyes.xaml.cs">
+      <DependentUpon>VentanaLeyes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\IAcuerdosController.cs" />
+    <Compile Include="Controller\IEjecutoriaElectoral.cs" />
+    <Compile Include="Controller\IMenuElectoral.cs" />
+    <Compile Include="Controller\Impl\AcuerdosControllerImpl.cs" />
+    <Compile Include="Controller\Impl\TablaResultadosAcuerdosControllerImpl.cs" />
+    <Compile Include="Controller\Impl\TablaResultadosEjecutoriaControllerImpl.cs" />
+    <Compile Include="Controller\Impl\EjecutoriaElectoralImpl.cs" />
+    <Compile Include="Controller\Impl\TablaResultadoVotoElectoralControllerImpl.cs" />
+    <Compile Include="Controller\Impl\TesisElectoralControllerImpl.cs" />
+    <Compile Include="Controller\Impl\VotoElectoralControllerImpl.cs" />
+    <Compile Include="Controller\ITablaResultadoEjecutoriaController.cs" />
+    <Compile Include="Controller\ITablaResultadosAcuerdosController.cs" />
+    <Compile Include="Controller\ITablaResultadoVotoElectoral.cs" />
+    <Compile Include="Controller\ITesisElectoralController.cs" />
+    <Compile Include="Controller\Impl\MenuElectoralImpl.cs" />
+    <Compile Include="Controller\Impl\TablaResultadosControllerImpl.cs" />
+    <Compile Include="Controller\ITablaResultadosController.cs" />
+    <Compile Include="Controller\IVotoElectoralController.cs" />
+    <Compile Include="Ejecutoria.xaml.cs">
+      <DependentUpon>Ejecutoria.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\impresion\DocumentoAcuerdoElectoral.cs" />
+    <Compile Include="gui\impresion\DocumentoEjecutoriaElectoral.cs" />
+    <Compile Include="gui\impresion\DocumentoListadoEjecutoriaElectoral.cs" />
+    <Compile Include="gui\impresion\DocumentoListadoTesisElectoral.cs" />
+    <Compile Include="gui\impresion\DocumentoListadoVoto.cs" />
+    <Compile Include="gui\impresion\DocumentoElectoralTesis.cs" />
+    <Compile Include="gui\impresion\DocumentoVoto.cs" />
+    <Compile Include="MenuElectoral.xaml.cs">
+      <DependentUpon>MenuElectoral.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TablaResultadoAcuerdos.xaml.cs">
+      <DependentUpon>TablaResultadoAcuerdos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TablaResultadoEjecutoria.xaml.cs">
+      <DependentUpon>TablaResultadoEjecutoria.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TablaResultados.xaml.cs">
+      <DependentUpon>TablaResultados.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TablaResultadoVotos.xaml.cs">
+      <DependentUpon>TablaResultadoVotos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TesisElectoral.xaml.cs">
+      <DependentUpon>TesisElectoral.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TO\Comp\EjecutoriasConsecIndxElectoralNSTOComp.cs" />
+    <Compile Include="TO\Comp\EjecutoriasConsecIndxElectoralTOComp.cs" />
+    <Compile Include="TO\Comp\EjecutoriasIdElectoralNSTOComp.cs" />
+    <Compile Include="TO\Comp\EjecutoriasIdElectoralTOComp.cs" />
+    <Compile Include="TO\Comp\EjecutoriasRubroElectoralTOComp.cs" />
+    <Compile Include="TO\Comp\EjecutoriaElectoralTOComp.cs" />
+    <Compile Include="TO\Comp\TesisElectoralConsecIndxNSTOComp.cs" />
+    <Compile Include="TO\Comp\TesisElectoralConsecIndxTOComp.cs" />
+    <Compile Include="TO\Comp\TesisElectoralInstanciaNSTOComp.cs" />
+    <Compile Include="TO\Comp\TesisElectoralInstanciaTOComp.cs" />
+    <Compile Include="TO\Comp\TesisElectoralIUSTOComp.cs" />
+    <Compile Include="TO\Comp\TesisElectoralIUSTONSComp.cs" />
+    <Compile Include="TO\Comp\TesisElectoralNSTOComp.cs" />
+    <Compile Include="TO\Comp\TesisElectoralRubroNSTOComp.cs" />
+    <Compile Include="TO\Comp\TesisElectoralRubroTOComp.cs" />
+    <Compile Include="TO\Comp\TesisElectoralTOComp.cs" />
+    <Compile Include="TO\Comp\TesisElectoralTpoPredicate.cs" />
+    <Compile Include="TO\Comp\TesisElectoralTpoTesisNSTOComp.cs" />
+    <Compile Include="TO\EjecutoriaSimplificadaElectoralTO.cs" />
+    <Compile Include="utils\IUSHyperlink.cs" />
+    <Compile Include="utils\IUSNavigationService.cs" />
+    <Compile Include="Votos.xaml.cs">
+      <DependentUpon>Votos.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="electoral.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Acuerdos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="apoyos\AcuerdoBuscaPalabras.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="apoyos\BuscaPalabras.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="apoyos\BuscaPalabrasEjecutoria.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="apoyos\BuscaPalabrasVotos.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="apoyos\EjecutoriasOrdenarPor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="apoyos\ListadoEjecutorias.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="apoyos\ListadoLeyes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="apoyos\ListadoTesis.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="apoyos\ListadoVotos.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="apoyos\MensajesGenerales.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="apoyos\ObtenerRango.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="apoyos\PorRegistro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="apoyos\VentanaLeyes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Ejecutoria.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MenuElectoral.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TablaResultadoAcuerdos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TablaResultadoEjecutoria.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TablaResultados.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TablaResultadoVotos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TesisElectoral.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Votos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ControlFramework\ControlFramework.csproj">
+      <Project>{EDD449DD-F585-4A72-9EEE-695D762253EF}</Project>
+      <Name>ControlFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\General\General\General.csproj">
+      <Project>{D9944DFC-D53F-4311-B325-FF6FB300A01B}</Project>
+      <Name>General</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IUSTO\IUSTO\IUSTO.csproj">
+      <Project>{BB6791F3-5F0B-4E0A-90DE-D61272AB5B92}</Project>
+      <Name>IUSTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\IUSTOAux\IUSTOAux.csproj">
+      <Project>{3544A381-B59F-49D6-9046-E39A8C2AC076}</Project>
+      <Name>IUSTOAux</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\ius_common\ius_common\ius_common.csproj">
+      <Project>{12679159-E247-4017-97F6-0C81CBE79F99}</Project>
+      <Name>ius_common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

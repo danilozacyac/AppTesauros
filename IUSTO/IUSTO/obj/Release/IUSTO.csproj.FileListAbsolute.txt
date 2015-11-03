@@ -1,0 +1,11 @@
+C:\Documents and Settings\cluna\Mis documentos\Visual Studio 2008\Projects\IUS.NET\IUSTO\IUSTO\bin\Release\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\Visual Studio 2008\Projects\IUS.NET\IUSTO\IUSTO\bin\Release\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\Visual Studio 2008\Projects\IUS.NET\IUSTO\IUSTO\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\Visual Studio 2008\Projects\IUS.NET\IUSTO\IUSTO\obj\Release\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\Visual Studio 2008\Projects\IUS.NET\IUSTO\IUSTO\obj\Release\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTO\IUSTO\bin\Release\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTO\IUSTO\bin\Release\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTO\IUSTO\bin\Release\Lucene.Net.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTO\IUSTO\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTO\IUSTO\obj\Release\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTO\IUSTO\obj\Release\IUSTO.pdb

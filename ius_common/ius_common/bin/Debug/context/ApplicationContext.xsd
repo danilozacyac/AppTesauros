@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.w3schools.com"
+xmlns="http://www.w3schools.com"
+elementFormDefault="qualified">
+    <xs:annotation>
+      <xs:documentation>
+        Definición básica para poder definir los singletons.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:annotation>
+      <xs:documentation>Define una anotación básica.  String con por lo menos 1 caracter de largo</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType name="nonNullString">
+      <xs:restriction base="xs:string">
+        <xs:minLength value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:annotation>
+      <xs:documentation>
+        Elemento usado opcionalmente para documentar.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:simpleType name="description">
+      <xs:restriction base="nonNullString"/>
+    </xs:simpleType>
+    <xs:complexType name="valueObject">
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="type" type="nonNullString" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="objectReference">
+      <xs:attribute name="object" type="nonNullString" use="optional"/>
+      <xs:attribute name="local" type="xs:IDREF" use="optional"/>
+      <xs:attribute name="parent" type="nonNullString" use="optional"/>
+    </xs:complexType>
+    <!-- Defines la referencia a un objeto o tipo. -->
+    <xs:complexType name="objectOrClassReference">
+      <xs:attribute name="object" type="nonNullString" use="optional"/>
+      <xs:attribute name="local" type="xs:IDREF" use="optional"/>
+      <xs:attribute name="type" type="nonNullString" use="optional"/>
+    </xs:complexType>
+
+    <xs:group name="objectList">
+      <xs:sequence>
+        <xs:element name="description" type="description" minOccurs="0"/>
+        <xs:choice>
+          <xs:element name="object" type="vanillaObject"/>
+          <xs:element name="ref" type="objectReference"/>
+          <xs:element name="idref" type="objectReference"/>
+          <xs:element name="list">
+            <xs:complexType>
+              <xs:group ref="objectList" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="set">
+            <xs:complexType>
+              <xs:group ref="objectList" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="dictionary" type="objectMap"/>
+          <xs:element name="name-values" type="objectNameValues"/>
+          <xs:element name="value" type="valueObject"/>
+          <xs:element name="null"/>
+        </xs:choice>
+      </xs:sequence>
+    </xs:group>
+    <xs:complexType name="objectNameValues">
+      <xs:sequence>
+        <xs:element name="add" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType mixed="true">
+            <xs:attribute name="key" type="nonNullString" use="required"/>
+            <xs:attribute name="value" use="required" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="importElement">
+      <xs:attribute name="resource" type="nonNullString" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="aliasElement">
+      <xs:attribute name="name" type="nonNullString" use="required"/>
+      <xs:attribute name="alias" type="nonNullString" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="objectMap">
+      <xs:sequence>
+        <xs:element type="mapEntryElement" name="entry" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="mapEntryElement">
+      <xs:sequence>
+        <xs:element type="mapKeyElement" name="key" minOccurs="0" maxOccurs="1"/>
+        <xs:group ref="objectList" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="key" type="nonNullString" use="optional"/>
+      <xs:attribute name="value" type="nonNullString" use="optional"/>
+      <xs:attribute name="key-ref" type="nonNullString" use="optional"/>
+      <xs:attribute name="value-ref" type="nonNullString" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="mapKeyElement">
+      <xs:group ref="objectList" minOccurs="1"/>
+    </xs:complexType>
+    <xs:annotation>
+      <xs:documentation>Define el argumento para el contructor del tipo.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType name="constructorArgument">
+      <xs:group ref="objectList" minOccurs="0"/>
+      <xs:attribute name="name" type="nonNullString" use="optional"/>
+      <xs:attribute name="index" type="nonNullString" use="optional"/>
+      <xs:attribute name="type" type="nonNullString" use="optional"/>
+      <xs:attribute name="value" type="nonNullString" use="optional"/>
+      <xs:attribute name="ref" type="nonNullString" use="optional"/>
+    </xs:complexType>
+    <xs:annotation>
+      <xs:documentation>Define property.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType name="property">
+      <xs:group ref="objectList" minOccurs="0"/>
+      <xs:attribute name="name" type="nonNullString" use="required"/>
+      <xs:attribute name="value" type="nonNullString" use="optional"/>
+      <xs:attribute name="ref" type="nonNullString" use="optional"/>
+    </xs:complexType>
+    <xs:annotation>
+      <xs:documentation>Defines un objeto común nombrado.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType name="vanillaObject">
+      <xs:sequence>
+        <xs:element name="description" type="description" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="constructor-arg" type="constructorArgument" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="property" type="property" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="listener" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ref" type="objectOrClassReference" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="event" type="nonNullString" use="optional"/>
+            <xs:attribute name="method" type="nonNullString" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="optional"/>
+      <xs:attribute name="name" type="nonNullString" use="optional"/>
+      <xs:attribute name="type" type="nonNullString" use="optional"/>
+      <xs:attribute name="parent" type="nonNullString" use="optional"/>
+      <xs:attribute name="abstract" type="xs:boolean" use="optional" default="false"/>
+      <xs:attribute name="singleton" type="xs:boolean" use="optional" default="true"/>
+      <xs:attribute name="scope" use="optional" default="application">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="application"/>
+            <xs:enumeration value="session"/>
+            <xs:enumeration value="request"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="lazy-init" use="optional" default="default">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="true"/>
+            <xs:enumeration value="false"/>
+            <xs:enumeration value="default"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="autowire" use="optional" default="default">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="no"/>
+            <xs:enumeration value="byName"/>
+            <xs:enumeration value="byType"/>
+            <xs:enumeration value="constructor"/>
+            <xs:enumeration value="autodetect"/>
+            <xs:enumeration value="default"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+
+      <xs:attribute name="dependency-check" use="optional" default="default">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="none"/>
+            <xs:enumeration value="objects"/>
+            <xs:enumeration value="simple"/>
+            <xs:enumeration value="all"/>
+            <xs:enumeration value="default"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="depends-on" type="nonNullString" use="optional"/>
+      <xs:attribute name="init-method" type="nonNullString" use="optional"/>
+      <xs:attribute name="destroy-method" type="nonNullString" use="optional"/>
+      <xs:attribute name="factory-method" type="nonNullString" use="optional"/>
+      <xs:attribute name="factory-object" type="nonNullString" use="optional"/>
+    </xs:complexType>
+    <xs:annotation>
+      <xs:documentation>The document root.  At least one object definition is required.</xs:documentation>
+    </xs:annotation>
+    <xs:element name="objects">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="description" type="description" minOccurs="0" maxOccurs="1"/>
+          <xs:element name="import" type="importElement" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="alias" type="aliasElement" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="object" type="vanillaObject" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:choice>
+        <xs:attribute name="default-lazy-init" type="xs:boolean" use="optional" default="false"/>
+        <xs:attribute name="default-dependency-check" use="optional" default="none">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="none"/>
+              <xs:enumeration value="objects"/>
+              <xs:enumeration value="simple"/>
+              <xs:enumeration value="all"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="default-autowire" use="optional" default="no">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="no"/>
+              <xs:enumeration value="byName"/>
+              <xs:enumeration value="byType"/>
+              <xs:enumeration value="constructor"/>
+              <xs:enumeration value="autodetect"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+     </xs:complexType>
+    </xs:element>
+  </xs:schema>

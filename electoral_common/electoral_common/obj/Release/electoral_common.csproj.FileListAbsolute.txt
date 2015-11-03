@@ -1,0 +1,11 @@
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\bin\Release\context\ApplicationContext.xml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\bin\Release\context\ApplicationContext.xsd
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\bin\Release\context\ApplicationContext.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\bin\Release\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\bin\Release\electoral_common.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\bin\Release\IUSTO.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\bin\Release\IUSTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\bin\Release\Lucene.Net.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\obj\Release\electoral_common.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\electoral_common\electoral_common\obj\Release\electoral_common.pdb

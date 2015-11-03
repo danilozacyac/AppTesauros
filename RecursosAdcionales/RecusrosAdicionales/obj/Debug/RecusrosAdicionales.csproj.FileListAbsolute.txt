@@ -1,0 +1,23 @@
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\RecursosAdcionales\RecusrosAdicionales\bin\Debug\Recursos.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\RecursosAdcionales\RecusrosAdicionales\bin\Debug\Recursos.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\RecursosAdcionales\RecusrosAdicionales\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\RecursosAdcionales\RecusrosAdicionales\obj\Debug\Recursos.g.resources
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\RecursosAdcionales\RecusrosAdicionales\obj\Debug\Recursos.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\RecursosAdcionales\RecusrosAdicionales\obj\Debug\Recursos.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\RecursosAdcionales\RecusrosAdicionales\bin\Debug\Recursos.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\RecursosAdcionales\RecusrosAdicionales\bin\Debug\Recursos.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\RecursosAdcionales\RecusrosAdicionales\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\RecursosAdcionales\RecusrosAdicionales\obj\Debug\Recursos.g.resources
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\RecursosAdcionales\RecusrosAdicionales\obj\Debug\Recursos.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\RecursosAdcionales\RecusrosAdicionales\obj\Debug\Recursos.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\RecursosAdcionales\RecusrosAdicionales\bin\Debug\Recursos.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\RecursosAdcionales\RecusrosAdicionales\bin\Debug\Recursos.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\RecursosAdcionales\RecusrosAdicionales\obj\Debug\Recursos.g.resources
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\RecursosAdcionales\RecusrosAdicionales\obj\Debug\Recursos.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\RecursosAdcionales\RecusrosAdicionales\obj\Debug\Recursos.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\RecursosAdcionales\RecusrosAdicionales\bin\Debug\Recursos.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\RecursosAdcionales\RecusrosAdicionales\bin\Debug\Recursos.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\RecursosAdcionales\RecusrosAdicionales\obj\Debug\Recursos.g.resources
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\RecursosAdcionales\RecusrosAdicionales\obj\Debug\Recursos.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\RecursosAdcionales\RecusrosAdicionales\obj\Debug\Recursos.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\RecursosAdcionales\RecusrosAdicionales\obj\Debug\RecusrosAdicionales.csprojResolveAssemblyReference.cache

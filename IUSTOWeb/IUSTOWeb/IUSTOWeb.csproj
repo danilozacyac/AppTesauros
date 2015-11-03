@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2620FBAC-27E6-4DEA-A05A-74ED3D51377B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IUSTOWeb</RootNamespace>
+    <AssemblyName>IUSTOWeb</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>IUSTOWeb.pfx</AssemblyOriginatorKeyFile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TO\BusquedaListaTO.cs" />
+    <Compile Include="TO\Comparador\AcuerdosConsecIndxTOComp.cs" />
+    <Compile Include="TO\Comparador\AcuerdosIdTOComp.cs" />
+    <Compile Include="TO\Comparador\AcuerdosRubroTOComp.cs" />
+    <Compile Include="TO\Comparador\AcuerdosTpoTesisTOComp.cs" />
+    <Compile Include="TO\Comparador\TesisConsecIndxNSTOComp.cs" />
+    <Compile Include="TO\Comparador\TesisInstanciaNSTOComp.cs" />
+    <Compile Include="TO\Comparador\TesisIUSTONSComp.cs" />
+    <Compile Include="TO\Comparador\TesisRubroNSTOComp.cs" />
+    <Compile Include="TO\Comparador\TesisNSTOComp.cs" />
+    <Compile Include="TO\Comparador\TesisTpoTesisNSTOComp.cs" />
+    <Compile Include="TO\Comparador\EjecutoriasConsecIndxNSTOComp.cs" />
+    <Compile Include="TO\Comparador\EjecutoriasIdNSTOComp.cs" />
+    <Compile Include="TO\Comparador\TreeNodeDataTOComp.cs" />
+    <Compile Include="TO\Comparador\VotoSimplifcadoRubroTOComp.cs" />
+    <Compile Include="TO\Comparador\VotoSimplificadoIdTOComp.cs" />
+    <Compile Include="TO\Comparador\VotoSimplificadoConsecIndxTOComp.cs" />
+    <Compile Include="TO\Comparador\VotoSimplificadoTOComp.cs" />
+    <Compile Include="TO\Comparador\EjecutoriasRubroTOComp.cs" />
+    <Compile Include="TO\Comparador\EjecutoriasIdTOComp.cs" />
+    <Compile Include="TO\Comparador\EjecutoriasConsecIndxTOComp.cs" />
+    <Compile Include="TO\Comparador\EjecutoriaTOComp.cs" />
+    <Compile Include="TO\Comparador\TesisConsecIndxTOComp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TO\Comparador\TesisInstanciaTOComp.cs" />
+    <Compile Include="TO\Comparador\TesisRubroTOComp.cs" />
+    <Compile Include="TO\Comparador\TesisIUSTOComp.cs" />
+    <Compile Include="TO\Comparador\TesisTOComp.cs" />
+    <Compile Include="TO\Comparador\TesisTpoPredicate.cs" />
+    <Compile Include="TO\Comparador\TesisTpoTesisTOComp.cs" />
+    <Compile Include="TO\AcuerdoSimplificadoTO.cs" />
+    <Compile Include="TO\DocumentoADesplegarTO.cs" />
+    <Compile Include="TO\EjecutoriaSimplificadaTO.cs" />
+    <Compile Include="FachadaBusquedaTradicionalImpl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TesisSimplificadaTO.cs" />
+    <Compile Include="TO\SeguridadUsuariosTO.cs" />
+    <Compile Include="TO\TesisSimplificadaElectoralTO.cs" />
+    <Compile Include="TO\VotoSimplificadoTO.cs" />
+    <Compile Include="utils\Constants.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IUSTOWeb.pfx" />
+    <None Include="output.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

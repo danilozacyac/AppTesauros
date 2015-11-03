@@ -1,0 +1,24 @@
+﻿<Page x:Class="mx.gob.scjn.directorio.CJF.CJFCircuitos"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="CJFCircuitos">
+    <Page.Resources>
+        <ResourceDictionary Source="/General;component/Resources.xaml">
+        </ResourceDictionary>
+    </Page.Resources>
+    
+    <Border Name="Borde" BorderThickness="0" Style="{StaticResource BorderStyle}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="400*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="400*" />
+            </Grid.RowDefinitions>
+            <Frame Name="Circuito" Margin="1,1,1,1">
+
+            </Frame>
+
+        </Grid>
+    </Border>
+</Page>

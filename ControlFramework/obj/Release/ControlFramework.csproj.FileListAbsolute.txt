@@ -1,0 +1,13 @@
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\bin\Release\JaStDev.ControlFramework.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\bin\Release\JaStDev.ControlFramework.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Release\JaStDev.ControlFramework_MarkupCompile.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Release\JaStDev.ControlFramework_MarkupCompile.lref
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Release\Themes\Generic.baml
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Release\JaStDev.ControlFramework.g.resources
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Release\JaStDev.ControlFramework.Properties.Resources.resources
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Release\ControlFramework.csproj.GenerateResource.Cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Release\JaStDev.ControlFramework.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\obj\Release\JaStDev.ControlFramework.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\ControlFramework\bin\Release\JaStDev.ControlFramework.XML

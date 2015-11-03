@@ -1,0 +1,279 @@
+﻿<Page x:Class="IUS.Window1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="clr-namespace:mx.gob.scjn.ius_common.gui.apoyos"
+      WindowTitle="Consulta de Jurisprudencia y Tesis Aisladas" 
+      ShowsNavigationUI="False"  IsHitTestVisible="True" Focusable="True"
+      xmlns:help="clr-namespace:JaStDev.ControlFramework.Controls;assembly=JaStDev.ControlFramework"
+      help:Help.HelpFile="IUS.chm"
+      Loaded="Page_Loaded">
+    
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/General;component/Resources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Border Name="Borde" Style="{StaticResource BorderStyle}">
+        <Canvas Margin="0,0,0,0" Name="canvas1" Height="550" Width="750">
+            <Grid Background="Beige" 
+                  Canvas.Left="0" 
+                  Canvas.Top="40" 
+                  Height="180" 
+                  Name="grid1"
+                  Width="582">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="24*"/>
+                    <RowDefinition Height="24*"/>
+                    <RowDefinition Height="24*" />
+                    <RowDefinition Height="24*" />
+                    <RowDefinition Height="24*" />
+                    <RowDefinition Height="24*" />
+                    <RowDefinition Height="24*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="73*" />
+                    <ColumnDefinition Width="73*" />
+                    <ColumnDefinition Width="73*" />
+                    <ColumnDefinition Width="73*" />
+                    <ColumnDefinition Width="73*" />
+                    <ColumnDefinition Width="73*" />
+                    <ColumnDefinition Width="73*" />
+                    <ColumnDefinition Width="73*" />
+                </Grid.ColumnDefinitions>
+                <Button Margin="0,0,0,0" Name="botonEpocasTodos" Click="botonEpocasTodos_Click">Todo</Button>
+                <Button Grid.Column="1" Margin="0,0,0,0" Name="butonPleno">Pleno</Button>
+                <Button Grid.Column="2" Margin="0,0,0,0" Name="butonSala1">1a. Sala</Button>
+                <Button Grid.Column="3" Margin="0,0,0,0" Name="butonSala2">2a. Sala</Button>
+                <Button Grid.Column="4" Margin="0,0,0,0" Name="butonSala3">3a. Sala</Button>
+                <Button Grid.Column="5" Margin="0,0,0,0" Name="butonSala4">4a. Sala</Button>
+                <Button Grid.Column="6" Margin="0,0,0,0" Name="butonSalaAux">S. Auxiliar</Button>
+                <Button Grid.Column="6" Margin="72.563,0,0,0" Name="butonTCC" Grid.ColumnSpan="3">TCC</Button>
+                <Button Margin="0,0,0,0" Name="botonEpoca9" Grid.Row="1">9a. </Button>
+                <Button Margin="0,0,0,0" Name="botonEpoca8" Grid.Row="2">8a. </Button>
+                <Button Margin="0,0,0,0" Name="botonEpoca7" Grid.Row="3">7a. </Button>
+                <Button Margin="0,0,0,0" Name="botonEpoca6" Grid.Row="4">6a. </Button>
+                <Button Margin="0,0,0,0" Name="botonEpoca5" Grid.Row="5">5a. </Button>
+                <Button Margin="0,0,0,0" Name="botonInformes" Grid.Row="6">Informes</Button>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="1" Grid.Row="1" Margin="0,0,0,0" Name="epocasH0V0">9a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="2" Grid.Row="1" Margin="0,0,0,0" Name="epocasH1V0">9a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="3" Grid.Row="1" Margin="0,0,0,0" Name="epocasH2V0">9a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="7" Grid.Row="1" Margin="0,0,0,0" Name="epocasH6V0">9a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="1" Grid.Row="2" Margin="0,0,0,0" Name="epocasH0V1">8a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="2" Grid.Row="2" Margin="0,0,0,0" Name="epocasH1V1">8a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="3" Grid.Row="2" Margin="0,0,0,0" Name="epocasH2V1">8a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="4" Grid.Row="2" Margin="0,0,0,0" Name="epocasH3V1">8a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="5" Grid.Row="2" Margin="0,0,0,0" Name="epocasH4V1">8a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="6" Grid.Row="2" Margin="0,0,0,0" Name="epocasH5V1">8a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="7" Grid.Row="2" Margin="0,0,0,0" Name="epocasH6V1">8a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="1" Grid.Row="3" Margin="0,0,0,0" Name="epocasH0V2">7a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="2" Grid.Row="3" Margin="0,0,0,0" Name="epocasH1V2">7a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="3" Grid.Row="3" Margin="0,0,0,0" Name="epocasH2V2">7a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="4" Grid.Row="3" Margin="0,0,0,0" Name="epocasH3V2">7a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="5" Grid.Row="3" Margin="0,0,0,0" Name="epocasH4V2">7a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="6" Grid.Row="3" Margin="0,0,0,0" Name="epocasH5V2">7a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="7" Grid.Row="3" Margin="0,0,0,0" Name="epocasH6V2">7a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="1" Grid.Row="4" Margin="0,0,0,0" Name="epocasH0V3">6a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="2" Grid.Row="4" Margin="0,0,0,0" Name="epocasH1V3">6a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="3" Grid.Row="4" Margin="0,0,0,0" Name="epocasH2V3">6a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="4" Grid.Row="4" Margin="0,0,0,0" Name="epocasH3V3">6a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="5" Grid.Row="4" Margin="0,0,0,0" Name="epocasH4V3">6a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="1" Grid.Row="5" Margin="0,0,0,0" Name="epocasH0V4">5a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="2" Grid.Row="5" Margin="0,0,0,0" Name="epocasH1V4">5a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="3" Grid.Row="5" Margin="0,0,0,0" Name="epocasH2V4">5a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="4" Grid.Row="5" Margin="0,0,0,0" Name="epocasH3V4">5a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="5" Grid.Row="5" Margin="0,0,0,0" Name="epocasH4V4">5a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="6" Grid.Row="5" Margin="0,0,0,0" Name="epocasH5V4">5a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="1" Grid.Row="6" Margin="0,0,0,0" Name="epocasH0V5">Informes</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="2" Grid.Row="6" Margin="0,0,0,0" Name="epocasH1V5">Informes</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="3" Grid.Row="6" Margin="0,0,0,0" Name="epocasH2V5">Informes</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="4" Grid.Row="6" Margin="0,0,0,0" Name="epocasH3V5">Informes</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="5" Grid.Row="6" Margin="0,0,0,0" Name="epocasH4V5">Informes</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="6" Grid.Row="6" Margin="0,0,0,0" Name="epocasH5V5">Informes</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="7" Grid.Row="6" Margin="0,0,0,0" Name="epocasH6V5">Informes</CheckBox>
+            </Grid>
+            <Label Height="28" Name="etiquetaEpocas" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" Margin="0,-10,0,0" FontWeight="Bold" Style="{StaticResource LabelStyle}" Canvas.Left="0" Canvas.Top="30">Épocas</Label>
+            <Label Name="etiquetaApendices" HorizontalAlignment="Left" Width="120" Margin="0,186,0,140" Height="23" FontWeight="Bold" Style="{StaticResource LabelStyle}" Canvas.Left="0" Canvas.Top="30">Apéndices</Label>
+            <Label Name="etiquetaAcuerdos" HorizontalAlignment="Left" Width="120" Margin="0,390,0,280" Grid.Row="1" Height="23" Canvas.Left="0" Canvas.Top="-9" Style="{StaticResource LabelStyle}" FontWeight="Bold">Acuerdos</Label>
+            <Grid Background="Beige" 
+                  Height="142" VerticalAlignment="Bottom" 
+                  Grid.ColumnSpan="2" Grid.RowSpan="5" 
+                  Canvas.Top="239" Canvas.Left="0" Width="645">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Button Margin="0,0,0,0" Name="botonApendicesTodos">Todo</Button>
+                <Button Margin="0,0,0,0" Name="botonAct2002"  Grid.Row="1">Act. 2002</Button>
+                <Button Margin="0,0,0,0" Name="botonAct2001"  Grid.Row="2">Act. 2001</Button>
+                <Button Margin="0,0,0,0" Name="boton19172000" Grid.Row="3">1917-2000</Button>
+                <Button Margin="0,0,0,0" Name="boton19171988" Grid.Row="4">1917-1995</Button>
+                <Button Margin="0,0,0,0" Name="boton19541988" Grid.Row="5">1954-1988</Button>
+                <Button Margin="0,0,0,0" Name="botonConst"  Grid.Column="1">Const.</Button>
+                <Button Margin="0,0,0,0" Name="botonPenal"  Grid.Column="2">Penal</Button>
+                <Button Margin="0,0,0,0" Name="botonAdmin" Grid.Column="3">Admin.</Button>
+                <Button Margin="0,0,0,0" Name="botonCivil" Grid.Column="4">Civil</Button>
+                <Button Margin="0,0,0,0" Name="botonLaboral" Grid.Column="5">Laboral</Button>
+                <Button Margin="0,0,0,0" Name="botonComun" Grid.Column="6">Común</Button>
+                <Button Margin="0,0,0,0" Name="botonConfComp" Grid.Column="7">Conf. Comp.</Button>
+                <Button Margin="0,0,0,0" Name="botonElectoral" Grid.Column="8">Electoral</Button>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH0V0" Grid.Row="1" Grid.Column="1">Act. 2002</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH1V0" Grid.Row="1" Grid.Column="2">Act. 2002</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH2V0" Grid.Row="1" Grid.Column="3">Act. 2002</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH3V0" Grid.Row="1" Grid.Column="4">Act. 2002</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH4V0" Grid.Row="1" Grid.Column="5">Act. 2002</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH5V0" Grid.Row="1" Grid.Column="6">Act. 2002</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH6V0" Grid.Row="1" Grid.Column="7">Act. 2002</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH7V0" Grid.Row="1" Grid.Column="8">Act. 2002</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH0V1" Grid.Row="2" Grid.Column="1">Act. 2001</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH1V1" Grid.Row="2" Grid.Column="2">Act. 2001</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH2V1" Grid.Row="2" Grid.Column="3">Act. 2001</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH3V1" Grid.Row="2" Grid.Column="4">Act. 2001</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH4V1" Grid.Row="2" Grid.Column="5">Act. 2001</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH5V1" Grid.Row="2" Grid.Column="6">Act. 2001</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH7V1" Grid.Row="2" Grid.Column="8">Act. 2001</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon"  Margin="0,0,0,0" Name="ApendiceH0V2" Grid.Row="3" Grid.Column="1">1917-2000</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH1V2" Grid.Row="3" Grid.Column="2">1917-2000</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH2V2" Grid.Row="3" Grid.Column="3">1917-2000</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon"  Margin="0,0,0,0" Name="ApendiceH3V2" Grid.Row="3" Grid.Column="4">1917-2000</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH4V2" Grid.Row="3" Grid.Column="5">1917-2000</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH5V2" Grid.Row="3" Grid.Column="6">1917-2000</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH6V2" Grid.Row="3" Grid.Column="7">1917-2000</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH7V2" Grid.Row="3" Grid.Column="8">1917-2000</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH0V3" Grid.Row="4" Grid.Column="1">1917-1995</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon"  Margin="0,0,0,0" Name="ApendiceH1V3" Grid.Row="4" Grid.Column="2">1917-1995</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH2V3" Grid.Row="4" Grid.Column="3">1917-1995</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH3V3" Grid.Row="4" Grid.Column="4">1917-1995</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH4V3" Grid.Row="4" Grid.Column="5">1917-1995</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH5V3" Grid.Row="4" Grid.Column="6">1917-1995</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH0V4" Grid.Row="5" Grid.Column="1">1954-1988</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH1V4" Grid.Row="5" Grid.Column="2">1954-1988</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH2V4" Grid.Row="5" Grid.Column="3">1954-1988</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH3V4" Grid.Row="5" Grid.Column="4">1954-1988</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH4V4" Grid.Row="5" Grid.Column="5">1954-1988</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Margin="0,0,0,0" Name="ApendiceH5V4" Grid.Row="5" Grid.Column="6">1954-1988</CheckBox>
+            </Grid>
+            <Grid Background="Beige" 
+                  Canvas.Left="-0.868" 
+                  Canvas.Top="402" Height="87" 
+                  Name="grid2" Width="636.868">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40*" />
+                    <RowDefinition Height="20*" />
+                    <RowDefinition Height="20*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Button Margin="0,0,0,0" Name="botonAcuerdosTodos">Todo</Button>
+                <Button Margin="0,0,0,0" Grid.Column="1" Name="botonPlenoSCJN">Pleno SCJN</Button>
+                <Button Margin="0,0,0,0" Grid.Column="2" Name="botonCJF">CJF</Button>
+                <Button Margin="0,0,0,0" Grid.Column="3" Name="botonPresidencia">Presidencia</Button>
+                <Button Margin="0,0,0,0" Grid.Column="4" Name="botonCGA" VerticalContentAlignment="Stretch" 
+                    HorizontalContentAlignment="Stretch" 
+                    VerticalAlignment="Stretch" FlowDirection="RightToLeft">
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center" Height="32">
+                    Com de Gob. y Admon </TextBlock>
+                </Button>
+                <Button Margin="0,0,0,0" Grid.Column="5" Name="botonComites">Comités SCJN</Button>
+                <Button Margin="0,0,0,0" Grid.Column="6" Name="botonConjuntos">Conjuntos</Button>
+                <Button Margin="0,0,0,0" Grid.Column="7" Name="botonOtros">Otros</Button>
+                <Button Grid.Row="1" Name="boton9a">9a.</Button>
+                <Button Grid.Row="2" Name="boton8a">8a.</Button>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="1" Grid.Row="1" Name="AcuerdoH0V0">9a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="2" Grid.Row="1" Name="AcuerdoH1V0">9a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="3" Grid.Row="1" Name="AcuerdoH2V0">9a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="4" Grid.Row="1" Name="AcuerdoH3V0">9a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="5" Grid.Row="1" Name="AcuerdoH4V0">9a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="6" Grid.Row="1" Name="AcuerdoH5V0">9a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="7" Grid.Row="1" Name="AcuerdoH6V0">9a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="1" Grid.Row="2" Name="AcuerdoH0V1">8a. Época</CheckBox>
+                <!--CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="2" Grid.Row="2" Name="AcuerdoH1V1">8a. Época</CheckBox-->
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="4" Grid.Row="2" Name="AcuerdoH3V1">8a. Época</CheckBox>
+                <CheckBox VerticalAlignment="Center" Foreground="Maroon" BorderBrush="Maroon" Grid.Column="7" Grid.Row="2" Name="AcuerdoH6V1">8a. Época</CheckBox>
+            </Grid>
+            <ComboBox Canvas.Left="0" Canvas.Top="0"
+                      ToolTip="Tipo de información para consultar"
+                  Height="23" Name="tipoDocumento" Width="120" 
+                  SelectionChanged="tipoDocumento_SelectionChanged">
+                <ComboBoxItem IsSelected="True">Tesis</ComboBoxItem>
+                <ComboBoxItem>Ejecutorias</ComboBoxItem>
+                <ComboBoxItem>Votos</ComboBoxItem>
+                <ComboBoxItem>Acuerdos</ComboBoxItem>
+                <ComboBoxItem>Otros</ComboBoxItem>
+            </ComboBox>
+            <Image Margin="120,0,0,0" Height="24"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left"
+               Name="secuencial" 
+                   ToolTip="Lectura secuencial"
+               MouseLeftButtonDown="secuencial_Click"
+               MouseEnter="secuencial_MouseEnter"
+               MouseLeave="secuencial_MouseLeave" 
+                   Source="/General;component/images/Bus-secuencial.png" /> 
+            <Image Name="PorRegistro" Height="24"
+                   Margin="230,0,0,0"
+                   ToolTip="Búsqueda por registro"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   MouseEnter="PorRegistro_MouseEnter"
+                   MouseLeave="PorRegistro_MouseLeave"
+                   MouseLeftButtonDown="PorRegistro_MouseLeftButtonDown" 
+                   Source="/General;component/images/Bus-registro.png"
+                   />
+            <Image Margin="360,0,0,0" Height="24"
+                   Name="PorPalabra" 
+                   ToolTip="Búsqueda por palabra"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   MouseEnter="PorPalabra_MouseEnter"
+                   MouseLeave="PorPalabra_MouseLeave"
+                   MouseLeftButtonDown="PorPalabra_MouseLeftButtonDown"
+                   Source="/General;component/images/Bus-palabra.png" 
+                   />
+            <Image Margin="490,0,0,0" Height="24" 
+                   Name="Recuperar" Stretch="Fill"
+                   Visibility="{Binding Source={StaticResource Visibilidad}, Path=ObtenVisibilidadInternet}"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   MouseEnter="Recuperar_MouseEnter"
+                   MouseLeave="Recuperar_MouseLeave"
+                   MouseLeftButtonDown="Recuperar_MouseLeftButtonDown"
+                   ToolTip="Recuperar consulta almacenada"
+                   Source="/General;component/images/recuperar.png"/>
+            <Image Margin="555,0,0,0" Height="24"
+                   Name="Salir"
+                   MouseEnter="Salir_MouseEnter"
+                   MouseLeave="Salir_MouseLeave"
+                   ToolTip="Regresar al menú principal"
+                   MouseLeftButtonDown="Salir_MouseLeftButtonDown"
+                   Source="/General;component/images/Salir-1.png"/>
+            <local:PorRegistro x:Name="ventanaPorRegistro" Visibility="Hidden" Grid.Column="1" Grid.ColumnSpan="6" Margin="6,6,6,-71" Grid.Row="2" Grid.RowSpan="5" Height="194" Canvas.Left="1" Canvas.Top="14" Width="424"></local:PorRegistro>
+            <local:ListaBusquedasAlmacenadas x:Name="ListaBusquedas" Visibility="Hidden" Grid.Column="1" Grid.ColumnSpan="7" Margin="70.333,7,38.917,-13" Grid.RowSpan="7" Height="200" Canvas.Left="8" Canvas.Top="33" Width="400" />
+
+        </Canvas>
+    </Border>
+</Page>

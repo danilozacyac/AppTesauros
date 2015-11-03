@@ -1,0 +1,8 @@
+﻿<Application x:Class="AppTesauro09wpf.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Startup="inicio">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

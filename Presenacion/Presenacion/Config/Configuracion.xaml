@@ -1,0 +1,124 @@
+﻿<Window x:Class="mx.gob.scjn.ius_common.gui.Config.Configuracion"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Configuración"
+        xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid"
+    Height="300" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="250"/>
+        <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TreeView>
+            <TreeViewItem Name="TviLetra" Selected="TviLetra_MouseLeftButtonDown"
+                          Header="Tamaño de la letra"/>
+            <TreeViewItem Name="TviCampos" Selected="TviCampos_MouseLeftButtonDown"
+                          IsExpanded="True" Header="Campos seleccionados inicialmente">
+                <TreeViewItem Name="TviCamposTesis"
+                              Selected="TviCamposTesis_MouseLeftButtonDown" Header="Tesis"></TreeViewItem>
+                <TreeViewItem Name="TviCamposEjecutoria" Selected="TviCamposEjecutoria_MouseLeftButtonDown" Header="Ejecutorias"></TreeViewItem>
+                <TreeViewItem Name="TviCamposVotos" Selected="TviCamposVotos_Selected" Header="Votos"></TreeViewItem>
+                <TreeViewItem Name="TviCamposAcuerdos"
+                              Selected="TviCamposAcuerdos_MouseLeftButtonDown" Header="Acuerdos/Otros"></TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Name="TviReportes"
+                          Selected="TviReportes_MouseLeftButtonDown" Header="Reportes">
+            </TreeViewItem>
+            <TreeViewItem Name="TviAvanzado" Visibility="Collapsed"
+                          Selected="TviAvanzado_MouseLeftButtonDown" Header="Avanzado"/>
+        </TreeView>
+        <StackPanel Grid.Column="1">
+            <Label FontSize="14" Name="LblTitulo">Opciones generales</Label>
+            <Button Name="BtnGuarda" Visibility="Collapsed" Click="BtnGuarda_Click">Guardar _cambios</Button>
+            <Grid Name="CnvLetra" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>                    
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label>Tamaño</Label>
+                <xcdg:NumericTextBox MaxLength="2" TextChanged="TbxPiePagina_TextChanged" Grid.Column="1" Name="TbxTamanoLetra" NumberStyles="None"></xcdg:NumericTextBox>                
+            </Grid>
+            <Grid Name="CnvCamposTesis" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <CheckBox Name="CbxLoc" Click="CbxLoc_Checked">_Localización</CheckBox>
+                <CheckBox Name="CbxRubro" Click="CbxLoc_Checked" Grid.Column="1">_Rubro</CheckBox>
+                <CheckBox Name="CbxTexto" Click="CbxLoc_Checked" Grid.Row="1">_Texto</CheckBox>
+                <CheckBox Name="CbxPrec" Click="CbxLoc_Checked" Grid.Row="1" Grid.Column="1">_Precedentes</CheckBox>
+            </Grid>
+            <Grid Name="CnvCamposEje" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <CheckBox Name="CbxLocEje" Click="CbxLoc_Checked">_Localización</CheckBox>
+                <CheckBox Name="CbxRubroEje" Click="CbxLoc_Checked" Grid.Column="1">T_ema</CheckBox>
+                <CheckBox Name="CbxTextoEje" Click="CbxLoc_Checked" Grid.Row="1">_Texto</CheckBox>
+                <CheckBox Name="CbxPrecEje" Click="CbxLoc_Checked" Grid.Row="1" Grid.Column="1">_Asunto</CheckBox>
+            </Grid>
+            <Grid Name="CnvCamposVotos" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <CheckBox Name="CbxLocVoto" Click="CbxLoc_Checked">_Localización</CheckBox>
+                <CheckBox Name="CbxRubroVoto" Click="CbxLoc_Checked" Grid.Column="1">_Emisor</CheckBox>
+                <CheckBox Name="CbxTextoVoto" Click="CbxLoc_Checked" Grid.Row="1">_Texto</CheckBox>
+                <CheckBox Name="CbxPrecVoto" Click="CbxLoc_Checked" Grid.Row="1" Grid.Column="1">_Asunto</CheckBox>
+            </Grid>
+            <Grid Name="CnvCamposAcu" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <CheckBox Name="CbxLocAcu" Click="CbxLoc_Checked">_Localización</CheckBox>
+                <CheckBox Name="CbxRubroAcu" Click="CbxLoc_Checked" Grid.Column="1">Tema</CheckBox>
+                <CheckBox Name="CbxTextoAcu" Click="CbxLoc_Checked" Grid.Row="1">_Texto</CheckBox>
+            </Grid>
+            <Grid Name="CnvReportes" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Name="LblPie">Pie de página</Label>
+                <TextBox MaxLength="55"  TextChanged="TbxPiePagina_TextChanged" Grid.Column="1" Name="TbxPiePagina"/>
+            </Grid>
+            <Grid Name="CnvAvanzado" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Name="LblPag">Número de tesis por página</Label>
+                <xcdg:NumericTextBox NumberStyles="None" Grid.Column="1" Name="TbxPagina"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

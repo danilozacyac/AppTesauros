@@ -1,0 +1,13 @@
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\iustoweb\iustoweb\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\iustoweb\iustoweb\bin\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\iustoweb\iustoweb\bin\Debug\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\iustoweb\iustoweb\obj\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS\IUS TFS Septiembre\IUSNET TFS\Codigo\Trunk\IUS.NET\iustoweb\iustoweb\obj\Debug\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTOWeb\IUSTOWeb\bin\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTOWeb\IUSTOWeb\bin\Debug\IUSTOWeb.pdb
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTOWeb\IUSTOWeb\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTOWeb\IUSTOWeb\obj\Debug\IUSTOWeb.dll
+C:\Documents and Settings\cluna\Mis documentos\IUS 2009 TFS\Trunk\IUS.NET\IUSTOWeb\IUSTOWeb\obj\Debug\IUSTOWeb.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOWeb\IUSTOWeb\obj\Debug\IUSTOWeb.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOWeb\IUSTOWeb\obj\Debug\IUSTOWeb.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\IUSTOWeb\IUSTOWeb\obj\Debug\IUSTOWeb.pdb

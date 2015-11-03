@@ -1,0 +1,45 @@
+﻿<Page x:Class="IUS.ConsultasEspeciales"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Loaded="Page_Loaded">
+    <Page.Resources>
+        <ResourceDictionary Source="/General;component/Resources.xaml"/>
+    </Page.Resources>
+    <Border Name="Borde" Style="{StaticResource BorderStyle}">
+        <Grid>
+            <TreeView Margin="32,32,42,96"
+                      MouseDoubleClick="treeView1_MouseDoubleClick" Name="treeView1" Opacity="1" 
+                      Background="Bisque" FontSize="14" SelectedItemChanged="treeView1_SelectedItemChanged">
+                <TreeViewItem Header="Generales" Selected="TreeViewItem_Selected" IsExpanded="True">
+                    <TreeViewItem Header="Suspensión del acto reclamado"/>
+                    <TreeViewItem Header="Improcedencia del juicio de amparo"/>
+                </TreeViewItem>
+                <TreeViewItem Header="Facultades Exclusivas de la SCJN" IsExpanded="True">
+	                      <TreeViewItem Header="Investigación sobre la violación grave de garantías individuales"/>
+	                      <TreeViewItem Header="Investigación sobre la violación grave del voto público"
+                                        ToolTip="Por decreto promulgado el 12 de noviembre de 2007, se derogó el párrafo tercero del artículo 97 constitucional"/>
+	                      <TreeViewItem Header="Controversias constitucionales"/>
+	                      <TreeViewItem Header="Acciones de inconstitucionalidad"/>
+                </TreeViewItem>
+                <TreeViewItem Header="Jurisprudencia por Contradicción de Tesis" IsExpanded="True">
+                    <TreeViewItem Header="Jurisprudencia por contradicción de tesis"/>
+                    <TreeViewItem Header="Jurisprudencia por reiteración y tesis aisladas provenientes de la resolución de contradicciones"/>
+                </TreeViewItem>
+                <TreeViewItem Header="Jurisprudencia y Tesis en Materia Electoral" IsExpanded="True">
+                    <TreeViewItem Header="Electoral"/>
+                </TreeViewItem>
+            </TreeView>
+            <Label Height="35" Margin="104,0,65,0" Name="label1"
+                   VerticalAlignment="Top" Style="{StaticResource UIStyle}"
+                   FontSize="18">Consultas especiales</Label>
+            <Button Height="40" 
+                    ToolTip="Regresar al menú principal"
+                   HorizontalAlignment="Right" 
+                   Name="Salir" 
+                   VerticalAlignment="Top" 
+                   Width="40" 
+                   Template="{StaticResource RegresarBoton}"
+                    Click="Salir_MouseLeftButtonDown"/>
+        </Grid>
+    </Border>
+</Page>

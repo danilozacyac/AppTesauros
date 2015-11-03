@@ -1,0 +1,73 @@
+﻿<Page x:Class="mx.gob.scjn.ius_common.gui.noticia.FramesResultados"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+      xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid">
+    <Page.Resources>
+        <ResourceDictionary Source="/General;component/Resources.xaml"/>
+    </Page.Resources>
+    <Border Style="{StaticResource BorderStyle}">
+    <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="400"/>
+                <ColumnDefinition Width="800*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+                <xcdg:DataGridControl Grid.Column="0" Grid.Row="1" Margin="0,0,0,0" 
+                                  Name="Periodos" Background="Bisque" 
+                                  ReadOnly="True" EditTriggers="None" 
+                                  NavigationBehavior="RowOnly" SelectionMode="Single" 
+                                  AutoCreateColumns="False" 
+                                      PropertyChanged="Periodos_PropertyChanged"
+                                      MouseLeftButtonDown="Periodos_MouseDoubleClick">
+                <xcdg:DataGridControl.Columns>
+                    <xcdg:Column FieldName="Fecha" 
+                                 TextTrimming="WordEllipsis" 
+                                 TextWrapping="WrapWithOverflow"
+                                 Title="Periodo"
+                                 Width="300"
+                                 IsMainColumn="True" ReadOnly="True" />
+                </xcdg:DataGridControl.Columns>
+                <xcdg:DataGridControl.View>
+                    <xcdg:TableView ShowFixedColumnSplitter="False" UseDefaultHeadersFooters="False">
+                        <xcdg:TableView.FixedHeaders>
+                            <DataTemplate>
+                                <xcdg:ColumnManagerRow MouseLeftButtonDown="Periodos_MouseDoubleClick" AllowSort="False" AllowColumnReorder="False" />
+                            </DataTemplate>
+                        </xcdg:TableView.FixedHeaders>
+                    </xcdg:TableView>
+                </xcdg:DataGridControl.View>
+            </xcdg:DataGridControl>
+            <xcdg:DataGridControl Grid.Column="1" Grid.Row="1" Margin="0,0,0,0" 
+                                  Name="Funcionarios" Background="Wheat" 
+                                  EditTriggers="None" ReadOnly="True" 
+                                  SelectionMode="Single" NavigationBehavior="RowOnly" AutoCreateColumns="False">
+                <xcdg:DataGridControl.Columns>
+                    <xcdg:Column FieldName="Funcionario" 
+                                 Width="300"
+                                 ReadOnly="True" 
+                                 TextTrimming="WordEllipsis"
+                                 TextWrapping="WrapWithOverflow"
+                                 Title="Ministros/Magistrados" IsMainColumn="True" />
+                </xcdg:DataGridControl.Columns>
+                <xcdg:DataGridControl.View>
+                    <xcdg:TableView ShowFixedColumnSplitter="False" ShowRowSelectorPane="False" UseDefaultHeadersFooters="False">
+                        <xcdg:TableView.FixedHeaders>
+                            <DataTemplate>
+                                <xcdg:ColumnManagerRow AllowSort="False" AllowColumnReorder="False" />
+                            </DataTemplate>
+                        </xcdg:TableView.FixedHeaders>
+                    </xcdg:TableView>
+                </xcdg:DataGridControl.View>
+            </xcdg:DataGridControl>
+            <Button Grid.Column="1" ToolTip="Regresar a la pantalla anterior"
+                    HorizontalAlignment="Right"
+                    Name="Salir" Width="40"
+                    Click="Salir_MouseLeftButtonDown"
+                    VerticalAlignment="Top"
+                    Template="{StaticResource RegresarBoton}" />
+        </Grid>
+        </Border>
+</Page>

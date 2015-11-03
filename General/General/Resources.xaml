@@ -1,0 +1,509 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:utilities="clr-namespace:mx.gob.scjn.ius_common.gui.gui.utilities"
+                    xmlns:utils="clr-namespace:mx.gob.scjn.ius_common.gui.utils"
+                    xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid">
+    <!--
+        <SolidColorBrush Color="#E8DEB7" x:Key="ColorBase"></SolidColorBrush>
+        <SolidColorBrush Color="Maroon" x:Key="ColorClaro"></SolidColorBrush>
+        <SolidColorBrush Color="Maroon" x:Key="ColorFuenteBoton"></SolidColorBrush>
+        <SolidColorBrush Color="Maroon" x:Key="ColorFuenteEtiqueta"></SolidColorBrush>
+    -->
+    <SolidColorBrush x:Key="ColorBase" Color="#2A2D39" />
+    <SolidColorBrush x:Key="ColorClaro" Color="#B5B2AB" />
+    <SolidColorBrush x:Key="ColorFuenteBoton" Color="#B5B2AB" />
+    <SolidColorBrush x:Key="ColorFuenteEtiqueta" Color="#B5B2AB" />
+
+    <!--  SolidColorBrush Color="Maroon" x:Key="ColorBase"></SolidColorBrush  -->
+    <!--  SolidColorBrush Color="Bisque" x:Key="ColorClaro"></SolidColorBrush  -->
+    <!--  SolidColorBrush Color="Bisque" x:Key="ColorFuenteBoton"></SolidColorBrush  -->
+    <!--  SolidColorBrush Color="Bisque" x:Key="ColorFuenteEtiqueta"></SolidColorBrush  -->
+
+    <Style x:Key="BorderStyle" TargetType="{x:Type Border}">
+        <!--  Setter Property="Background" Value="Maroon"/  -->
+        <!--  Setter Property="Background" Value="#E6D7B3"/  -->
+        <!--  <Setter Property="Background" Value="#E8DEB7"/> Existente hasta Abril 25 2012  -->
+        <Setter Property="Background" Value="#2A2D39" />
+        <Setter Property="BorderBrush" Value="#DDDDDD" />
+        <Setter Property="BorderThickness" Value="1" />
+        <!--  Setter Property="Background" Value="#FAFA81"/  -->
+        <!--  Setter Property="CornerRadius" Value="50"/  -->
+        <!--
+            Setter Property="Background">
+            <Setter.Value>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="Green" Offset="0"/>
+            <GradientStop Color="Bisque" Offset=".7"/>
+            <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+            </Setter.Value>
+            </Setter
+        -->
+    </Style>
+    <Style x:Key="LabelStyle" TargetType="{x:Type Label}">
+        <!--  Setter Property="Foreground" Value="Bisque"/  -->
+        <!--  <Setter Property="Foreground" Value="Maroon"/> Hasta Abril 25 2012  -->
+        <Setter Property="Foreground" Value="#B5B2AB" />
+    </Style>
+    <Style x:Key="ChkStyle" TargetType="{x:Type CheckBox}">
+        <!--  Setter Property="Foreground" Value="Bisque"/  -->
+        <Setter Property="Foreground" Value="#B5B2AB" />
+    </Style>
+    <Style x:Key="UIStyle" TargetType="{x:Type Control}">
+        <!--  Setter Property="Foreground" Value="Bisque"/  -->
+        <!--  <Setter Property="Foreground" Value="Maroon"/> Hasta Abril 25 2012  -->
+        <Setter Property="Foreground" Value="#B5B2AB" />
+    </Style>
+    <Style x:Key="TextStyle" TargetType="{x:Type TextBlock}">
+        <!--  Setter Property="Foreground" Value="Bisque"/  -->
+        <!--  <Setter Property="Foreground" Value="Maroon"/> Hasta Abril 25 2012  -->
+        <Setter Property="Foreground" Value="#B5B2AB" />
+    </Style>
+    <utilities:VisibilidadGlobal x:Key="Visibilidad" />
+    <ControlTemplate x:Key="FDPVTemplate" TargetType="{x:Type FlowDocumentPageViewer}">
+        <Border Margin="{TemplateBinding Control.Padding}"
+                HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}"
+                VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}"
+                BorderBrush="{TemplateBinding Border.BorderBrush}"
+                BorderThickness="0"
+                x:Uid="Border_47">
+            <AdornerDecorator ClipToBounds="True" x:Uid="AdornerDecorator_1">
+                <DocumentPageView DocumentViewerBase.IsMasterPage="True"
+                                  KeyboardNavigation.IsTabStop="False"
+                                  KeyboardNavigation.TabIndex="1"
+                                  KeyboardNavigation.TabNavigation="Local"
+                                  x:Uid="DocumentPageView_1" />
+            </AdornerDecorator>
+        </Border>
+    </ControlTemplate>
+    <ControlTemplate x:Key="TacheBoton" TargetType="Button">
+        <Image x:Name="ImagenTache" Source="/General;component/images/TACHE1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenTache" Property="Source" Value="/General;component/images/TACHE2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="NotaGenericaBoton" TargetType="Button">
+        <Image x:Name="ImagenNotaGenerica" Source="/General;component/images/NOTAGENERICA1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenNotaGenerica" Property="Source" Value="/General;component/images/NOTAGENERICA2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="ExpanderBoton" TargetType="Button">
+        <Image x:Name="ImagenExpander" Source="/General;component/images/MAS1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenExpander" Property="Source" Value="/General;component/images/MAS2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="TemaBoton" TargetType="Button">
+        <Image x:Name="ImagenTema" Source="/General;component/images/TEMAS1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenTema" Property="Source" Value="/General;component/images/TEMAS2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="TablaBoton" TargetType="Button">
+        <Image x:Name="ImagenTabla" Source="/General;component/images/Tabla1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenTabla" Property="Source" Value="/General;component/images/Tabla2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="VeaseBoton" TargetType="Button">
+        <Image x:Name="ImagenVease" Source="/General;component/images/Votos1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenVease" Property="Source" Value="/General;component/images/Votos2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="ConcordanciaBoton" TargetType="Button">
+        <Image x:Name="ImagenConcordancia" Source="/General;component/images/Concordancia1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenConcordancia" Property="Source" Value="/General;component/images/Concordancia2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="ImprimePapelBoton" TargetType="Button">
+        <Image x:Name="ImagenImprimePapel" Source="/General;component/images/Imprimir1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenImprimePapel" Property="Source" Value="/General;component/images/Imprimir2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="ImprimeBoton" TargetType="Button">
+        <Image x:Name="ImagenImprime" Source="/General;component/images/Imprimir1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenImprime" Property="Source" Value="/General;component/images/Imprimir2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="ImprimeDirectoBoton" TargetType="Button">
+        <Image x:Name="ImagenImprimeDirecto" Source="/General;component/images/Imprimir-B1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenImprimeDirecto" Property="Source" Value="/General;component/images/Imprimir-B2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="RegresarBoton" TargetType="Button">
+        <Image x:Name="ImagenRegresar" Source="/General;component/images/REGRESAR1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenRegresar" Property="Source" Value="/General;component/images/REGRESAR2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <DataTemplate x:Key="ImageContentPresenter">
+        <Image Width="60"
+               Height="52"
+               VerticalAlignment="Top"
+               Source="{Binding .}"
+               Visibility="Visible" />
+    </DataTemplate>
+    <utilities:ItemIndexNumberConverter x:Key="Convertidor" />
+
+    <Style x:Key="itemIndexSelectorStyle" TargetType="{x:Type xcdg:RowSelector}">
+        <Setter Property="IsEnabled" Value="false" />
+        <Setter Property="Content" Value="{Binding RelativeSource={RelativeSource Self}, Path=ItemIndex, Converter={StaticResource Convertidor}}" />
+    </Style>
+    <Style TargetType="{x:Type xcdg:DataRow}">
+        <Setter Property="xcdg:RowSelector.RowSelectorStyle" Value="{StaticResource itemIndexSelectorStyle}" />
+    </Style>
+    <!--  Controles tanto de partes como de navegacion en las tablas de resultados  -->
+    <ControlTemplate x:Key="InicioBoton" TargetType="Button">
+        <Image x:Name="ImagenInicio" Source="/General;component/images/FLECHA-Z1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenInicio" Property="Source" Value="/General;component/images/FLECHA-Z2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="AnteriorBoton" TargetType="Button">
+        <Image x:Name="ImagenAnterior" Source="/General;component/images/FLECHA-Y1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenAnterior" Property="Source" Value="/General;component/images/FLECHA-Y2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="SiguienteBoton" TargetType="Button">
+        <Image x:Name="ImagenSiguiente" Source="/General;component/images/FLECHA-W1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenSiguiente" Property="Source" Value="/General;component/images/FLECHA-W2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="FinalBoton" TargetType="Button">
+        <Image x:Name="ImagenFinal" Source="/General;component/images/FLECHA-X1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenFinal" Property="Source" Value="/General;component/images/FLECHA-X2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <!--  Fin de los controles de navegacion de la tabla de resultados  de las partes  -->
+    <!--  Controles tanto de  navegacion en los documentos  -->
+    <ControlTemplate x:Key="InicioListaBoton" TargetType="Button">
+        <Image x:Name="ImagenInicioLista" Source="/General;component/images/FLECHA-BB1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenInicioLista" Property="Source" Value="/General;component/images/FLECHA-BB2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="AnteriorListaBoton" TargetType="Button">
+        <Image x:Name="ImagenAnteriorLista" Source="/General;component/images/FLECHA-B1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenAnteriorLista" Property="Source" Value="/General;component/images/FLECHA-B2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="SiguienteListaBoton" TargetType="Button">
+        <Image x:Name="ImagenSiguienteLista" Source="/General;component/images/FLECHA-A1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenSiguienteLista" Property="Source" Value="/General;component/images/FLECHA-A2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="FinalListaBoton" TargetType="Button">
+        <Image x:Name="ImagenFinalLista" Source="/General;component/images/FLECHA-AA1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenFinalLista" Property="Source" Value="/General;component/images/FLECHA-AA2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <!--  Fin de los controles de navegacion de la tabla de resultados  de las partes  -->
+    <ControlTemplate x:Key="OriginalBoton" TargetType="Button">
+        <Image x:Name="ImagenOriginal" Source="/General;component/images/Original1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenOriginal" Property="Source" Value="/General;component/images/Original2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="OrdenarBoton" TargetType="Button">
+        <Image x:Name="ImagenOrdenar" Source="/General;component/images/OrdenarPor1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenOrdenar" Property="Source" Value="/General;component/images/OrdenarPor2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="GuardarBoton" TargetType="Button">
+        <Image x:Name="ImagenGuardar" Source="/General;component/images/Guardar1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenGuardar" Property="Source" Value="/General;component/images/Guardar2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="PortapapelesBoton" TargetType="Button">
+        <Image x:Name="ImagenPortapapeles" Source="/General;component/images/Portapapeles1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenPortapapeles" Property="Source" Value="/General;component/images/Portapapeles2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="FontMayorBoton" TargetType="Button">
+        <Image x:Name="ImagenFontMayor" Source="/General;component/images/FONT-MAS1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenFontMayor" Property="Source" Value="/General;component/images/FONT-MAS2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="FontMenorBoton" TargetType="Button">
+        <Image x:Name="ImagenFontMenor" Source="/General;component/images/FONT-MENOS1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenFontMenor" Property="Source" Value="/General;component/images/FONT-MENOS2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="MarcarTodoBoton" TargetType="Button">
+        <Image x:Name="ImagenMarcarTodo" Source="/General;component/images/Marcar Todos1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenMarcarTodo" Property="Source" Value="/General;component/images/Marcar Todos2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="DesmarcarBoton" TargetType="Button">
+        <Image x:Name="ImagenDesmarcar" Source="/General;component/images/DESMARCAR1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenDesmarcar" Property="Source" Value="/General;component/images/DESMARCAR2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="MarcarBoton" TargetType="Button">
+        <Image x:Name="ImagenMarcar" Source="/General;component/images/MARCAR1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenMarcar" Property="Source" Value="/General;component/images/MARCAR2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="HistorialBoton" TargetType="Button">
+        <Image x:Name="ImagenHistorial" Source="/General;component/images/HISTORIAL1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenHistorial" Property="Source" Value="/General;component/images/HISTORIAL2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="SentenciaBoton" TargetType="Button">
+        <Image x:Name="ImagenEjecutoria" Source="/General;component/images/sentencia1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenEjecutoria" Property="Source" Value="/General;component/images/sentencia2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="EjecutoriaBoton" TargetType="Button">
+        <Image x:Name="ImagenEjecutoria" Source="/General;component/images/Ejecutoria1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenEjecutoria" Property="Source" Value="/General;component/images/Ejecutoria2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="VotoBoton" TargetType="Button">
+        <Image x:Name="ImagenHistorial" Source="/General;component/images/Voto1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenHistorial" Property="Source" Value="/General;component/images/Voto2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="ObservacionesBoton" TargetType="Button">
+        <Image x:Name="ImagenObservaciones" Source="/General;component/images/Observaciones1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenObservaciones" Property="Source" Value="/General;component/images/Observaciones2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="BuscarBoton" TargetType="Button">
+        <Image x:Name="ImagenBuscar" Source="/General;component/images/BUSQUEDA1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenBuscar" Property="Source" Value="/General;component/images/BUSQUEDA2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="GenealogiaBoton" TargetType="Button">
+        <Image x:Name="ImagenGenealogia" Source="/General;component/images/GENEALOGIA1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenGenealogia" Property="Source" Value="/General;component/images/GENEALOGIA2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="IncorporaBoton" TargetType="Button">
+        <Grid>
+            <ContentPresenter />
+            <Image x:Name="ImagenIncorpora" Source="/General;component/images/Incorporar1.png" />
+
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenIncorpora" Property="Source" Value="/General;component/images/Incorporar2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="VerBoton" TargetType="Button">
+        <Grid>
+            <ContentPresenter />
+            <Image x:Name="ImagenVer" Source="/General;component/images/VerExpresiones1.png" />
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenVer" Property="Source" Value="/General;component/images/VerExpresiones2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="AlmacenarBoton" TargetType="Button">
+        <Grid>
+            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Image x:Name="ImagenAlmacenar" Source="/General;component/images/AlmacenarExpresion.png" />
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenAlmacenar" Property="Source" Value="/General;component/images/AlmacenarExpresion2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="EliminarBoton" TargetType="Button">
+        <Grid>
+            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Image x:Name="ImagenEliminar" Source="/General;component/images/Eliminar1.png" />
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenEliminar" Property="Source" Value="/General;component/images/Eliminar2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="CopiarBoton" TargetType="Button">
+        <Grid>
+            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Image x:Name="ImagenCopiar" Source="/General;component/images/Copiar1.png" />
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenCopiar" Property="Source" Value="/General;component/images/Copiar2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="RecuperarBoton" TargetType="Button">
+        <Grid>
+            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Image x:Name="ImagenRecuperar" Source="/General;component/images/Recuperar1.png" />
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenRecuperar" Property="Source" Value="/General;component/images/recuperar2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="RealizarBoton" TargetType="Button">
+        <Grid>
+            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Image x:Name="ImagenRealizar" Source="/General;component/images/RealizarConsulta1.png" />
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenRealizar" Property="Source" Value="/General;component/images/RealizarConsulta2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="VisualizarBoton" TargetType="Button">
+        <Image x:Name="ImagenVisualizar" Source="/General;component/images/Visualizar1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenVisualizar" Property="Source" Value="/General;component/images/Visualizar2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="ExpandirBoton" TargetType="Button">
+        <Image x:Name="ImagenExpandir" Source="/General;component/images/Expandir1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenExpandir" Property="Source" Value="/General;component/images/Expandir2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="RestaurarBoton" TargetType="Button">
+        <Image x:Name="ImagenRestaurar" Source="/General;component/images/Restaurar1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenRestaurar" Property="Source" Value="/General;component/images/Restaurar2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="DocumentoCompletoBoton" TargetType="Button">
+        <Image x:Name="ImagenDocumentoCompleto" Source="/General;component/images/Ver Documento1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenDocumentoCompleto" Property="Source" Value="/General;component/images/Ver Documento2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="TesisBoton" TargetType="Button">
+        <Image x:Name="ImagenTesis" Source="/General;component/images/TesisIco1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenTesis" Property="Source" Value="/General;component/images/TesisIco2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate x:Key="BuroBoton" TargetType="Button">
+        <Image x:Name="ImagenBuro" Source="/General;component/images/Almacenar1.png" />
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="ImagenBuro" Property="Source" Value="/General;component/images/Almacenar2.png" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+</ResourceDictionary>
+

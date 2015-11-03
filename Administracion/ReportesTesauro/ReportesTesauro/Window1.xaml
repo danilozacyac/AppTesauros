@@ -1,0 +1,17 @@
+﻿<Window x:Class="ReportesTesauro.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="300" Width="700">
+    <Grid Name="GrdPrincipal">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+            </Grid.RowDefinitions>
+            <Button Name="BtnReporteCE" Click="BtnReporteCE_Click">Reporte CE</Button>
+        </Grid>
+    </Grid>
+</Window>

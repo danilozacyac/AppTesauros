@@ -1,0 +1,41 @@
+E:\Proyectos_2009\Progs\Thesauro\AppTesauro09wpf\TesauroUtilities\obj\Debug\ResolveAssemblyReference.cache
+E:\Proyectos_2009\Progs\Thesauro\AppTesauro09wpf\TesauroUtilities\bin\Debug\TesauroUtilities.dll
+E:\Proyectos_2009\Progs\Thesauro\AppTesauro09wpf\TesauroUtilities\bin\Debug\TesauroUtilities.pdb
+E:\Proyectos_2009\Progs\Thesauro\AppTesauro09wpf\TesauroUtilities\obj\Debug\TesauroUtilities.dll
+E:\Proyectos_2009\Progs\Thesauro\AppTesauro09wpf\TesauroUtilities\obj\Debug\TesauroUtilities.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroUtilities\bin\Debug\TesauroUtilities.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroUtilities\bin\Debug\TesauroUtilities.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroUtilities\bin\Debug\TesauroTO.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroUtilities\bin\Debug\TesauroTO.pdb
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroUtilities\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroUtilities\obj\Debug\TesauroUtilities.dll
+C:\Documents and Settings\cluna\Mis documentos\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroUtilities\obj\Debug\TesauroUtilities.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroUtilities\bin\Debug\TesauroUtilities.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroUtilities\bin\Debug\TesauroUtilities.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroUtilities\bin\Debug\TesauroTO.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroUtilities\bin\Debug\TesauroTO.pdb
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroUtilities\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroUtilities\obj\Debug\TesauroUtilities.dll
+C:\Users\cluna\Documents\Descargas\archivos_2009_10_06\AppTesauro09wpf\AppTesauro09wpf\TesauroUtilities\obj\Debug\TesauroUtilities.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\TesauroUtilities\bin\Debug\TesauroUtilities.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\TesauroUtilities\bin\Debug\TesauroUtilities.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\TesauroUtilities\bin\Debug\IUSTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\TesauroUtilities\bin\Debug\TesauroTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\TesauroUtilities\bin\Debug\Lucene.Net.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\TesauroUtilities\bin\Debug\IUSTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\TesauroUtilities\bin\Debug\TesauroTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\TesauroUtilities\obj\Debug\TesauroUtilities.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\TesauroUtilities\obj\Debug\TesauroUtilities.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\App Tesauros\AppTesauro09wpf\TesauroUtilities\obj\Debug\TesauroUtilities.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\TesauroUtilities\bin\Debug\TesauroUtilities.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\TesauroUtilities\bin\Debug\TesauroUtilities.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\TesauroUtilities\bin\Debug\IUSTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\TesauroUtilities\bin\Debug\TesauroTO.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\TesauroUtilities\bin\Debug\Lucene.Net.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\TesauroUtilities\bin\Debug\IUSTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\TesauroUtilities\bin\Debug\TesauroTO.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\TesauroUtilities\obj\Debug\TesauroUtilities.csprojResolveAssemblyReference.cache
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\TesauroUtilities\obj\Debug\TesauroUtilities.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\TesauroUtilities\obj\Debug\TesauroUtilities.pdb
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\TesauroUtilities\bin\Debug\ScjnUtilities.dll
+C:\Users\lavega\Documents\Visual Studio 2010\Projects\AppTesauros\AppTesauro09wpf\TesauroUtilities\bin\Debug\ScjnUtilities.pdb

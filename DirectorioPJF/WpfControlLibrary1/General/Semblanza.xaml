@@ -1,0 +1,87 @@
+﻿<Page x:Class="mx.gob.scjn.directorio.General.Semblanza"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:local="clr-namespace:mx.gob.scjn.directorio"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Semblanza" Loaded="Page_Loaded" >
+    <Page.Resources>
+        <ResourceDictionary Source="/General;component/Resources.xaml">
+        </ResourceDictionary>
+    </Page.Resources>
+    <Border Name="Borde" BorderThickness="0" Style="{StaticResource BorderStyle}">
+
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="93.687*" />
+                <ColumnDefinition Width="112.313" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="6" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="41.5" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="54.54*" />
+                <RowDefinition Height="136.35" />
+                <RowDefinition Height="63.71*" />
+            </Grid.RowDefinitions>
+            <Frame Name="SemblanzaHTML" Grid.Row="2" Grid.ColumnSpan="4" Grid.Column="1" Grid.RowSpan="3">
+                
+            </Frame>
+            <Rectangle Name="rectangleInstancia" Margin="0,1,5.2,0" Stroke="Black" RadiusX="10" RadiusY="10" 
+                       Fill="Bisque" IsHitTestVisible="False" Opacity="9" Visibility="Visible" 
+                       StrokeDashCap="Round" StrokeDashOffset="5" StrokeEndLineCap="Square" 
+                       StrokeLineJoin="Bevel" StrokeStartLineCap="Triangle" OpacityMask="Bisque" 
+                       IsEnabled="True" Grid.Column="2" />
+            <TextBox Margin="16.25,5" Name="txtTituloSemblanza" FontSize="20" Background="Bisque" 
+                     IsReadOnly="True" BorderThickness="0" HorizontalContentAlignment="Stretch" 
+                     VerticalContentAlignment="Stretch" Grid.Column="2" TextAlignment="Justify" HorizontalAlignment="Center" />
+            <Grid Grid.Column="3" Grid.ColumnSpan="2" Margin="12,2,1,1" Name="grdBotones">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0*" />
+                    <ColumnDefinition Width="35" />
+                    <ColumnDefinition Width="35" />
+                    <ColumnDefinition Width="35" />
+                    <ColumnDefinition Width="35" />
+                    <ColumnDefinition Width="0*" />
+                </Grid.ColumnDefinitions>
+
+                <!--<Button Name="Guardar_" Grid.Column="2"  Margin="0,0,0,0" 
+                        ToolTip="Guardar en archivo" ToolTipService.Placement="Top"  Click="Guardar_Click" 
+                        Visibility="{Binding Source={StaticResource Visibilidad}, Path=ObtenVisibilidadInternet}"
+                        Template="{StaticResource GuardarBoton}"/>-->
+                <Button Name="Imprimir_" Grid.Column="1" Margin="0,0,0,0"
+                        ToolTip="Imprimir" ToolTipService.Placement="Top"
+                        Template="{StaticResource ImprimeBoton}"
+                        Click="Imprimir_Click" />
+                <Button Name="PortaPapeles_" Grid.Column="3" Margin="0,0,0,0"
+                        ToolTip="Portapapeles" ToolTipService.Placement="Top"
+                        Click="PortaPapeles_Click"
+                        Template="{StaticResource PortapapelesBoton}"
+                        HorizontalAlignment="Right" />
+                
+                <Button Name="Salir_" Grid.Column="4" Margin="0,0,0,0"
+                        ToolTip="Regresar a la pantalla anterior" ToolTipService.Placement="Top"
+                        Click="Salir_MouseButtonDown"
+                        Template="{StaticResource RegresarBoton}" />
+
+
+                <!--<Image Name="Guardar_" Visibility="Hidden" Margin="0,0,0,0" Grid.Column="1"
+                       MouseLeftButtonDown="Guardar" ToolTip="Guardar" Source="/DirectorioPJF;component/Images/Guardar1.PNG" />-->
+                <!--<Image Name="Imprimir_" Grid.Column="2" Margin="0,0,0,0" MouseLeftButtonDown="Imprimir" 
+                       Source="/DirectorioPJF;component/Images/Imprimir1.PNG" ImageFailed="Imprimir__ImageFailed" 
+                       ToolTip="Para imprimir, por favor utilice el botón derecho del ratón" />-->
+                <!--<Image Name="PortaPapeles_" Grid.Column="3" Margin="0,0,0,0" MouseLeftButtonDown="PortaPapeles" 
+                       ToolTip="Para enviar al portapapeles, por favor utilice el botón derecho del ratón" 
+                       Source="/DirectorioPJF;component/Images/PORTAPAPELES1.PNG" />-->
+                <!--<Image Name="Salir_" Grid.Column="4" Margin="0,0,2.672,1.503" MouseLeftButtonDown="Salir" 
+                       ToolTip="Regresar " Source="/DirectorioPJF;component/Images/regresar1.PNG" />-->
+            </Grid>
+            <FlowDocumentPageViewer Name="impresion" IsEnabled="True"  Background="White" Visibility="Hidden" Margin="3,3,-207,3" HorizontalAlignment="Right" Width="180.603" Grid.Row="1" />
+            <RichTextBox Grid.Row="3" Name="contenidoTexto" Visibility="Hidden" VerticalScrollBarVisibility="Auto" Margin="52.27,0,7.54,16.845"  Height="22.95" Width="108" Grid.Column="2" Grid.ColumnSpan="2" VerticalAlignment="Bottom" />
+            <DocumentViewer  Name="documentViewer1" Grid.Column="3" Grid.Row="4" Height="18" Visibility="Hidden" Margin="14,0,47.75,6" VerticalAlignment="Bottom" />
+            <local:MensajesAvisos x:Name="Aviso" Visibility="Hidden" Margin="9,4,-75,36" Grid.ColumnSpan="5" Grid.Column="1" Grid.RowSpan="3" Grid.Row="2" />
+        </Grid>
+    </Border>
+
+</Page>

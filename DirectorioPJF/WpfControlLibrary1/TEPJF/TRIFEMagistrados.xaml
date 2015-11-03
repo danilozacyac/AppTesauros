@@ -1,0 +1,110 @@
+﻿<Page x:Class="mx.gob.scjn.directorio.TEPJF.TRIFEMagistrados"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:local="clr-namespace:mx.gob.scjn.directorio"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="TRIFEMagistrados" >
+    
+    <Page.Resources>
+        <ResourceDictionary Source="/General;component/Resources.xaml">
+        </ResourceDictionary>
+    </Page.Resources>
+    
+    <Border Name="Borde" BorderThickness="0" Style="{StaticResource BorderStyle}">
+        
+        <Grid Height="510" Width="737.5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="56*" />
+                <RowDefinition Height="404.099*" />
+                <RowDefinition Height="49.901*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="369*" />
+                <ColumnDefinition Width="310*" />
+                <ColumnDefinition Width="58.75*" />
+            </Grid.ColumnDefinitions>
+            <Image Margin="12,2,12,12" Name="image1" Stretch="Fill" 
+                   Source="/DirectorioPJF;component/Images/TRIFE.jpg" Grid.Row="1" Grid.RowSpan="2" 
+                   ToolTip="www.trife.gob.mx" MouseLeftButtonDown="TRIFE_MouseLeftButtonDown"/>
+            
+            <Button Name="Salir" Grid.Column="2"  
+                    Margin="1,1,1,1"
+                    ToolTip="Regresar a la pantalla anterior"
+                    Click="Salir_MouseButtonDown"
+                    Template="{StaticResource RegresarBoton}" />
+
+            <!--<Image   Margin="0,0,0,10" ToolTip="Regresar al la pantalla anterior"
+               Name="Salir" Grid.Column="1" HorizontalAlignment="Right" 
+                     Source="/DirectorioPJF;component/Images/REGRESAR1.PNG" 
+                        MouseLeftButtonDown="Salir_MouseButtonDown" Width="55" />-->
+           
+            <Rectangle Name="rectangleCabecera" Margin="12,-2,1.27,4" Stroke="Black" RadiusX="10" RadiusY="10" Fill="Bisque" IsHitTestVisible="False" Opacity="9" Visibility="Visible" StrokeDashCap="Round" StrokeDashOffset="5" StrokeEndLineCap="Square" StrokeLineJoin="Bevel" StrokeStartLineCap="Triangle" OpacityMask="Bisque" IsEnabled="True" Grid.ColumnSpan="2" />
+            <Rectangle Name="rectangleGrid" Margin="0.875,1,1,0" Stroke="Black" RadiusX="10" RadiusY="10" 
+                       Fill="Bisque" IsHitTestVisible="False" Opacity="9" Visibility="Visible" 
+                       StrokeDashCap="Round" StrokeDashOffset="5" StrokeEndLineCap="Square" 
+                       StrokeLineJoin="Bevel" StrokeStartLineCap="Triangle" OpacityMask="Bisque" 
+                       IsEnabled="True" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" />
+            <TextBox Margin="20,6,17.27,12" Name="txtTituloSemblanza" FontSize="25" Background="Bisque" IsReadOnly="True" 
+                     BorderThickness="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
+                     Grid.ColumnSpan="2"  ToolTip="Carlota Armero # 5000, Col. CTM Culhuacán, Del. Coyoacán, C.P. 04480, México, D.F., Tels. 57-28-23-00 y 57-28-24-00"
+                     MouseLeftButtonDown="txtTituloSemblanza_MouseLeftButtonDown">Tribunal Electoral del Poder Judicial de la Federación</TextBox>
+            <xcdg:DataGridControl AutoCreateColumns="False" Background="Wheat" EditTriggers="None" Margin="19.875,20,20,19" 
+                                  Name="Magistrados" NavigationBehavior="RowOnly" ReadOnly="True" SelectionMode="Single" 
+                                  xmlns:xcdg="http://schemas.xceed.com/wpf/xaml/datagrid" 
+                                  Grid.Column="1" MouseLeftButtonDown="Ver_Semblanza" MouseDoubleClick="Ver_Semblanza" 
+                                  Grid.Row="1" FontSize="18" ToolTip="Doble clic para ver datos biográficos" Grid.ColumnSpan="2">
+                <xcdg:DataGridControl.Columns>
+                    <xcdg:Column FieldName="NombrePersona" Title="Nombre" Width="880" IsMainColumn="False" ReadOnly="True" TextTrimming="WordEllipsis" TextWrapping="WrapWithOverflow" Visible="False" />
+                    <xcdg:Column FieldName="IdPersona" Title="Id" Visible="False" />
+                    <xcdg:Column FieldName="IdTitulo" Title="Titulo" Visible="False" />
+                    <xcdg:Column FieldName="IdPuesto" Title="IdPuesto" Visible="False" />
+                    <xcdg:Column FieldName="IdPonencia" Title="IdPonencia" Visible="False" />
+                    <xcdg:Column FieldName="NombreCompleto" Title="NombreCompleto" Visible="True" Width="300" IsMainColumn="True" MinWidth="100" ReadOnly="True" TextWrapping="WrapWithOverflow" />
+                    <xcdg:Column FieldName="ApellidosPersona" Title="ApellidosPersona" Visible="False" />
+                    <xcdg:Column FieldName="Orden" Title="Orden" Visible="False" />
+                    <xcdg:Column FieldName="Prefijo" Title="Prefijo" Visible="False" />
+                    <xcdg:Column FieldName="Posfijo" Title="Posfijo" Visible="False" />
+                    <xcdg:Column FieldName="TituloPersona" Title="TituloPersona" Visible="False" />
+                    <xcdg:Column FieldName="TitSemblanza" Title="TitSemblanza" Visible="False" />
+                </xcdg:DataGridControl.Columns>
+                <xcdg:DataGridControl.View>
+                    <xcdg:TableView ShowFixedColumnSplitter="False" ShowRowSelectorPane="False" UseDefaultHeadersFooters="False"></xcdg:TableView>
+                </xcdg:DataGridControl.View>
+            </xcdg:DataGridControl>
+            <Grid Margin="0,1,1,1" Name="grdBotones" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right" Width="149.5" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="0*" />
+                    <ColumnDefinition Width="50" />
+                </Grid.ColumnDefinitions>
+
+                <Button Name="Guardar_"  Click="Guardar_Click"
+                            Grid.Row="0" Margin="0" 
+                            ToolTip="Guardar en archivo" 
+                            Visibility="{Binding Source={StaticResource Visibilidad}, Path=ObtenVisibilidadInternet}"
+                            Template="{StaticResource GuardarBoton}"/>
+                <Button Name="Imprimir_" Click="Imprimir_Click"
+                            Grid.Column="1" Grid.Row="0" Margin="0"
+                            ToolTip="Imprimir"
+                            Template="{StaticResource ImprimeBoton}"
+                            VerticalAlignment="Top" />
+                <Button Name="PortaPapeles_" Click="PortaPapeles_Click"
+                            Grid.Column="3" Margin="1,1,1,1"
+                            ToolTip="Portapapeles"
+                            Template="{StaticResource PortapapelesBoton}"
+                            HorizontalAlignment="Right" />
+                
+                <!--<Image  Name="Guardar_" Grid.Column="0" Grid.Row="0" Margin="0" MouseLeftButtonDown="Guardar" Source="/DirectorioPJF;component/Images/Guardar1.PNG" ToolTip="Guardar" Visibility="Hidden" />
+                <Image Name="Imprimir_" Grid.Column="1" Grid.ColumnSpan="2" MouseLeftButtonDown="Imprimir" Source="/DirectorioPJF;component/Images/Imprimir1.PNG" ToolTip="Imprimir" />
+                <Image Name="PortaPapeles_" Grid.Column="3"  Margin="1" MouseLeftButtonDown="PortaPapeles" Source="/DirectorioPJF;component/Images/PORTAPAPELES1.PNG" ToolTip="Enviar al portapapeles" />-->
+            </Grid>
+            <RichTextBox Height="31.851" Margin="0,6.025,106.645,12.025" Name="contenidoTexto" Visibility="Hidden" VerticalScrollBarVisibility="Auto" Width="35"  Grid.Column="1" AcceptsTab="True" SnapsToDevicePixels="True" Grid.Row="2" HorizontalAlignment="Right" />
+            <FlowDocumentPageViewer Name="impresion" IsEnabled="True"
+                                        Background="White" Grid.Row="2" Visibility="Hidden" Margin="34.875,23,0,3.442" Grid.Column="1" HorizontalAlignment="Left" Width="69.5" />
+            <local:OpcionesImprimir x:Name="OpImprimir" Visibility="Hidden" Margin="219.375,79.55,109.395,74.55" Grid.Row="1" Grid.ColumnSpan="2" />
+            <local:FondoTransparente x:Name="FTransparente" Visibility="Hidden" Margin="1,1,1,1" Grid.ColumnSpan="3" Grid.RowSpan="3" />
+            <local:MensajesAvisos x:Name="Aviso" Visibility="Hidden" Margin="183.25,98,138.52,92.099" Grid.ColumnSpan="2" Grid.Row="1" />
+
+        </Grid>
+    </Border>
+</Page>

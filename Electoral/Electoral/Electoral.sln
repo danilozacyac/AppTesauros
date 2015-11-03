@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Electoral", "Electoral\Electoral.csproj", "{F88F47CB-AE43-4D36-B713-D4EE86121E20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "General", "..\..\General\General\General.csproj", "{D9944DFC-D53F-4311-B325-FF6FB300A01B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IUSTOWeb", "..\..\IUSTOWeb\IUSTOWeb\IUSTOWeb.csproj", "{2620FBAC-27E6-4DEA-A05A-74ED3D51377B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F88F47CB-AE43-4D36-B713-D4EE86121E20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F88F47CB-AE43-4D36-B713-D4EE86121E20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F88F47CB-AE43-4D36-B713-D4EE86121E20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F88F47CB-AE43-4D36-B713-D4EE86121E20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9944DFC-D53F-4311-B325-FF6FB300A01B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9944DFC-D53F-4311-B325-FF6FB300A01B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9944DFC-D53F-4311-B325-FF6FB300A01B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9944DFC-D53F-4311-B325-FF6FB300A01B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2620FBAC-27E6-4DEA-A05A-74ED3D51377B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2620FBAC-27E6-4DEA-A05A-74ED3D51377B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2620FBAC-27E6-4DEA-A05A-74ED3D51377B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2620FBAC-27E6-4DEA-A05A-74ED3D51377B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

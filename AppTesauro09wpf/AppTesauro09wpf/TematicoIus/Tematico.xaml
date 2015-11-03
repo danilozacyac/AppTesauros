@@ -1,0 +1,177 @@
+﻿<Window x:Class="AppTesauro09wpf.TematicoIus.Tematico"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:converter="clr-namespace:AppTesauro09wpf.Converters"
+        Name="TematicoWnd"
+        Title="Tematico"
+        Width="727"
+        Height="651"
+        Background="LightSeaGreen"
+        Loaded="Window_Loaded"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <converter:ForegroundConverter x:Key="foreConverter" />
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="55" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TreeView x:Name="TreeTematico"
+                      Grid.Row="1"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch"
+                      AllowDrop="True"
+                      Foreground="{Binding IdTemaOrigen,
+                                           Converter={StaticResource foreConverter}}"
+                      ItemsSource="{Binding Categories}"
+                      SelectedItemChanged="TreeTematico_SelectedItemChanged">
+                <TreeView.ItemContainerStyle>
+
+                    <Style TargetType="{x:Type TreeViewItem}">
+                        <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+                        <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
+                        <Setter Property="FontWeight" Value="Normal" />
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="FontWeight" Value="Bold" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TreeView.ItemContainerStyle>
+                <TreeView.ItemTemplate>
+                    <HierarchicalDataTemplate ItemsSource="{Binding SubTemas}">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock VerticalAlignment="Center"
+                                       Foreground="{Binding IdTemaOrigen,
+                                                            Converter={StaticResource foreConverter}}"
+                                       Text="{Binding Descripcion,
+                                                      Mode=TwoWay}" />
+                        </StackPanel>
+                    </HierarchicalDataTemplate>
+                </TreeView.ItemTemplate>
+            </TreeView>
+            <TextBlock Name="textBlock1"
+                       Grid.Column="1"
+                       Height="23"
+                       Margin="20,23,0,0"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       FontSize="14"
+                       FontWeight="Bold"
+                       Text="Descripción:" />
+            <TextBox Name="TxtDescripcion"
+                     Grid.Column="1"
+                     Width="292"
+                     Height="23"
+                     Margin="20,52,0,0"
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Top"
+                     IsEnabled="False" />
+            <TextBlock Name="textBlock2"
+                       Grid.Column="1"
+                       Height="23"
+                       Margin="20,107,0,0"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       Text="¿Es de primer nivel?" />
+            <RadioButton Name="RadYes"
+                         Grid.Column="1"
+                         Height="16"
+                         Margin="236,107,0,0"
+                         HorizontalAlignment="Left"
+                         VerticalAlignment="Top"
+                         Content=" Si"
+                         IsChecked="False" />
+            <RadioButton Name="RadNo"
+                         Grid.Column="1"
+                         Height="16"
+                         Margin="284,107,0,0"
+                         HorizontalAlignment="Left"
+                         VerticalAlignment="Top"
+                         Content=" No"
+                         IsChecked="True" />
+            <TextBlock Name="textBlock3"
+                       Grid.Column="1"
+                       Height="23"
+                       Margin="20,163,0,0"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       FontSize="14"
+                       FontWeight="Bold"
+                       Text="Notas:" />
+            <TextBox Name="TxtNotas"
+                     Grid.Column="1"
+                     Width="292"
+                     Height="131"
+                     Margin="20,192,0,0"
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Top" />
+            <TextBlock Name="textBlock4"
+                       Grid.Column="1"
+                       Height="23"
+                       Margin="21,363,0,0"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top"
+                       FontSize="14"
+                       FontWeight="Bold"
+                       Text="Observaciones:" />
+            <TextBox Name="TxtObservaciones"
+                     Grid.Column="1"
+                     Width="292"
+                     Height="109"
+                     Margin="21,392,0,0"
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Top" />
+        </Grid>
+        <Button Name="BtnCancelar"
+                Grid.Row="2"
+                Width="75"
+                Height="23"
+                Margin="0,15,39,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Click="BtnCancelar_Click"
+                Content="Cancelar" />
+        <Button Name="BtnAceptar"
+                Grid.Row="2"
+                Width="75"
+                Height="23"
+                Margin="501,15,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="BtnAceptar_Click"
+                Content="Aceptar" />
+        <TextBox Name="TxtBuscar"
+                 Width="178"
+                 Height="23"
+                 Margin="12,12,0,0"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top" />
+        <Button Name="BtnBuscar"
+                Width="52"
+                Height="23"
+                Margin="196,11,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="BtnBuscar_Click"
+                Content="Buscar" />
+        <Button Name="BtnRestaurar"
+                Width="75"
+                Height="23"
+                Margin="254,11,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="BtnRestaurar_Click"
+                Content="Restaurar" />
+    </Grid>
+</Window>
